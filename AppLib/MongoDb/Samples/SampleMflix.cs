@@ -6,7 +6,7 @@ namespace AppLib.MongoDb.Samples
     public class SampleMflix : BaseSampleDatabase
     {
         #region Public Properties
-        
+
         public IMongoCollection<BsonDocument> Comments { get; }
         public IMongoCollection<BsonDocument> Movies { get; }
         public IMongoCollection<BsonDocument> Sessions { get; }

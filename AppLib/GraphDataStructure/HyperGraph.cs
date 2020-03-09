@@ -1,13 +1,16 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace AppLib.GraphDataStructure
 {
     public class HyperGraph
     {
-        #region Public Properties
+        #region Public Get-Only Properties
+        
+        public Guid Id { get; } = Guid.NewGuid();
 
-        public LinkedList<HyperEdge> Edges { get; }
-        public LinkedList<Vertex> Vertices { get; }
+        public List<HyperEdge> Edges { get; }
+        public List<Vertex> Vertices { get; }
 
         #endregion
 
@@ -15,19 +18,10 @@ namespace AppLib.GraphDataStructure
 
         public HyperGraph()
         {
-            Edges = new LinkedList<HyperEdge>();
-            Vertices = new LinkedList<Vertex>();
+            Edges = new List<HyperEdge>();
+            Vertices = new List<Vertex>();
         }
 
         #endregion
-
-        public void AddVertex(Vertex vertex)
-        {
-            
-        }
-
-        public void AddEdge(HyperEdge hyperEdge)
-        {
-        }
     }
 }

@@ -1,6 +1,8 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AppLib.GraphDataStructure;
 using MongoDB.Bson;
 using MongoDB.Driver;
 
@@ -20,41 +22,73 @@ namespace AppLib.MongoDb
                 .ToListAsync();
         }
 
-        public static async Task<IEnumerable<KeyValuePair<string, int>>> ParseCollectionAsync(
-            IMongoCollection<BsonDocument> collection)
+        public static async Task<HyperGraph> ParseCollectionToHyperGraphAsync(
+            IMongoCollection<BsonDocument> bsonDocCollection)
         {
-            var collectionFields = new Dictionary<string, int>();
+            var hyperGraph = new HyperGraph();
 
-            foreach (var doc in collection.AsQueryable())
+            await foreach (var pairs in ParseCollectionAsync(bsonDocCollection))
             {
-                collectionFields.AddOrModify(await ParseDocumentAsync(doc));
+                var edge = new HyperEdge {Weight = 1};
+
+                foreach (var (key, _) in pairs)
+                {
+                    var vertex = hyperGraph.Vertices.FirstOrDefault(v => v.Data.Equals(key));
+                    if (vertex is null)
+                    {
+                        vertex = new Vertex {Data = key};
+                        hyperGraph.Vertices.Add(vertex);
+                    }
+
+                    vertex.Edges.Add(edge);
+                    edge.Vertices.Add(vertex);
+                }
+
+                var testHyperEdge = hyperGraph.Edges.FirstOrDefault(he => he.Vertices.SetEquals(edge.Vertices));
+                if (testHyperEdge is null)
+                    hyperGraph.Edges.Add(edge);
+                else
+                {
+                    foreach (var vertex in edge.Vertices)
+                    {
+                        vertex.Edges.RemoveWhere(e => e.Id == edge.Id);
+                        vertex.Edges.Add(testHyperEdge);
+                    }
+
+                    testHyperEdge.Weight++;
+                }
             }
 
-            return collectionFields;
+            return hyperGraph;
         }
 
-        public static IEnumerable<KeyValuePair<string, int>> ParseDocument(BsonDocument doc)
+        private static async IAsyncEnumerable<IEnumerable<KeyValuePair<string, int>>> ParseCollectionAsync(
+            IMongoCollection<BsonDocument> bsonCollection)
+        {
+            foreach (var doc in bsonCollection.AsQueryable())
+                yield return await ParseDocumentTaskAsync(doc);
+        }
+
+        private static async Task<IEnumerable<KeyValuePair<string, int>>> ParseDocumentTaskAsync(BsonDocument doc,
+            string keyPrefix = null)
         {
             var collectionFields = new Dictionary<string, int>();
-            foreach (var el in doc.Elements)
-                collectionFields.AddOrModify(ParseElement(el));
+            foreach (var el in doc)
+                collectionFields.AddOrModify(await ParseElementTaskAsync(el, keyPrefix));
+
             return collectionFields;
         }
 
-        public static async Task<IEnumerable<KeyValuePair<string, int>>> ParseDocumentAsync(BsonDocument doc) =>
-            await Task.Run(() => ParseDocument(doc));
-
-        private static IEnumerable<KeyValuePair<string, int>> ParseElement(BsonElement el)
+        private static async Task<IEnumerable<KeyValuePair<string, int>>> ParseElementTaskAsync(BsonElement el,
+            string keyPrefix = null)
         {
             var collectionFields = new Dictionary<string, int>();
             if (el.Value.IsBsonDocument)
-                collectionFields.AddOrModify(ParseDocument(el.Value.AsBsonDocument));
+                collectionFields.AddOrModify(await ParseDocumentTaskAsync(el.Value.AsBsonDocument,
+                    (keyPrefix is null ? null : keyPrefix + '.') + el.Name));
             else
-                collectionFields.AddOrModify(el.Name);
+                collectionFields.AddOrModify($"{(keyPrefix is null ? null : keyPrefix + '.')}{el.Name}");
             return collectionFields;
         }
-
-        private static async Task<IEnumerable<KeyValuePair<string, int>>> ParseElementAsync(BsonElement el) =>
-            await Task.Run(() => ParseElement(el));
     }
 }

@@ -1,11 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
+using System.IO;
 using System.Linq;
-using System.Threading.Tasks;
-using AppLib;
+using AppLib.GraphDataStructure;
 using AppLib.MongoDb;
-using MongoDB.Bson;
-using MongoDB.Driver;
 using MongoDbContext = AppLib.MongoDb.MongoDbContext;
 
 namespace TestConsole
@@ -16,14 +13,43 @@ namespace TestConsole
         {
             var db = new MongoDbContext();
 
-            var result = BsonParser.ParseCollectionAsync(db.SampleMflix.Movies);
-            result.Wait();
-            foreach (var (key, value) in result.Result)
+            // var result = BsonParser.ParseCollectionTaskAsync(db.SampleAirbnb.ListingAndReviews);
+            // result.Wait();
+            // foreach (var (key, value) in result.Result)
+            // {
+            //     Console.WriteLine($"{key}: {value}");
+            // }
+            var hgTask = BsonParser.ParseCollectionToHyperGraphAsync(db.SampleTraining.Tweets);
+            hgTask.Wait();
+            var hg = hgTask.Result;
+            using var fs = new FileStream($@"Logs\{DateTime.Now:yy-MM-dd HH-mm-ss}.log", FileMode.Create);
+            using var sw = new StreamWriter(fs) {AutoFlush = true};
+            sw.WriteLine("Vertices:");
+            foreach (var vertex in hg.Vertices)
             {
-                Console.WriteLine($"{key}: {value}");
+                sw.WriteLine("Data: " + vertex.Data);
+                sw.WriteLine($"Vertex edges {vertex.Edges.Count}:");
+                foreach (var edge in vertex.Edges)
+                    sw.Write(edge.Weight + " ");
+                sw.WriteLine();
+                sw.WriteLine("".PadLeft(50, '-'));
             }
 
-            Console.ReadLine();
+            sw.WriteLine("Edges:");
+            foreach (var edge in hg.Edges)
+            {
+                sw.WriteLine("Edge weight: " + edge.Weight);
+                sw.WriteLine($"Edge vertices {edge.Vertices.Count}:");
+                foreach (var vertex in edge.Vertices)
+                    sw.WriteLine('\t' + vertex.Data);
+                sw.WriteLine();
+                sw.WriteLine("".PadLeft(50, '-'));
+            }
+
+            sw.WriteLine("Vertices count: " + hg.Vertices.Count);
+            sw.WriteLine("Edges count: " + hg.Edges.Count);
+            
+            Console.WriteLine("Done!");
         }
     }
 }

@@ -105,18 +105,8 @@ $RECYCLE.BIN/
 *.iml
 out
 gen
-.gitignore
-.idea/.idea.DimplomaWork/.idea/contentModel.xml
-DimplomaWork/bin/
-DimplomaWork/obj/Debug/netcoreapp3.1/MainWindow.baml
-DimplomaWork/obj/Debug/netcoreapp3.1/DimplomaWork_MarkupCompile.cache
-DimplomaWork/obj/Debug/netcoreapp3.1/DimplomaWork.pdb
-DimplomaWork/obj/Debug/netcoreapp3.1/DimplomaWork.g.resources
-DimplomaWork/obj/Debug/netcoreapp3.1/DimplomaWork.exe
-DimplomaWork/obj/Debug/netcoreapp3.1/DimplomaWork.dll
-DimplomaWork/obj/Debug/netcoreapp3.1/DimplomaWork.csprojAssemblyReference.cache
-DimplomaWork/obj/Debug/netcoreapp3.1/DimplomaWork.csproj.FileListAbsolute.txt
-.idea/.idea.DimplomaWork/.idea/workspace.xml
-DimplomaWork/obj/Debug/netcoreapp3.1/DimplomaWork_MarkupCompile.cache
-DimplomaWork/obj/Debug/netcoreapp3.1/DimplomaWork.csprojAssemblyReference.cache
-.idea/.idea.DimplomaWork/.idea/workspace.xml
+
+# Selfmaid ignore
+*.cache
+*/obj/*
+*/bin/*

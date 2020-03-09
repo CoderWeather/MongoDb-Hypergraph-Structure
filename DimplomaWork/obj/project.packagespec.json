@@ -15,7 +15,11 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
-        "projectReferences": {}
+        "projectReferences": {
+          "C:\\Users\\Ilya\\Documents\\Github\\DimplomaWork\\AppLib\\AppLib.csproj": {
+            "projectPath": "C:\\Users\\Ilya\\Documents\\Github\\DimplomaWork\\AppLib\\AppLib.csproj"
+          }
+        }
       }
     },
     "warningProperties": {

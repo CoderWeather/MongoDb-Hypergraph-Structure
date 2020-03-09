@@ -1,6 +1,157 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="444683a7-54b7-4b3d-ad84-81eb9a2bab79" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.DimplomaWork/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DimplomaWork/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DimplomaWork/obj/Debug/netcoreapp3.1/DimplomaWork.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DimplomaWork/obj/Debug/netcoreapp3.1/DimplomaWork.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DimplomaWork/obj/Debug/netcoreapp3.1/DimplomaWork.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DimplomaWork/obj/Debug/netcoreapp3.1/DimplomaWork.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DimplomaWork/obj/Debug/netcoreapp3.1/DimplomaWork_MarkupCompile.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DimplomaWork/obj/Debug/netcoreapp3.1/DimplomaWork_MarkupCompile.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DimplomaWork/obj/DimplomaWork.csproj.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DimplomaWork/obj/DimplomaWork.csproj.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DimplomaWork/obj/DimplomaWork.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/DimplomaWork/obj/DimplomaWork.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DimplomaWork/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/DimplomaWork/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DimplomaWork/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/DimplomaWork/obj/project.packagespec.json" afterDir="false" />
+    </list>
+    <list id="67e9120d-de30-435c-86d1-0cfba98f550d" name="Smart Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager">
+    <option name="groupingKeys">
+      <option value="directory" />
+    </option>
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="AtlasCluster[0]" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="AtlasCluster[0]" type="feb32156:DbDataSourceImpl" />
+        <item name="sample_airbnb: schema" type="f0f64354:MongoImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="AtlasCluster[0]" type="feb32156:DbDataSourceImpl" />
+        <item name="sample_analytics: schema" type="f0f64354:MongoImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="AtlasCluster[0]" type="feb32156:DbDataSourceImpl" />
+        <item name="sample_geospatial: schema" type="f0f64354:MongoImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="AtlasCluster[0]" type="feb32156:DbDataSourceImpl" />
+        <item name="sample_mflix: schema" type="f0f64354:MongoImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="AtlasCluster[0]" type="feb32156:DbDataSourceImpl" />
+        <item name="sample_supplies: schema" type="f0f64354:MongoImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="AtlasCluster[0]" type="feb32156:DbDataSourceImpl" />
+        <item name="sample_training: schema" type="f0f64354:MongoImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="AtlasCluster[0]" type="feb32156:DbDataSourceImpl" />
+        <item name="sample_weatherdata: schema" type="f0f64354:MongoImplModel$Schema" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/AppLib/GraphDataStructure/HyperEdge.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/AppLib/MongoDb/Samples/BaseSampleDatabase.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/AppLib/EnumerableExtensions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/BBB3B884-123D-47EA-9CD1-5BED540D02AE/3BF/ArrayList.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/BE30F059-06DD-42DF-8B46-2939459B49EA/A/HashSet.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/DimplomaWork/MainWindow.xaml.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/69B0D8B8-E702-4195-8A70-32D7A088D1F0/0/ISet.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/BBB3B884-123D-47EA-9CD1-5BED540D02AE/81/Guid.Windows.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/DimplomaWork/MainWindow.xaml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/AppLib/MongoDb/Samples/SampleAirbnb.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/AppLib/MongoDb/Samples/SampleAnalytics.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/AppLib/MongoDb/Samples/SampleGeospatial.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/AppLib/MongoDb/Samples/SampleMflix.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/AppLib/MongoDb/Samples/SampleSupplies.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TestConsole/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/AppLib/MongoDb/Samples/SampleTraining.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/AppLib/MongoDb/Samples/SampleWeatherdata.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/F40AEF44-138B-4E3C-B2DE-5FA77D7F0FEE/03/8d9d316b/IMongoClient.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/F40AEF44-138B-4E3C-B2DE-5FA77D7F0FEE/16/fa31c5a5/IMongoCollectionExtensions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C8A641C3-D567-425D-9EC3-FAD845E2A1C8/91/3419717e/BsonDocument.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/BBB3B884-123D-47EA-9CD1-5BED540D02AE/2E/Object.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C8A641C3-D567-425D-9EC3-FAD845E2A1C8/ae/859fbf1b/BsonValue.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/F40AEF44-138B-4E3C-B2DE-5FA77D7F0FEE/ef/0003abb5/MongoQueryableImpl`2.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C8A641C3-D567-425D-9EC3-FAD845E2A1C8/f1/d452b518/BsonElement.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/AppLib/DictionaryExtensions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/AppLib/MongoDb/MongoDbContext.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6A2778C7-E75B-4D78-81DF-6B1F295F3EF0/af/e8e77830/IQueryable`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/AppLib/GraphDataStructure/HyperGraph.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/AppLib/GraphDataStructure/Vertex.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/AppLib/MongoDb/BsonParser.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6A2778C7-E75B-4D78-81DF-6B1F295F3EF0/05/7cba92b2/IQueryable.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/BBB3B884-123D-47EA-9CD1-5BED540D02AE/3DC/List.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/DimplomaWork/MainWindow.xaml.cs" />
+        <option value="$PROJECT_DIR$/MongoDbContext/Class1.cs" />
+        <option value="$PROJECT_DIR$/MongoDbContext/MongoDbContext.cs" />
+        <option value="$PROJECT_DIR$/AppLib/MongoDbContext/Graph.cs" />
+        <option value="$PROJECT_DIR$/AppLib/MongoDbContext/DbContext.cs" />
+        <option value="$PROJECT_DIR$/AppLib/MongoDb/DbContext.cs" />
+        <option value="$PROJECT_DIR$/AppLib/IDictionaryExtensions.cs" />
+        <option value="$PROJECT_DIR$/AppLib/DictionaryExtensions.cs" />
+        <option value="$PROJECT_DIR$/AppLib/MongoDb/Samples/BaseSampleCollection.cs" />
+        <option value="$PROJECT_DIR$/AppLib/MongoDb/Samples/BaseSampleDatabase.cs" />
+        <option value="$PROJECT_DIR$/AppLib/GraphDataStructure/Edge.cs" />
+        <option value="$PROJECT_DIR$/AppLib/GraphDataStructure/Graph.cs" />
+        <option value="$PROJECT_DIR$/AppLib/MongoDb/Samples/SampleMflix.cs" />
+        <option value="$PROJECT_DIR$/AppLib/MongoDb/MongoDbContext.cs" />
+        <option value="$PROJECT_DIR$/AppLib/MongoDb/Samples/SampleAnalytics.cs" />
+        <option value="$PROJECT_DIR$/AppLib/MongoDb/Samples/SampleGeospatial.cs" />
+        <option value="$PROJECT_DIR$/AppLib/MongoDb/Samples/SampleSupplies.cs" />
+        <option value="$PROJECT_DIR$/AppLib/MongoDb/Samples/SampleTraining.cs" />
+        <option value="$PROJECT_DIR$/AppLib/MongoDb/Samples/SampleWeatherdata.cs" />
+        <option value="$PROJECT_DIR$/AppLib/MongoDb/Samples/SampleAirbnb.cs" />
+        <option value="$PROJECT_DIR$/AppLib/IEnumerableExtensions.cs" />
+        <option value="$PROJECT_DIR$/AppLib/EnumerableExtensions.cs" />
+        <option value="$PROJECT_DIR$/AppLib/GraphDataStructure/HyperGraph.cs" />
+        <option value="$PROJECT_DIR$/TestConsole/Program.cs" />
+        <option value="$PROJECT_DIR$/AppLib/GraphDataStructure/Vertex.cs" />
+        <option value="$PROJECT_DIR$/AppLib/GraphDataStructure/HyperEdge.cs" />
+        <option value="$PROJECT_DIR$/AppLib/MongoDb/BsonParser.cs" />
+      </list>
+    </option>
+  </component>
   <component name="ProjectId" id="1YnTHxNn3RrPx4YvMCEnUduAnMA" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -8,8 +159,295 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="mongo" />
     <property name="Rider.SolutionExplorerActivator" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="TWShift.3" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/MongoAtlasCluster" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
+  </component>
+  <component name="RunManager" selected=".NET Project.TestConsole">
+    <configuration name="DimplomaWork" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/DimplomaWork/DimplomaWork.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="DotNetCore" />
+      <option name="PROJECT_TFM" value="" />
+      <method v="2">
+        <option name="Build" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestConsole" type="DotNetProject" factoryName=".NET Project" temporary="true">
+      <option name="EXE_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/TestConsole/TestConsole.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="DotNetCore" />
+      <option name="PROJECT_TFM" value=".NETCoreApp,Version=v3.1" />
+      <method v="2">
+        <option name="Build" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue=".NET Project.TestConsole" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="444683a7-54b7-4b3d-ad84-81eb9a2bab79" name="Default Changelist" comment="" />
+      <changelist id="67e9120d-de30-435c-86d1-0cfba98f550d" name="Smart Changelist" comment="" />
+      <created>1583577276618</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1583577276618</updated>
+      <workItem from="1583577286536" duration="2346000" />
+      <workItem from="1583606981363" duration="9193000" />
+      <workItem from="1583668782432" duration="14180000" />
+      <workItem from="1583758723846" duration="13242000" />
+    </task>
+    <task id="LOCAL-00001" summary="Initial commit.">
+      <created>1583577593423</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1583577593423</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Added aggregation from MongoCollection to HyperGraph structure.">
+      <created>1583776480783</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1583776480784</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="false" />
+    <MESSAGE value="Initial commit." />
+    <MESSAGE value="Added aggregation from MongoCollection to HyperGraph structure." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added aggregation from MongoCollection to HyperGraph structure." />
+    <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="231" y="16" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583693596807">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="231" y="16" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728/-1920.-313.1920.1040@0.0.1366.728" timestamp="1583693596807" />
+    <state x="-1180" y="-66" key="FileChooserDialogImpl" timestamp="1583768752285">
+      <screen x="-1920" y="-313" width="1920" height="1040" />
+    </state>
+    <state x="-1180" y="-66" key="FileChooserDialogImpl/0.0.1366.728/-1920.-313.1920.1040@-1920.-313.1920.1040" timestamp="1583768752285" />
+    <state width="1879" height="310" key="GridCell.Tab.0.bottom" timestamp="1583771276756">
+      <screen x="-1920" y="-313" width="1920" height="1040" />
+    </state>
+    <state width="1879" height="310" key="GridCell.Tab.0.bottom/0.0.1366.728/-1920.-313.1920.1040@-1920.-313.1920.1040" timestamp="1583771276756" />
+    <state width="1325" height="218" key="GridCell.Tab.0.bottom/0.0.1366.728/-1920.-313.1920.1040@0.0.1366.728" timestamp="1583701848853" />
+    <state width="1325" height="218" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1583579643444" />
+    <state width="1879" height="310" key="GridCell.Tab.0.center" timestamp="1583771276756">
+      <screen x="-1920" y="-313" width="1920" height="1040" />
+    </state>
+    <state width="1879" height="310" key="GridCell.Tab.0.center/0.0.1366.728/-1920.-313.1920.1040@-1920.-313.1920.1040" timestamp="1583771276756" />
+    <state width="1325" height="218" key="GridCell.Tab.0.center/0.0.1366.728/-1920.-313.1920.1040@0.0.1366.728" timestamp="1583701848852" />
+    <state width="1325" height="218" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1583579643444" />
+    <state width="1879" height="310" key="GridCell.Tab.0.left" timestamp="1583771276756">
+      <screen x="-1920" y="-313" width="1920" height="1040" />
+    </state>
+    <state width="1879" height="310" key="GridCell.Tab.0.left/0.0.1366.728/-1920.-313.1920.1040@-1920.-313.1920.1040" timestamp="1583771276756" />
+    <state width="1325" height="218" key="GridCell.Tab.0.left/0.0.1366.728/-1920.-313.1920.1040@0.0.1366.728" timestamp="1583701848851" />
+    <state width="1325" height="218" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1583579643444" />
+    <state width="1879" height="310" key="GridCell.Tab.0.right" timestamp="1583771276756">
+      <screen x="-1920" y="-313" width="1920" height="1040" />
+    </state>
+    <state width="1879" height="310" key="GridCell.Tab.0.right/0.0.1366.728/-1920.-313.1920.1040@-1920.-313.1920.1040" timestamp="1583771276756" />
+    <state width="1325" height="218" key="GridCell.Tab.0.right/0.0.1366.728/-1920.-313.1920.1040@0.0.1366.728" timestamp="1583701848852" />
+    <state width="1325" height="218" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1583579643444" />
+    <state width="1879" height="342" key="GridCell.Tab.1.bottom" timestamp="1583771089360">
+      <screen x="-1920" y="-313" width="1920" height="1040" />
+    </state>
+    <state width="1879" height="342" key="GridCell.Tab.1.bottom/0.0.1366.728/-1920.-313.1920.1040@-1920.-313.1920.1040" timestamp="1583771089360" />
+    <state width="1325" height="218" key="GridCell.Tab.1.bottom/0.0.1366.728/-1920.-313.1920.1040@0.0.1366.728" timestamp="1583701848855" />
+    <state width="1325" height="218" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1583579643445" />
+    <state width="1879" height="342" key="GridCell.Tab.1.center" timestamp="1583771089360">
+      <screen x="-1920" y="-313" width="1920" height="1040" />
+    </state>
+    <state width="1879" height="342" key="GridCell.Tab.1.center/0.0.1366.728/-1920.-313.1920.1040@-1920.-313.1920.1040" timestamp="1583771089360" />
+    <state width="1325" height="218" key="GridCell.Tab.1.center/0.0.1366.728/-1920.-313.1920.1040@0.0.1366.728" timestamp="1583701848854" />
+    <state width="1325" height="218" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1583579643445" />
+    <state width="1879" height="342" key="GridCell.Tab.1.left" timestamp="1583771089360">
+      <screen x="-1920" y="-313" width="1920" height="1040" />
+    </state>
+    <state width="1879" height="342" key="GridCell.Tab.1.left/0.0.1366.728/-1920.-313.1920.1040@-1920.-313.1920.1040" timestamp="1583771089360" />
+    <state width="1325" height="218" key="GridCell.Tab.1.left/0.0.1366.728/-1920.-313.1920.1040@0.0.1366.728" timestamp="1583701848853" />
+    <state width="1325" height="218" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1583579643445" />
+    <state width="1879" height="342" key="GridCell.Tab.1.right" timestamp="1583771089360">
+      <screen x="-1920" y="-313" width="1920" height="1040" />
+    </state>
+    <state width="1879" height="342" key="GridCell.Tab.1.right/0.0.1366.728/-1920.-313.1920.1040@-1920.-313.1920.1040" timestamp="1583771089360" />
+    <state width="1325" height="218" key="GridCell.Tab.1.right/0.0.1366.728/-1920.-313.1920.1040@0.0.1366.728" timestamp="1583701848855" />
+    <state width="1325" height="218" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1583579643445" />
+    <state width="1879" height="342" key="GridCell.Tab.2.bottom" timestamp="1583771089361">
+      <screen x="-1920" y="-313" width="1920" height="1040" />
+    </state>
+    <state width="1879" height="342" key="GridCell.Tab.2.bottom/0.0.1366.728/-1920.-313.1920.1040@-1920.-313.1920.1040" timestamp="1583771089361" />
+    <state width="1325" height="218" key="GridCell.Tab.2.bottom/0.0.1366.728/-1920.-313.1920.1040@0.0.1366.728" timestamp="1583701848857" />
+    <state width="1325" height="218" key="GridCell.Tab.2.bottom/0.0.1366.728@0.0.1366.728" timestamp="1583579643445" />
+    <state width="1879" height="342" key="GridCell.Tab.2.center" timestamp="1583771089360">
+      <screen x="-1920" y="-313" width="1920" height="1040" />
+    </state>
+    <state width="1879" height="342" key="GridCell.Tab.2.center/0.0.1366.728/-1920.-313.1920.1040@-1920.-313.1920.1040" timestamp="1583771089360" />
+    <state width="1325" height="218" key="GridCell.Tab.2.center/0.0.1366.728/-1920.-313.1920.1040@0.0.1366.728" timestamp="1583701848856" />
+    <state width="1325" height="218" key="GridCell.Tab.2.center/0.0.1366.728@0.0.1366.728" timestamp="1583579643445" />
+    <state width="1879" height="342" key="GridCell.Tab.2.left" timestamp="1583771089360">
+      <screen x="-1920" y="-313" width="1920" height="1040" />
+    </state>
+    <state width="1879" height="342" key="GridCell.Tab.2.left/0.0.1366.728/-1920.-313.1920.1040@-1920.-313.1920.1040" timestamp="1583771089360" />
+    <state width="1325" height="218" key="GridCell.Tab.2.left/0.0.1366.728/-1920.-313.1920.1040@0.0.1366.728" timestamp="1583701848856" />
+    <state width="1325" height="218" key="GridCell.Tab.2.left/0.0.1366.728@0.0.1366.728" timestamp="1583579643445" />
+    <state width="1879" height="342" key="GridCell.Tab.2.right" timestamp="1583771089360">
+      <screen x="-1920" y="-313" width="1920" height="1040" />
+    </state>
+    <state width="1879" height="342" key="GridCell.Tab.2.right/0.0.1366.728/-1920.-313.1920.1040@-1920.-313.1920.1040" timestamp="1583771089360" />
+    <state width="1325" height="218" key="GridCell.Tab.2.right/0.0.1366.728/-1920.-313.1920.1040@0.0.1366.728" timestamp="1583701848856" />
+    <state width="1325" height="218" key="GridCell.Tab.2.right/0.0.1366.728@0.0.1366.728" timestamp="1583579643445" />
+    <state width="1879" height="342" key="GridCell.Tab.3.bottom" timestamp="1583771089361">
+      <screen x="-1920" y="-313" width="1920" height="1040" />
+    </state>
+    <state width="1879" height="342" key="GridCell.Tab.3.bottom/0.0.1366.728/-1920.-313.1920.1040@-1920.-313.1920.1040" timestamp="1583771089361" />
+    <state width="1325" height="218" key="GridCell.Tab.3.bottom/0.0.1366.728/-1920.-313.1920.1040@0.0.1366.728" timestamp="1583701848859" />
+    <state width="1325" height="218" key="GridCell.Tab.3.bottom/0.0.1366.728@0.0.1366.728" timestamp="1583579643445" />
+    <state width="1879" height="342" key="GridCell.Tab.3.center" timestamp="1583771089361">
+      <screen x="-1920" y="-313" width="1920" height="1040" />
+    </state>
+    <state width="1879" height="342" key="GridCell.Tab.3.center/0.0.1366.728/-1920.-313.1920.1040@-1920.-313.1920.1040" timestamp="1583771089361" />
+    <state width="1325" height="218" key="GridCell.Tab.3.center/0.0.1366.728/-1920.-313.1920.1040@0.0.1366.728" timestamp="1583701848858" />
+    <state width="1325" height="218" key="GridCell.Tab.3.center/0.0.1366.728@0.0.1366.728" timestamp="1583579643445" />
+    <state width="1879" height="342" key="GridCell.Tab.3.left" timestamp="1583771089361">
+      <screen x="-1920" y="-313" width="1920" height="1040" />
+    </state>
+    <state width="1879" height="342" key="GridCell.Tab.3.left/0.0.1366.728/-1920.-313.1920.1040@-1920.-313.1920.1040" timestamp="1583771089361" />
+    <state width="1325" height="218" key="GridCell.Tab.3.left/0.0.1366.728/-1920.-313.1920.1040@0.0.1366.728" timestamp="1583701848857" />
+    <state width="1325" height="218" key="GridCell.Tab.3.left/0.0.1366.728@0.0.1366.728" timestamp="1583579643445" />
+    <state width="1879" height="342" key="GridCell.Tab.3.right" timestamp="1583771089361">
+      <screen x="-1920" y="-313" width="1920" height="1040" />
+    </state>
+    <state width="1879" height="342" key="GridCell.Tab.3.right/0.0.1366.728/-1920.-313.1920.1040@-1920.-313.1920.1040" timestamp="1583771089361" />
+    <state width="1325" height="218" key="GridCell.Tab.3.right/0.0.1366.728/-1920.-313.1920.1040@0.0.1366.728" timestamp="1583701848858" />
+    <state width="1325" height="218" key="GridCell.Tab.3.right/0.0.1366.728@0.0.1366.728" timestamp="1583579643445" />
+    <state width="1879" height="342" key="GridCell.Tab.4.bottom" timestamp="1583771089361">
+      <screen x="-1920" y="-313" width="1920" height="1040" />
+    </state>
+    <state width="1879" height="342" key="GridCell.Tab.4.bottom/0.0.1366.728/-1920.-313.1920.1040@-1920.-313.1920.1040" timestamp="1583771089361" />
+    <state width="1325" height="218" key="GridCell.Tab.4.bottom/0.0.1366.728/-1920.-313.1920.1040@0.0.1366.728" timestamp="1583701848860" />
+    <state width="1325" height="218" key="GridCell.Tab.4.bottom/0.0.1366.728@0.0.1366.728" timestamp="1583579643445" />
+    <state width="1879" height="342" key="GridCell.Tab.4.center" timestamp="1583771089361">
+      <screen x="-1920" y="-313" width="1920" height="1040" />
+    </state>
+    <state width="1879" height="342" key="GridCell.Tab.4.center/0.0.1366.728/-1920.-313.1920.1040@-1920.-313.1920.1040" timestamp="1583771089361" />
+    <state width="1325" height="218" key="GridCell.Tab.4.center/0.0.1366.728/-1920.-313.1920.1040@0.0.1366.728" timestamp="1583701848859" />
+    <state width="1325" height="218" key="GridCell.Tab.4.center/0.0.1366.728@0.0.1366.728" timestamp="1583579643445" />
+    <state width="1879" height="342" key="GridCell.Tab.4.left" timestamp="1583771089361">
+      <screen x="-1920" y="-313" width="1920" height="1040" />
+    </state>
+    <state width="1879" height="342" key="GridCell.Tab.4.left/0.0.1366.728/-1920.-313.1920.1040@-1920.-313.1920.1040" timestamp="1583771089361" />
+    <state width="1325" height="218" key="GridCell.Tab.4.left/0.0.1366.728/-1920.-313.1920.1040@0.0.1366.728" timestamp="1583701848859" />
+    <state width="1325" height="218" key="GridCell.Tab.4.left/0.0.1366.728@0.0.1366.728" timestamp="1583579643445" />
+    <state width="1879" height="342" key="GridCell.Tab.4.right" timestamp="1583771089361">
+      <screen x="-1920" y="-313" width="1920" height="1040" />
+    </state>
+    <state width="1879" height="342" key="GridCell.Tab.4.right/0.0.1366.728/-1920.-313.1920.1040@-1920.-313.1920.1040" timestamp="1583771089361" />
+    <state width="1325" height="218" key="GridCell.Tab.4.right/0.0.1366.728/-1920.-313.1920.1040@0.0.1366.728" timestamp="1583701848859" />
+    <state width="1325" height="218" key="GridCell.Tab.4.right/0.0.1366.728@0.0.1366.728" timestamp="1583579643445" />
+    <state width="286" height="538" key="HiddenNamespacesPopup" timestamp="1583693659813">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="286" height="538" key="HiddenNamespacesPopup/0.0.1366.728/-1920.-313.1920.1040@0.0.1366.728" timestamp="1583693659813" />
+    <state x="-1380" y="-58" key="IDE.errors.dialog" timestamp="1583765195098">
+      <screen x="-1920" y="-313" width="1920" height="1040" />
+    </state>
+    <state x="-1380" y="-58" key="IDE.errors.dialog/0.0.1366.728/-1920.-313.1920.1040@-1920.-313.1920.1040" timestamp="1583765195098" />
+    <state x="275" y="96" key="Rider.ProjectTemplateDialog.Size" timestamp="1583577737925">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="96" key="Rider.ProjectTemplateDialog.Size/0.0.1366.728@0.0.1366.728" timestamp="1583577737925" />
+    <state x="-1166" y="-71" key="RiderGenerateDialog" timestamp="1583775497072">
+      <screen x="-1920" y="-313" width="1920" height="1040" />
+    </state>
+    <state x="-1166" y="-71" key="RiderGenerateDialog/0.0.1366.728/-1920.-313.1920.1040@-1920.-313.1920.1040" timestamp="1583775497072" />
+    <state x="-1426" y="-162" key="SettingsEditor" timestamp="1583764655996">
+      <screen x="-1920" y="-313" width="1920" height="1040" />
+    </state>
+    <state x="-1426" y="-162" key="SettingsEditor/0.0.1366.728/-1920.-313.1920.1040@-1920.-313.1920.1040" timestamp="1583764655996" />
+    <state x="-1112" y="119" key="VCS.ChangelistChooser" timestamp="1583782949059">
+      <screen x="-1920" y="-313" width="1920" height="1040" />
+    </state>
+    <state x="-1112" y="119" key="VCS.ChangelistChooser/0.0.1366.728/-1920.-313.1920.1040@-1920.-313.1920.1040" timestamp="1583782949059" />
+    <state x="513" y="233" width="355" height="261" key="VCS.EditChangelistDialog" timestamp="1583577556748">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="513" y="233" width="355" height="261" key="VCS.EditChangelistDialog/0.0.1366.728@0.0.1366.728" timestamp="1583577556748" />
+    <state x="-1368" y="-60" key="Vcs.Push.Dialog.v2" timestamp="1583776483650">
+      <screen x="-1920" y="-313" width="1920" height="1040" />
+    </state>
+    <state x="-1368" y="-60" key="Vcs.Push.Dialog.v2/0.0.1366.728/-1920.-313.1920.1040@-1920.-313.1920.1040" timestamp="1583776483650" />
+    <state x="392" y="106" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1583694034124">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="392" y="106" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1366.728/-1920.-313.1920.1040@0.0.1366.728" timestamp="1583694034124" />
+    <state x="333" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1583694167813">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="333" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1366.728/-1920.-313.1920.1040@0.0.1366.728" timestamp="1583694167813" />
+    <state x="339" y="162" width="672" height="677" key="run.anything.popup" timestamp="1583609710757">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="339" y="162" width="672" height="677" key="run.anything.popup/0.0.1366.728/-1920.-313.1920.1040@0.0.1366.728" timestamp="1583609710757" />
+    <state x="339" y="162" width="672" height="677" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1583579369140" />
+    <state x="-1297" y="-88" width="672" height="678" key="search.everywhere.popup" timestamp="1583759960591">
+      <screen x="-1920" y="-313" width="1920" height="1040" />
+    </state>
+    <state x="-1297" y="-88" width="672" height="678" key="search.everywhere.popup/0.0.1366.728/-1920.-313.1920.1040@-1920.-313.1920.1040" timestamp="1583759960591" />
   </component>
 </project>

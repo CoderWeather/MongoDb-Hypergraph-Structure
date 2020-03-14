@@ -1,4 +1,4 @@
-﻿namespace DimplomaWork
+﻿namespace DesktopApp
 {
     public partial class MainWindow
     {

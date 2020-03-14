@@ -1,9 +1,4 @@
-﻿*.cache
-**/obj
-**/bin
-**/.idea
-/Logs/
-*.swp
+﻿*.swp
 *.*~
 project.lock.json
 .DS_Store
@@ -40,3 +35,10 @@ msbuild.wrn
 
 # Visual Studio 2015
 .vs/
+
+# Myself
+*.cache
+**/obj
+**/bin
+**/.idea
+/Logs/

@@ -1,35 +1,42 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.IO;
+using System.Linq;
+using System.Threading.Tasks;
 using AppLib.MongoDb;
+using MongoDB.Bson;
+using MongoDB.Driver;
 using MongoDbContext = AppLib.MongoDb.MongoDbContext;
 
 namespace TestConsole
 {
     internal static class Program
     {
+        private static readonly DirectoryInfo WorkDir =
+            new DirectoryInfo(@"..\..\..\..\Logs\" + DateTime.Now.ToString("yyyy-MM-dd"));
+
         private static void Main(string[] args)
         {
             var db = new MongoDbContext();
+            if (WorkDir.Exists is false) WorkDir.Create();
+            var tasks = db.AllCollections.Select(ParseCollectionAsync).ToArray();
+            Task.WaitAll(tasks);
+            Console.WriteLine("All done");
+        }
 
-            // var result = BsonParser.ParseCollectionTaskAsync(db.SampleAirbnb.ListingAndReviews);
-            // result.Wait();
-            // foreach (var (key, value) in result.Result)
-            // {
-            //     Console.WriteLine($"{key}: {value}");
-            // }
-            var hgTask = BsonParser.ParseCollectionToHyperGraphAsync(db.SampleTraining.Tweets);
-            hgTask.Wait();
-            var hg = hgTask.Result;
-            using var fs = new FileStream($@"Logs\{DateTime.Now:yy-MM-dd HH-mm-ss}.log", FileMode.Create);
-            using var sw = new StreamWriter(fs) {AutoFlush = true};
+        private static async Task ParseCollectionAsync(IMongoCollection<BsonDocument> collection)
+        {
+            Console.WriteLine($"Parse {collection.CollectionNamespace.FullName} Start!");
+            var file = new FileInfo($@"{WorkDir.FullName}\{collection.CollectionNamespace.FullName}.log");
+            if (file.Exists) file.Delete();
+            var hg = await BsonParser.CollectionToHyperGraphTaskAsync(collection);
+            await using var fs = new FileStream(file.FullName, FileMode.Create);
+            await using var sw = new StreamWriter(fs) {AutoFlush = true};
             sw.WriteLine("Vertices:");
             foreach (var vertex in hg.Vertices)
             {
                 sw.WriteLine("Data: " + vertex.Data);
-                sw.WriteLine($"Vertex edges {vertex.Edges.Count}:");
-                foreach (var edge in vertex.Edges)
-                    sw.Write(edge.Weight + " ");
-                sw.WriteLine();
+                sw.WriteLine($"Vertex edges: {vertex.Edges.Count}");
                 sw.WriteLine("".PadLeft(50, '-'));
             }
 
@@ -40,14 +47,13 @@ namespace TestConsole
                 sw.WriteLine($"Edge vertices {edge.Vertices.Count}:");
                 foreach (var vertex in edge.Vertices)
                     sw.WriteLine('\t' + vertex.Data);
-                sw.WriteLine();
                 sw.WriteLine("".PadLeft(50, '-'));
             }
 
             sw.WriteLine("Vertices count: " + hg.Vertices.Count);
             sw.WriteLine("Edges count: " + hg.Edges.Count);
-            
-            Console.WriteLine("Done!");
+
+            Console.WriteLine($"Parse {collection.CollectionNamespace.FullName} Done!");
         }
     }
 }

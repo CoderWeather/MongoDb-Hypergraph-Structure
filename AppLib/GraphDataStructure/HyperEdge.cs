@@ -6,7 +6,7 @@ namespace AppLib.GraphDataStructure
     public class HyperEdge
     {
         public Guid Id { get; } = Guid.NewGuid();
-        public int Weight { get; set; }
+        public int Weight { get; set; } = 1;
         public HashSet<Vertex> Vertices { get; } = new HashSet<Vertex>(Vertex.Comparer);
 
         private sealed class EqualityComparer : IEqualityComparer<HyperEdge>

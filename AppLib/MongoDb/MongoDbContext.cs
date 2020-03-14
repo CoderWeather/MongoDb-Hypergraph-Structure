@@ -1,4 +1,6 @@
-﻿using AppLib.MongoDb.Samples;
+﻿using System.Collections.Generic;
+using AppLib.MongoDb.Samples;
+using MongoDB.Bson;
 using MongoDB.Driver;
 
 namespace AppLib.MongoDb
@@ -30,6 +32,8 @@ namespace AppLib.MongoDb
         public SampleTraining SampleTraining { get; }
         public SampleWeatherdata SampleWeatherdata { get; }
 
+        public List<IMongoCollection<BsonDocument>> AllCollections { get; }
+
         #endregion
 
         #region Public Constructor
@@ -44,6 +48,19 @@ namespace AppLib.MongoDb
             SampleSupplies = new SampleSupplies(_mongoClient);
             SampleTraining = new SampleTraining(_mongoClient);
             SampleWeatherdata = new SampleWeatherdata(_mongoClient);
+
+            AllCollections = new List<IMongoCollection<BsonDocument>>
+            {
+                SampleAirbnb.ListingAndReviews,
+                SampleAnalytics.Accounts, SampleAnalytics.Customers, SampleAnalytics.Transactions,
+                SampleGeospatial.Shipwrecks,
+                SampleMflix.Comments, SampleMflix.Movies, SampleMflix.Sessions, SampleMflix.Theaters, SampleMflix.Users,
+                SampleSupplies.Sales,
+                SampleTraining.Companies, SampleTraining.Grades, SampleTraining.Inspections, SampleTraining.Posts,
+                SampleTraining.Routes, SampleTraining.Stories, SampleTraining.Trips, SampleTraining.Tweets,
+                SampleTraining.Zips,
+                SampleWeatherdata.Data
+            };
         }
 
         #endregion

@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using AppLib.GraphDataStructure;
@@ -10,28 +9,18 @@ namespace AppLib.MongoDb
 {
     public static class BsonParser
     {
-        private const string mapFunc = @"";
-        private const string reduceFunc = @"";
-        private const string finalizeFunc = @"";
+        #region Async Parse
 
-        public static async Task<IEnumerable<KeyValuePair<string, int>>> MapReduce(
-            IMongoCollection<BsonDocument> collection)
-        {
-            return await (await collection
-                    .MapReduceAsync<KeyValuePair<string, int>>(mapFunc, reduceFunc))
-                .ToListAsync();
-        }
-
-        public static async Task<HyperGraph> ParseCollectionToHyperGraphAsync(
+        public static async Task<HyperGraph> CollectionToHyperGraphTaskAsync(
             IMongoCollection<BsonDocument> bsonDocCollection)
         {
             var hyperGraph = new HyperGraph();
 
-            await foreach (var pairs in ParseCollectionAsync(bsonDocCollection))
+            await foreach (var keys in ParseCollectionAsync(bsonDocCollection.AsQueryable()))
             {
-                var edge = new HyperEdge {Weight = 1};
+                var edge = new HyperEdge();
 
-                foreach (var (key, _) in pairs)
+                foreach (var key in keys)
                 {
                     var vertex = hyperGraph.Vertices.FirstOrDefault(v => v.Data.Equals(key));
                     if (vertex is null)
@@ -44,51 +33,49 @@ namespace AppLib.MongoDb
                     edge.Vertices.Add(vertex);
                 }
 
-                var testHyperEdge = hyperGraph.Edges.FirstOrDefault(he => he.Vertices.SetEquals(edge.Vertices));
-                if (testHyperEdge is null)
+                var existHyperEdge = hyperGraph.Edges.FirstOrDefault(he => he.Vertices.SetEquals(edge.Vertices));
+                if (existHyperEdge is null)
                     hyperGraph.Edges.Add(edge);
                 else
                 {
                     foreach (var vertex in edge.Vertices)
                     {
                         vertex.Edges.RemoveWhere(e => e.Id == edge.Id);
-                        vertex.Edges.Add(testHyperEdge);
+                        vertex.Edges.Add(existHyperEdge);
                     }
 
-                    testHyperEdge.Weight++;
+                    existHyperEdge.Weight++;
                 }
             }
 
             return hyperGraph;
         }
 
-        private static async IAsyncEnumerable<IEnumerable<KeyValuePair<string, int>>> ParseCollectionAsync(
-            IMongoCollection<BsonDocument> bsonCollection)
+        private static async IAsyncEnumerable<IEnumerable<string>> ParseCollectionAsync(
+            IEnumerable<BsonDocument> collection)
         {
-            foreach (var doc in bsonCollection.AsQueryable())
-                yield return await ParseDocumentTaskAsync(doc);
+            foreach (var doc in collection)
+                yield return await Task.Run(() => ParseDocument(doc));
         }
 
-        private static async Task<IEnumerable<KeyValuePair<string, int>>> ParseDocumentTaskAsync(BsonDocument doc,
-            string keyPrefix = null)
-        {
-            var collectionFields = new Dictionary<string, int>();
-            foreach (var el in doc)
-                collectionFields.AddOrModify(await ParseElementTaskAsync(el, keyPrefix));
+        #endregion
 
-            return collectionFields;
-        }
 
-        private static async Task<IEnumerable<KeyValuePair<string, int>>> ParseElementTaskAsync(BsonElement el,
-            string keyPrefix = null)
+        #region Sinchronize Parse
+
+        private static IEnumerable<string> ParseDocument(BsonDocument doc, string? ketPrefix = null) =>
+            doc.SelectMany(el => ParseElement(el, ketPrefix));
+
+        private static IEnumerable<string> ParseElement(BsonElement el, string? keyPrefix = null)
         {
-            var collectionFields = new Dictionary<string, int>();
+            var newKey = $"{(keyPrefix is null ? null : keyPrefix + '.')}{el.Name}";
             if (el.Value.IsBsonDocument)
-                collectionFields.AddOrModify(await ParseDocumentTaskAsync(el.Value.AsBsonDocument,
-                    (keyPrefix is null ? null : keyPrefix + '.') + el.Name));
+                foreach (var key in ParseDocument(el.Value.AsBsonDocument, newKey))
+                    yield return key;
             else
-                collectionFields.AddOrModify($"{(keyPrefix is null ? null : keyPrefix + '.')}{el.Name}");
-            return collectionFields;
+                yield return newKey;
         }
+
+        #endregion
     }
 }

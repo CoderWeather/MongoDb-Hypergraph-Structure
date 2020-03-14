@@ -3,10 +3,12 @@
     <PropertyGroup>
         <TargetFramework>netcoreapp3.1</TargetFramework>
         <RootNamespace>AppLib</RootNamespace>
+        <Nullable>enable</Nullable>
     </PropertyGroup>
 
     <ItemGroup>
       <PackageReference Include="MongoDB.Driver" Version="2.10.2" />
+      <PackageReference Include="System.Linq.Async" Version="4.0.0" />
     </ItemGroup>
 
 </Project>

@@ -6,7 +6,7 @@ namespace AppLib.GraphDataStructure
     public class Vertex : IComparable<Vertex>
     {
         public Guid Id { get; } = Guid.NewGuid();
-        public string Data { get; set; }
+        public string Data { get; set; } = string.Empty;
         public HashSet<HyperEdge> Edges { get; } = new HashSet<HyperEdge>();
 
         public int CompareTo(Vertex other) =>

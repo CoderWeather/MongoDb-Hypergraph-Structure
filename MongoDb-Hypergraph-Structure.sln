@@ -6,6 +6,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppLib", "AppLib\AppLib.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestConsole", "TestConsole\TestConsole.csproj", "{84759966-FDA0-49FD-A423-F9C826DFF848}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AvaloniaDesktopApp", "AvaloniaDesktopApp\AvaloniaDesktopApp.csproj", "{D1A25F17-1527-4541-8E19-F848FE76196B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{84759966-FDA0-49FD-A423-F9C826DFF848}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{84759966-FDA0-49FD-A423-F9C826DFF848}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{84759966-FDA0-49FD-A423-F9C826DFF848}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1A25F17-1527-4541-8E19-F848FE76196B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1A25F17-1527-4541-8E19-F848FE76196B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1A25F17-1527-4541-8E19-F848FE76196B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1A25F17-1527-4541-8E19-F848FE76196B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

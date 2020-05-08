@@ -1,0 +1,23 @@
+Vertices:
+Data: _id
+Vertex edges: 1
+--------------------------------------------------
+Data: name
+Vertex edges: 1
+--------------------------------------------------
+Data: email
+Vertex edges: 1
+--------------------------------------------------
+Data: password
+Vertex edges: 1
+--------------------------------------------------
+Edges:
+Edge weight: 185
+Edge vertices 4:
+	_id
+	name
+	email
+	password
+--------------------------------------------------
+Vertices count: 4
+Edges count: 1

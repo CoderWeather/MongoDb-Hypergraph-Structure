@@ -1,0 +1,63 @@
+Vertices:
+Data: _id
+Vertex edges: 1
+--------------------------------------------------
+Data: recrd
+Vertex edges: 1
+--------------------------------------------------
+Data: vesslterms
+Vertex edges: 1
+--------------------------------------------------
+Data: feature_type
+Vertex edges: 1
+--------------------------------------------------
+Data: chart
+Vertex edges: 1
+--------------------------------------------------
+Data: latdec
+Vertex edges: 1
+--------------------------------------------------
+Data: londec
+Vertex edges: 1
+--------------------------------------------------
+Data: gp_quality
+Vertex edges: 1
+--------------------------------------------------
+Data: depth
+Vertex edges: 1
+--------------------------------------------------
+Data: sounding_type
+Vertex edges: 1
+--------------------------------------------------
+Data: history
+Vertex edges: 1
+--------------------------------------------------
+Data: quasou
+Vertex edges: 1
+--------------------------------------------------
+Data: watlev
+Vertex edges: 1
+--------------------------------------------------
+Data: coordinates
+Vertex edges: 1
+--------------------------------------------------
+Edges:
+Edge weight: 11095
+Edge vertices 14:
+	_id
+	recrd
+	vesslterms
+	feature_type
+	chart
+	latdec
+	londec
+	gp_quality
+	depth
+	sounding_type
+	history
+	quasou
+	watlev
+	coordinates
+--------------------------------------------------
+Vertices count: 14
+Edges count: 1

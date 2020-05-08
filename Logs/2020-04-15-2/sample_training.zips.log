@@ -1,0 +1,31 @@
+Vertices:
+Data: _id
+Vertex edges: 1
+--------------------------------------------------
+Data: city
+Vertex edges: 1
+--------------------------------------------------
+Data: zip
+Vertex edges: 1
+--------------------------------------------------
+Data: loc
+Vertex edges: 1
+--------------------------------------------------
+Data: pop
+Vertex edges: 1
+--------------------------------------------------
+Data: state
+Vertex edges: 1
+--------------------------------------------------
+Edges:
+Edge weight: 29470
+Edge vertices 6:
+	_id
+	city
+	zip
+	loc
+	pop
+	state
+--------------------------------------------------
+Vertices count: 6
+Edges count: 1

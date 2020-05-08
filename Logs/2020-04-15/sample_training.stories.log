@@ -1,0 +1,289 @@
+Vertices:
+Data: _id
+Vertex edges: 7
+--------------------------------------------------
+Data: href
+Vertex edges: 7
+--------------------------------------------------
+Data: title
+Vertex edges: 7
+--------------------------------------------------
+Data: comments
+Vertex edges: 7
+--------------------------------------------------
+Data: container.name
+Vertex edges: 7
+--------------------------------------------------
+Data: container.short_name
+Vertex edges: 7
+--------------------------------------------------
+Data: submit_date
+Vertex edges: 7
+--------------------------------------------------
+Data: topic.name
+Vertex edges: 7
+--------------------------------------------------
+Data: topic.short_name
+Vertex edges: 7
+--------------------------------------------------
+Data: promote_date
+Vertex edges: 7
+--------------------------------------------------
+Data: id
+Vertex edges: 7
+--------------------------------------------------
+Data: media
+Vertex edges: 7
+--------------------------------------------------
+Data: diggs
+Vertex edges: 7
+--------------------------------------------------
+Data: description
+Vertex edges: 7
+--------------------------------------------------
+Data: link
+Vertex edges: 7
+--------------------------------------------------
+Data: user.name
+Vertex edges: 7
+--------------------------------------------------
+Data: user.registered
+Vertex edges: 7
+--------------------------------------------------
+Data: user.fullname
+Vertex edges: 2
+--------------------------------------------------
+Data: user.icon
+Vertex edges: 7
+--------------------------------------------------
+Data: user.profileviews
+Vertex edges: 7
+--------------------------------------------------
+Data: status
+Vertex edges: 7
+--------------------------------------------------
+Data: shorturl
+Vertex edges: 7
+--------------------------------------------------
+Data: thumbnail.originalheight
+Vertex edges: 3
+--------------------------------------------------
+Data: thumbnail.originalwidth
+Vertex edges: 3
+--------------------------------------------------
+Data: thumbnail.src
+Vertex edges: 3
+--------------------------------------------------
+Data: thumbnail.height
+Vertex edges: 3
+--------------------------------------------------
+Data: thumbnail.width
+Vertex edges: 3
+--------------------------------------------------
+Data: thumbnail.contentType
+Vertex edges: 3
+--------------------------------------------------
+Data: inaccurate
+Vertex edges: 2
+--------------------------------------------------
+Data: takedowndays
+Vertex edges: 1
+--------------------------------------------------
+Data: takedownuri
+Vertex edges: 1
+--------------------------------------------------
+Edges:
+Edge weight: 1784
+Edge vertices 22:
+	_id
+	href
+	title
+	comments
+	container.name
+	container.short_name
+	submit_date
+	topic.name
+	topic.short_name
+	promote_date
+	id
+	media
+	diggs
+	description
+	link
+	user.name
+	user.registered
+	user.fullname
+	user.icon
+	user.profileviews
+	status
+	shorturl
+--------------------------------------------------
+Edge weight: 1390
+Edge vertices 21:
+	_id
+	href
+	title
+	comments
+	container.name
+	container.short_name
+	submit_date
+	topic.name
+	topic.short_name
+	promote_date
+	id
+	media
+	diggs
+	description
+	link
+	user.name
+	user.registered
+	user.icon
+	user.profileviews
+	status
+	shorturl
+--------------------------------------------------
+Edge weight: 3743
+Edge vertices 28:
+	_id
+	href
+	title
+	comments
+	thumbnail.originalheight
+	thumbnail.originalwidth
+	thumbnail.src
+	thumbnail.height
+	thumbnail.width
+	thumbnail.contentType
+	container.name
+	container.short_name
+	submit_date
+	topic.name
+	topic.short_name
+	promote_date
+	id
+	media
+	diggs
+	description
+	link
+	user.name
+	user.registered
+	user.fullname
+	user.icon
+	user.profileviews
+	status
+	shorturl
+--------------------------------------------------
+Edge weight: 2919
+Edge vertices 27:
+	_id
+	href
+	title
+	comments
+	thumbnail.originalheight
+	thumbnail.originalwidth
+	thumbnail.src
+	thumbnail.height
+	thumbnail.width
+	thumbnail.contentType
+	container.name
+	container.short_name
+	submit_date
+	topic.name
+	topic.short_name
+	promote_date
+	id
+	media
+	diggs
+	description
+	link
+	user.name
+	user.registered
+	user.icon
+	user.profileviews
+	status
+	shorturl
+--------------------------------------------------
+Edge weight: 4
+Edge vertices 28:
+	_id
+	href
+	title
+	comments
+	thumbnail.originalheight
+	thumbnail.originalwidth
+	thumbnail.src
+	thumbnail.height
+	thumbnail.width
+	thumbnail.contentType
+	container.name
+	container.short_name
+	submit_date
+	topic.name
+	topic.short_name
+	promote_date
+	inaccurate
+	id
+	media
+	diggs
+	description
+	link
+	user.name
+	user.registered
+	user.icon
+	user.profileviews
+	status
+	shorturl
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 22:
+	_id
+	href
+	title
+	comments
+	container.name
+	container.short_name
+	submit_date
+	topic.name
+	topic.short_name
+	promote_date
+	inaccurate
+	id
+	media
+	diggs
+	description
+	link
+	user.name
+	user.registered
+	user.icon
+	user.profileviews
+	status
+	shorturl
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 23:
+	_id
+	href
+	takedowndays
+	title
+	comments
+	container.name
+	container.short_name
+	submit_date
+	topic.name
+	topic.short_name
+	promote_date
+	takedownuri
+	id
+	media
+	diggs
+	description
+	link
+	user.name
+	user.registered
+	user.icon
+	user.profileviews
+	status
+	shorturl
+--------------------------------------------------
+Vertices count: 31
+Edges count: 7

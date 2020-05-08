@@ -1,0 +1,39 @@
+Vertices:
+Data: _id
+Vertex edges: 1
+--------------------------------------------------
+Data: body
+Vertex edges: 1
+--------------------------------------------------
+Data: permalink
+Vertex edges: 1
+--------------------------------------------------
+Data: author
+Vertex edges: 1
+--------------------------------------------------
+Data: title
+Vertex edges: 1
+--------------------------------------------------
+Data: tags
+Vertex edges: 1
+--------------------------------------------------
+Data: comments
+Vertex edges: 1
+--------------------------------------------------
+Data: date
+Vertex edges: 1
+--------------------------------------------------
+Edges:
+Edge weight: 500
+Edge vertices 8:
+	_id
+	body
+	permalink
+	author
+	title
+	tags
+	comments
+	date
+--------------------------------------------------
+Vertices count: 8
+Edges count: 1

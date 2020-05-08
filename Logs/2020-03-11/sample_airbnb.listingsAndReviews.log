@@ -1,0 +1,2280 @@
+Vertices:
+Data: _id
+Vertex edges: 53
+--------------------------------------------------
+Data: listing_url
+Vertex edges: 53
+--------------------------------------------------
+Data: name
+Vertex edges: 53
+--------------------------------------------------
+Data: summary
+Vertex edges: 53
+--------------------------------------------------
+Data: space
+Vertex edges: 53
+--------------------------------------------------
+Data: description
+Vertex edges: 53
+--------------------------------------------------
+Data: neighborhood_overview
+Vertex edges: 53
+--------------------------------------------------
+Data: notes
+Vertex edges: 53
+--------------------------------------------------
+Data: transit
+Vertex edges: 53
+--------------------------------------------------
+Data: access
+Vertex edges: 53
+--------------------------------------------------
+Data: interaction
+Vertex edges: 53
+--------------------------------------------------
+Data: house_rules
+Vertex edges: 53
+--------------------------------------------------
+Data: property_type
+Vertex edges: 53
+--------------------------------------------------
+Data: room_type
+Vertex edges: 53
+--------------------------------------------------
+Data: bed_type
+Vertex edges: 53
+--------------------------------------------------
+Data: minimum_nights
+Vertex edges: 53
+--------------------------------------------------
+Data: maximum_nights
+Vertex edges: 53
+--------------------------------------------------
+Data: cancellation_policy
+Vertex edges: 53
+--------------------------------------------------
+Data: last_scraped
+Vertex edges: 53
+--------------------------------------------------
+Data: calendar_last_scraped
+Vertex edges: 53
+--------------------------------------------------
+Data: first_review
+Vertex edges: 29
+--------------------------------------------------
+Data: last_review
+Vertex edges: 29
+--------------------------------------------------
+Data: accommodates
+Vertex edges: 53
+--------------------------------------------------
+Data: bedrooms
+Vertex edges: 48
+--------------------------------------------------
+Data: beds
+Vertex edges: 45
+--------------------------------------------------
+Data: number_of_reviews
+Vertex edges: 53
+--------------------------------------------------
+Data: bathrooms
+Vertex edges: 46
+--------------------------------------------------
+Data: amenities
+Vertex edges: 53
+--------------------------------------------------
+Data: price
+Vertex edges: 53
+--------------------------------------------------
+Data: security_deposit
+Vertex edges: 24
+--------------------------------------------------
+Data: cleaning_fee
+Vertex edges: 23
+--------------------------------------------------
+Data: extra_people
+Vertex edges: 53
+--------------------------------------------------
+Data: guests_included
+Vertex edges: 53
+--------------------------------------------------
+Data: images
+Vertex edges: 53
+--------------------------------------------------
+Data: host
+Vertex edges: 53
+--------------------------------------------------
+Data: address
+Vertex edges: 53
+--------------------------------------------------
+Data: availability
+Vertex edges: 53
+--------------------------------------------------
+Data: review_scores
+Vertex edges: 53
+--------------------------------------------------
+Data: reviews
+Vertex edges: 53
+--------------------------------------------------
+Data: weekly_price
+Vertex edges: 24
+--------------------------------------------------
+Data: monthly_price
+Vertex edges: 22
+--------------------------------------------------
+Data: reviews_per_month
+Vertex edges: 5
+--------------------------------------------------
+Edges:
+Edge weight: 2252
+Edge vertices 39:
+	_id
+	listing_url
+	name
+	summary
+	space
+	description
+	neighborhood_overview
+	notes
+	transit
+	access
+	interaction
+	house_rules
+	property_type
+	room_type
+	bed_type
+	minimum_nights
+	maximum_nights
+	cancellation_policy
+	last_scraped
+	calendar_last_scraped
+	first_review
+	last_review
+	accommodates
+	bedrooms
+	beds
+	number_of_reviews
+	bathrooms
+	amenities
+	price
+	security_deposit
+	cleaning_fee
+	extra_people
+	guests_included
+	images
+	host
+	address
+	availability
+	review_scores
+	reviews
+--------------------------------------------------
+Edge weight: 12
+Edge vertices 38:
+	_id
+	listing_url
+	name
+	summary
+	space
+	description
+	neighborhood_overview
+	notes
+	transit
+	access
+	interaction
+	house_rules
+	property_type
+	room_type
+	bed_type
+	minimum_nights
+	maximum_nights
+	cancellation_policy
+	last_scraped
+	calendar_last_scraped
+	accommodates
+	bedrooms
+	beds
+	number_of_reviews
+	bathrooms
+	amenities
+	price
+	weekly_price
+	monthly_price
+	cleaning_fee
+	extra_people
+	guests_included
+	images
+	host
+	address
+	availability
+	review_scores
+	reviews
+--------------------------------------------------
+Edge weight: 68
+Edge vertices 40:
+	_id
+	listing_url
+	name
+	summary
+	space
+	description
+	neighborhood_overview
+	notes
+	transit
+	access
+	interaction
+	house_rules
+	property_type
+	room_type
+	bed_type
+	minimum_nights
+	maximum_nights
+	cancellation_policy
+	last_scraped
+	calendar_last_scraped
+	first_review
+	last_review
+	accommodates
+	bedrooms
+	beds
+	number_of_reviews
+	bathrooms
+	amenities
+	price
+	weekly_price
+	monthly_price
+	cleaning_fee
+	extra_people
+	guests_included
+	images
+	host
+	address
+	availability
+	review_scores
+	reviews
+--------------------------------------------------
+Edge weight: 578
+Edge vertices 37:
+	_id
+	listing_url
+	name
+	summary
+	space
+	description
+	neighborhood_overview
+	notes
+	transit
+	access
+	interaction
+	house_rules
+	property_type
+	room_type
+	bed_type
+	minimum_nights
+	maximum_nights
+	cancellation_policy
+	last_scraped
+	calendar_last_scraped
+	first_review
+	last_review
+	accommodates
+	bedrooms
+	beds
+	number_of_reviews
+	bathrooms
+	amenities
+	price
+	extra_people
+	guests_included
+	images
+	host
+	address
+	availability
+	review_scores
+	reviews
+--------------------------------------------------
+Edge weight: 494
+Edge vertices 37:
+	_id
+	listing_url
+	name
+	summary
+	space
+	description
+	neighborhood_overview
+	notes
+	transit
+	access
+	interaction
+	house_rules
+	property_type
+	room_type
+	bed_type
+	minimum_nights
+	maximum_nights
+	cancellation_policy
+	last_scraped
+	calendar_last_scraped
+	accommodates
+	bedrooms
+	beds
+	number_of_reviews
+	bathrooms
+	amenities
+	price
+	security_deposit
+	cleaning_fee
+	extra_people
+	guests_included
+	images
+	host
+	address
+	availability
+	review_scores
+	reviews
+--------------------------------------------------
+Edge weight: 435
+Edge vertices 38:
+	_id
+	listing_url
+	name
+	summary
+	space
+	description
+	neighborhood_overview
+	notes
+	transit
+	access
+	interaction
+	house_rules
+	property_type
+	room_type
+	bed_type
+	minimum_nights
+	maximum_nights
+	cancellation_policy
+	last_scraped
+	calendar_last_scraped
+	first_review
+	last_review
+	accommodates
+	bedrooms
+	beds
+	number_of_reviews
+	bathrooms
+	amenities
+	price
+	cleaning_fee
+	extra_people
+	guests_included
+	images
+	host
+	address
+	availability
+	review_scores
+	reviews
+--------------------------------------------------
+Edge weight: 619
+Edge vertices 35:
+	_id
+	listing_url
+	name
+	summary
+	space
+	description
+	neighborhood_overview
+	notes
+	transit
+	access
+	interaction
+	house_rules
+	property_type
+	room_type
+	bed_type
+	minimum_nights
+	maximum_nights
+	cancellation_policy
+	last_scraped
+	calendar_last_scraped
+	accommodates
+	bedrooms
+	beds
+	number_of_reviews
+	bathrooms
+	amenities
+	price
+	extra_people
+	guests_included
+	images
+	host
+	address
+	availability
+	review_scores
+	reviews
+--------------------------------------------------
+Edge weight: 27
+Edge vertices 38:
+	_id
+	listing_url
+	name
+	summary
+	space
+	description
+	neighborhood_overview
+	notes
+	transit
+	access
+	interaction
+	house_rules
+	property_type
+	room_type
+	bed_type
+	minimum_nights
+	maximum_nights
+	cancellation_policy
+	last_scraped
+	calendar_last_scraped
+	first_review
+	last_review
+	accommodates
+	bedrooms
+	beds
+	number_of_reviews
+	bathrooms
+	amenities
+	price
+	weekly_price
+	extra_people
+	guests_included
+	images
+	host
+	address
+	availability
+	review_scores
+	reviews
+--------------------------------------------------
+Edge weight: 292
+Edge vertices 41:
+	_id
+	listing_url
+	name
+	summary
+	space
+	description
+	neighborhood_overview
+	notes
+	transit
+	access
+	interaction
+	house_rules
+	property_type
+	room_type
+	bed_type
+	minimum_nights
+	maximum_nights
+	cancellation_policy
+	last_scraped
+	calendar_last_scraped
+	first_review
+	last_review
+	accommodates
+	bedrooms
+	beds
+	number_of_reviews
+	bathrooms
+	amenities
+	price
+	weekly_price
+	monthly_price
+	security_deposit
+	cleaning_fee
+	extra_people
+	guests_included
+	images
+	host
+	address
+	availability
+	review_scores
+	reviews
+--------------------------------------------------
+Edge weight: 96
+Edge vertices 40:
+	_id
+	listing_url
+	name
+	summary
+	space
+	description
+	neighborhood_overview
+	notes
+	transit
+	access
+	interaction
+	house_rules
+	property_type
+	room_type
+	bed_type
+	minimum_nights
+	maximum_nights
+	cancellation_policy
+	last_scraped
+	calendar_last_scraped
+	first_review
+	last_review
+	accommodates
+	bedrooms
+	beds
+	number_of_reviews
+	bathrooms
+	amenities
+	price
+	weekly_price
+	security_deposit
+	cleaning_fee
+	extra_people
+	guests_included
+	images
+	host
+	address
+	availability
+	review_scores
+	reviews
+--------------------------------------------------
+Edge weight: 36
+Edge vertices 39:
+	_id
+	listing_url
+	name
+	summary
+	space
+	description
+	neighborhood_overview
+	notes
+	transit
+	access
+	interaction
+	house_rules
+	property_type
+	room_type
+	bed_type
+	minimum_nights
+	maximum_nights
+	cancellation_policy
+	last_scraped
+	calendar_last_scraped
+	first_review
+	last_review
+	accommodates
+	bedrooms
+	beds
+	number_of_reviews
+	bathrooms
+	amenities
+	price
+	weekly_price
+	cleaning_fee
+	extra_people
+	guests_included
+	images
+	host
+	address
+	availability
+	review_scores
+	reviews
+--------------------------------------------------
+Edge weight: 22
+Edge vertices 39:
+	_id
+	listing_url
+	name
+	summary
+	space
+	description
+	neighborhood_overview
+	notes
+	transit
+	access
+	interaction
+	house_rules
+	property_type
+	room_type
+	bed_type
+	minimum_nights
+	maximum_nights
+	cancellation_policy
+	last_scraped
+	calendar_last_scraped
+	accommodates
+	bedrooms
+	beds
+	number_of_reviews
+	bathrooms
+	amenities
+	price
+	weekly_price
+	monthly_price
+	security_deposit
+	cleaning_fee
+	extra_people
+	guests_included
+	images
+	host
+	address
+	availability
+	review_scores
+	reviews
+--------------------------------------------------
+Edge weight: 32
+Edge vertices 36:
+	_id
+	listing_url
+	name
+	summary
+	space
+	description
+	neighborhood_overview
+	notes
+	transit
+	access
+	interaction
+	house_rules
+	property_type
+	room_type
+	bed_type
+	minimum_nights
+	maximum_nights
+	cancellation_policy
+	last_scraped
+	calendar_last_scraped
+	accommodates
+	bedrooms
+	beds
+	number_of_reviews
+	bathrooms
+	amenities
+	price
+	security_deposit
+	extra_people
+	guests_included
+	images
+	host
+	address
+	availability
+	review_scores
+	reviews
+--------------------------------------------------
+Edge weight: 118
+Edge vertices 36:
+	_id
+	listing_url
+	name
+	summary
+	space
+	description
+	neighborhood_overview
+	notes
+	transit
+	access
+	interaction
+	house_rules
+	property_type
+	room_type
+	bed_type
+	minimum_nights
+	maximum_nights
+	cancellation_policy
+	last_scraped
+	calendar_last_scraped
+	accommodates
+	bedrooms
+	beds
+	number_of_reviews
+	bathrooms
+	amenities
+	price
+	cleaning_fee
+	extra_people
+	guests_included
+	images
+	host
+	address
+	availability
+	review_scores
+	reviews
+--------------------------------------------------
+Edge weight: 10
+Edge vertices 39:
+	_id
+	listing_url
+	name
+	summary
+	space
+	description
+	neighborhood_overview
+	notes
+	transit
+	access
+	interaction
+	house_rules
+	property_type
+	room_type
+	bed_type
+	minimum_nights
+	maximum_nights
+	cancellation_policy
+	last_scraped
+	calendar_last_scraped
+	first_review
+	last_review
+	accommodates
+	bedrooms
+	beds
+	number_of_reviews
+	bathrooms
+	amenities
+	price
+	weekly_price
+	security_deposit
+	extra_people
+	guests_included
+	images
+	host
+	address
+	availability
+	review_scores
+	reviews
+--------------------------------------------------
+Edge weight: 66
+Edge vertices 38:
+	_id
+	listing_url
+	name
+	summary
+	space
+	description
+	neighborhood_overview
+	notes
+	transit
+	access
+	interaction
+	house_rules
+	property_type
+	room_type
+	bed_type
+	minimum_nights
+	maximum_nights
+	cancellation_policy
+	last_scraped
+	calendar_last_scraped
+	first_review
+	last_review
+	accommodates
+	bedrooms
+	beds
+	number_of_reviews
+	bathrooms
+	amenities
+	price
+	security_deposit
+	extra_people
+	guests_included
+	images
+	host
+	address
+	availability
+	review_scores
+	reviews
+--------------------------------------------------
+Edge weight: 68
+Edge vertices 39:
+	_id
+	listing_url
+	name
+	summary
+	space
+	description
+	neighborhood_overview
+	notes
+	transit
+	access
+	interaction
+	house_rules
+	property_type
+	room_type
+	bed_type
+	minimum_nights
+	maximum_nights
+	cancellation_policy
+	last_scraped
+	calendar_last_scraped
+	first_review
+	last_review
+	accommodates
+	bedrooms
+	beds
+	number_of_reviews
+	bathrooms
+	amenities
+	price
+	weekly_price
+	monthly_price
+	extra_people
+	guests_included
+	images
+	host
+	address
+	availability
+	review_scores
+	reviews
+--------------------------------------------------
+Edge weight: 8
+Edge vertices 38:
+	_id
+	listing_url
+	name
+	summary
+	space
+	description
+	neighborhood_overview
+	notes
+	transit
+	access
+	interaction
+	house_rules
+	property_type
+	room_type
+	bed_type
+	minimum_nights
+	maximum_nights
+	cancellation_policy
+	last_scraped
+	calendar_last_scraped
+	first_review
+	last_review
+	accommodates
+	bedrooms
+	beds
+	number_of_reviews
+	bathrooms
+	amenities
+	price
+	monthly_price
+	extra_people
+	guests_included
+	images
+	host
+	address
+	availability
+	review_scores
+	reviews
+--------------------------------------------------
+Edge weight: 26
+Edge vertices 37:
+	_id
+	listing_url
+	name
+	summary
+	space
+	description
+	neighborhood_overview
+	notes
+	transit
+	access
+	interaction
+	house_rules
+	property_type
+	room_type
+	bed_type
+	minimum_nights
+	maximum_nights
+	cancellation_policy
+	last_scraped
+	calendar_last_scraped
+	accommodates
+	bedrooms
+	beds
+	number_of_reviews
+	bathrooms
+	amenities
+	price
+	weekly_price
+	monthly_price
+	extra_people
+	guests_included
+	images
+	host
+	address
+	availability
+	review_scores
+	reviews
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 35:
+	_id
+	listing_url
+	name
+	summary
+	space
+	description
+	neighborhood_overview
+	notes
+	transit
+	access
+	interaction
+	house_rules
+	property_type
+	room_type
+	bed_type
+	minimum_nights
+	maximum_nights
+	cancellation_policy
+	last_scraped
+	calendar_last_scraped
+	accommodates
+	bedrooms
+	number_of_reviews
+	amenities
+	price
+	weekly_price
+	monthly_price
+	extra_people
+	guests_included
+	images
+	host
+	address
+	availability
+	review_scores
+	reviews
+--------------------------------------------------
+Edge weight: 94
+Edge vertices 40:
+	_id
+	listing_url
+	name
+	summary
+	space
+	description
+	neighborhood_overview
+	notes
+	transit
+	access
+	interaction
+	house_rules
+	property_type
+	room_type
+	bed_type
+	minimum_nights
+	maximum_nights
+	cancellation_policy
+	last_scraped
+	calendar_last_scraped
+	first_review
+	last_review
+	accommodates
+	bedrooms
+	beds
+	number_of_reviews
+	bathrooms
+	amenities
+	price
+	monthly_price
+	security_deposit
+	cleaning_fee
+	extra_people
+	guests_included
+	images
+	host
+	address
+	availability
+	review_scores
+	reviews
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 39:
+	_id
+	listing_url
+	name
+	summary
+	space
+	description
+	neighborhood_overview
+	notes
+	transit
+	access
+	interaction
+	house_rules
+	property_type
+	room_type
+	bed_type
+	minimum_nights
+	maximum_nights
+	cancellation_policy
+	last_scraped
+	calendar_last_scraped
+	first_review
+	last_review
+	accommodates
+	beds
+	number_of_reviews
+	bathrooms
+	amenities
+	price
+	monthly_price
+	security_deposit
+	cleaning_fee
+	extra_people
+	guests_included
+	images
+	host
+	address
+	availability
+	review_scores
+	reviews
+--------------------------------------------------
+Edge weight: 6
+Edge vertices 38:
+	_id
+	listing_url
+	name
+	summary
+	space
+	description
+	neighborhood_overview
+	notes
+	transit
+	access
+	interaction
+	house_rules
+	property_type
+	room_type
+	bed_type
+	minimum_nights
+	maximum_nights
+	cancellation_policy
+	last_scraped
+	calendar_last_scraped
+	accommodates
+	bedrooms
+	beds
+	number_of_reviews
+	bathrooms
+	amenities
+	price
+	weekly_price
+	security_deposit
+	cleaning_fee
+	extra_people
+	guests_included
+	images
+	host
+	address
+	availability
+	review_scores
+	reviews
+--------------------------------------------------
+Edge weight: 17
+Edge vertices 40:
+	_id
+	listing_url
+	name
+	summary
+	space
+	description
+	neighborhood_overview
+	notes
+	transit
+	access
+	interaction
+	house_rules
+	property_type
+	room_type
+	bed_type
+	minimum_nights
+	maximum_nights
+	cancellation_policy
+	last_scraped
+	calendar_last_scraped
+	first_review
+	last_review
+	accommodates
+	bedrooms
+	beds
+	number_of_reviews
+	bathrooms
+	amenities
+	price
+	weekly_price
+	monthly_price
+	security_deposit
+	extra_people
+	guests_included
+	images
+	host
+	address
+	availability
+	review_scores
+	reviews
+--------------------------------------------------
+Edge weight: 2
+Edge vertices 33:
+	_id
+	listing_url
+	name
+	summary
+	space
+	description
+	neighborhood_overview
+	notes
+	transit
+	access
+	interaction
+	house_rules
+	property_type
+	room_type
+	bed_type
+	minimum_nights
+	maximum_nights
+	cancellation_policy
+	last_scraped
+	calendar_last_scraped
+	accommodates
+	bedrooms
+	number_of_reviews
+	amenities
+	price
+	extra_people
+	guests_included
+	images
+	host
+	address
+	availability
+	review_scores
+	reviews
+--------------------------------------------------
+Edge weight: 7
+Edge vertices 38:
+	_id
+	listing_url
+	name
+	summary
+	space
+	description
+	neighborhood_overview
+	notes
+	transit
+	access
+	interaction
+	house_rules
+	property_type
+	room_type
+	bed_type
+	minimum_nights
+	maximum_nights
+	cancellation_policy
+	last_scraped
+	calendar_last_scraped
+	accommodates
+	bedrooms
+	beds
+	number_of_reviews
+	bathrooms
+	amenities
+	price
+	monthly_price
+	security_deposit
+	cleaning_fee
+	extra_people
+	guests_included
+	images
+	host
+	address
+	availability
+	review_scores
+	reviews
+--------------------------------------------------
+Edge weight: 2
+Edge vertices 37:
+	_id
+	listing_url
+	name
+	summary
+	space
+	description
+	neighborhood_overview
+	notes
+	transit
+	access
+	interaction
+	house_rules
+	property_type
+	room_type
+	bed_type
+	minimum_nights
+	maximum_nights
+	cancellation_policy
+	last_scraped
+	calendar_last_scraped
+	accommodates
+	bedrooms
+	beds
+	number_of_reviews
+	bathrooms
+	amenities
+	price
+	monthly_price
+	cleaning_fee
+	extra_people
+	guests_included
+	images
+	host
+	address
+	availability
+	review_scores
+	reviews
+--------------------------------------------------
+Edge weight: 11
+Edge vertices 39:
+	_id
+	listing_url
+	name
+	summary
+	space
+	description
+	neighborhood_overview
+	notes
+	transit
+	access
+	interaction
+	house_rules
+	property_type
+	room_type
+	bed_type
+	minimum_nights
+	maximum_nights
+	cancellation_policy
+	last_scraped
+	calendar_last_scraped
+	first_review
+	last_review
+	accommodates
+	bedrooms
+	beds
+	number_of_reviews
+	bathrooms
+	amenities
+	price
+	monthly_price
+	cleaning_fee
+	extra_people
+	guests_included
+	images
+	host
+	address
+	availability
+	review_scores
+	reviews
+--------------------------------------------------
+Edge weight: 59
+Edge vertices 40:
+	_id
+	listing_url
+	name
+	summary
+	space
+	description
+	neighborhood_overview
+	notes
+	transit
+	access
+	interaction
+	house_rules
+	property_type
+	room_type
+	bed_type
+	minimum_nights
+	maximum_nights
+	cancellation_policy
+	last_scraped
+	calendar_last_scraped
+	first_review
+	last_review
+	accommodates
+	bedrooms
+	beds
+	number_of_reviews
+	reviews_per_month
+	bathrooms
+	amenities
+	price
+	security_deposit
+	cleaning_fee
+	extra_people
+	guests_included
+	images
+	host
+	address
+	availability
+	review_scores
+	reviews
+--------------------------------------------------
+Edge weight: 7
+Edge vertices 39:
+	_id
+	listing_url
+	name
+	summary
+	space
+	description
+	neighborhood_overview
+	notes
+	transit
+	access
+	interaction
+	house_rules
+	property_type
+	room_type
+	bed_type
+	minimum_nights
+	maximum_nights
+	cancellation_policy
+	last_scraped
+	calendar_last_scraped
+	first_review
+	last_review
+	accommodates
+	bedrooms
+	beds
+	number_of_reviews
+	bathrooms
+	amenities
+	price
+	monthly_price
+	security_deposit
+	extra_people
+	guests_included
+	images
+	host
+	address
+	availability
+	review_scores
+	reviews
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 33:
+	_id
+	listing_url
+	name
+	summary
+	space
+	description
+	neighborhood_overview
+	notes
+	transit
+	access
+	interaction
+	house_rules
+	property_type
+	room_type
+	bed_type
+	minimum_nights
+	maximum_nights
+	cancellation_policy
+	last_scraped
+	calendar_last_scraped
+	accommodates
+	number_of_reviews
+	bathrooms
+	amenities
+	price
+	extra_people
+	guests_included
+	images
+	host
+	address
+	availability
+	review_scores
+	reviews
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 36:
+	_id
+	listing_url
+	name
+	summary
+	space
+	description
+	neighborhood_overview
+	notes
+	transit
+	access
+	interaction
+	house_rules
+	property_type
+	room_type
+	bed_type
+	minimum_nights
+	maximum_nights
+	cancellation_policy
+	last_scraped
+	calendar_last_scraped
+	first_review
+	last_review
+	accommodates
+	number_of_reviews
+	bathrooms
+	amenities
+	price
+	cleaning_fee
+	extra_people
+	guests_included
+	images
+	host
+	address
+	availability
+	review_scores
+	reviews
+--------------------------------------------------
+Edge weight: 7
+Edge vertices 38:
+	_id
+	listing_url
+	name
+	summary
+	space
+	description
+	neighborhood_overview
+	notes
+	transit
+	access
+	interaction
+	house_rules
+	property_type
+	room_type
+	bed_type
+	minimum_nights
+	maximum_nights
+	cancellation_policy
+	last_scraped
+	calendar_last_scraped
+	accommodates
+	bedrooms
+	beds
+	number_of_reviews
+	bathrooms
+	amenities
+	price
+	weekly_price
+	monthly_price
+	security_deposit
+	extra_people
+	guests_included
+	images
+	host
+	address
+	availability
+	review_scores
+	reviews
+--------------------------------------------------
+Edge weight: 8
+Edge vertices 36:
+	_id
+	listing_url
+	name
+	summary
+	space
+	description
+	neighborhood_overview
+	notes
+	transit
+	access
+	interaction
+	house_rules
+	property_type
+	room_type
+	bed_type
+	minimum_nights
+	maximum_nights
+	cancellation_policy
+	last_scraped
+	calendar_last_scraped
+	accommodates
+	bedrooms
+	beds
+	number_of_reviews
+	bathrooms
+	amenities
+	price
+	monthly_price
+	extra_people
+	guests_included
+	images
+	host
+	address
+	availability
+	review_scores
+	reviews
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 36:
+	_id
+	listing_url
+	name
+	summary
+	space
+	description
+	neighborhood_overview
+	notes
+	transit
+	access
+	interaction
+	house_rules
+	property_type
+	room_type
+	bed_type
+	minimum_nights
+	maximum_nights
+	cancellation_policy
+	last_scraped
+	calendar_last_scraped
+	first_review
+	last_review
+	accommodates
+	bedrooms
+	number_of_reviews
+	bathrooms
+	amenities
+	price
+	extra_people
+	guests_included
+	images
+	host
+	address
+	availability
+	review_scores
+	reviews
+--------------------------------------------------
+Edge weight: 22
+Edge vertices 38:
+	_id
+	listing_url
+	name
+	summary
+	space
+	description
+	neighborhood_overview
+	notes
+	transit
+	access
+	interaction
+	house_rules
+	property_type
+	room_type
+	bed_type
+	minimum_nights
+	maximum_nights
+	cancellation_policy
+	last_scraped
+	calendar_last_scraped
+	first_review
+	last_review
+	accommodates
+	bedrooms
+	beds
+	number_of_reviews
+	reviews_per_month
+	bathrooms
+	amenities
+	price
+	extra_people
+	guests_included
+	images
+	host
+	address
+	availability
+	review_scores
+	reviews
+--------------------------------------------------
+Edge weight: 4
+Edge vertices 37:
+	_id
+	listing_url
+	name
+	summary
+	space
+	description
+	neighborhood_overview
+	notes
+	transit
+	access
+	interaction
+	house_rules
+	property_type
+	room_type
+	bed_type
+	minimum_nights
+	maximum_nights
+	cancellation_policy
+	last_scraped
+	calendar_last_scraped
+	accommodates
+	bedrooms
+	beds
+	number_of_reviews
+	bathrooms
+	amenities
+	price
+	weekly_price
+	cleaning_fee
+	extra_people
+	guests_included
+	images
+	host
+	address
+	availability
+	review_scores
+	reviews
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 42:
+	_id
+	listing_url
+	name
+	summary
+	space
+	description
+	neighborhood_overview
+	notes
+	transit
+	access
+	interaction
+	house_rules
+	property_type
+	room_type
+	bed_type
+	minimum_nights
+	maximum_nights
+	cancellation_policy
+	last_scraped
+	calendar_last_scraped
+	first_review
+	last_review
+	accommodates
+	bedrooms
+	beds
+	number_of_reviews
+	reviews_per_month
+	bathrooms
+	amenities
+	price
+	weekly_price
+	monthly_price
+	security_deposit
+	cleaning_fee
+	extra_people
+	guests_included
+	images
+	host
+	address
+	availability
+	review_scores
+	reviews
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 37:
+	_id
+	listing_url
+	name
+	summary
+	space
+	description
+	neighborhood_overview
+	notes
+	transit
+	access
+	interaction
+	house_rules
+	property_type
+	room_type
+	bed_type
+	minimum_nights
+	maximum_nights
+	cancellation_policy
+	last_scraped
+	calendar_last_scraped
+	accommodates
+	bedrooms
+	beds
+	number_of_reviews
+	bathrooms
+	amenities
+	price
+	monthly_price
+	security_deposit
+	extra_people
+	guests_included
+	images
+	host
+	address
+	availability
+	review_scores
+	reviews
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 40:
+	_id
+	listing_url
+	name
+	summary
+	space
+	description
+	neighborhood_overview
+	notes
+	transit
+	access
+	interaction
+	house_rules
+	property_type
+	room_type
+	bed_type
+	minimum_nights
+	maximum_nights
+	cancellation_policy
+	last_scraped
+	calendar_last_scraped
+	first_review
+	last_review
+	accommodates
+	bedrooms
+	beds
+	number_of_reviews
+	amenities
+	price
+	weekly_price
+	monthly_price
+	security_deposit
+	cleaning_fee
+	extra_people
+	guests_included
+	images
+	host
+	address
+	availability
+	review_scores
+	reviews
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 39:
+	_id
+	listing_url
+	name
+	summary
+	space
+	description
+	neighborhood_overview
+	notes
+	transit
+	access
+	interaction
+	house_rules
+	property_type
+	room_type
+	bed_type
+	minimum_nights
+	maximum_nights
+	cancellation_policy
+	last_scraped
+	calendar_last_scraped
+	first_review
+	last_review
+	accommodates
+	bedrooms
+	beds
+	number_of_reviews
+	amenities
+	price
+	weekly_price
+	monthly_price
+	security_deposit
+	extra_people
+	guests_included
+	images
+	host
+	address
+	availability
+	review_scores
+	reviews
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 38:
+	_id
+	listing_url
+	name
+	summary
+	space
+	description
+	neighborhood_overview
+	notes
+	transit
+	access
+	interaction
+	house_rules
+	property_type
+	room_type
+	bed_type
+	minimum_nights
+	maximum_nights
+	cancellation_policy
+	last_scraped
+	calendar_last_scraped
+	first_review
+	last_review
+	accommodates
+	beds
+	number_of_reviews
+	bathrooms
+	amenities
+	price
+	weekly_price
+	monthly_price
+	extra_people
+	guests_included
+	images
+	host
+	address
+	availability
+	review_scores
+	reviews
+--------------------------------------------------
+Edge weight: 5
+Edge vertices 34:
+	_id
+	listing_url
+	name
+	summary
+	space
+	description
+	neighborhood_overview
+	notes
+	transit
+	access
+	interaction
+	house_rules
+	property_type
+	room_type
+	bed_type
+	minimum_nights
+	maximum_nights
+	cancellation_policy
+	last_scraped
+	calendar_last_scraped
+	accommodates
+	bedrooms
+	number_of_reviews
+	bathrooms
+	amenities
+	price
+	extra_people
+	guests_included
+	images
+	host
+	address
+	availability
+	review_scores
+	reviews
+--------------------------------------------------
+Edge weight: 11
+Edge vertices 39:
+	_id
+	listing_url
+	name
+	summary
+	space
+	description
+	neighborhood_overview
+	notes
+	transit
+	access
+	interaction
+	house_rules
+	property_type
+	room_type
+	bed_type
+	minimum_nights
+	maximum_nights
+	cancellation_policy
+	last_scraped
+	calendar_last_scraped
+	first_review
+	last_review
+	accommodates
+	bedrooms
+	beds
+	number_of_reviews
+	reviews_per_month
+	bathrooms
+	amenities
+	price
+	cleaning_fee
+	extra_people
+	guests_included
+	images
+	host
+	address
+	availability
+	review_scores
+	reviews
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 38:
+	_id
+	listing_url
+	name
+	summary
+	space
+	description
+	neighborhood_overview
+	notes
+	transit
+	access
+	interaction
+	house_rules
+	property_type
+	room_type
+	bed_type
+	minimum_nights
+	maximum_nights
+	cancellation_policy
+	last_scraped
+	calendar_last_scraped
+	first_review
+	last_review
+	accommodates
+	bedrooms
+	beds
+	number_of_reviews
+	amenities
+	price
+	weekly_price
+	security_deposit
+	extra_people
+	guests_included
+	images
+	host
+	address
+	availability
+	review_scores
+	reviews
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 34:
+	_id
+	listing_url
+	name
+	summary
+	space
+	description
+	neighborhood_overview
+	notes
+	transit
+	access
+	interaction
+	house_rules
+	property_type
+	room_type
+	bed_type
+	minimum_nights
+	maximum_nights
+	cancellation_policy
+	last_scraped
+	calendar_last_scraped
+	accommodates
+	beds
+	number_of_reviews
+	bathrooms
+	amenities
+	price
+	extra_people
+	guests_included
+	images
+	host
+	address
+	availability
+	review_scores
+	reviews
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 39:
+	_id
+	listing_url
+	name
+	summary
+	space
+	description
+	neighborhood_overview
+	notes
+	transit
+	access
+	interaction
+	house_rules
+	property_type
+	room_type
+	bed_type
+	minimum_nights
+	maximum_nights
+	cancellation_policy
+	last_scraped
+	calendar_last_scraped
+	first_review
+	last_review
+	accommodates
+	bedrooms
+	beds
+	number_of_reviews
+	reviews_per_month
+	bathrooms
+	amenities
+	price
+	security_deposit
+	extra_people
+	guests_included
+	images
+	host
+	address
+	availability
+	review_scores
+	reviews
+--------------------------------------------------
+Edge weight: 13
+Edge vertices 36:
+	_id
+	listing_url
+	name
+	summary
+	space
+	description
+	neighborhood_overview
+	notes
+	transit
+	access
+	interaction
+	house_rules
+	property_type
+	room_type
+	bed_type
+	minimum_nights
+	maximum_nights
+	cancellation_policy
+	last_scraped
+	calendar_last_scraped
+	accommodates
+	bedrooms
+	beds
+	number_of_reviews
+	bathrooms
+	amenities
+	price
+	weekly_price
+	extra_people
+	guests_included
+	images
+	host
+	address
+	availability
+	review_scores
+	reviews
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 35:
+	_id
+	listing_url
+	name
+	summary
+	space
+	description
+	neighborhood_overview
+	notes
+	transit
+	access
+	interaction
+	house_rules
+	property_type
+	room_type
+	bed_type
+	minimum_nights
+	maximum_nights
+	cancellation_policy
+	last_scraped
+	calendar_last_scraped
+	accommodates
+	bedrooms
+	number_of_reviews
+	bathrooms
+	amenities
+	price
+	weekly_price
+	extra_people
+	guests_included
+	images
+	host
+	address
+	availability
+	review_scores
+	reviews
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 36:
+	_id
+	listing_url
+	name
+	summary
+	space
+	description
+	neighborhood_overview
+	notes
+	transit
+	access
+	interaction
+	house_rules
+	property_type
+	room_type
+	bed_type
+	minimum_nights
+	maximum_nights
+	cancellation_policy
+	last_scraped
+	calendar_last_scraped
+	first_review
+	last_review
+	accommodates
+	bedrooms
+	beds
+	number_of_reviews
+	amenities
+	price
+	extra_people
+	guests_included
+	images
+	host
+	address
+	availability
+	review_scores
+	reviews
+--------------------------------------------------
+Edge weight: 2
+Edge vertices 37:
+	_id
+	listing_url
+	name
+	summary
+	space
+	description
+	neighborhood_overview
+	notes
+	transit
+	access
+	interaction
+	house_rules
+	property_type
+	room_type
+	bed_type
+	minimum_nights
+	maximum_nights
+	cancellation_policy
+	last_scraped
+	calendar_last_scraped
+	accommodates
+	bedrooms
+	beds
+	number_of_reviews
+	bathrooms
+	amenities
+	price
+	weekly_price
+	security_deposit
+	extra_people
+	guests_included
+	images
+	host
+	address
+	availability
+	review_scores
+	reviews
+--------------------------------------------------
+Edge weight: 3
+Edge vertices 34:
+	_id
+	listing_url
+	name
+	summary
+	space
+	description
+	neighborhood_overview
+	notes
+	transit
+	access
+	interaction
+	house_rules
+	property_type
+	room_type
+	bed_type
+	minimum_nights
+	maximum_nights
+	cancellation_policy
+	last_scraped
+	calendar_last_scraped
+	accommodates
+	bedrooms
+	beds
+	number_of_reviews
+	amenities
+	price
+	extra_people
+	guests_included
+	images
+	host
+	address
+	availability
+	review_scores
+	reviews
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 37:
+	_id
+	listing_url
+	name
+	summary
+	space
+	description
+	neighborhood_overview
+	notes
+	transit
+	access
+	interaction
+	house_rules
+	property_type
+	room_type
+	bed_type
+	minimum_nights
+	maximum_nights
+	cancellation_policy
+	last_scraped
+	calendar_last_scraped
+	accommodates
+	bedrooms
+	number_of_reviews
+	bathrooms
+	amenities
+	price
+	weekly_price
+	security_deposit
+	cleaning_fee
+	extra_people
+	guests_included
+	images
+	host
+	address
+	availability
+	review_scores
+	reviews
+--------------------------------------------------
+Vertices count: 42
+Edges count: 53

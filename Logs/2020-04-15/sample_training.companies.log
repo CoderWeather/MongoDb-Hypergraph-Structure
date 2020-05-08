@@ -1,0 +1,545 @@
+Vertices:
+Data: _id
+Vertex edges: 7
+--------------------------------------------------
+Data: name
+Vertex edges: 7
+--------------------------------------------------
+Data: permalink
+Vertex edges: 7
+--------------------------------------------------
+Data: crunchbase_url
+Vertex edges: 7
+--------------------------------------------------
+Data: homepage_url
+Vertex edges: 7
+--------------------------------------------------
+Data: blog_url
+Vertex edges: 7
+--------------------------------------------------
+Data: blog_feed_url
+Vertex edges: 7
+--------------------------------------------------
+Data: twitter_username
+Vertex edges: 7
+--------------------------------------------------
+Data: category_code
+Vertex edges: 7
+--------------------------------------------------
+Data: number_of_employees
+Vertex edges: 7
+--------------------------------------------------
+Data: founded_year
+Vertex edges: 7
+--------------------------------------------------
+Data: founded_month
+Vertex edges: 7
+--------------------------------------------------
+Data: founded_day
+Vertex edges: 7
+--------------------------------------------------
+Data: deadpooled_year
+Vertex edges: 7
+--------------------------------------------------
+Data: tag_list
+Vertex edges: 7
+--------------------------------------------------
+Data: alias_list
+Vertex edges: 7
+--------------------------------------------------
+Data: email_address
+Vertex edges: 7
+--------------------------------------------------
+Data: phone_number
+Vertex edges: 7
+--------------------------------------------------
+Data: description
+Vertex edges: 7
+--------------------------------------------------
+Data: created_at
+Vertex edges: 7
+--------------------------------------------------
+Data: updated_at
+Vertex edges: 7
+--------------------------------------------------
+Data: overview
+Vertex edges: 7
+--------------------------------------------------
+Data: image.available_sizes
+Vertex edges: 5
+--------------------------------------------------
+Data: products
+Vertex edges: 7
+--------------------------------------------------
+Data: relationships
+Vertex edges: 7
+--------------------------------------------------
+Data: competitions
+Vertex edges: 7
+--------------------------------------------------
+Data: providerships
+Vertex edges: 7
+--------------------------------------------------
+Data: total_money_raised
+Vertex edges: 7
+--------------------------------------------------
+Data: funding_rounds
+Vertex edges: 7
+--------------------------------------------------
+Data: investments
+Vertex edges: 7
+--------------------------------------------------
+Data: acquisition.price_amount
+Vertex edges: 4
+--------------------------------------------------
+Data: acquisition.price_currency_code
+Vertex edges: 4
+--------------------------------------------------
+Data: acquisition.term_code
+Vertex edges: 4
+--------------------------------------------------
+Data: acquisition.source_url
+Vertex edges: 4
+--------------------------------------------------
+Data: acquisition.source_description
+Vertex edges: 4
+--------------------------------------------------
+Data: acquisition.acquired_year
+Vertex edges: 4
+--------------------------------------------------
+Data: acquisition.acquired_month
+Vertex edges: 4
+--------------------------------------------------
+Data: acquisition.acquired_day
+Vertex edges: 4
+--------------------------------------------------
+Data: acquisition.acquiring_company.name
+Vertex edges: 4
+--------------------------------------------------
+Data: acquisition.acquiring_company.permalink
+Vertex edges: 4
+--------------------------------------------------
+Data: acquisitions
+Vertex edges: 7
+--------------------------------------------------
+Data: offices
+Vertex edges: 7
+--------------------------------------------------
+Data: milestones
+Vertex edges: 7
+--------------------------------------------------
+Data: video_embeds
+Vertex edges: 7
+--------------------------------------------------
+Data: screenshots
+Vertex edges: 7
+--------------------------------------------------
+Data: external_links
+Vertex edges: 7
+--------------------------------------------------
+Data: partners
+Vertex edges: 7
+--------------------------------------------------
+Data: deadpooled_month
+Vertex edges: 6
+--------------------------------------------------
+Data: deadpooled_day
+Vertex edges: 6
+--------------------------------------------------
+Data: deadpooled_url
+Vertex edges: 6
+--------------------------------------------------
+Data: image.attribution
+Vertex edges: 4
+--------------------------------------------------
+Data: acquisition
+Vertex edges: 3
+--------------------------------------------------
+Data: ipo
+Vertex edges: 4
+--------------------------------------------------
+Data: ipo.valuation_amount
+Vertex edges: 2
+--------------------------------------------------
+Data: ipo.valuation_currency_code
+Vertex edges: 2
+--------------------------------------------------
+Data: ipo.pub_year
+Vertex edges: 2
+--------------------------------------------------
+Data: ipo.pub_month
+Vertex edges: 2
+--------------------------------------------------
+Data: ipo.pub_day
+Vertex edges: 2
+--------------------------------------------------
+Data: ipo.stock_symbol
+Vertex edges: 2
+--------------------------------------------------
+Data: image
+Vertex edges: 2
+--------------------------------------------------
+Edges:
+Edge weight: 1
+Edge vertices 47:
+	_id
+	name
+	permalink
+	crunchbase_url
+	homepage_url
+	blog_url
+	blog_feed_url
+	twitter_username
+	category_code
+	number_of_employees
+	founded_year
+	founded_month
+	founded_day
+	deadpooled_year
+	tag_list
+	alias_list
+	email_address
+	phone_number
+	description
+	created_at
+	updated_at
+	overview
+	image.available_sizes
+	products
+	relationships
+	competitions
+	providerships
+	total_money_raised
+	funding_rounds
+	investments
+	acquisition.price_amount
+	acquisition.price_currency_code
+	acquisition.term_code
+	acquisition.source_url
+	acquisition.source_description
+	acquisition.acquired_year
+	acquisition.acquired_month
+	acquisition.acquired_day
+	acquisition.acquiring_company.name
+	acquisition.acquiring_company.permalink
+	acquisitions
+	offices
+	milestones
+	video_embeds
+	screenshots
+	external_links
+	partners
+--------------------------------------------------
+Edge weight: 6855
+Edge vertices 43:
+	_id
+	name
+	permalink
+	crunchbase_url
+	homepage_url
+	blog_url
+	blog_feed_url
+	twitter_username
+	category_code
+	number_of_employees
+	founded_year
+	founded_month
+	founded_day
+	deadpooled_year
+	deadpooled_month
+	deadpooled_day
+	deadpooled_url
+	tag_list
+	alias_list
+	email_address
+	phone_number
+	description
+	created_at
+	updated_at
+	overview
+	image.available_sizes
+	image.attribution
+	products
+	relationships
+	competitions
+	providerships
+	total_money_raised
+	funding_rounds
+	investments
+	acquisition
+	acquisitions
+	offices
+	milestones
+	ipo
+	video_embeds
+	screenshots
+	external_links
+	partners
+--------------------------------------------------
+Edge weight: 176
+Edge vertices 48:
+	_id
+	name
+	permalink
+	crunchbase_url
+	homepage_url
+	blog_url
+	blog_feed_url
+	twitter_username
+	category_code
+	number_of_employees
+	founded_year
+	founded_month
+	founded_day
+	deadpooled_year
+	deadpooled_month
+	deadpooled_day
+	deadpooled_url
+	tag_list
+	alias_list
+	email_address
+	phone_number
+	description
+	created_at
+	updated_at
+	overview
+	image.available_sizes
+	image.attribution
+	products
+	relationships
+	competitions
+	providerships
+	total_money_raised
+	funding_rounds
+	investments
+	acquisition
+	acquisitions
+	offices
+	milestones
+	ipo.valuation_amount
+	ipo.valuation_currency_code
+	ipo.pub_year
+	ipo.pub_month
+	ipo.pub_day
+	ipo.stock_symbol
+	video_embeds
+	screenshots
+	external_links
+	partners
+--------------------------------------------------
+Edge weight: 1092
+Edge vertices 52:
+	_id
+	name
+	permalink
+	crunchbase_url
+	homepage_url
+	blog_url
+	blog_feed_url
+	twitter_username
+	category_code
+	number_of_employees
+	founded_year
+	founded_month
+	founded_day
+	deadpooled_year
+	deadpooled_month
+	deadpooled_day
+	deadpooled_url
+	tag_list
+	alias_list
+	email_address
+	phone_number
+	description
+	created_at
+	updated_at
+	overview
+	image.available_sizes
+	image.attribution
+	products
+	relationships
+	competitions
+	providerships
+	total_money_raised
+	funding_rounds
+	investments
+	acquisition.price_amount
+	acquisition.price_currency_code
+	acquisition.term_code
+	acquisition.source_url
+	acquisition.source_description
+	acquisition.acquired_year
+	acquisition.acquired_month
+	acquisition.acquired_day
+	acquisition.acquiring_company.name
+	acquisition.acquiring_company.permalink
+	acquisitions
+	offices
+	milestones
+	ipo
+	video_embeds
+	screenshots
+	external_links
+	partners
+--------------------------------------------------
+Edge weight: 1143
+Edge vertices 42:
+	_id
+	name
+	permalink
+	crunchbase_url
+	homepage_url
+	blog_url
+	blog_feed_url
+	twitter_username
+	category_code
+	number_of_employees
+	founded_year
+	founded_month
+	founded_day
+	deadpooled_year
+	deadpooled_month
+	deadpooled_day
+	deadpooled_url
+	tag_list
+	alias_list
+	email_address
+	phone_number
+	description
+	created_at
+	updated_at
+	overview
+	image
+	products
+	relationships
+	competitions
+	providerships
+	total_money_raised
+	funding_rounds
+	investments
+	acquisition
+	acquisitions
+	offices
+	milestones
+	ipo
+	video_embeds
+	screenshots
+	external_links
+	partners
+--------------------------------------------------
+Edge weight: 214
+Edge vertices 51:
+	_id
+	name
+	permalink
+	crunchbase_url
+	homepage_url
+	blog_url
+	blog_feed_url
+	twitter_username
+	category_code
+	number_of_employees
+	founded_year
+	founded_month
+	founded_day
+	deadpooled_year
+	deadpooled_month
+	deadpooled_day
+	deadpooled_url
+	tag_list
+	alias_list
+	email_address
+	phone_number
+	description
+	created_at
+	updated_at
+	overview
+	image
+	products
+	relationships
+	competitions
+	providerships
+	total_money_raised
+	funding_rounds
+	investments
+	acquisition.price_amount
+	acquisition.price_currency_code
+	acquisition.term_code
+	acquisition.source_url
+	acquisition.source_description
+	acquisition.acquired_year
+	acquisition.acquired_month
+	acquisition.acquired_day
+	acquisition.acquiring_company.name
+	acquisition.acquiring_company.permalink
+	acquisitions
+	offices
+	milestones
+	ipo
+	video_embeds
+	screenshots
+	external_links
+	partners
+--------------------------------------------------
+Edge weight: 19
+Edge vertices 57:
+	_id
+	name
+	permalink
+	crunchbase_url
+	homepage_url
+	blog_url
+	blog_feed_url
+	twitter_username
+	category_code
+	number_of_employees
+	founded_year
+	founded_month
+	founded_day
+	deadpooled_year
+	deadpooled_month
+	deadpooled_day
+	deadpooled_url
+	tag_list
+	alias_list
+	email_address
+	phone_number
+	description
+	created_at
+	updated_at
+	overview
+	image.available_sizes
+	image.attribution
+	products
+	relationships
+	competitions
+	providerships
+	total_money_raised
+	funding_rounds
+	investments
+	acquisition.price_amount
+	acquisition.price_currency_code
+	acquisition.term_code
+	acquisition.source_url
+	acquisition.source_description
+	acquisition.acquired_year
+	acquisition.acquired_month
+	acquisition.acquired_day
+	acquisition.acquiring_company.name
+	acquisition.acquiring_company.permalink
+	acquisitions
+	offices
+	milestones
+	ipo.valuation_amount
+	ipo.valuation_currency_code
+	ipo.pub_year
+	ipo.pub_month
+	ipo.pub_day
+	ipo.stock_symbol
+	video_embeds
+	screenshots
+	external_links
+	partners
+--------------------------------------------------
+Vertices count: 60
+Edges count: 7

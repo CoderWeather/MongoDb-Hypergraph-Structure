@@ -1,0 +1,19 @@
+Vertices:
+Data: _id
+Vertex edges: 1
+--------------------------------------------------
+Data: user_id
+Vertex edges: 1
+--------------------------------------------------
+Data: jwt
+Vertex edges: 1
+--------------------------------------------------
+Edges:
+Edge weight: 1
+Edge vertices 3:
+	_id
+	user_id
+	jwt
+--------------------------------------------------
+Vertices count: 3
+Edges count: 1

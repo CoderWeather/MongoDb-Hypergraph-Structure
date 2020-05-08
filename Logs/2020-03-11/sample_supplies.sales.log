@@ -1,0 +1,35 @@
+Vertices:
+Data: _id
+Vertex edges: 1
+--------------------------------------------------
+Data: saleDate
+Vertex edges: 1
+--------------------------------------------------
+Data: items
+Vertex edges: 1
+--------------------------------------------------
+Data: storeLocation
+Vertex edges: 1
+--------------------------------------------------
+Data: customer
+Vertex edges: 1
+--------------------------------------------------
+Data: couponUsed
+Vertex edges: 1
+--------------------------------------------------
+Data: purchaseMethod
+Vertex edges: 1
+--------------------------------------------------
+Edges:
+Edge weight: 5000
+Edge vertices 7:
+	_id
+	saleDate
+	items
+	storeLocation
+	customer
+	couponUsed
+	purchaseMethod
+--------------------------------------------------
+Vertices count: 7
+Edges count: 1

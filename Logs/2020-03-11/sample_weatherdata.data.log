@@ -1,0 +1,2458 @@
+Vertices:
+Data: _id
+Vertex edges: 98
+--------------------------------------------------
+Data: st
+Vertex edges: 98
+--------------------------------------------------
+Data: ts
+Vertex edges: 98
+--------------------------------------------------
+Data: position
+Vertex edges: 95
+--------------------------------------------------
+Data: elevation
+Vertex edges: 98
+--------------------------------------------------
+Data: callLetters
+Vertex edges: 98
+--------------------------------------------------
+Data: qualityControlProcess
+Vertex edges: 98
+--------------------------------------------------
+Data: dataSource
+Vertex edges: 98
+--------------------------------------------------
+Data: type
+Vertex edges: 98
+--------------------------------------------------
+Data: airTemperature
+Vertex edges: 98
+--------------------------------------------------
+Data: dewPoint
+Vertex edges: 98
+--------------------------------------------------
+Data: pressure
+Vertex edges: 98
+--------------------------------------------------
+Data: wind
+Vertex edges: 98
+--------------------------------------------------
+Data: visibility
+Vertex edges: 98
+--------------------------------------------------
+Data: skyCondition
+Vertex edges: 98
+--------------------------------------------------
+Data: sections
+Vertex edges: 98
+--------------------------------------------------
+Data: precipitationEstimatedObservation
+Vertex edges: 98
+--------------------------------------------------
+Data: atmosphericPressureChange
+Vertex edges: 58
+--------------------------------------------------
+Data: seaSurfaceTemperature
+Vertex edges: 50
+--------------------------------------------------
+Data: waveMeasurement
+Vertex edges: 48
+--------------------------------------------------
+Data: pastWeatherObservationManual
+Vertex edges: 52
+--------------------------------------------------
+Data: skyConditionObservation
+Vertex edges: 79
+--------------------------------------------------
+Data: presentWeatherObservationManual
+Vertex edges: 63
+--------------------------------------------------
+Data: atmosphericPressureObservation
+Vertex edges: 16
+--------------------------------------------------
+Data: skyCoverLayer
+Vertex edges: 28
+--------------------------------------------------
+Data: liquidPrecipitation
+Vertex edges: 19
+--------------------------------------------------
+Data: extremeAirTemperature
+Vertex edges: 3
+--------------------------------------------------
+Edges:
+Edge weight: 86
+Edge vertices 17:
+	_id
+	st
+	ts
+	position
+	elevation
+	callLetters
+	qualityControlProcess
+	dataSource
+	type
+	airTemperature
+	dewPoint
+	pressure
+	wind
+	visibility
+	skyCondition
+	sections
+	precipitationEstimatedObservation
+--------------------------------------------------
+Edge weight: 130
+Edge vertices 20:
+	_id
+	st
+	ts
+	position
+	elevation
+	callLetters
+	qualityControlProcess
+	dataSource
+	type
+	airTemperature
+	dewPoint
+	pressure
+	wind
+	visibility
+	skyCondition
+	sections
+	precipitationEstimatedObservation
+	atmosphericPressureChange
+	seaSurfaceTemperature
+	waveMeasurement
+--------------------------------------------------
+Edge weight: 605
+Edge vertices 20:
+	_id
+	st
+	ts
+	position
+	elevation
+	callLetters
+	qualityControlProcess
+	dataSource
+	type
+	airTemperature
+	dewPoint
+	pressure
+	wind
+	visibility
+	skyCondition
+	sections
+	precipitationEstimatedObservation
+	pastWeatherObservationManual
+	skyConditionObservation
+	presentWeatherObservationManual
+--------------------------------------------------
+Edge weight: 24
+Edge vertices 22:
+	_id
+	st
+	ts
+	position
+	elevation
+	callLetters
+	qualityControlProcess
+	dataSource
+	type
+	airTemperature
+	dewPoint
+	pressure
+	wind
+	visibility
+	skyCondition
+	sections
+	precipitationEstimatedObservation
+	pastWeatherObservationManual
+	skyConditionObservation
+	atmosphericPressureObservation
+	atmosphericPressureChange
+	presentWeatherObservationManual
+--------------------------------------------------
+Edge weight: 307
+Edge vertices 21:
+	_id
+	st
+	ts
+	position
+	elevation
+	callLetters
+	qualityControlProcess
+	dataSource
+	type
+	airTemperature
+	dewPoint
+	pressure
+	wind
+	visibility
+	skyCondition
+	sections
+	precipitationEstimatedObservation
+	pastWeatherObservationManual
+	skyConditionObservation
+	atmosphericPressureChange
+	presentWeatherObservationManual
+--------------------------------------------------
+Edge weight: 76
+Edge vertices 21:
+	_id
+	st
+	ts
+	position
+	elevation
+	callLetters
+	qualityControlProcess
+	dataSource
+	type
+	airTemperature
+	dewPoint
+	pressure
+	wind
+	visibility
+	skyCondition
+	sections
+	precipitationEstimatedObservation
+	pastWeatherObservationManual
+	skyConditionObservation
+	presentWeatherObservationManual
+	waveMeasurement
+--------------------------------------------------
+Edge weight: 5536
+Edge vertices 23:
+	_id
+	st
+	ts
+	position
+	elevation
+	callLetters
+	qualityControlProcess
+	dataSource
+	type
+	airTemperature
+	dewPoint
+	pressure
+	wind
+	visibility
+	skyCondition
+	sections
+	precipitationEstimatedObservation
+	pastWeatherObservationManual
+	skyConditionObservation
+	atmosphericPressureChange
+	presentWeatherObservationManual
+	seaSurfaceTemperature
+	waveMeasurement
+--------------------------------------------------
+Edge weight: 411
+Edge vertices 22:
+	_id
+	st
+	ts
+	position
+	elevation
+	callLetters
+	qualityControlProcess
+	dataSource
+	type
+	airTemperature
+	dewPoint
+	pressure
+	wind
+	visibility
+	skyCondition
+	sections
+	precipitationEstimatedObservation
+	pastWeatherObservationManual
+	skyConditionObservation
+	atmosphericPressureChange
+	presentWeatherObservationManual
+	waveMeasurement
+--------------------------------------------------
+Edge weight: 397
+Edge vertices 24:
+	_id
+	st
+	ts
+	position
+	elevation
+	callLetters
+	qualityControlProcess
+	dataSource
+	type
+	airTemperature
+	dewPoint
+	pressure
+	wind
+	visibility
+	skyCondition
+	sections
+	precipitationEstimatedObservation
+	pastWeatherObservationManual
+	skyCoverLayer
+	skyConditionObservation
+	atmosphericPressureChange
+	presentWeatherObservationManual
+	seaSurfaceTemperature
+	waveMeasurement
+--------------------------------------------------
+Edge weight: 91
+Edge vertices 19:
+	_id
+	st
+	ts
+	position
+	elevation
+	callLetters
+	qualityControlProcess
+	dataSource
+	type
+	airTemperature
+	dewPoint
+	pressure
+	wind
+	visibility
+	skyCondition
+	sections
+	precipitationEstimatedObservation
+	atmosphericPressureChange
+	waveMeasurement
+--------------------------------------------------
+Edge weight: 41
+Edge vertices 19:
+	_id
+	st
+	ts
+	position
+	elevation
+	callLetters
+	qualityControlProcess
+	dataSource
+	type
+	airTemperature
+	dewPoint
+	pressure
+	wind
+	visibility
+	skyCondition
+	sections
+	precipitationEstimatedObservation
+	atmosphericPressureChange
+	seaSurfaceTemperature
+--------------------------------------------------
+Edge weight: 26
+Edge vertices 20:
+	_id
+	st
+	ts
+	position
+	elevation
+	callLetters
+	qualityControlProcess
+	dataSource
+	type
+	airTemperature
+	dewPoint
+	pressure
+	wind
+	visibility
+	skyCondition
+	sections
+	precipitationEstimatedObservation
+	skyConditionObservation
+	atmosphericPressureChange
+	seaSurfaceTemperature
+--------------------------------------------------
+Edge weight: 124
+Edge vertices 21:
+	_id
+	st
+	ts
+	position
+	elevation
+	callLetters
+	qualityControlProcess
+	dataSource
+	type
+	airTemperature
+	dewPoint
+	pressure
+	wind
+	visibility
+	skyCondition
+	sections
+	precipitationEstimatedObservation
+	pastWeatherObservationManual
+	skyConditionObservation
+	presentWeatherObservationManual
+	seaSurfaceTemperature
+--------------------------------------------------
+Edge weight: 751
+Edge vertices 22:
+	_id
+	st
+	ts
+	position
+	elevation
+	callLetters
+	qualityControlProcess
+	dataSource
+	type
+	airTemperature
+	dewPoint
+	pressure
+	wind
+	visibility
+	skyCondition
+	sections
+	precipitationEstimatedObservation
+	pastWeatherObservationManual
+	skyConditionObservation
+	atmosphericPressureChange
+	presentWeatherObservationManual
+	seaSurfaceTemperature
+--------------------------------------------------
+Edge weight: 184
+Edge vertices 21:
+	_id
+	st
+	ts
+	position
+	elevation
+	callLetters
+	qualityControlProcess
+	dataSource
+	type
+	airTemperature
+	dewPoint
+	pressure
+	wind
+	visibility
+	skyCondition
+	sections
+	precipitationEstimatedObservation
+	skyConditionObservation
+	atmosphericPressureChange
+	seaSurfaceTemperature
+	waveMeasurement
+--------------------------------------------------
+Edge weight: 353
+Edge vertices 22:
+	_id
+	st
+	ts
+	position
+	elevation
+	callLetters
+	qualityControlProcess
+	dataSource
+	type
+	airTemperature
+	dewPoint
+	pressure
+	wind
+	visibility
+	skyCondition
+	sections
+	precipitationEstimatedObservation
+	pastWeatherObservationManual
+	skyConditionObservation
+	presentWeatherObservationManual
+	seaSurfaceTemperature
+	waveMeasurement
+--------------------------------------------------
+Edge weight: 24
+Edge vertices 22:
+	_id
+	st
+	ts
+	position
+	elevation
+	callLetters
+	qualityControlProcess
+	dataSource
+	type
+	airTemperature
+	dewPoint
+	pressure
+	wind
+	visibility
+	skyCondition
+	sections
+	precipitationEstimatedObservation
+	skyConditionObservation
+	atmosphericPressureChange
+	presentWeatherObservationManual
+	seaSurfaceTemperature
+	waveMeasurement
+--------------------------------------------------
+Edge weight: 122
+Edge vertices 23:
+	_id
+	st
+	ts
+	position
+	elevation
+	callLetters
+	qualityControlProcess
+	dataSource
+	type
+	airTemperature
+	dewPoint
+	pressure
+	wind
+	visibility
+	skyCondition
+	sections
+	precipitationEstimatedObservation
+	pastWeatherObservationManual
+	skyCoverLayer
+	skyConditionObservation
+	atmosphericPressureChange
+	presentWeatherObservationManual
+	seaSurfaceTemperature
+--------------------------------------------------
+Edge weight: 39
+Edge vertices 22:
+	_id
+	st
+	ts
+	position
+	elevation
+	callLetters
+	qualityControlProcess
+	dataSource
+	type
+	airTemperature
+	dewPoint
+	pressure
+	wind
+	visibility
+	skyCondition
+	sections
+	precipitationEstimatedObservation
+	pastWeatherObservationManual
+	skyCoverLayer
+	skyConditionObservation
+	atmosphericPressureChange
+	presentWeatherObservationManual
+--------------------------------------------------
+Edge weight: 64
+Edge vertices 18:
+	_id
+	st
+	ts
+	position
+	elevation
+	callLetters
+	qualityControlProcess
+	dataSource
+	type
+	airTemperature
+	dewPoint
+	pressure
+	wind
+	visibility
+	skyCondition
+	sections
+	precipitationEstimatedObservation
+	seaSurfaceTemperature
+--------------------------------------------------
+Edge weight: 32
+Edge vertices 18:
+	_id
+	st
+	ts
+	position
+	elevation
+	callLetters
+	qualityControlProcess
+	dataSource
+	type
+	airTemperature
+	dewPoint
+	pressure
+	wind
+	visibility
+	skyCondition
+	sections
+	precipitationEstimatedObservation
+	skyConditionObservation
+--------------------------------------------------
+Edge weight: 19
+Edge vertices 20:
+	_id
+	st
+	ts
+	position
+	elevation
+	callLetters
+	qualityControlProcess
+	dataSource
+	type
+	airTemperature
+	dewPoint
+	pressure
+	wind
+	visibility
+	skyCondition
+	sections
+	precipitationEstimatedObservation
+	skyConditionObservation
+	seaSurfaceTemperature
+	waveMeasurement
+--------------------------------------------------
+Edge weight: 15
+Edge vertices 22:
+	_id
+	st
+	ts
+	position
+	elevation
+	callLetters
+	qualityControlProcess
+	dataSource
+	type
+	airTemperature
+	dewPoint
+	pressure
+	wind
+	visibility
+	skyCondition
+	sections
+	precipitationEstimatedObservation
+	skyCoverLayer
+	skyConditionObservation
+	atmosphericPressureChange
+	seaSurfaceTemperature
+	waveMeasurement
+--------------------------------------------------
+Edge weight: 10
+Edge vertices 22:
+	_id
+	st
+	ts
+	position
+	elevation
+	callLetters
+	qualityControlProcess
+	dataSource
+	type
+	airTemperature
+	dewPoint
+	pressure
+	wind
+	visibility
+	skyCondition
+	sections
+	precipitationEstimatedObservation
+	pastWeatherObservationManual
+	skyConditionObservation
+	atmosphericPressureChange
+	seaSurfaceTemperature
+	waveMeasurement
+--------------------------------------------------
+Edge weight: 19
+Edge vertices 23:
+	_id
+	st
+	ts
+	position
+	elevation
+	callLetters
+	qualityControlProcess
+	dataSource
+	type
+	airTemperature
+	dewPoint
+	pressure
+	wind
+	visibility
+	skyCondition
+	sections
+	precipitationEstimatedObservation
+	pastWeatherObservationManual
+	skyCoverLayer
+	skyConditionObservation
+	presentWeatherObservationManual
+	seaSurfaceTemperature
+	waveMeasurement
+--------------------------------------------------
+Edge weight: 46
+Edge vertices 18:
+	_id
+	st
+	ts
+	position
+	elevation
+	callLetters
+	qualityControlProcess
+	dataSource
+	type
+	airTemperature
+	dewPoint
+	pressure
+	wind
+	visibility
+	skyCondition
+	sections
+	precipitationEstimatedObservation
+	atmosphericPressureChange
+--------------------------------------------------
+Edge weight: 4
+Edge vertices 20:
+	_id
+	st
+	ts
+	position
+	elevation
+	callLetters
+	qualityControlProcess
+	dataSource
+	type
+	airTemperature
+	dewPoint
+	pressure
+	wind
+	visibility
+	skyCondition
+	sections
+	precipitationEstimatedObservation
+	skyCoverLayer
+	skyConditionObservation
+	atmosphericPressureChange
+--------------------------------------------------
+Edge weight: 50
+Edge vertices 23:
+	_id
+	st
+	ts
+	position
+	elevation
+	callLetters
+	qualityControlProcess
+	dataSource
+	type
+	airTemperature
+	dewPoint
+	pressure
+	wind
+	visibility
+	skyCondition
+	sections
+	precipitationEstimatedObservation
+	pastWeatherObservationManual
+	skyCoverLayer
+	skyConditionObservation
+	atmosphericPressureChange
+	presentWeatherObservationManual
+	waveMeasurement
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 21:
+	_id
+	st
+	ts
+	position
+	elevation
+	callLetters
+	qualityControlProcess
+	dataSource
+	type
+	airTemperature
+	dewPoint
+	pressure
+	wind
+	visibility
+	skyCondition
+	sections
+	precipitationEstimatedObservation
+	skyCoverLayer
+	skyConditionObservation
+	atmosphericPressureChange
+	presentWeatherObservationManual
+--------------------------------------------------
+Edge weight: 46
+Edge vertices 19:
+	_id
+	st
+	ts
+	position
+	elevation
+	callLetters
+	qualityControlProcess
+	dataSource
+	type
+	airTemperature
+	dewPoint
+	pressure
+	wind
+	visibility
+	skyCondition
+	sections
+	precipitationEstimatedObservation
+	seaSurfaceTemperature
+	waveMeasurement
+--------------------------------------------------
+Edge weight: 19
+Edge vertices 22:
+	_id
+	st
+	ts
+	position
+	elevation
+	callLetters
+	qualityControlProcess
+	dataSource
+	type
+	airTemperature
+	dewPoint
+	pressure
+	wind
+	visibility
+	skyCondition
+	sections
+	precipitationEstimatedObservation
+	pastWeatherObservationManual
+	atmosphericPressureChange
+	presentWeatherObservationManual
+	seaSurfaceTemperature
+	waveMeasurement
+--------------------------------------------------
+Edge weight: 11
+Edge vertices 22:
+	_id
+	st
+	ts
+	position
+	elevation
+	callLetters
+	qualityControlProcess
+	dataSource
+	type
+	airTemperature
+	dewPoint
+	pressure
+	wind
+	visibility
+	skyCondition
+	sections
+	precipitationEstimatedObservation
+	pastWeatherObservationManual
+	skyCoverLayer
+	skyConditionObservation
+	presentWeatherObservationManual
+	seaSurfaceTemperature
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 21:
+	_id
+	st
+	ts
+	position
+	elevation
+	callLetters
+	qualityControlProcess
+	dataSource
+	type
+	airTemperature
+	dewPoint
+	pressure
+	wind
+	visibility
+	skyCondition
+	sections
+	precipitationEstimatedObservation
+	pastWeatherObservationManual
+	presentWeatherObservationManual
+	seaSurfaceTemperature
+	waveMeasurement
+--------------------------------------------------
+Edge weight: 10
+Edge vertices 21:
+	_id
+	st
+	ts
+	position
+	elevation
+	callLetters
+	qualityControlProcess
+	dataSource
+	type
+	airTemperature
+	dewPoint
+	pressure
+	wind
+	visibility
+	skyCondition
+	sections
+	precipitationEstimatedObservation
+	skyCoverLayer
+	skyConditionObservation
+	atmosphericPressureChange
+	waveMeasurement
+--------------------------------------------------
+Edge weight: 32
+Edge vertices 21:
+	_id
+	st
+	ts
+	position
+	elevation
+	callLetters
+	qualityControlProcess
+	dataSource
+	type
+	airTemperature
+	dewPoint
+	pressure
+	wind
+	visibility
+	skyCondition
+	sections
+	precipitationEstimatedObservation
+	pastWeatherObservationManual
+	skyCoverLayer
+	skyConditionObservation
+	presentWeatherObservationManual
+--------------------------------------------------
+Edge weight: 24
+Edge vertices 20:
+	_id
+	st
+	ts
+	position
+	elevation
+	callLetters
+	qualityControlProcess
+	dataSource
+	type
+	airTemperature
+	dewPoint
+	pressure
+	wind
+	visibility
+	skyCondition
+	sections
+	precipitationEstimatedObservation
+	skyConditionObservation
+	atmosphericPressureChange
+	waveMeasurement
+--------------------------------------------------
+Edge weight: 4
+Edge vertices 20:
+	_id
+	st
+	ts
+	position
+	elevation
+	callLetters
+	qualityControlProcess
+	dataSource
+	type
+	airTemperature
+	dewPoint
+	pressure
+	wind
+	visibility
+	skyCondition
+	sections
+	precipitationEstimatedObservation
+	skyConditionObservation
+	presentWeatherObservationManual
+	waveMeasurement
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 21:
+	_id
+	st
+	ts
+	position
+	elevation
+	callLetters
+	qualityControlProcess
+	dataSource
+	type
+	airTemperature
+	dewPoint
+	pressure
+	wind
+	visibility
+	skyCondition
+	sections
+	liquidPrecipitation
+	precipitationEstimatedObservation
+	skyConditionObservation
+	atmosphericPressureObservation
+	atmosphericPressureChange
+--------------------------------------------------
+Edge weight: 45
+Edge vertices 24:
+	_id
+	st
+	ts
+	position
+	elevation
+	callLetters
+	qualityControlProcess
+	dataSource
+	type
+	airTemperature
+	dewPoint
+	pressure
+	wind
+	visibility
+	skyCondition
+	sections
+	liquidPrecipitation
+	precipitationEstimatedObservation
+	pastWeatherObservationManual
+	skyConditionObservation
+	atmosphericPressureChange
+	presentWeatherObservationManual
+	seaSurfaceTemperature
+	waveMeasurement
+--------------------------------------------------
+Edge weight: 13
+Edge vertices 22:
+	_id
+	st
+	ts
+	position
+	elevation
+	callLetters
+	qualityControlProcess
+	dataSource
+	type
+	airTemperature
+	dewPoint
+	pressure
+	wind
+	visibility
+	skyCondition
+	sections
+	precipitationEstimatedObservation
+	pastWeatherObservationManual
+	skyCoverLayer
+	skyConditionObservation
+	presentWeatherObservationManual
+	waveMeasurement
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 24:
+	_id
+	st
+	ts
+	position
+	elevation
+	callLetters
+	qualityControlProcess
+	dataSource
+	type
+	airTemperature
+	dewPoint
+	pressure
+	wind
+	visibility
+	skyCondition
+	sections
+	liquidPrecipitation
+	precipitationEstimatedObservation
+	pastWeatherObservationManual
+	skyCoverLayer
+	skyConditionObservation
+	atmosphericPressureChange
+	presentWeatherObservationManual
+	waveMeasurement
+--------------------------------------------------
+Edge weight: 6
+Edge vertices 20:
+	_id
+	st
+	ts
+	position
+	elevation
+	callLetters
+	qualityControlProcess
+	dataSource
+	type
+	airTemperature
+	dewPoint
+	pressure
+	wind
+	visibility
+	skyCondition
+	sections
+	liquidPrecipitation
+	precipitationEstimatedObservation
+	atmosphericPressureObservation
+	atmosphericPressureChange
+--------------------------------------------------
+Edge weight: 16
+Edge vertices 21:
+	_id
+	st
+	ts
+	position
+	elevation
+	callLetters
+	qualityControlProcess
+	dataSource
+	type
+	airTemperature
+	dewPoint
+	pressure
+	wind
+	visibility
+	skyCondition
+	sections
+	liquidPrecipitation
+	precipitationEstimatedObservation
+	pastWeatherObservationManual
+	skyConditionObservation
+	presentWeatherObservationManual
+--------------------------------------------------
+Edge weight: 9
+Edge vertices 24:
+	_id
+	st
+	ts
+	position
+	elevation
+	callLetters
+	qualityControlProcess
+	dataSource
+	type
+	airTemperature
+	dewPoint
+	pressure
+	wind
+	visibility
+	skyCondition
+	sections
+	precipitationEstimatedObservation
+	pastWeatherObservationManual
+	skyConditionObservation
+	atmosphericPressureObservation
+	atmosphericPressureChange
+	presentWeatherObservationManual
+	seaSurfaceTemperature
+	waveMeasurement
+--------------------------------------------------
+Edge weight: 16
+Edge vertices 19:
+	_id
+	st
+	ts
+	position
+	elevation
+	callLetters
+	qualityControlProcess
+	dataSource
+	type
+	airTemperature
+	dewPoint
+	pressure
+	wind
+	visibility
+	skyCondition
+	sections
+	precipitationEstimatedObservation
+	skyConditionObservation
+	presentWeatherObservationManual
+--------------------------------------------------
+Edge weight: 19
+Edge vertices 19:
+	_id
+	st
+	ts
+	position
+	elevation
+	callLetters
+	qualityControlProcess
+	dataSource
+	type
+	airTemperature
+	dewPoint
+	pressure
+	wind
+	visibility
+	skyCondition
+	sections
+	precipitationEstimatedObservation
+	skyConditionObservation
+	atmosphericPressureChange
+--------------------------------------------------
+Edge weight: 4
+Edge vertices 24:
+	_id
+	st
+	ts
+	position
+	elevation
+	callLetters
+	qualityControlProcess
+	dataSource
+	type
+	airTemperature
+	dewPoint
+	pressure
+	wind
+	visibility
+	skyCondition
+	sections
+	liquidPrecipitation
+	precipitationEstimatedObservation
+	pastWeatherObservationManual
+	skyConditionObservation
+	extremeAirTemperature
+	atmosphericPressureObservation
+	atmosphericPressureChange
+	presentWeatherObservationManual
+--------------------------------------------------
+Edge weight: 11
+Edge vertices 21:
+	_id
+	st
+	ts
+	position
+	elevation
+	callLetters
+	qualityControlProcess
+	dataSource
+	type
+	airTemperature
+	dewPoint
+	pressure
+	wind
+	visibility
+	skyCondition
+	sections
+	precipitationEstimatedObservation
+	pastWeatherObservationManual
+	atmosphericPressureChange
+	presentWeatherObservationManual
+	waveMeasurement
+--------------------------------------------------
+Edge weight: 2
+Edge vertices 22:
+	_id
+	st
+	ts
+	position
+	elevation
+	callLetters
+	qualityControlProcess
+	dataSource
+	type
+	airTemperature
+	dewPoint
+	pressure
+	wind
+	visibility
+	skyCondition
+	sections
+	liquidPrecipitation
+	precipitationEstimatedObservation
+	pastWeatherObservationManual
+	skyConditionObservation
+	presentWeatherObservationManual
+	waveMeasurement
+--------------------------------------------------
+Edge weight: 2
+Edge vertices 22:
+	_id
+	st
+	ts
+	position
+	elevation
+	callLetters
+	qualityControlProcess
+	dataSource
+	type
+	airTemperature
+	dewPoint
+	pressure
+	wind
+	visibility
+	skyCondition
+	sections
+	liquidPrecipitation
+	precipitationEstimatedObservation
+	pastWeatherObservationManual
+	skyConditionObservation
+	presentWeatherObservationManual
+	seaSurfaceTemperature
+--------------------------------------------------
+Edge weight: 4
+Edge vertices 19:
+	_id
+	st
+	ts
+	position
+	elevation
+	callLetters
+	qualityControlProcess
+	dataSource
+	type
+	airTemperature
+	dewPoint
+	pressure
+	wind
+	visibility
+	skyCondition
+	sections
+	precipitationEstimatedObservation
+	skyConditionObservation
+	seaSurfaceTemperature
+--------------------------------------------------
+Edge weight: 5
+Edge vertices 18:
+	_id
+	st
+	ts
+	position
+	elevation
+	callLetters
+	qualityControlProcess
+	dataSource
+	type
+	airTemperature
+	dewPoint
+	pressure
+	wind
+	visibility
+	skyCondition
+	sections
+	precipitationEstimatedObservation
+	waveMeasurement
+--------------------------------------------------
+Edge weight: 2
+Edge vertices 19:
+	_id
+	st
+	ts
+	position
+	elevation
+	callLetters
+	qualityControlProcess
+	dataSource
+	type
+	airTemperature
+	dewPoint
+	pressure
+	wind
+	visibility
+	skyCondition
+	sections
+	liquidPrecipitation
+	precipitationEstimatedObservation
+	skyConditionObservation
+--------------------------------------------------
+Edge weight: 3
+Edge vertices 23:
+	_id
+	st
+	ts
+	position
+	elevation
+	callLetters
+	qualityControlProcess
+	dataSource
+	type
+	airTemperature
+	dewPoint
+	pressure
+	wind
+	visibility
+	skyCondition
+	sections
+	liquidPrecipitation
+	precipitationEstimatedObservation
+	pastWeatherObservationManual
+	skyConditionObservation
+	presentWeatherObservationManual
+	seaSurfaceTemperature
+	waveMeasurement
+--------------------------------------------------
+Edge weight: 2
+Edge vertices 19:
+	_id
+	st
+	ts
+	position
+	elevation
+	callLetters
+	qualityControlProcess
+	dataSource
+	type
+	airTemperature
+	dewPoint
+	pressure
+	wind
+	visibility
+	skyCondition
+	sections
+	precipitationEstimatedObservation
+	pastWeatherObservationManual
+	presentWeatherObservationManual
+--------------------------------------------------
+Edge weight: 5
+Edge vertices 20:
+	_id
+	st
+	ts
+	position
+	elevation
+	callLetters
+	qualityControlProcess
+	dataSource
+	type
+	airTemperature
+	dewPoint
+	pressure
+	wind
+	visibility
+	skyCondition
+	sections
+	precipitationEstimatedObservation
+	pastWeatherObservationManual
+	atmosphericPressureChange
+	presentWeatherObservationManual
+--------------------------------------------------
+Edge weight: 5
+Edge vertices 21:
+	_id
+	st
+	ts
+	position
+	elevation
+	callLetters
+	qualityControlProcess
+	dataSource
+	type
+	airTemperature
+	dewPoint
+	pressure
+	wind
+	visibility
+	skyCondition
+	sections
+	precipitationEstimatedObservation
+	skyConditionObservation
+	presentWeatherObservationManual
+	seaSurfaceTemperature
+	waveMeasurement
+--------------------------------------------------
+Edge weight: 3
+Edge vertices 22:
+	_id
+	st
+	ts
+	elevation
+	callLetters
+	qualityControlProcess
+	dataSource
+	type
+	airTemperature
+	dewPoint
+	pressure
+	wind
+	visibility
+	skyCondition
+	sections
+	precipitationEstimatedObservation
+	pastWeatherObservationManual
+	skyConditionObservation
+	atmosphericPressureChange
+	presentWeatherObservationManual
+	seaSurfaceTemperature
+	waveMeasurement
+--------------------------------------------------
+Edge weight: 4
+Edge vertices 25:
+	_id
+	st
+	ts
+	position
+	elevation
+	callLetters
+	qualityControlProcess
+	dataSource
+	type
+	airTemperature
+	dewPoint
+	pressure
+	wind
+	visibility
+	skyCondition
+	sections
+	liquidPrecipitation
+	precipitationEstimatedObservation
+	pastWeatherObservationManual
+	skyCoverLayer
+	skyConditionObservation
+	atmosphericPressureChange
+	presentWeatherObservationManual
+	seaSurfaceTemperature
+	waveMeasurement
+--------------------------------------------------
+Edge weight: 2
+Edge vertices 18:
+	_id
+	st
+	ts
+	position
+	elevation
+	callLetters
+	qualityControlProcess
+	dataSource
+	type
+	airTemperature
+	dewPoint
+	pressure
+	wind
+	visibility
+	skyCondition
+	sections
+	precipitationEstimatedObservation
+	presentWeatherObservationManual
+--------------------------------------------------
+Edge weight: 2
+Edge vertices 21:
+	_id
+	st
+	ts
+	position
+	elevation
+	callLetters
+	qualityControlProcess
+	dataSource
+	type
+	airTemperature
+	dewPoint
+	pressure
+	wind
+	visibility
+	skyCondition
+	sections
+	liquidPrecipitation
+	precipitationEstimatedObservation
+	skyConditionObservation
+	atmosphericPressureChange
+	seaSurfaceTemperature
+--------------------------------------------------
+Edge weight: 7
+Edge vertices 20:
+	_id
+	st
+	ts
+	position
+	elevation
+	callLetters
+	qualityControlProcess
+	dataSource
+	type
+	airTemperature
+	dewPoint
+	pressure
+	wind
+	visibility
+	skyCondition
+	sections
+	precipitationEstimatedObservation
+	skyConditionObservation
+	atmosphericPressureChange
+	presentWeatherObservationManual
+--------------------------------------------------
+Edge weight: 3
+Edge vertices 20:
+	_id
+	st
+	ts
+	position
+	elevation
+	callLetters
+	qualityControlProcess
+	dataSource
+	type
+	airTemperature
+	dewPoint
+	pressure
+	wind
+	visibility
+	skyCondition
+	sections
+	precipitationEstimatedObservation
+	skyConditionObservation
+	presentWeatherObservationManual
+	seaSurfaceTemperature
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 21:
+	_id
+	st
+	ts
+	position
+	elevation
+	callLetters
+	qualityControlProcess
+	dataSource
+	type
+	airTemperature
+	dewPoint
+	pressure
+	wind
+	visibility
+	skyCondition
+	sections
+	precipitationEstimatedObservation
+	pastWeatherObservationManual
+	skyConditionObservation
+	atmosphericPressureObservation
+	presentWeatherObservationManual
+--------------------------------------------------
+Edge weight: 3
+Edge vertices 22:
+	_id
+	st
+	ts
+	position
+	elevation
+	callLetters
+	qualityControlProcess
+	dataSource
+	type
+	airTemperature
+	dewPoint
+	pressure
+	wind
+	visibility
+	skyCondition
+	sections
+	liquidPrecipitation
+	precipitationEstimatedObservation
+	skyConditionObservation
+	atmosphericPressureChange
+	seaSurfaceTemperature
+	waveMeasurement
+--------------------------------------------------
+Edge weight: 5
+Edge vertices 19:
+	_id
+	st
+	ts
+	position
+	elevation
+	callLetters
+	qualityControlProcess
+	dataSource
+	type
+	airTemperature
+	dewPoint
+	pressure
+	wind
+	visibility
+	skyCondition
+	sections
+	precipitationEstimatedObservation
+	skyConditionObservation
+	waveMeasurement
+--------------------------------------------------
+Edge weight: 4
+Edge vertices 23:
+	_id
+	st
+	ts
+	position
+	elevation
+	callLetters
+	qualityControlProcess
+	dataSource
+	type
+	airTemperature
+	dewPoint
+	pressure
+	wind
+	visibility
+	skyCondition
+	sections
+	liquidPrecipitation
+	precipitationEstimatedObservation
+	pastWeatherObservationManual
+	skyConditionObservation
+	atmosphericPressureObservation
+	atmosphericPressureChange
+	presentWeatherObservationManual
+--------------------------------------------------
+Edge weight: 5
+Edge vertices 23:
+	_id
+	st
+	ts
+	position
+	elevation
+	callLetters
+	qualityControlProcess
+	dataSource
+	type
+	airTemperature
+	dewPoint
+	pressure
+	wind
+	visibility
+	skyCondition
+	sections
+	liquidPrecipitation
+	precipitationEstimatedObservation
+	pastWeatherObservationManual
+	skyConditionObservation
+	atmosphericPressureChange
+	presentWeatherObservationManual
+	seaSurfaceTemperature
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 23:
+	_id
+	st
+	ts
+	position
+	elevation
+	callLetters
+	qualityControlProcess
+	dataSource
+	type
+	airTemperature
+	dewPoint
+	pressure
+	wind
+	visibility
+	skyCondition
+	sections
+	precipitationEstimatedObservation
+	pastWeatherObservationManual
+	skyConditionObservation
+	atmosphericPressureObservation
+	atmosphericPressureChange
+	presentWeatherObservationManual
+	waveMeasurement
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 25:
+	_id
+	st
+	ts
+	position
+	elevation
+	callLetters
+	qualityControlProcess
+	dataSource
+	type
+	airTemperature
+	dewPoint
+	pressure
+	wind
+	visibility
+	skyCondition
+	sections
+	precipitationEstimatedObservation
+	pastWeatherObservationManual
+	skyCoverLayer
+	skyConditionObservation
+	atmosphericPressureObservation
+	atmosphericPressureChange
+	presentWeatherObservationManual
+	seaSurfaceTemperature
+	waveMeasurement
+--------------------------------------------------
+Edge weight: 5
+Edge vertices 21:
+	_id
+	st
+	ts
+	position
+	elevation
+	callLetters
+	qualityControlProcess
+	dataSource
+	type
+	airTemperature
+	dewPoint
+	pressure
+	wind
+	visibility
+	skyCondition
+	sections
+	precipitationEstimatedObservation
+	skyConditionObservation
+	atmosphericPressureChange
+	presentWeatherObservationManual
+	waveMeasurement
+--------------------------------------------------
+Edge weight: 5
+Edge vertices 21:
+	_id
+	st
+	ts
+	position
+	elevation
+	callLetters
+	qualityControlProcess
+	dataSource
+	type
+	airTemperature
+	dewPoint
+	pressure
+	wind
+	visibility
+	skyCondition
+	sections
+	precipitationEstimatedObservation
+	skyConditionObservation
+	atmosphericPressureChange
+	presentWeatherObservationManual
+	seaSurfaceTemperature
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 24:
+	_id
+	st
+	ts
+	position
+	elevation
+	callLetters
+	qualityControlProcess
+	dataSource
+	type
+	airTemperature
+	dewPoint
+	pressure
+	wind
+	visibility
+	skyCondition
+	sections
+	precipitationEstimatedObservation
+	pastWeatherObservationManual
+	skyCoverLayer
+	skyConditionObservation
+	atmosphericPressureObservation
+	atmosphericPressureChange
+	seaSurfaceTemperature
+	waveMeasurement
+--------------------------------------------------
+Edge weight: 4
+Edge vertices 21:
+	_id
+	st
+	ts
+	position
+	elevation
+	callLetters
+	qualityControlProcess
+	dataSource
+	type
+	airTemperature
+	dewPoint
+	pressure
+	wind
+	visibility
+	skyCondition
+	sections
+	precipitationEstimatedObservation
+	pastWeatherObservationManual
+	atmosphericPressureChange
+	presentWeatherObservationManual
+	seaSurfaceTemperature
+--------------------------------------------------
+Edge weight: 7
+Edge vertices 21:
+	_id
+	st
+	ts
+	position
+	elevation
+	callLetters
+	qualityControlProcess
+	dataSource
+	type
+	airTemperature
+	dewPoint
+	pressure
+	wind
+	visibility
+	skyCondition
+	sections
+	precipitationEstimatedObservation
+	skyCoverLayer
+	skyConditionObservation
+	atmosphericPressureChange
+	seaSurfaceTemperature
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 19:
+	_id
+	st
+	ts
+	position
+	elevation
+	callLetters
+	qualityControlProcess
+	dataSource
+	type
+	airTemperature
+	dewPoint
+	pressure
+	wind
+	visibility
+	skyCondition
+	sections
+	precipitationEstimatedObservation
+	atmosphericPressureChange
+	presentWeatherObservationManual
+--------------------------------------------------
+Edge weight: 2
+Edge vertices 23:
+	_id
+	st
+	ts
+	position
+	elevation
+	callLetters
+	qualityControlProcess
+	dataSource
+	type
+	airTemperature
+	dewPoint
+	pressure
+	wind
+	visibility
+	skyCondition
+	sections
+	precipitationEstimatedObservation
+	pastWeatherObservationManual
+	skyConditionObservation
+	extremeAirTemperature
+	atmosphericPressureObservation
+	atmosphericPressureChange
+	presentWeatherObservationManual
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 23:
+	_id
+	st
+	ts
+	position
+	elevation
+	callLetters
+	qualityControlProcess
+	dataSource
+	type
+	airTemperature
+	dewPoint
+	pressure
+	wind
+	visibility
+	skyCondition
+	sections
+	precipitationEstimatedObservation
+	skyCoverLayer
+	skyConditionObservation
+	atmosphericPressureChange
+	presentWeatherObservationManual
+	seaSurfaceTemperature
+	waveMeasurement
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 24:
+	_id
+	st
+	ts
+	position
+	elevation
+	callLetters
+	qualityControlProcess
+	dataSource
+	type
+	airTemperature
+	dewPoint
+	pressure
+	wind
+	visibility
+	skyCondition
+	sections
+	precipitationEstimatedObservation
+	pastWeatherObservationManual
+	skyCoverLayer
+	skyConditionObservation
+	atmosphericPressureObservation
+	presentWeatherObservationManual
+	seaSurfaceTemperature
+	waveMeasurement
+--------------------------------------------------
+Edge weight: 3
+Edge vertices 21:
+	_id
+	st
+	ts
+	position
+	elevation
+	callLetters
+	qualityControlProcess
+	dataSource
+	type
+	airTemperature
+	dewPoint
+	pressure
+	wind
+	visibility
+	skyCondition
+	sections
+	precipitationEstimatedObservation
+	pastWeatherObservationManual
+	skyConditionObservation
+	atmosphericPressureChange
+	seaSurfaceTemperature
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 23:
+	_id
+	st
+	ts
+	position
+	elevation
+	callLetters
+	qualityControlProcess
+	dataSource
+	type
+	airTemperature
+	dewPoint
+	pressure
+	wind
+	visibility
+	skyCondition
+	sections
+	precipitationEstimatedObservation
+	pastWeatherObservationManual
+	skyConditionObservation
+	atmosphericPressureObservation
+	atmosphericPressureChange
+	presentWeatherObservationManual
+	seaSurfaceTemperature
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 23:
+	_id
+	st
+	ts
+	position
+	elevation
+	callLetters
+	qualityControlProcess
+	dataSource
+	type
+	airTemperature
+	dewPoint
+	pressure
+	wind
+	visibility
+	skyCondition
+	sections
+	liquidPrecipitation
+	precipitationEstimatedObservation
+	pastWeatherObservationManual
+	skyConditionObservation
+	extremeAirTemperature
+	atmosphericPressureObservation
+	presentWeatherObservationManual
+--------------------------------------------------
+Edge weight: 3
+Edge vertices 21:
+	_id
+	st
+	ts
+	position
+	elevation
+	callLetters
+	qualityControlProcess
+	dataSource
+	type
+	airTemperature
+	dewPoint
+	pressure
+	wind
+	visibility
+	skyCondition
+	sections
+	precipitationEstimatedObservation
+	skyCoverLayer
+	skyConditionObservation
+	presentWeatherObservationManual
+	waveMeasurement
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 20:
+	_id
+	st
+	ts
+	position
+	elevation
+	callLetters
+	qualityControlProcess
+	dataSource
+	type
+	airTemperature
+	dewPoint
+	pressure
+	wind
+	visibility
+	skyCondition
+	sections
+	liquidPrecipitation
+	precipitationEstimatedObservation
+	skyConditionObservation
+	seaSurfaceTemperature
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 21:
+	_id
+	st
+	ts
+	position
+	elevation
+	callLetters
+	qualityControlProcess
+	dataSource
+	type
+	airTemperature
+	dewPoint
+	pressure
+	wind
+	visibility
+	skyCondition
+	sections
+	precipitationEstimatedObservation
+	pastWeatherObservationManual
+	skyCoverLayer
+	skyConditionObservation
+	waveMeasurement
+--------------------------------------------------
+Edge weight: 2
+Edge vertices 20:
+	_id
+	st
+	ts
+	position
+	elevation
+	callLetters
+	qualityControlProcess
+	dataSource
+	type
+	airTemperature
+	dewPoint
+	pressure
+	wind
+	visibility
+	skyCondition
+	sections
+	precipitationEstimatedObservation
+	pastWeatherObservationManual
+	presentWeatherObservationManual
+	waveMeasurement
+--------------------------------------------------
+Edge weight: 2
+Edge vertices 23:
+	_id
+	st
+	ts
+	elevation
+	callLetters
+	qualityControlProcess
+	dataSource
+	type
+	airTemperature
+	dewPoint
+	pressure
+	wind
+	visibility
+	skyCondition
+	sections
+	liquidPrecipitation
+	precipitationEstimatedObservation
+	pastWeatherObservationManual
+	skyConditionObservation
+	atmosphericPressureChange
+	presentWeatherObservationManual
+	seaSurfaceTemperature
+	waveMeasurement
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 22:
+	_id
+	st
+	ts
+	position
+	elevation
+	callLetters
+	qualityControlProcess
+	dataSource
+	type
+	airTemperature
+	dewPoint
+	pressure
+	wind
+	visibility
+	skyCondition
+	sections
+	precipitationEstimatedObservation
+	skyCoverLayer
+	skyConditionObservation
+	atmosphericPressureChange
+	presentWeatherObservationManual
+	waveMeasurement
+--------------------------------------------------
+Edge weight: 2
+Edge vertices 23:
+	_id
+	st
+	ts
+	position
+	elevation
+	callLetters
+	qualityControlProcess
+	dataSource
+	type
+	airTemperature
+	dewPoint
+	pressure
+	wind
+	visibility
+	skyCondition
+	sections
+	precipitationEstimatedObservation
+	pastWeatherObservationManual
+	skyConditionObservation
+	atmosphericPressureObservation
+	presentWeatherObservationManual
+	seaSurfaceTemperature
+	waveMeasurement
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 23:
+	_id
+	st
+	ts
+	position
+	elevation
+	callLetters
+	qualityControlProcess
+	dataSource
+	type
+	airTemperature
+	dewPoint
+	pressure
+	wind
+	visibility
+	skyCondition
+	sections
+	liquidPrecipitation
+	precipitationEstimatedObservation
+	pastWeatherObservationManual
+	skyCoverLayer
+	skyConditionObservation
+	atmosphericPressureChange
+	presentWeatherObservationManual
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 19:
+	_id
+	st
+	ts
+	position
+	elevation
+	callLetters
+	qualityControlProcess
+	dataSource
+	type
+	airTemperature
+	dewPoint
+	pressure
+	wind
+	visibility
+	skyCondition
+	sections
+	precipitationEstimatedObservation
+	skyCoverLayer
+	skyConditionObservation
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 21:
+	_id
+	st
+	ts
+	position
+	elevation
+	callLetters
+	qualityControlProcess
+	dataSource
+	type
+	airTemperature
+	dewPoint
+	pressure
+	wind
+	visibility
+	skyCondition
+	sections
+	precipitationEstimatedObservation
+	skyCoverLayer
+	skyConditionObservation
+	presentWeatherObservationManual
+	seaSurfaceTemperature
+--------------------------------------------------
+Edge weight: 2
+Edge vertices 20:
+	_id
+	st
+	ts
+	position
+	elevation
+	callLetters
+	qualityControlProcess
+	dataSource
+	type
+	airTemperature
+	dewPoint
+	pressure
+	wind
+	visibility
+	skyCondition
+	sections
+	precipitationEstimatedObservation
+	skyCoverLayer
+	skyConditionObservation
+	waveMeasurement
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 22:
+	_id
+	st
+	ts
+	position
+	elevation
+	callLetters
+	qualityControlProcess
+	dataSource
+	type
+	airTemperature
+	dewPoint
+	pressure
+	wind
+	visibility
+	skyCondition
+	sections
+	precipitationEstimatedObservation
+	skyCoverLayer
+	skyConditionObservation
+	atmosphericPressureChange
+	presentWeatherObservationManual
+	seaSurfaceTemperature
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 22:
+	_id
+	st
+	ts
+	position
+	elevation
+	callLetters
+	qualityControlProcess
+	dataSource
+	type
+	airTemperature
+	dewPoint
+	pressure
+	wind
+	visibility
+	skyCondition
+	sections
+	precipitationEstimatedObservation
+	skyConditionObservation
+	atmosphericPressureObservation
+	atmosphericPressureChange
+	seaSurfaceTemperature
+	waveMeasurement
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 20:
+	_id
+	st
+	ts
+	position
+	elevation
+	callLetters
+	qualityControlProcess
+	dataSource
+	type
+	airTemperature
+	dewPoint
+	pressure
+	wind
+	visibility
+	skyCondition
+	sections
+	precipitationEstimatedObservation
+	pastWeatherObservationManual
+	atmosphericPressureChange
+	seaSurfaceTemperature
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 21:
+	_id
+	st
+	ts
+	elevation
+	callLetters
+	qualityControlProcess
+	dataSource
+	type
+	airTemperature
+	dewPoint
+	pressure
+	wind
+	visibility
+	skyCondition
+	sections
+	precipitationEstimatedObservation
+	pastWeatherObservationManual
+	skyConditionObservation
+	atmosphericPressureChange
+	presentWeatherObservationManual
+	seaSurfaceTemperature
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 21:
+	_id
+	st
+	ts
+	position
+	elevation
+	callLetters
+	qualityControlProcess
+	dataSource
+	type
+	airTemperature
+	dewPoint
+	pressure
+	wind
+	visibility
+	skyCondition
+	sections
+	precipitationEstimatedObservation
+	skyCoverLayer
+	skyConditionObservation
+	seaSurfaceTemperature
+	waveMeasurement
+--------------------------------------------------
+Vertices count: 27
+Edges count: 98

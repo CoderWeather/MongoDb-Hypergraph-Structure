@@ -1,0 +1,165 @@
+Vertices:
+Data: _id
+Vertex edges: 5
+--------------------------------------------------
+Data: href
+Vertex edges: 5
+--------------------------------------------------
+Data: title
+Vertex edges: 5
+--------------------------------------------------
+Data: comments
+Vertex edges: 5
+--------------------------------------------------
+Data: container
+Vertex edges: 5
+--------------------------------------------------
+Data: submit_date
+Vertex edges: 5
+--------------------------------------------------
+Data: topic
+Vertex edges: 5
+--------------------------------------------------
+Data: promote_date
+Vertex edges: 5
+--------------------------------------------------
+Data: id
+Vertex edges: 5
+--------------------------------------------------
+Data: media
+Vertex edges: 5
+--------------------------------------------------
+Data: diggs
+Vertex edges: 5
+--------------------------------------------------
+Data: description
+Vertex edges: 5
+--------------------------------------------------
+Data: link
+Vertex edges: 5
+--------------------------------------------------
+Data: user
+Vertex edges: 5
+--------------------------------------------------
+Data: status
+Vertex edges: 5
+--------------------------------------------------
+Data: shorturl
+Vertex edges: 5
+--------------------------------------------------
+Data: thumbnail
+Vertex edges: 2
+--------------------------------------------------
+Data: inaccurate
+Vertex edges: 2
+--------------------------------------------------
+Data: takedowndays
+Vertex edges: 1
+--------------------------------------------------
+Data: takedownuri
+Vertex edges: 1
+--------------------------------------------------
+Edges:
+Edge weight: 3174
+Edge vertices 16:
+	_id
+	href
+	title
+	comments
+	container
+	submit_date
+	topic
+	promote_date
+	id
+	media
+	diggs
+	description
+	link
+	user
+	status
+	shorturl
+--------------------------------------------------
+Edge weight: 6662
+Edge vertices 17:
+	_id
+	href
+	title
+	comments
+	thumbnail
+	container
+	submit_date
+	topic
+	promote_date
+	id
+	media
+	diggs
+	description
+	link
+	user
+	status
+	shorturl
+--------------------------------------------------
+Edge weight: 4
+Edge vertices 18:
+	_id
+	href
+	title
+	comments
+	thumbnail
+	container
+	submit_date
+	topic
+	promote_date
+	inaccurate
+	id
+	media
+	diggs
+	description
+	link
+	user
+	status
+	shorturl
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 17:
+	_id
+	href
+	title
+	comments
+	container
+	submit_date
+	topic
+	promote_date
+	inaccurate
+	id
+	media
+	diggs
+	description
+	link
+	user
+	status
+	shorturl
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 18:
+	_id
+	href
+	takedowndays
+	title
+	comments
+	container
+	submit_date
+	topic
+	promote_date
+	takedownuri
+	id
+	media
+	diggs
+	description
+	link
+	user
+	status
+	shorturl
+--------------------------------------------------
+Vertices count: 20
+Edges count: 5

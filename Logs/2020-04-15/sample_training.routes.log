@@ -1,0 +1,47 @@
+Vertices:
+Data: _id
+Vertex edges: 1
+--------------------------------------------------
+Data: airline.id
+Vertex edges: 1
+--------------------------------------------------
+Data: airline.name
+Vertex edges: 1
+--------------------------------------------------
+Data: airline.alias
+Vertex edges: 1
+--------------------------------------------------
+Data: airline.iata
+Vertex edges: 1
+--------------------------------------------------
+Data: src_airport
+Vertex edges: 1
+--------------------------------------------------
+Data: dst_airport
+Vertex edges: 1
+--------------------------------------------------
+Data: codeshare
+Vertex edges: 1
+--------------------------------------------------
+Data: stops
+Vertex edges: 1
+--------------------------------------------------
+Data: airplane
+Vertex edges: 1
+--------------------------------------------------
+Edges:
+Edge weight: 66985
+Edge vertices 10:
+	_id
+	airline.id
+	airline.name
+	airline.alias
+	airline.iata
+	src_airport
+	dst_airport
+	codeshare
+	stops
+	airplane
+--------------------------------------------------
+Vertices count: 10
+Edges count: 1

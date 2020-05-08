@@ -1,0 +1,63 @@
+Vertices:
+Data: _id
+Vertex edges: 1
+--------------------------------------------------
+Data: tripduration
+Vertex edges: 1
+--------------------------------------------------
+Data: start station id
+Vertex edges: 1
+--------------------------------------------------
+Data: start station name
+Vertex edges: 1
+--------------------------------------------------
+Data: end station id
+Vertex edges: 1
+--------------------------------------------------
+Data: end station name
+Vertex edges: 1
+--------------------------------------------------
+Data: bikeid
+Vertex edges: 1
+--------------------------------------------------
+Data: usertype
+Vertex edges: 1
+--------------------------------------------------
+Data: birth year
+Vertex edges: 1
+--------------------------------------------------
+Data: gender
+Vertex edges: 1
+--------------------------------------------------
+Data: start station location
+Vertex edges: 1
+--------------------------------------------------
+Data: end station location
+Vertex edges: 1
+--------------------------------------------------
+Data: start time
+Vertex edges: 1
+--------------------------------------------------
+Data: stop time
+Vertex edges: 1
+--------------------------------------------------
+Edges:
+Edge weight: 10000
+Edge vertices 14:
+	_id
+	tripduration
+	start station id
+	start station name
+	end station id
+	end station name
+	bikeid
+	usertype
+	birth year
+	gender
+	start station location
+	end station location
+	start time
+	stop time
+--------------------------------------------------
+Vertices count: 14
+Edges count: 1

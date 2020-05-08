@@ -1,0 +1,39 @@
+Vertices:
+Data: _id
+Vertex edges: 1
+--------------------------------------------------
+Data: id
+Vertex edges: 1
+--------------------------------------------------
+Data: certificate_number
+Vertex edges: 1
+--------------------------------------------------
+Data: business_name
+Vertex edges: 1
+--------------------------------------------------
+Data: date
+Vertex edges: 1
+--------------------------------------------------
+Data: result
+Vertex edges: 1
+--------------------------------------------------
+Data: sector
+Vertex edges: 1
+--------------------------------------------------
+Data: address
+Vertex edges: 1
+--------------------------------------------------
+Edges:
+Edge weight: 80047
+Edge vertices 8:
+	_id
+	id
+	certificate_number
+	business_name
+	date
+	result
+	sector
+	address
+--------------------------------------------------
+Vertices count: 8
+Edges count: 1

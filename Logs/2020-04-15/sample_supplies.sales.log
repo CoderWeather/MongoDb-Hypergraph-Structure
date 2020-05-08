@@ -1,0 +1,47 @@
+Vertices:
+Data: _id
+Vertex edges: 1
+--------------------------------------------------
+Data: saleDate
+Vertex edges: 1
+--------------------------------------------------
+Data: items
+Vertex edges: 1
+--------------------------------------------------
+Data: storeLocation
+Vertex edges: 1
+--------------------------------------------------
+Data: customer.gender
+Vertex edges: 1
+--------------------------------------------------
+Data: customer.age
+Vertex edges: 1
+--------------------------------------------------
+Data: customer.email
+Vertex edges: 1
+--------------------------------------------------
+Data: customer.satisfaction
+Vertex edges: 1
+--------------------------------------------------
+Data: couponUsed
+Vertex edges: 1
+--------------------------------------------------
+Data: purchaseMethod
+Vertex edges: 1
+--------------------------------------------------
+Edges:
+Edge weight: 5000
+Edge vertices 10:
+	_id
+	saleDate
+	items
+	storeLocation
+	customer.gender
+	customer.age
+	customer.email
+	customer.satisfaction
+	couponUsed
+	purchaseMethod
+--------------------------------------------------
+Vertices count: 10
+Edges count: 1

@@ -1,0 +1,23 @@
+Vertices:
+Data: _id
+Vertex edges: 1
+--------------------------------------------------
+Data: student_id
+Vertex edges: 1
+--------------------------------------------------
+Data: scores
+Vertex edges: 1
+--------------------------------------------------
+Data: class_id
+Vertex edges: 1
+--------------------------------------------------
+Edges:
+Edge weight: 100000
+Edge vertices 4:
+	_id
+	student_id
+	scores
+	class_id
+--------------------------------------------------
+Vertices count: 4
+Edges count: 1

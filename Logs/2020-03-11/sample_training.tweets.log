@@ -1,0 +1,104 @@
+Vertices:
+Data: _id
+Vertex edges: 2
+--------------------------------------------------
+Data: text
+Vertex edges: 2
+--------------------------------------------------
+Data: in_reply_to_status_id
+Vertex edges: 2
+--------------------------------------------------
+Data: retweet_count
+Vertex edges: 2
+--------------------------------------------------
+Data: contributors
+Vertex edges: 2
+--------------------------------------------------
+Data: created_at
+Vertex edges: 2
+--------------------------------------------------
+Data: geo
+Vertex edges: 2
+--------------------------------------------------
+Data: source
+Vertex edges: 2
+--------------------------------------------------
+Data: coordinates
+Vertex edges: 2
+--------------------------------------------------
+Data: in_reply_to_screen_name
+Vertex edges: 2
+--------------------------------------------------
+Data: truncated
+Vertex edges: 2
+--------------------------------------------------
+Data: entities
+Vertex edges: 2
+--------------------------------------------------
+Data: retweeted
+Vertex edges: 2
+--------------------------------------------------
+Data: place
+Vertex edges: 2
+--------------------------------------------------
+Data: user
+Vertex edges: 2
+--------------------------------------------------
+Data: favorited
+Vertex edges: 2
+--------------------------------------------------
+Data: in_reply_to_user_id
+Vertex edges: 2
+--------------------------------------------------
+Data: id
+Vertex edges: 2
+--------------------------------------------------
+Data: retweeted_status
+Vertex edges: 1
+--------------------------------------------------
+Edges:
+Edge weight: 22787
+Edge vertices 18:
+	_id
+	text
+	in_reply_to_status_id
+	retweet_count
+	contributors
+	created_at
+	geo
+	source
+	coordinates
+	in_reply_to_screen_name
+	truncated
+	entities
+	retweeted
+	place
+	user
+	favorited
+	in_reply_to_user_id
+	id
+--------------------------------------------------
+Edge weight: 2045
+Edge vertices 19:
+	_id
+	text
+	in_reply_to_status_id
+	retweet_count
+	contributors
+	created_at
+	geo
+	source
+	retweeted_status
+	coordinates
+	in_reply_to_screen_name
+	truncated
+	entities
+	retweeted
+	place
+	user
+	favorited
+	in_reply_to_user_id
+	id
+--------------------------------------------------
+Vertices count: 19
+Edges count: 2

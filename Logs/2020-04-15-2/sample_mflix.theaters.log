@@ -1,0 +1,19 @@
+Vertices:
+Data: _id
+Vertex edges: 1
+--------------------------------------------------
+Data: theaterId
+Vertex edges: 1
+--------------------------------------------------
+Data: location
+Vertex edges: 1
+--------------------------------------------------
+Edges:
+Edge weight: 1564
+Edge vertices 3:
+	_id
+	theaterId
+	location
+--------------------------------------------------
+Vertices count: 3
+Edges count: 1

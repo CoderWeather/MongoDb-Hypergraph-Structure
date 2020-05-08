@@ -1,0 +1,54 @@
+Vertices:
+Data: _id
+Vertex edges: 2
+--------------------------------------------------
+Data: username
+Vertex edges: 2
+--------------------------------------------------
+Data: name
+Vertex edges: 2
+--------------------------------------------------
+Data: address
+Vertex edges: 2
+--------------------------------------------------
+Data: birthdate
+Vertex edges: 2
+--------------------------------------------------
+Data: email
+Vertex edges: 2
+--------------------------------------------------
+Data: accounts
+Vertex edges: 2
+--------------------------------------------------
+Data: tier_and_details
+Vertex edges: 2
+--------------------------------------------------
+Data: active
+Vertex edges: 1
+--------------------------------------------------
+Edges:
+Edge weight: 499
+Edge vertices 8:
+	_id
+	username
+	name
+	address
+	birthdate
+	email
+	accounts
+	tier_and_details
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 9:
+	_id
+	username
+	name
+	address
+	birthdate
+	email
+	active
+	accounts
+	tier_and_details
+--------------------------------------------------
+Vertices count: 9
+Edges count: 2

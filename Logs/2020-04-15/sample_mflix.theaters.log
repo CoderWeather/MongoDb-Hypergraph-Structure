@@ -1,0 +1,54 @@
+Vertices:
+Data: _id
+Vertex edges: 2
+--------------------------------------------------
+Data: theaterId
+Vertex edges: 2
+--------------------------------------------------
+Data: location.address.street1
+Vertex edges: 2
+--------------------------------------------------
+Data: location.address.city
+Vertex edges: 2
+--------------------------------------------------
+Data: location.address.state
+Vertex edges: 2
+--------------------------------------------------
+Data: location.address.zipcode
+Vertex edges: 2
+--------------------------------------------------
+Data: location.geo.type
+Vertex edges: 2
+--------------------------------------------------
+Data: location.geo.coordinates
+Vertex edges: 2
+--------------------------------------------------
+Data: location.address.street2
+Vertex edges: 1
+--------------------------------------------------
+Edges:
+Edge weight: 1008
+Edge vertices 8:
+	_id
+	theaterId
+	location.address.street1
+	location.address.city
+	location.address.state
+	location.address.zipcode
+	location.geo.type
+	location.geo.coordinates
+--------------------------------------------------
+Edge weight: 556
+Edge vertices 9:
+	_id
+	theaterId
+	location.address.street1
+	location.address.street2
+	location.address.city
+	location.address.state
+	location.address.zipcode
+	location.geo.type
+	location.geo.coordinates
+--------------------------------------------------
+Vertices count: 9
+Edges count: 2

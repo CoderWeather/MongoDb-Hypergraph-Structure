@@ -1,0 +1,10453 @@
+Vertices:
+Data: _id
+Vertex edges: 514
+--------------------------------------------------
+Data: plot
+Vertex edges: 389
+--------------------------------------------------
+Data: genres
+Vertex edges: 458
+--------------------------------------------------
+Data: runtime
+Vertex edges: 406
+--------------------------------------------------
+Data: cast
+Vertex edges: 399
+--------------------------------------------------
+Data: num_mflix_comments
+Vertex edges: 300
+--------------------------------------------------
+Data: title
+Vertex edges: 514
+--------------------------------------------------
+Data: fullplot
+Vertex edges: 332
+--------------------------------------------------
+Data: countries
+Vertex edges: 504
+--------------------------------------------------
+Data: released
+Vertex edges: 387
+--------------------------------------------------
+Data: directors
+Vertex edges: 461
+--------------------------------------------------
+Data: rated
+Vertex edges: 141
+--------------------------------------------------
+Data: awards
+Vertex edges: 514
+--------------------------------------------------
+Data: lastupdated
+Vertex edges: 514
+--------------------------------------------------
+Data: year
+Vertex edges: 514
+--------------------------------------------------
+Data: imdb
+Vertex edges: 514
+--------------------------------------------------
+Data: type
+Vertex edges: 514
+--------------------------------------------------
+Data: tomatoes
+Vertex edges: 337
+--------------------------------------------------
+Data: poster
+Vertex edges: 287
+--------------------------------------------------
+Data: languages
+Vertex edges: 420
+--------------------------------------------------
+Data: writers
+Vertex edges: 310
+--------------------------------------------------
+Data: metacritic
+Vertex edges: 112
+--------------------------------------------------
+Edges:
+Edge weight: 1
+Edge vertices 18:
+	_id
+	plot
+	genres
+	runtime
+	cast
+	num_mflix_comments
+	title
+	fullplot
+	countries
+	released
+	directors
+	rated
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 30
+Edge vertices 19:
+	_id
+	plot
+	genres
+	runtime
+	cast
+	poster
+	title
+	fullplot
+	languages
+	released
+	directors
+	rated
+	awards
+	lastupdated
+	year
+	imdb
+	countries
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 3830
+Edge vertices 21:
+	_id
+	plot
+	genres
+	runtime
+	rated
+	cast
+	num_mflix_comments
+	poster
+	title
+	fullplot
+	languages
+	released
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	countries
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 7
+Edge vertices 19:
+	_id
+	plot
+	genres
+	runtime
+	cast
+	num_mflix_comments
+	title
+	fullplot
+	languages
+	released
+	directors
+	rated
+	awards
+	lastupdated
+	year
+	imdb
+	countries
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 2493
+Edge vertices 20:
+	_id
+	plot
+	genres
+	runtime
+	cast
+	num_mflix_comments
+	poster
+	title
+	fullplot
+	languages
+	released
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	countries
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 19:
+	_id
+	plot
+	genres
+	runtime
+	cast
+	num_mflix_comments
+	poster
+	title
+	lastupdated
+	languages
+	released
+	directors
+	rated
+	awards
+	year
+	imdb
+	countries
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 43
+Edge vertices 19:
+	_id
+	plot
+	genres
+	runtime
+	cast
+	num_mflix_comments
+	poster
+	title
+	lastupdated
+	languages
+	released
+	directors
+	writers
+	awards
+	year
+	imdb
+	countries
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 15
+Edge vertices 19:
+	_id
+	plot
+	genres
+	runtime
+	rated
+	cast
+	poster
+	title
+	fullplot
+	countries
+	released
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 1961
+Edge vertices 20:
+	_id
+	plot
+	genres
+	runtime
+	rated
+	cast
+	poster
+	title
+	fullplot
+	languages
+	released
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	countries
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 68
+Edge vertices 19:
+	_id
+	plot
+	genres
+	runtime
+	rated
+	cast
+	title
+	fullplot
+	languages
+	released
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	countries
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 22
+Edge vertices 19:
+	_id
+	plot
+	genres
+	runtime
+	cast
+	num_mflix_comments
+	poster
+	title
+	fullplot
+	countries
+	released
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 126
+Edge vertices 20:
+	_id
+	plot
+	genres
+	runtime
+	rated
+	cast
+	num_mflix_comments
+	title
+	fullplot
+	languages
+	released
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	countries
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 22
+Edge vertices 20:
+	_id
+	plot
+	genres
+	runtime
+	rated
+	cast
+	num_mflix_comments
+	poster
+	title
+	fullplot
+	countries
+	released
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 45
+Edge vertices 20:
+	_id
+	plot
+	genres
+	runtime
+	cast
+	num_mflix_comments
+	poster
+	title
+	fullplot
+	languages
+	released
+	directors
+	rated
+	awards
+	lastupdated
+	year
+	imdb
+	countries
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 448
+Edge vertices 18:
+	_id
+	plot
+	genres
+	runtime
+	cast
+	title
+	fullplot
+	languages
+	released
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	countries
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 100
+Edge vertices 17:
+	_id
+	plot
+	genres
+	runtime
+	cast
+	title
+	fullplot
+	languages
+	released
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	countries
+	type
+--------------------------------------------------
+Edge weight: 10
+Edge vertices 17:
+	_id
+	plot
+	genres
+	runtime
+	cast
+	title
+	fullplot
+	countries
+	released
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 15
+Edge vertices 18:
+	_id
+	plot
+	genres
+	runtime
+	cast
+	poster
+	title
+	fullplot
+	countries
+	released
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 2
+Edge vertices 19:
+	_id
+	plot
+	genres
+	runtime
+	cast
+	num_mflix_comments
+	poster
+	title
+	fullplot
+	countries
+	released
+	directors
+	rated
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 19:
+	_id
+	plot
+	genres
+	runtime
+	rated
+	cast
+	num_mflix_comments
+	title
+	fullplot
+	countries
+	released
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 50
+Edge vertices 20:
+	_id
+	plot
+	genres
+	runtime
+	rated
+	title
+	num_mflix_comments
+	poster
+	countries
+	fullplot
+	languages
+	cast
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 2
+Edge vertices 19:
+	_id
+	plot
+	genres
+	runtime
+	rated
+	title
+	poster
+	countries
+	fullplot
+	num_mflix_comments
+	cast
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 949
+Edge vertices 19:
+	_id
+	plot
+	genres
+	runtime
+	cast
+	num_mflix_comments
+	title
+	fullplot
+	languages
+	released
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	countries
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 3802
+Edge vertices 22:
+	_id
+	fullplot
+	imdb
+	year
+	plot
+	genres
+	rated
+	metacritic
+	title
+	lastupdated
+	languages
+	writers
+	type
+	tomatoes
+	poster
+	num_mflix_comments
+	released
+	awards
+	countries
+	cast
+	directors
+	runtime
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 18:
+	_id
+	plot
+	genres
+	runtime
+	rated
+	cast
+	title
+	fullplot
+	countries
+	released
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 416
+Edge vertices 19:
+	_id
+	plot
+	genres
+	runtime
+	cast
+	num_mflix_comments
+	poster
+	title
+	fullplot
+	languages
+	released
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	countries
+	type
+--------------------------------------------------
+Edge weight: 104
+Edge vertices 19:
+	_id
+	plot
+	genres
+	runtime
+	cast
+	num_mflix_comments
+	poster
+	title
+	fullplot
+	languages
+	released
+	directors
+	awards
+	lastupdated
+	year
+	imdb
+	countries
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 1258
+Edge vertices 19:
+	_id
+	plot
+	genres
+	runtime
+	cast
+	poster
+	title
+	fullplot
+	languages
+	released
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	countries
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 20
+Edge vertices 19:
+	_id
+	plot
+	genres
+	runtime
+	rated
+	title
+	poster
+	countries
+	fullplot
+	languages
+	cast
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 53
+Edge vertices 20:
+	_id
+	plot
+	genres
+	runtime
+	rated
+	cast
+	num_mflix_comments
+	poster
+	title
+	lastupdated
+	languages
+	released
+	directors
+	writers
+	awards
+	year
+	imdb
+	countries
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 165
+Edge vertices 16:
+	_id
+	countries
+	genres
+	runtime
+	cast
+	title
+	lastupdated
+	languages
+	released
+	directors
+	writers
+	awards
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 19:
+	_id
+	plot
+	runtime
+	rated
+	cast
+	num_mflix_comments
+	poster
+	title
+	lastupdated
+	languages
+	released
+	directors
+	writers
+	awards
+	year
+	imdb
+	countries
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 62
+Edge vertices 17:
+	_id
+	countries
+	genres
+	runtime
+	cast
+	poster
+	title
+	lastupdated
+	languages
+	released
+	directors
+	writers
+	awards
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 313
+Edge vertices 17:
+	_id
+	countries
+	genres
+	runtime
+	cast
+	num_mflix_comments
+	title
+	lastupdated
+	languages
+	released
+	directors
+	writers
+	awards
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 143
+Edge vertices 18:
+	_id
+	countries
+	genres
+	runtime
+	cast
+	num_mflix_comments
+	poster
+	title
+	lastupdated
+	languages
+	released
+	directors
+	writers
+	awards
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 20:
+	_id
+	plot
+	genres
+	runtime
+	metacritic
+	rated
+	cast
+	poster
+	title
+	fullplot
+	countries
+	released
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 68
+Edge vertices 19:
+	_id
+	plot
+	genres
+	runtime
+	title
+	num_mflix_comments
+	poster
+	countries
+	fullplot
+	languages
+	cast
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 6
+Edge vertices 17:
+	_id
+	countries
+	genres
+	runtime
+	rated
+	cast
+	title
+	lastupdated
+	languages
+	released
+	directors
+	writers
+	awards
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 16
+Edge vertices 17:
+	_id
+	plot
+	genres
+	runtime
+	cast
+	title
+	fullplot
+	languages
+	released
+	directors
+	awards
+	lastupdated
+	year
+	imdb
+	countries
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 38
+Edge vertices 18:
+	_id
+	plot
+	genres
+	runtime
+	cast
+	num_mflix_comments
+	title
+	lastupdated
+	languages
+	released
+	directors
+	writers
+	awards
+	year
+	imdb
+	countries
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 9
+Edge vertices 18:
+	_id
+	countries
+	genres
+	runtime
+	rated
+	cast
+	num_mflix_comments
+	title
+	lastupdated
+	languages
+	released
+	directors
+	writers
+	awards
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 20
+Edge vertices 16:
+	_id
+	num_mflix_comments
+	genres
+	runtime
+	title
+	countries
+	lastupdated
+	languages
+	cast
+	directors
+	writers
+	awards
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 5
+Edge vertices 18:
+	_id
+	plot
+	genres
+	runtime
+	rated
+	cast
+	poster
+	title
+	lastupdated
+	languages
+	released
+	directors
+	writers
+	awards
+	year
+	imdb
+	countries
+	type
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 15:
+	_id
+	plot
+	genres
+	runtime
+	title
+	countries
+	fullplot
+	num_mflix_comments
+	directors
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 29
+Edge vertices 19:
+	_id
+	plot
+	genres
+	runtime
+	rated
+	cast
+	poster
+	title
+	lastupdated
+	languages
+	released
+	directors
+	writers
+	awards
+	year
+	imdb
+	countries
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 212
+Edge vertices 19:
+	_id
+	plot
+	genres
+	runtime
+	rated
+	cast
+	poster
+	title
+	fullplot
+	languages
+	released
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	countries
+	type
+--------------------------------------------------
+Edge weight: 14
+Edge vertices 16:
+	_id
+	countries
+	genres
+	runtime
+	cast
+	num_mflix_comments
+	title
+	lastupdated
+	languages
+	released
+	directors
+	awards
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 29
+Edge vertices 18:
+	_id
+	plot
+	genres
+	runtime
+	title
+	poster
+	countries
+	fullplot
+	languages
+	cast
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 1708
+Edge vertices 21:
+	_id
+	plot
+	genres
+	runtime
+	metacritic
+	rated
+	cast
+	poster
+	title
+	fullplot
+	languages
+	released
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	countries
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 45
+Edge vertices 18:
+	_id
+	plot
+	genres
+	runtime
+	cast
+	poster
+	title
+	fullplot
+	languages
+	released
+	directors
+	awards
+	lastupdated
+	year
+	imdb
+	countries
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 15:
+	_id
+	num_mflix_comments
+	runtime
+	title
+	countries
+	lastupdated
+	languages
+	cast
+	directors
+	writers
+	awards
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 3
+Edge vertices 19:
+	_id
+	plot
+	genres
+	runtime
+	rated
+	title
+	poster
+	countries
+	fullplot
+	num_mflix_comments
+	released
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 2
+Edge vertices 20:
+	_id
+	plot
+	runtime
+	rated
+	cast
+	num_mflix_comments
+	poster
+	title
+	fullplot
+	languages
+	released
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	countries
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 289
+Edge vertices 20:
+	_id
+	plot
+	genres
+	runtime
+	metacritic
+	cast
+	poster
+	title
+	fullplot
+	languages
+	released
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	countries
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 22
+Edge vertices 19:
+	_id
+	plot
+	genres
+	runtime
+	rated
+	cast
+	num_mflix_comments
+	title
+	fullplot
+	languages
+	released
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	countries
+	type
+--------------------------------------------------
+Edge weight: 8
+Edge vertices 18:
+	_id
+	plot
+	genres
+	runtime
+	title
+	num_mflix_comments
+	poster
+	countries
+	fullplot
+	languages
+	cast
+	directors
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 3
+Edge vertices 17:
+	_id
+	plot
+	genres
+	runtime
+	title
+	poster
+	countries
+	fullplot
+	num_mflix_comments
+	released
+	directors
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 18
+Edge vertices 16:
+	_id
+	countries
+	genres
+	cast
+	num_mflix_comments
+	title
+	lastupdated
+	languages
+	released
+	directors
+	writers
+	awards
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 23
+Edge vertices 18:
+	_id
+	plot
+	genres
+	runtime
+	cast
+	poster
+	title
+	lastupdated
+	languages
+	released
+	directors
+	writers
+	awards
+	year
+	imdb
+	countries
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 15
+Edge vertices 19:
+	_id
+	plot
+	genres
+	runtime
+	metacritic
+	cast
+	title
+	fullplot
+	languages
+	released
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	countries
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 4
+Edge vertices 18:
+	_id
+	plot
+	genres
+	runtime
+	title
+	poster
+	countries
+	fullplot
+	num_mflix_comments
+	cast
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 14:
+	_id
+	plot
+	genres
+	runtime
+	title
+	countries
+	fullplot
+	directors
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 44
+Edge vertices 18:
+	_id
+	plot
+	genres
+	runtime
+	title
+	num_mflix_comments
+	countries
+	fullplot
+	languages
+	cast
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 26
+Edge vertices 17:
+	_id
+	plot
+	genres
+	runtime
+	title
+	countries
+	fullplot
+	languages
+	cast
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 63
+Edge vertices 16:
+	_id
+	countries
+	genres
+	runtime
+	cast
+	num_mflix_comments
+	title
+	lastupdated
+	languages
+	released
+	directors
+	writers
+	awards
+	year
+	imdb
+	type
+--------------------------------------------------
+Edge weight: 10
+Edge vertices 17:
+	_id
+	plot
+	genres
+	runtime
+	cast
+	poster
+	title
+	lastupdated
+	languages
+	released
+	directors
+	writers
+	awards
+	year
+	imdb
+	countries
+	type
+--------------------------------------------------
+Edge weight: 28
+Edge vertices 15:
+	_id
+	countries
+	genres
+	runtime
+	cast
+	title
+	lastupdated
+	languages
+	released
+	directors
+	writers
+	awards
+	year
+	imdb
+	type
+--------------------------------------------------
+Edge weight: 4
+Edge vertices 16:
+	_id
+	plot
+	genres
+	runtime
+	title
+	countries
+	fullplot
+	num_mflix_comments
+	released
+	directors
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 193
+Edge vertices 18:
+	_id
+	plot
+	genres
+	runtime
+	cast
+	poster
+	title
+	fullplot
+	languages
+	released
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	countries
+	type
+--------------------------------------------------
+Edge weight: 197
+Edge vertices 18:
+	_id
+	plot
+	genres
+	runtime
+	cast
+	num_mflix_comments
+	title
+	fullplot
+	languages
+	released
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	countries
+	type
+--------------------------------------------------
+Edge weight: 574
+Edge vertices 21:
+	_id
+	plot
+	genres
+	runtime
+	metacritic
+	cast
+	num_mflix_comments
+	poster
+	title
+	fullplot
+	languages
+	released
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	countries
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 16:
+	_id
+	plot
+	genres
+	runtime
+	title
+	countries
+	fullplot
+	num_mflix_comments
+	cast
+	directors
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 19:
+	_id
+	plot
+	genres
+	runtime
+	metacritic
+	title
+	num_mflix_comments
+	countries
+	fullplot
+	languages
+	cast
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 39
+Edge vertices 18:
+	_id
+	plot
+	genres
+	runtime
+	cast
+	num_mflix_comments
+	title
+	fullplot
+	languages
+	released
+	directors
+	awards
+	lastupdated
+	year
+	imdb
+	countries
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 4
+Edge vertices 17:
+	_id
+	num_mflix_comments
+	genres
+	runtime
+	title
+	poster
+	countries
+	lastupdated
+	languages
+	cast
+	directors
+	writers
+	awards
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 8
+Edge vertices 17:
+	_id
+	plot
+	genres
+	runtime
+	title
+	num_mflix_comments
+	countries
+	fullplot
+	languages
+	released
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	type
+--------------------------------------------------
+Edge weight: 16
+Edge vertices 18:
+	_id
+	plot
+	genres
+	runtime
+	title
+	num_mflix_comments
+	countries
+	fullplot
+	languages
+	released
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 29
+Edge vertices 17:
+	_id
+	countries
+	genres
+	runtime
+	cast
+	num_mflix_comments
+	poster
+	title
+	lastupdated
+	languages
+	released
+	directors
+	writers
+	awards
+	year
+	imdb
+	type
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 17:
+	_id
+	plot
+	genres
+	runtime
+	title
+	poster
+	countries
+	lastupdated
+	languages
+	cast
+	directors
+	writers
+	awards
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 3
+Edge vertices 13:
+	_id
+	genres
+	runtime
+	title
+	countries
+	lastupdated
+	released
+	directors
+	awards
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 11
+Edge vertices 19:
+	_id
+	countries
+	genres
+	runtime
+	rated
+	cast
+	num_mflix_comments
+	poster
+	title
+	lastupdated
+	languages
+	released
+	directors
+	writers
+	awards
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 16:
+	_id
+	plot
+	genres
+	runtime
+	title
+	num_mflix_comments
+	countries
+	fullplot
+	languages
+	directors
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 17:
+	_id
+	plot
+	genres
+	runtime
+	cast
+	num_mflix_comments
+	poster
+	title
+	fullplot
+	countries
+	released
+	directors
+	awards
+	lastupdated
+	year
+	imdb
+	type
+--------------------------------------------------
+Edge weight: 13
+Edge vertices 15:
+	_id
+	genres
+	runtime
+	title
+	countries
+	lastupdated
+	languages
+	cast
+	directors
+	writers
+	awards
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 2
+Edge vertices 14:
+	_id
+	genres
+	runtime
+	title
+	countries
+	lastupdated
+	languages
+	cast
+	directors
+	awards
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 363
+Edge vertices 20:
+	_id
+	plot
+	genres
+	runtime
+	rated
+	cast
+	num_mflix_comments
+	poster
+	title
+	fullplot
+	languages
+	released
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	countries
+	type
+--------------------------------------------------
+Edge weight: 75
+Edge vertices 18:
+	_id
+	plot
+	genres
+	runtime
+	cast
+	num_mflix_comments
+	poster
+	title
+	fullplot
+	languages
+	released
+	awards
+	lastupdated
+	year
+	imdb
+	countries
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 18:
+	_id
+	plot
+	runtime
+	title
+	num_mflix_comments
+	poster
+	countries
+	fullplot
+	languages
+	cast
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 17:
+	_id
+	num_mflix_comments
+	genres
+	runtime
+	metacritic
+	title
+	poster
+	countries
+	lastupdated
+	languages
+	cast
+	directors
+	awards
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 3
+Edge vertices 18:
+	_id
+	plot
+	genres
+	runtime
+	title
+	num_mflix_comments
+	countries
+	fullplot
+	languages
+	released
+	directors
+	rated
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 6
+Edge vertices 19:
+	_id
+	plot
+	genres
+	runtime
+	rated
+	title
+	num_mflix_comments
+	countries
+	fullplot
+	languages
+	cast
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 3
+Edge vertices 18:
+	_id
+	plot
+	genres
+	runtime
+	rated
+	title
+	countries
+	fullplot
+	languages
+	cast
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 17:
+	_id
+	plot
+	genres
+	runtime
+	title
+	countries
+	fullplot
+	languages
+	released
+	directors
+	rated
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 2
+Edge vertices 17:
+	_id
+	plot
+	genres
+	runtime
+	cast
+	poster
+	title
+	fullplot
+	countries
+	released
+	directors
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 8
+Edge vertices 15:
+	_id
+	countries
+	genres
+	cast
+	title
+	lastupdated
+	languages
+	released
+	directors
+	writers
+	awards
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 2
+Edge vertices 16:
+	_id
+	plot
+	genres
+	title
+	num_mflix_comments
+	countries
+	fullplot
+	languages
+	cast
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	type
+--------------------------------------------------
+Edge weight: 14
+Edge vertices 17:
+	_id
+	plot
+	genres
+	runtime
+	cast
+	title
+	lastupdated
+	languages
+	released
+	directors
+	writers
+	awards
+	year
+	imdb
+	countries
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 12
+Edge vertices 18:
+	_id
+	countries
+	genres
+	runtime
+	rated
+	cast
+	poster
+	title
+	lastupdated
+	languages
+	released
+	directors
+	writers
+	awards
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 9
+Edge vertices 16:
+	_id
+	countries
+	runtime
+	cast
+	num_mflix_comments
+	title
+	lastupdated
+	languages
+	released
+	directors
+	writers
+	awards
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 2
+Edge vertices 19:
+	_id
+	plot
+	genres
+	runtime
+	title
+	num_mflix_comments
+	poster
+	countries
+	fullplot
+	languages
+	cast
+	directors
+	rated
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 121
+Edge vertices 21:
+	_id
+	plot
+	genres
+	runtime
+	metacritic
+	cast
+	num_mflix_comments
+	poster
+	title
+	fullplot
+	languages
+	released
+	directors
+	rated
+	awards
+	lastupdated
+	year
+	imdb
+	countries
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 2
+Edge vertices 14:
+	_id
+	genres
+	title
+	countries
+	lastupdated
+	languages
+	cast
+	directors
+	writers
+	awards
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 17:
+	_id
+	num_mflix_comments
+	genres
+	runtime
+	rated
+	title
+	countries
+	lastupdated
+	languages
+	cast
+	directors
+	writers
+	awards
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 3
+Edge vertices 16:
+	_id
+	plot
+	genres
+	runtime
+	title
+	countries
+	fullplot
+	languages
+	cast
+	directors
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 6
+Edge vertices 15:
+	_id
+	countries
+	runtime
+	cast
+	title
+	lastupdated
+	languages
+	released
+	directors
+	writers
+	awards
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 17:
+	_id
+	countries
+	genres
+	runtime
+	cast
+	poster
+	title
+	lastupdated
+	num_mflix_comments
+	released
+	directors
+	writers
+	awards
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 34
+Edge vertices 19:
+	_id
+	plot
+	genres
+	runtime
+	cast
+	num_mflix_comments
+	poster
+	title
+	fullplot
+	languages
+	released
+	rated
+	awards
+	lastupdated
+	year
+	imdb
+	countries
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 14:
+	_id
+	plot
+	genres
+	runtime
+	title
+	countries
+	lastupdated
+	released
+	directors
+	awards
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 15:
+	_id
+	plot
+	genres
+	runtime
+	title
+	countries
+	fullplot
+	released
+	directors
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 74
+Edge vertices 20:
+	_id
+	plot
+	genres
+	runtime
+	metacritic
+	cast
+	poster
+	title
+	fullplot
+	languages
+	released
+	directors
+	rated
+	awards
+	lastupdated
+	year
+	imdb
+	countries
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 17:
+	_id
+	plot
+	genres
+	runtime
+	title
+	num_mflix_comments
+	countries
+	lastupdated
+	languages
+	cast
+	directors
+	writers
+	awards
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 3
+Edge vertices 18:
+	_id
+	countries
+	genres
+	runtime
+	cast
+	num_mflix_comments
+	poster
+	title
+	lastupdated
+	languages
+	released
+	directors
+	rated
+	awards
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 11
+Edge vertices 19:
+	_id
+	plot
+	runtime
+	cast
+	num_mflix_comments
+	poster
+	title
+	fullplot
+	languages
+	released
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	countries
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 16:
+	_id
+	plot
+	runtime
+	cast
+	title
+	fullplot
+	languages
+	released
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	countries
+	type
+--------------------------------------------------
+Edge weight: 27
+Edge vertices 17:
+	_id
+	plot
+	genres
+	runtime
+	cast
+	poster
+	title
+	fullplot
+	languages
+	released
+	awards
+	lastupdated
+	year
+	imdb
+	countries
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 8
+Edge vertices 17:
+	_id
+	plot
+	genres
+	runtime
+	title
+	poster
+	countries
+	fullplot
+	languages
+	cast
+	directors
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 3
+Edge vertices 18:
+	_id
+	plot
+	genres
+	countries
+	cast
+	poster
+	title
+	fullplot
+	languages
+	released
+	directors
+	rated
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 56
+Edge vertices 18:
+	_id
+	plot
+	genres
+	countries
+	cast
+	num_mflix_comments
+	title
+	fullplot
+	languages
+	released
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 16
+Edge vertices 17:
+	_id
+	plot
+	genres
+	runtime
+	cast
+	num_mflix_comments
+	poster
+	title
+	fullplot
+	languages
+	released
+	awards
+	lastupdated
+	year
+	imdb
+	countries
+	type
+--------------------------------------------------
+Edge weight: 10
+Edge vertices 18:
+	_id
+	plot
+	genres
+	runtime
+	rated
+	cast
+	title
+	fullplot
+	languages
+	released
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	countries
+	type
+--------------------------------------------------
+Edge weight: 6
+Edge vertices 18:
+	_id
+	plot
+	runtime
+	cast
+	num_mflix_comments
+	title
+	fullplot
+	languages
+	released
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	countries
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 12
+Edge vertices 17:
+	_id
+	plot
+	genres
+	runtime
+	title
+	num_mflix_comments
+	countries
+	fullplot
+	languages
+	cast
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	type
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 17:
+	_id
+	plot
+	runtime
+	title
+	poster
+	countries
+	fullplot
+	languages
+	cast
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 27
+Edge vertices 19:
+	_id
+	plot
+	genres
+	runtime
+	title
+	num_mflix_comments
+	poster
+	countries
+	fullplot
+	languages
+	released
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 5
+Edge vertices 15:
+	_id
+	countries
+	genres
+	runtime
+	cast
+	title
+	lastupdated
+	languages
+	released
+	directors
+	awards
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 10
+Edge vertices 18:
+	_id
+	plot
+	genres
+	runtime
+	title
+	poster
+	countries
+	fullplot
+	num_mflix_comments
+	released
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 41
+Edge vertices 21:
+	_id
+	plot
+	genres
+	runtime
+	metacritic
+	rated
+	cast
+	num_mflix_comments
+	poster
+	title
+	lastupdated
+	languages
+	released
+	directors
+	writers
+	awards
+	year
+	imdb
+	countries
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 16:
+	_id
+	plot
+	title
+	num_mflix_comments
+	countries
+	fullplot
+	languages
+	cast
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 5
+Edge vertices 18:
+	_id
+	plot
+	runtime
+	cast
+	num_mflix_comments
+	poster
+	title
+	fullplot
+	languages
+	released
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	countries
+	type
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 17:
+	_id
+	plot
+	genres
+	runtime
+	title
+	num_mflix_comments
+	countries
+	fullplot
+	languages
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 3
+Edge vertices 15:
+	_id
+	countries
+	genres
+	cast
+	num_mflix_comments
+	title
+	lastupdated
+	languages
+	released
+	directors
+	awards
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 6
+Edge vertices 15:
+	_id
+	num_mflix_comments
+	genres
+	runtime
+	title
+	countries
+	lastupdated
+	languages
+	cast
+	directors
+	writers
+	awards
+	year
+	imdb
+	type
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 15:
+	_id
+	genres
+	runtime
+	title
+	poster
+	countries
+	lastupdated
+	released
+	directors
+	writers
+	awards
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 2
+Edge vertices 19:
+	_id
+	plot
+	runtime
+	rated
+	cast
+	poster
+	title
+	fullplot
+	languages
+	released
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	countries
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 240
+Edge vertices 20:
+	_id
+	plot
+	genres
+	runtime
+	metacritic
+	rated
+	cast
+	poster
+	title
+	fullplot
+	languages
+	released
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	countries
+	type
+--------------------------------------------------
+Edge weight: 399
+Edge vertices 21:
+	_id
+	plot
+	genres
+	runtime
+	metacritic
+	rated
+	cast
+	num_mflix_comments
+	poster
+	title
+	fullplot
+	languages
+	released
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	countries
+	type
+--------------------------------------------------
+Edge weight: 9
+Edge vertices 17:
+	_id
+	plot
+	genres
+	runtime
+	cast
+	poster
+	title
+	fullplot
+	languages
+	released
+	directors
+	awards
+	lastupdated
+	year
+	imdb
+	countries
+	type
+--------------------------------------------------
+Edge weight: 2
+Edge vertices 19:
+	_id
+	plot
+	genres
+	runtime
+	rated
+	title
+	num_mflix_comments
+	poster
+	countries
+	fullplot
+	languages
+	cast
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	type
+--------------------------------------------------
+Edge weight: 3
+Edge vertices 14:
+	_id
+	countries
+	genres
+	cast
+	title
+	lastupdated
+	languages
+	released
+	directors
+	writers
+	awards
+	year
+	imdb
+	type
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 15:
+	_id
+	countries
+	genres
+	runtime
+	cast
+	num_mflix_comments
+	poster
+	title
+	lastupdated
+	languages
+	released
+	awards
+	year
+	imdb
+	type
+--------------------------------------------------
+Edge weight: 13
+Edge vertices 18:
+	_id
+	plot
+	genres
+	runtime
+	title
+	num_mflix_comments
+	poster
+	countries
+	fullplot
+	languages
+	released
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	type
+--------------------------------------------------
+Edge weight: 4
+Edge vertices 17:
+	_id
+	plot
+	runtime
+	cast
+	num_mflix_comments
+	title
+	fullplot
+	languages
+	released
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	countries
+	type
+--------------------------------------------------
+Edge weight: 3
+Edge vertices 17:
+	_id
+	plot
+	genres
+	runtime
+	cast
+	poster
+	title
+	fullplot
+	languages
+	released
+	rated
+	awards
+	lastupdated
+	year
+	imdb
+	countries
+	type
+--------------------------------------------------
+Edge weight: 7
+Edge vertices 19:
+	_id
+	plot
+	genres
+	runtime
+	rated
+	cast
+	num_mflix_comments
+	poster
+	title
+	lastupdated
+	languages
+	released
+	directors
+	writers
+	awards
+	year
+	imdb
+	countries
+	type
+--------------------------------------------------
+Edge weight: 6
+Edge vertices 15:
+	_id
+	countries
+	runtime
+	cast
+	num_mflix_comments
+	title
+	lastupdated
+	languages
+	released
+	directors
+	writers
+	awards
+	year
+	imdb
+	type
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 17:
+	_id
+	plot
+	genres
+	runtime
+	title
+	num_mflix_comments
+	countries
+	fullplot
+	languages
+	released
+	directors
+	rated
+	awards
+	lastupdated
+	year
+	imdb
+	type
+--------------------------------------------------
+Edge weight: 14
+Edge vertices 18:
+	_id
+	plot
+	genres
+	runtime
+	title
+	num_mflix_comments
+	poster
+	countries
+	fullplot
+	languages
+	cast
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	type
+--------------------------------------------------
+Edge weight: 11
+Edge vertices 16:
+	_id
+	countries
+	genres
+	runtime
+	cast
+	poster
+	title
+	lastupdated
+	languages
+	released
+	directors
+	writers
+	awards
+	year
+	imdb
+	type
+--------------------------------------------------
+Edge weight: 2
+Edge vertices 16:
+	_id
+	plot
+	genres
+	runtime
+	cast
+	title
+	lastupdated
+	languages
+	released
+	directors
+	writers
+	awards
+	year
+	imdb
+	countries
+	type
+--------------------------------------------------
+Edge weight: 2
+Edge vertices 16:
+	_id
+	plot
+	genres
+	runtime
+	cast
+	num_mflix_comments
+	title
+	fullplot
+	languages
+	released
+	awards
+	lastupdated
+	year
+	imdb
+	countries
+	type
+--------------------------------------------------
+Edge weight: 12
+Edge vertices 18:
+	_id
+	plot
+	genres
+	runtime
+	cast
+	num_mflix_comments
+	poster
+	title
+	fullplot
+	languages
+	released
+	directors
+	awards
+	lastupdated
+	year
+	imdb
+	countries
+	type
+--------------------------------------------------
+Edge weight: 5
+Edge vertices 19:
+	_id
+	plot
+	genres
+	runtime
+	cast
+	num_mflix_comments
+	poster
+	title
+	fullplot
+	languages
+	released
+	directors
+	rated
+	awards
+	lastupdated
+	year
+	imdb
+	countries
+	type
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 14:
+	_id
+	plot
+	genres
+	runtime
+	title
+	countries
+	fullplot
+	languages
+	cast
+	awards
+	lastupdated
+	year
+	imdb
+	type
+--------------------------------------------------
+Edge weight: 4
+Edge vertices 17:
+	_id
+	plot
+	genres
+	runtime
+	cast
+	num_mflix_comments
+	title
+	lastupdated
+	languages
+	released
+	directors
+	writers
+	awards
+	year
+	imdb
+	countries
+	type
+--------------------------------------------------
+Edge weight: 3
+Edge vertices 18:
+	_id
+	plot
+	genres
+	runtime
+	cast
+	poster
+	title
+	fullplot
+	languages
+	released
+	directors
+	rated
+	awards
+	lastupdated
+	year
+	imdb
+	countries
+	type
+--------------------------------------------------
+Edge weight: 2
+Edge vertices 14:
+	_id
+	countries
+	runtime
+	cast
+	title
+	lastupdated
+	languages
+	released
+	directors
+	writers
+	awards
+	year
+	imdb
+	type
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 18:
+	_id
+	plot
+	genres
+	runtime
+	rated
+	title
+	num_mflix_comments
+	countries
+	fullplot
+	languages
+	cast
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	type
+--------------------------------------------------
+Edge weight: 2
+Edge vertices 18:
+	_id
+	plot
+	genres
+	runtime
+	rated
+	title
+	poster
+	countries
+	fullplot
+	languages
+	cast
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	type
+--------------------------------------------------
+Edge weight: 8
+Edge vertices 18:
+	_id
+	plot
+	genres
+	runtime
+	cast
+	num_mflix_comments
+	poster
+	title
+	lastupdated
+	languages
+	released
+	directors
+	writers
+	awards
+	year
+	imdb
+	countries
+	type
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 16:
+	_id
+	plot
+	runtime
+	cast
+	num_mflix_comments
+	poster
+	title
+	fullplot
+	languages
+	released
+	awards
+	lastupdated
+	year
+	imdb
+	countries
+	type
+--------------------------------------------------
+Edge weight: 4
+Edge vertices 16:
+	_id
+	plot
+	genres
+	runtime
+	cast
+	poster
+	title
+	fullplot
+	languages
+	released
+	awards
+	lastupdated
+	year
+	imdb
+	countries
+	type
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 16:
+	_id
+	plot
+	genres
+	runtime
+	cast
+	num_mflix_comments
+	poster
+	title
+	lastupdated
+	languages
+	released
+	awards
+	year
+	imdb
+	countries
+	type
+--------------------------------------------------
+Edge weight: 48
+Edge vertices 19:
+	_id
+	plot
+	genres
+	runtime
+	metacritic
+	cast
+	poster
+	title
+	fullplot
+	languages
+	released
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	countries
+	type
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 17:
+	_id
+	plot
+	genres
+	runtime
+	rated
+	title
+	poster
+	countries
+	fullplot
+	released
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	type
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 17:
+	_id
+	countries
+	genres
+	runtime
+	rated
+	cast
+	poster
+	title
+	lastupdated
+	languages
+	released
+	directors
+	writers
+	awards
+	year
+	imdb
+	type
+--------------------------------------------------
+Edge weight: 7
+Edge vertices 17:
+	_id
+	plot
+	genres
+	runtime
+	title
+	poster
+	countries
+	fullplot
+	languages
+	cast
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	type
+--------------------------------------------------
+Edge weight: 4
+Edge vertices 19:
+	_id
+	plot
+	genres
+	runtime
+	cast
+	num_mflix_comments
+	poster
+	title
+	fullplot
+	languages
+	released
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	countries
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 14:
+	_id
+	genres
+	runtime
+	title
+	countries
+	lastupdated
+	released
+	directors
+	writers
+	awards
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 17:
+	_id
+	plot
+	runtime
+	rated
+	title
+	countries
+	fullplot
+	languages
+	cast
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 73
+Edge vertices 20:
+	_id
+	plot
+	genres
+	runtime
+	metacritic
+	cast
+	num_mflix_comments
+	poster
+	title
+	fullplot
+	languages
+	released
+	directors
+	awards
+	lastupdated
+	year
+	imdb
+	countries
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 4
+Edge vertices 16:
+	_id
+	plot
+	genres
+	runtime
+	title
+	countries
+	fullplot
+	languages
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 23
+Edge vertices 17:
+	_id
+	plot
+	genres
+	countries
+	cast
+	title
+	fullplot
+	languages
+	released
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 5
+Edge vertices 15:
+	_id
+	countries
+	genres
+	runtime
+	cast
+	title
+	lastupdated
+	released
+	directors
+	writers
+	awards
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 9
+Edge vertices 18:
+	_id
+	plot
+	genres
+	runtime
+	title
+	poster
+	countries
+	fullplot
+	languages
+	released
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 6
+Edge vertices 16:
+	_id
+	plot
+	genres
+	runtime
+	title
+	countries
+	fullplot
+	languages
+	released
+	directors
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 20
+Edge vertices 18:
+	_id
+	plot
+	genres
+	runtime
+	cast
+	poster
+	title
+	fullplot
+	languages
+	released
+	rated
+	awards
+	lastupdated
+	year
+	imdb
+	countries
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 6
+Edge vertices 17:
+	_id
+	plot
+	genres
+	runtime
+	title
+	countries
+	fullplot
+	num_mflix_comments
+	cast
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 6
+Edge vertices 16:
+	_id
+	plot
+	genres
+	runtime
+	title
+	countries
+	fullplot
+	languages
+	cast
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	type
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 19:
+	_id
+	plot
+	genres
+	runtime
+	rated
+	title
+	poster
+	countries
+	fullplot
+	languages
+	released
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 2
+Edge vertices 14:
+	_id
+	countries
+	cast
+	num_mflix_comments
+	title
+	lastupdated
+	languages
+	released
+	directors
+	writers
+	awards
+	year
+	imdb
+	type
+--------------------------------------------------
+Edge weight: 3
+Edge vertices 18:
+	_id
+	plot
+	genres
+	runtime
+	title
+	num_mflix_comments
+	poster
+	countries
+	fullplot
+	languages
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 2
+Edge vertices 18:
+	_id
+	plot
+	genres
+	runtime
+	title
+	poster
+	countries
+	fullplot
+	languages
+	cast
+	directors
+	rated
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 3
+Edge vertices 17:
+	_id
+	plot
+	genres
+	runtime
+	title
+	poster
+	countries
+	fullplot
+	released
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 8
+Edge vertices 18:
+	_id
+	plot
+	genres
+	runtime
+	cast
+	num_mflix_comments
+	title
+	fullplot
+	countries
+	released
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 4
+Edge vertices 17:
+	_id
+	countries
+	runtime
+	cast
+	num_mflix_comments
+	poster
+	title
+	lastupdated
+	languages
+	released
+	directors
+	writers
+	awards
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 4
+Edge vertices 19:
+	_id
+	plot
+	genres
+	countries
+	rated
+	cast
+	num_mflix_comments
+	title
+	fullplot
+	languages
+	released
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 5
+Edge vertices 17:
+	_id
+	countries
+	genres
+	runtime
+	cast
+	num_mflix_comments
+	poster
+	title
+	lastupdated
+	languages
+	released
+	directors
+	awards
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 3
+Edge vertices 16:
+	_id
+	countries
+	genres
+	runtime
+	cast
+	title
+	lastupdated
+	num_mflix_comments
+	released
+	directors
+	writers
+	awards
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 17:
+	_id
+	plot
+	genres
+	runtime
+	cast
+	poster
+	title
+	lastupdated
+	languages
+	released
+	writers
+	awards
+	year
+	imdb
+	countries
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 5
+Edge vertices 16:
+	_id
+	plot
+	genres
+	runtime
+	cast
+	title
+	fullplot
+	languages
+	released
+	awards
+	lastupdated
+	year
+	imdb
+	countries
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 38
+Edge vertices 18:
+	_id
+	plot
+	genres
+	countries
+	cast
+	poster
+	title
+	fullplot
+	languages
+	released
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 13
+Edge vertices 18:
+	_id
+	plot
+	genres
+	countries
+	cast
+	num_mflix_comments
+	poster
+	title
+	fullplot
+	languages
+	released
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	type
+--------------------------------------------------
+Edge weight: 8
+Edge vertices 18:
+	_id
+	plot
+	genres
+	runtime
+	cast
+	num_mflix_comments
+	poster
+	title
+	fullplot
+	languages
+	released
+	rated
+	awards
+	lastupdated
+	year
+	imdb
+	countries
+	type
+--------------------------------------------------
+Edge weight: 9
+Edge vertices 17:
+	_id
+	plot
+	genres
+	runtime
+	title
+	countries
+	fullplot
+	languages
+	released
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 19
+Edge vertices 20:
+	_id
+	plot
+	genres
+	runtime
+	metacritic
+	rated
+	cast
+	poster
+	title
+	lastupdated
+	languages
+	released
+	directors
+	writers
+	awards
+	year
+	imdb
+	countries
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 52
+Edge vertices 19:
+	_id
+	plot
+	genres
+	countries
+	cast
+	num_mflix_comments
+	poster
+	title
+	fullplot
+	languages
+	released
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 6
+Edge vertices 17:
+	_id
+	plot
+	runtime
+	cast
+	title
+	fullplot
+	languages
+	released
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	countries
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 2
+Edge vertices 16:
+	_id
+	countries
+	genres
+	runtime
+	cast
+	num_mflix_comments
+	poster
+	title
+	lastupdated
+	languages
+	released
+	awards
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 3
+Edge vertices 15:
+	_id
+	countries
+	genres
+	runtime
+	cast
+	title
+	lastupdated
+	num_mflix_comments
+	released
+	directors
+	awards
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 6
+Edge vertices 16:
+	_id
+	num_mflix_comments
+	genres
+	runtime
+	title
+	countries
+	lastupdated
+	languages
+	released
+	directors
+	writers
+	awards
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 10
+Edge vertices 18:
+	_id
+	plot
+	genres
+	countries
+	cast
+	num_mflix_comments
+	poster
+	title
+	fullplot
+	languages
+	released
+	directors
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 19:
+	_id
+	plot
+	runtime
+	rated
+	cast
+	num_mflix_comments
+	title
+	fullplot
+	languages
+	released
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	countries
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 15
+Edge vertices 20:
+	_id
+	plot
+	genres
+	countries
+	rated
+	cast
+	num_mflix_comments
+	poster
+	title
+	fullplot
+	languages
+	released
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 4
+Edge vertices 16:
+	_id
+	countries
+	genres
+	runtime
+	cast
+	poster
+	title
+	lastupdated
+	languages
+	released
+	directors
+	awards
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 16:
+	_id
+	countries
+	runtime
+	rated
+	cast
+	title
+	lastupdated
+	languages
+	released
+	directors
+	writers
+	awards
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 10
+Edge vertices 17:
+	_id
+	plot
+	genres
+	runtime
+	title
+	countries
+	fullplot
+	num_mflix_comments
+	released
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 16:
+	_id
+	genres
+	runtime
+	title
+	poster
+	countries
+	lastupdated
+	languages
+	cast
+	directors
+	writers
+	awards
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 14:
+	_id
+	genres
+	runtime
+	title
+	countries
+	lastupdated
+	num_mflix_comments
+	cast
+	directors
+	awards
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 39
+Edge vertices 19:
+	_id
+	plot
+	genres
+	runtime
+	metacritic
+	cast
+	poster
+	title
+	fullplot
+	languages
+	released
+	directors
+	awards
+	lastupdated
+	year
+	imdb
+	countries
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 2
+Edge vertices 18:
+	_id
+	plot
+	genres
+	rated
+	title
+	poster
+	countries
+	fullplot
+	languages
+	cast
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 2
+Edge vertices 20:
+	_id
+	plot
+	runtime
+	metacritic
+	cast
+	num_mflix_comments
+	poster
+	title
+	fullplot
+	languages
+	released
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	countries
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 13:
+	_id
+	genres
+	runtime
+	title
+	countries
+	lastupdated
+	num_mflix_comments
+	released
+	directors
+	awards
+	year
+	imdb
+	type
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 18:
+	_id
+	plot
+	genres
+	runtime
+	title
+	num_mflix_comments
+	countries
+	fullplot
+	languages
+	cast
+	directors
+	rated
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 15:
+	_id
+	plot
+	genres
+	runtime
+	title
+	countries
+	fullplot
+	cast
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	type
+--------------------------------------------------
+Edge weight: 3
+Edge vertices 17:
+	_id
+	plot
+	genres
+	runtime
+	title
+	num_mflix_comments
+	countries
+	fullplot
+	languages
+	cast
+	directors
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 16:
+	_id
+	genres
+	runtime
+	metacritic
+	title
+	poster
+	countries
+	lastupdated
+	released
+	directors
+	writers
+	awards
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 13
+Edge vertices 17:
+	_id
+	plot
+	genres
+	runtime
+	title
+	num_mflix_comments
+	countries
+	fullplot
+	languages
+	released
+	directors
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 2
+Edge vertices 14:
+	_id
+	genres
+	runtime
+	title
+	countries
+	lastupdated
+	num_mflix_comments
+	released
+	directors
+	awards
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 4
+Edge vertices 16:
+	_id
+	plot
+	genres
+	runtime
+	title
+	countries
+	fullplot
+	released
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 2
+Edge vertices 18:
+	_id
+	countries
+	genres
+	runtime
+	rated
+	cast
+	num_mflix_comments
+	poster
+	title
+	lastupdated
+	languages
+	released
+	directors
+	writers
+	awards
+	year
+	imdb
+	type
+--------------------------------------------------
+Edge weight: 3
+Edge vertices 17:
+	_id
+	plot
+	genres
+	runtime
+	cast
+	num_mflix_comments
+	title
+	fullplot
+	languages
+	released
+	awards
+	lastupdated
+	year
+	imdb
+	countries
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 18:
+	_id
+	num_mflix_comments
+	genres
+	runtime
+	rated
+	title
+	poster
+	countries
+	lastupdated
+	languages
+	cast
+	directors
+	writers
+	awards
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 4
+Edge vertices 19:
+	_id
+	countries
+	genres
+	runtime
+	metacritic
+	rated
+	cast
+	poster
+	title
+	lastupdated
+	languages
+	released
+	directors
+	writers
+	awards
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 20:
+	_id
+	plot
+	genres
+	runtime
+	metacritic
+	cast
+	num_mflix_comments
+	poster
+	title
+	fullplot
+	countries
+	released
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 18:
+	_id
+	num_mflix_comments
+	genres
+	runtime
+	metacritic
+	title
+	poster
+	countries
+	lastupdated
+	languages
+	cast
+	directors
+	writers
+	awards
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 6
+Edge vertices 19:
+	_id
+	plot
+	genres
+	runtime
+	metacritic
+	title
+	poster
+	countries
+	fullplot
+	languages
+	released
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 2
+Edge vertices 16:
+	_id
+	plot
+	genres
+	runtime
+	title
+	num_mflix_comments
+	countries
+	lastupdated
+	languages
+	directors
+	writers
+	awards
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 5
+Edge vertices 21:
+	_id
+	plot
+	genres
+	runtime
+	metacritic
+	rated
+	cast
+	num_mflix_comments
+	title
+	fullplot
+	languages
+	released
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	countries
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 100
+Edge vertices 20:
+	_id
+	plot
+	genres
+	runtime
+	metacritic
+	cast
+	num_mflix_comments
+	poster
+	title
+	fullplot
+	languages
+	released
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	countries
+	type
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 17:
+	_id
+	plot
+	genres
+	runtime
+	title
+	countries
+	fullplot
+	languages
+	cast
+	directors
+	rated
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 15:
+	_id
+	genres
+	runtime
+	title
+	countries
+	lastupdated
+	num_mflix_comments
+	cast
+	directors
+	writers
+	awards
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 18:
+	_id
+	plot
+	genres
+	runtime
+	cast
+	num_mflix_comments
+	poster
+	title
+	fullplot
+	countries
+	released
+	directors
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 2
+Edge vertices 16:
+	_id
+	countries
+	genres
+	cast
+	num_mflix_comments
+	poster
+	title
+	lastupdated
+	languages
+	released
+	directors
+	writers
+	awards
+	year
+	imdb
+	type
+--------------------------------------------------
+Edge weight: 3
+Edge vertices 16:
+	_id
+	countries
+	genres
+	cast
+	poster
+	title
+	lastupdated
+	languages
+	released
+	directors
+	writers
+	awards
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 4
+Edge vertices 18:
+	_id
+	countries
+	genres
+	runtime
+	metacritic
+	cast
+	poster
+	title
+	lastupdated
+	languages
+	released
+	directors
+	writers
+	awards
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 17:
+	_id
+	plot
+	genres
+	runtime
+	title
+	poster
+	countries
+	fullplot
+	num_mflix_comments
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 8
+Edge vertices 19:
+	_id
+	plot
+	genres
+	runtime
+	metacritic
+	cast
+	poster
+	title
+	lastupdated
+	languages
+	released
+	directors
+	writers
+	awards
+	year
+	imdb
+	countries
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 5
+Edge vertices 20:
+	_id
+	plot
+	genres
+	runtime
+	metacritic
+	title
+	num_mflix_comments
+	poster
+	countries
+	fullplot
+	languages
+	cast
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 9
+Edge vertices 15:
+	_id
+	genres
+	runtime
+	title
+	countries
+	lastupdated
+	languages
+	released
+	directors
+	writers
+	awards
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 14:
+	_id
+	plot
+	genres
+	runtime
+	title
+	countries
+	fullplot
+	cast
+	directors
+	awards
+	lastupdated
+	year
+	imdb
+	type
+--------------------------------------------------
+Edge weight: 2
+Edge vertices 14:
+	_id
+	countries
+	genres
+	cast
+	title
+	lastupdated
+	languages
+	released
+	directors
+	awards
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 15:
+	_id
+	plot
+	genres
+	runtime
+	title
+	countries
+	lastupdated
+	num_mflix_comments
+	released
+	directors
+	writers
+	awards
+	year
+	imdb
+	type
+--------------------------------------------------
+Edge weight: 4
+Edge vertices 19:
+	_id
+	countries
+	genres
+	runtime
+	metacritic
+	cast
+	num_mflix_comments
+	poster
+	title
+	lastupdated
+	languages
+	released
+	directors
+	writers
+	awards
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 16:
+	_id
+	plot
+	genres
+	runtime
+	title
+	countries
+	fullplot
+	num_mflix_comments
+	cast
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	type
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 18:
+	_id
+	plot
+	genres
+	runtime
+	title
+	num_mflix_comments
+	poster
+	countries
+	fullplot
+	languages
+	directors
+	rated
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 2
+Edge vertices 20:
+	_id
+	plot
+	genres
+	runtime
+	metacritic
+	rated
+	title
+	poster
+	countries
+	fullplot
+	languages
+	cast
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 2
+Edge vertices 18:
+	_id
+	plot
+	genres
+	title
+	num_mflix_comments
+	poster
+	countries
+	fullplot
+	languages
+	cast
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 9
+Edge vertices 17:
+	_id
+	plot
+	genres
+	countries
+	cast
+	num_mflix_comments
+	poster
+	title
+	fullplot
+	languages
+	released
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 6
+Edge vertices 20:
+	_id
+	countries
+	genres
+	runtime
+	metacritic
+	rated
+	cast
+	num_mflix_comments
+	poster
+	title
+	lastupdated
+	languages
+	released
+	directors
+	writers
+	awards
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 2
+Edge vertices 16:
+	_id
+	countries
+	runtime
+	cast
+	poster
+	title
+	lastupdated
+	languages
+	released
+	directors
+	writers
+	awards
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 15:
+	_id
+	plot
+	genres
+	title
+	countries
+	fullplot
+	languages
+	cast
+	directors
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 20:
+	_id
+	plot
+	genres
+	runtime
+	metacritic
+	rated
+	cast
+	title
+	fullplot
+	languages
+	released
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	countries
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 2
+Edge vertices 17:
+	_id
+	plot
+	genres
+	runtime
+	cast
+	num_mflix_comments
+	poster
+	title
+	lastupdated
+	languages
+	released
+	awards
+	year
+	imdb
+	countries
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 14:
+	_id
+	genres
+	runtime
+	title
+	countries
+	lastupdated
+	cast
+	directors
+	writers
+	awards
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 18:
+	_id
+	plot
+	genres
+	countries
+	metacritic
+	cast
+	poster
+	title
+	fullplot
+	languages
+	released
+	directors
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 3
+Edge vertices 17:
+	_id
+	plot
+	genres
+	title
+	num_mflix_comments
+	countries
+	fullplot
+	languages
+	cast
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 15
+Edge vertices 20:
+	_id
+	plot
+	genres
+	runtime
+	metacritic
+	title
+	num_mflix_comments
+	poster
+	countries
+	fullplot
+	languages
+	released
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 5
+Edge vertices 18:
+	_id
+	plot
+	runtime
+	cast
+	poster
+	title
+	fullplot
+	languages
+	released
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	countries
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 2
+Edge vertices 17:
+	_id
+	plot
+	runtime
+	cast
+	num_mflix_comments
+	title
+	fullplot
+	countries
+	released
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 6
+Edge vertices 15:
+	_id
+	num_mflix_comments
+	genres
+	runtime
+	title
+	countries
+	lastupdated
+	languages
+	released
+	directors
+	awards
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 16:
+	_id
+	plot
+	runtime
+	title
+	countries
+	fullplot
+	languages
+	cast
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 19:
+	_id
+	countries
+	genres
+	runtime
+	metacritic
+	rated
+	cast
+	num_mflix_comments
+	title
+	lastupdated
+	languages
+	released
+	directors
+	writers
+	awards
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 16:
+	_id
+	plot
+	runtime
+	title
+	countries
+	fullplot
+	num_mflix_comments
+	cast
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 13:
+	_id
+	genres
+	runtime
+	title
+	countries
+	lastupdated
+	directors
+	writers
+	awards
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 14:
+	_id
+	num_mflix_comments
+	genres
+	title
+	countries
+	lastupdated
+	languages
+	released
+	directors
+	writers
+	awards
+	year
+	imdb
+	type
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 17:
+	_id
+	plot
+	genres
+	runtime
+	title
+	num_mflix_comments
+	countries
+	fullplot
+	languages
+	directors
+	rated
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 6
+Edge vertices 15:
+	_id
+	genres
+	runtime
+	title
+	countries
+	lastupdated
+	num_mflix_comments
+	released
+	directors
+	writers
+	awards
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 2
+Edge vertices 14:
+	_id
+	num_mflix_comments
+	genres
+	runtime
+	title
+	countries
+	lastupdated
+	languages
+	directors
+	writers
+	awards
+	year
+	imdb
+	type
+--------------------------------------------------
+Edge weight: 19
+Edge vertices 17:
+	_id
+	plot
+	genres
+	countries
+	cast
+	num_mflix_comments
+	title
+	fullplot
+	languages
+	released
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	type
+--------------------------------------------------
+Edge weight: 2
+Edge vertices 18:
+	_id
+	plot
+	countries
+	cast
+	num_mflix_comments
+	poster
+	title
+	fullplot
+	languages
+	released
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 14:
+	_id
+	num_mflix_comments
+	genres
+	title
+	countries
+	lastupdated
+	languages
+	cast
+	directors
+	awards
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 19:
+	_id
+	plot
+	runtime
+	metacritic
+	cast
+	num_mflix_comments
+	title
+	fullplot
+	languages
+	released
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	countries
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 19:
+	_id
+	plot
+	genres
+	runtime
+	metacritic
+	cast
+	num_mflix_comments
+	title
+	fullplot
+	languages
+	released
+	directors
+	awards
+	lastupdated
+	year
+	imdb
+	countries
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 15:
+	_id
+	num_mflix_comments
+	genres
+	runtime
+	title
+	countries
+	lastupdated
+	languages
+	directors
+	writers
+	awards
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 14:
+	_id
+	num_mflix_comments
+	genres
+	runtime
+	title
+	countries
+	lastupdated
+	languages
+	cast
+	awards
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 17:
+	_id
+	num_mflix_comments
+	genres
+	runtime
+	title
+	poster
+	countries
+	lastupdated
+	languages
+	released
+	directors
+	writers
+	awards
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 16:
+	_id
+	plot
+	genres
+	runtime
+	title
+	countries
+	fullplot
+	num_mflix_comments
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 16
+Edge vertices 20:
+	_id
+	plot
+	genres
+	runtime
+	metacritic
+	cast
+	num_mflix_comments
+	title
+	fullplot
+	languages
+	released
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	countries
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 3
+Edge vertices 19:
+	_id
+	plot
+	genres
+	runtime
+	metacritic
+	title
+	poster
+	countries
+	fullplot
+	languages
+	cast
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 8
+Edge vertices 20:
+	_id
+	plot
+	genres
+	runtime
+	metacritic
+	cast
+	num_mflix_comments
+	poster
+	title
+	lastupdated
+	languages
+	released
+	directors
+	writers
+	awards
+	year
+	imdb
+	countries
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 3
+Edge vertices 21:
+	_id
+	plot
+	genres
+	runtime
+	metacritic
+	rated
+	cast
+	num_mflix_comments
+	poster
+	title
+	fullplot
+	countries
+	released
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 12:
+	_id
+	title
+	countries
+	lastupdated
+	num_mflix_comments
+	cast
+	directors
+	awards
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 2
+Edge vertices 19:
+	_id
+	plot
+	genres
+	runtime
+	metacritic
+	title
+	num_mflix_comments
+	poster
+	countries
+	fullplot
+	languages
+	cast
+	directors
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 19:
+	_id
+	plot
+	runtime
+	metacritic
+	cast
+	num_mflix_comments
+	poster
+	title
+	fullplot
+	countries
+	released
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 4
+Edge vertices 18:
+	_id
+	countries
+	genres
+	runtime
+	metacritic
+	cast
+	num_mflix_comments
+	title
+	lastupdated
+	languages
+	released
+	directors
+	writers
+	awards
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 13:
+	_id
+	runtime
+	title
+	poster
+	countries
+	lastupdated
+	languages
+	directors
+	awards
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 3
+Edge vertices 17:
+	_id
+	countries
+	genres
+	cast
+	num_mflix_comments
+	poster
+	title
+	lastupdated
+	languages
+	released
+	directors
+	writers
+	awards
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 2
+Edge vertices 15:
+	_id
+	plot
+	genres
+	countries
+	cast
+	poster
+	title
+	fullplot
+	languages
+	released
+	awards
+	lastupdated
+	year
+	imdb
+	type
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 18:
+	_id
+	countries
+	genres
+	metacritic
+	cast
+	num_mflix_comments
+	poster
+	title
+	lastupdated
+	languages
+	released
+	directors
+	writers
+	awards
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 2
+Edge vertices 16:
+	_id
+	plot
+	genres
+	runtime
+	title
+	poster
+	countries
+	fullplot
+	released
+	directors
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 16
+Edge vertices 19:
+	_id
+	plot
+	genres
+	runtime
+	metacritic
+	title
+	num_mflix_comments
+	poster
+	countries
+	fullplot
+	languages
+	released
+	directors
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 8
+Edge vertices 20:
+	_id
+	plot
+	genres
+	runtime
+	metacritic
+	title
+	num_mflix_comments
+	poster
+	countries
+	fullplot
+	languages
+	released
+	directors
+	rated
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 16:
+	_id
+	plot
+	genres
+	runtime
+	cast
+	title
+	fullplot
+	countries
+	released
+	directors
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 2
+Edge vertices 18:
+	_id
+	countries
+	genres
+	runtime
+	metacritic
+	rated
+	cast
+	title
+	lastupdated
+	languages
+	released
+	directors
+	writers
+	awards
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 2
+Edge vertices 14:
+	_id
+	genres
+	runtime
+	title
+	countries
+	lastupdated
+	num_mflix_comments
+	directors
+	writers
+	awards
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 5
+Edge vertices 21:
+	_id
+	plot
+	genres
+	runtime
+	metacritic
+	rated
+	title
+	num_mflix_comments
+	poster
+	countries
+	fullplot
+	languages
+	cast
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 20:
+	_id
+	plot
+	genres
+	runtime
+	metacritic
+	cast
+	num_mflix_comments
+	title
+	fullplot
+	languages
+	released
+	directors
+	rated
+	awards
+	lastupdated
+	year
+	imdb
+	countries
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 19:
+	_id
+	plot
+	genres
+	runtime
+	metacritic
+	cast
+	title
+	fullplot
+	languages
+	released
+	directors
+	rated
+	awards
+	lastupdated
+	year
+	imdb
+	countries
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 2
+Edge vertices 20:
+	_id
+	plot
+	genres
+	runtime
+	metacritic
+	rated
+	title
+	num_mflix_comments
+	poster
+	countries
+	fullplot
+	languages
+	cast
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	type
+--------------------------------------------------
+Edge weight: 19
+Edge vertices 19:
+	_id
+	plot
+	genres
+	runtime
+	metacritic
+	cast
+	poster
+	title
+	fullplot
+	languages
+	released
+	directors
+	rated
+	awards
+	lastupdated
+	year
+	imdb
+	countries
+	type
+--------------------------------------------------
+Edge weight: 15
+Edge vertices 19:
+	_id
+	plot
+	genres
+	runtime
+	metacritic
+	cast
+	num_mflix_comments
+	poster
+	title
+	fullplot
+	languages
+	released
+	directors
+	awards
+	lastupdated
+	year
+	imdb
+	countries
+	type
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 19:
+	_id
+	plot
+	genres
+	runtime
+	metacritic
+	rated
+	title
+	poster
+	countries
+	fullplot
+	languages
+	cast
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	type
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 18:
+	_id
+	plot
+	genres
+	runtime
+	metacritic
+	title
+	num_mflix_comments
+	poster
+	countries
+	fullplot
+	languages
+	released
+	directors
+	awards
+	lastupdated
+	year
+	imdb
+	type
+--------------------------------------------------
+Edge weight: 7
+Edge vertices 20:
+	_id
+	plot
+	genres
+	runtime
+	metacritic
+	rated
+	cast
+	num_mflix_comments
+	poster
+	title
+	lastupdated
+	languages
+	released
+	directors
+	writers
+	awards
+	year
+	imdb
+	countries
+	type
+--------------------------------------------------
+Edge weight: 8
+Edge vertices 19:
+	_id
+	plot
+	genres
+	runtime
+	metacritic
+	rated
+	cast
+	poster
+	title
+	lastupdated
+	languages
+	released
+	directors
+	writers
+	awards
+	year
+	imdb
+	countries
+	type
+--------------------------------------------------
+Edge weight: 16
+Edge vertices 20:
+	_id
+	plot
+	genres
+	runtime
+	metacritic
+	cast
+	num_mflix_comments
+	poster
+	title
+	fullplot
+	languages
+	released
+	directors
+	rated
+	awards
+	lastupdated
+	year
+	imdb
+	countries
+	type
+--------------------------------------------------
+Edge weight: 7
+Edge vertices 19:
+	_id
+	plot
+	genres
+	runtime
+	metacritic
+	cast
+	num_mflix_comments
+	title
+	fullplot
+	languages
+	released
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	countries
+	type
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 18:
+	_id
+	plot
+	genres
+	countries
+	rated
+	cast
+	num_mflix_comments
+	title
+	fullplot
+	languages
+	released
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	type
+--------------------------------------------------
+Edge weight: 8
+Edge vertices 15:
+	_id
+	countries
+	genres
+	cast
+	num_mflix_comments
+	title
+	lastupdated
+	languages
+	released
+	directors
+	writers
+	awards
+	year
+	imdb
+	type
+--------------------------------------------------
+Edge weight: 2
+Edge vertices 16:
+	_id
+	plot
+	genres
+	runtime
+	title
+	num_mflix_comments
+	countries
+	fullplot
+	languages
+	cast
+	directors
+	awards
+	lastupdated
+	year
+	imdb
+	type
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 16:
+	_id
+	plot
+	genres
+	runtime
+	cast
+	title
+	fullplot
+	countries
+	released
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	type
+--------------------------------------------------
+Edge weight: 5
+Edge vertices 18:
+	_id
+	plot
+	genres
+	runtime
+	metacritic
+	cast
+	poster
+	title
+	fullplot
+	languages
+	released
+	directors
+	awards
+	lastupdated
+	year
+	imdb
+	countries
+	type
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 14:
+	_id
+	plot
+	runtime
+	title
+	poster
+	countries
+	fullplot
+	languages
+	directors
+	awards
+	lastupdated
+	year
+	imdb
+	type
+--------------------------------------------------
+Edge weight: 5
+Edge vertices 17:
+	_id
+	plot
+	genres
+	runtime
+	cast
+	num_mflix_comments
+	title
+	fullplot
+	countries
+	released
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	type
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 19:
+	_id
+	plot
+	genres
+	runtime
+	metacritic
+	title
+	num_mflix_comments
+	poster
+	countries
+	fullplot
+	languages
+	cast
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	type
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 16:
+	_id
+	plot
+	genres
+	runtime
+	cast
+	poster
+	title
+	lastupdated
+	languages
+	released
+	directors
+	awards
+	year
+	imdb
+	countries
+	type
+--------------------------------------------------
+Edge weight: 3
+Edge vertices 19:
+	_id
+	plot
+	genres
+	runtime
+	metacritic
+	cast
+	num_mflix_comments
+	poster
+	title
+	lastupdated
+	languages
+	released
+	directors
+	writers
+	awards
+	year
+	imdb
+	countries
+	type
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 16:
+	_id
+	plot
+	genres
+	countries
+	cast
+	num_mflix_comments
+	title
+	lastupdated
+	languages
+	released
+	directors
+	writers
+	awards
+	year
+	imdb
+	type
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 18:
+	_id
+	plot
+	genres
+	runtime
+	metacritic
+	title
+	poster
+	countries
+	fullplot
+	languages
+	cast
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	type
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 19:
+	_id
+	plot
+	genres
+	runtime
+	rated
+	cast
+	num_mflix_comments
+	poster
+	title
+	fullplot
+	languages
+	released
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	countries
+	type
+--------------------------------------------------
+Edge weight: 12
+Edge vertices 17:
+	_id
+	plot
+	genres
+	runtime
+	cast
+	num_mflix_comments
+	title
+	fullplot
+	languages
+	released
+	directors
+	awards
+	lastupdated
+	year
+	imdb
+	countries
+	type
+--------------------------------------------------
+Edge weight: 5
+Edge vertices 17:
+	_id
+	plot
+	genres
+	runtime
+	title
+	num_mflix_comments
+	poster
+	countries
+	fullplot
+	languages
+	released
+	directors
+	awards
+	lastupdated
+	year
+	imdb
+	type
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 18:
+	_id
+	plot
+	genres
+	runtime
+	metacritic
+	title
+	num_mflix_comments
+	poster
+	countries
+	fullplot
+	languages
+	cast
+	directors
+	awards
+	lastupdated
+	year
+	imdb
+	type
+--------------------------------------------------
+Edge weight: 6
+Edge vertices 16:
+	_id
+	plot
+	genres
+	runtime
+	title
+	countries
+	fullplot
+	languages
+	released
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	type
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 16:
+	_id
+	plot
+	genres
+	runtime
+	title
+	poster
+	countries
+	fullplot
+	num_mflix_comments
+	released
+	directors
+	awards
+	lastupdated
+	year
+	imdb
+	type
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 13:
+	_id
+	genres
+	runtime
+	title
+	countries
+	lastupdated
+	languages
+	cast
+	directors
+	awards
+	year
+	imdb
+	type
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 17:
+	_id
+	plot
+	genres
+	runtime
+	metacritic
+	cast
+	title
+	fullplot
+	languages
+	released
+	directors
+	awards
+	lastupdated
+	year
+	imdb
+	countries
+	type
+--------------------------------------------------
+Edge weight: 4
+Edge vertices 20:
+	_id
+	plot
+	genres
+	runtime
+	rated
+	title
+	num_mflix_comments
+	poster
+	countries
+	fullplot
+	languages
+	released
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 19:
+	_id
+	plot
+	genres
+	runtime
+	metacritic
+	cast
+	num_mflix_comments
+	title
+	lastupdated
+	languages
+	released
+	directors
+	writers
+	awards
+	year
+	imdb
+	countries
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 3
+Edge vertices 19:
+	_id
+	plot
+	genres
+	runtime
+	metacritic
+	cast
+	num_mflix_comments
+	poster
+	title
+	fullplot
+	languages
+	released
+	awards
+	lastupdated
+	year
+	imdb
+	countries
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 2
+Edge vertices 15:
+	_id
+	num_mflix_comments
+	genres
+	title
+	countries
+	lastupdated
+	languages
+	released
+	directors
+	writers
+	awards
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 2
+Edge vertices 17:
+	_id
+	countries
+	genres
+	runtime
+	metacritic
+	cast
+	title
+	lastupdated
+	languages
+	released
+	directors
+	writers
+	awards
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 3
+Edge vertices 20:
+	_id
+	plot
+	genres
+	runtime
+	metacritic
+	rated
+	title
+	poster
+	countries
+	fullplot
+	languages
+	released
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 5
+Edge vertices 17:
+	_id
+	plot
+	genres
+	countries
+	cast
+	num_mflix_comments
+	title
+	fullplot
+	languages
+	released
+	directors
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 3
+Edge vertices 17:
+	_id
+	plot
+	genres
+	countries
+	cast
+	poster
+	title
+	fullplot
+	languages
+	released
+	directors
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 2
+Edge vertices 18:
+	_id
+	plot
+	genres
+	runtime
+	metacritic
+	title
+	num_mflix_comments
+	countries
+	fullplot
+	languages
+	released
+	directors
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 2
+Edge vertices 19:
+	_id
+	plot
+	genres
+	rated
+	title
+	num_mflix_comments
+	poster
+	countries
+	fullplot
+	languages
+	cast
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 17:
+	_id
+	countries
+	genres
+	runtime
+	metacritic
+	cast
+	poster
+	title
+	lastupdated
+	languages
+	released
+	directors
+	awards
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 18:
+	_id
+	plot
+	runtime
+	cast
+	num_mflix_comments
+	poster
+	title
+	lastupdated
+	languages
+	released
+	directors
+	writers
+	awards
+	year
+	imdb
+	countries
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 15:
+	_id
+	genres
+	runtime
+	title
+	poster
+	countries
+	lastupdated
+	languages
+	released
+	directors
+	awards
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 2
+Edge vertices 19:
+	_id
+	plot
+	genres
+	runtime
+	metacritic
+	title
+	num_mflix_comments
+	countries
+	fullplot
+	languages
+	released
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 19:
+	_id
+	plot
+	genres
+	countries
+	cast
+	num_mflix_comments
+	poster
+	title
+	fullplot
+	languages
+	released
+	directors
+	rated
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 9
+Edge vertices 17:
+	_id
+	plot
+	genres
+	runtime
+	title
+	poster
+	countries
+	fullplot
+	languages
+	released
+	directors
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 2
+Edge vertices 20:
+	_id
+	plot
+	genres
+	runtime
+	rated
+	cast
+	num_mflix_comments
+	poster
+	title
+	fullplot
+	languages
+	released
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	countries
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 4
+Edge vertices 16:
+	_id
+	plot
+	genres
+	countries
+	cast
+	poster
+	title
+	fullplot
+	languages
+	released
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 2
+Edge vertices 18:
+	_id
+	plot
+	genres
+	countries
+	cast
+	num_mflix_comments
+	poster
+	title
+	lastupdated
+	languages
+	released
+	directors
+	writers
+	awards
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 18:
+	_id
+	plot
+	genres
+	runtime
+	rated
+	cast
+	num_mflix_comments
+	title
+	fullplot
+	countries
+	released
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	type
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 15:
+	_id
+	num_mflix_comments
+	genres
+	title
+	countries
+	lastupdated
+	languages
+	cast
+	directors
+	writers
+	awards
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 3
+Edge vertices 18:
+	_id
+	plot
+	genres
+	runtime
+	cast
+	num_mflix_comments
+	poster
+	title
+	lastupdated
+	languages
+	released
+	directors
+	awards
+	year
+	imdb
+	countries
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 16:
+	_id
+	plot
+	genres
+	countries
+	cast
+	num_mflix_comments
+	title
+	fullplot
+	languages
+	released
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 15:
+	_id
+	genres
+	runtime
+	metacritic
+	title
+	countries
+	lastupdated
+	languages
+	released
+	directors
+	awards
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 19:
+	_id
+	plot
+	genres
+	runtime
+	metacritic
+	title
+	poster
+	countries
+	fullplot
+	num_mflix_comments
+	released
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 2
+Edge vertices 14:
+	_id
+	num_mflix_comments
+	genres
+	title
+	countries
+	lastupdated
+	languages
+	released
+	directors
+	awards
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 2
+Edge vertices 20:
+	_id
+	plot
+	genres
+	countries
+	metacritic
+	rated
+	cast
+	poster
+	title
+	fullplot
+	languages
+	released
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 16:
+	_id
+	plot
+	genres
+	runtime
+	title
+	countries
+	lastupdated
+	languages
+	cast
+	directors
+	writers
+	awards
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 18:
+	_id
+	plot
+	genres
+	runtime
+	rated
+	cast
+	num_mflix_comments
+	title
+	lastupdated
+	countries
+	released
+	directors
+	writers
+	awards
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 19:
+	_id
+	plot
+	genres
+	runtime
+	metacritic
+	cast
+	poster
+	title
+	lastupdated
+	languages
+	released
+	directors
+	rated
+	awards
+	year
+	imdb
+	countries
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 11
+Edge vertices 18:
+	_id
+	plot
+	genres
+	runtime
+	title
+	num_mflix_comments
+	poster
+	countries
+	fullplot
+	languages
+	released
+	directors
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 18:
+	_id
+	plot
+	genres
+	runtime
+	cast
+	poster
+	title
+	fullplot
+	languages
+	released
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	countries
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 16:
+	_id
+	plot
+	genres
+	countries
+	cast
+	title
+	lastupdated
+	languages
+	released
+	directors
+	writers
+	awards
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 2
+Edge vertices 16:
+	_id
+	plot
+	genres
+	title
+	num_mflix_comments
+	countries
+	fullplot
+	languages
+	cast
+	directors
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 18:
+	_id
+	plot
+	genres
+	runtime
+	rated
+	cast
+	poster
+	title
+	fullplot
+	languages
+	released
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	countries
+	type
+--------------------------------------------------
+Edge weight: 2
+Edge vertices 16:
+	_id
+	plot
+	genres
+	countries
+	cast
+	title
+	fullplot
+	languages
+	released
+	directors
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 15:
+	_id
+	countries
+	genres
+	runtime
+	cast
+	num_mflix_comments
+	title
+	lastupdated
+	languages
+	released
+	awards
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 13
+Edge vertices 19:
+	_id
+	plot
+	genres
+	countries
+	rated
+	cast
+	poster
+	title
+	fullplot
+	languages
+	released
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 18:
+	_id
+	plot
+	genres
+	runtime
+	metacritic
+	cast
+	title
+	lastupdated
+	languages
+	released
+	directors
+	writers
+	awards
+	year
+	imdb
+	countries
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 2
+Edge vertices 14:
+	_id
+	countries
+	genres
+	runtime
+	cast
+	title
+	lastupdated
+	languages
+	released
+	awards
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 20:
+	_id
+	plot
+	genres
+	runtime
+	metacritic
+	title
+	num_mflix_comments
+	poster
+	countries
+	fullplot
+	languages
+	cast
+	directors
+	rated
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 2
+Edge vertices 17:
+	_id
+	plot
+	genres
+	title
+	poster
+	countries
+	fullplot
+	languages
+	cast
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 15:
+	_id
+	countries
+	cast
+	num_mflix_comments
+	title
+	lastupdated
+	languages
+	released
+	directors
+	writers
+	awards
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 16:
+	_id
+	plot
+	genres
+	runtime
+	title
+	poster
+	countries
+	fullplot
+	languages
+	directors
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 14:
+	_id
+	genres
+	runtime
+	title
+	countries
+	lastupdated
+	languages
+	released
+	directors
+	awards
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 2
+Edge vertices 17:
+	_id
+	plot
+	genres
+	runtime
+	title
+	num_mflix_comments
+	poster
+	countries
+	fullplot
+	languages
+	cast
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 17:
+	_id
+	plot
+	runtime
+	cast
+	num_mflix_comments
+	title
+	lastupdated
+	languages
+	released
+	directors
+	writers
+	awards
+	year
+	imdb
+	countries
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 2
+Edge vertices 17:
+	_id
+	plot
+	genres
+	countries
+	cast
+	num_mflix_comments
+	title
+	lastupdated
+	languages
+	released
+	directors
+	writers
+	awards
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 3
+Edge vertices 18:
+	_id
+	plot
+	genres
+	countries
+	cast
+	poster
+	title
+	fullplot
+	num_mflix_comments
+	released
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 13:
+	_id
+	genres
+	runtime
+	title
+	countries
+	lastupdated
+	cast
+	directors
+	awards
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 2
+Edge vertices 17:
+	_id
+	plot
+	genres
+	runtime
+	title
+	num_mflix_comments
+	poster
+	countries
+	fullplot
+	languages
+	directors
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 3
+Edge vertices 19:
+	_id
+	plot
+	genres
+	runtime
+	title
+	num_mflix_comments
+	poster
+	countries
+	fullplot
+	languages
+	released
+	directors
+	rated
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 15:
+	_id
+	countries
+	genres
+	cast
+	title
+	lastupdated
+	num_mflix_comments
+	released
+	directors
+	writers
+	awards
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 15:
+	_id
+	genres
+	runtime
+	title
+	poster
+	countries
+	lastupdated
+	languages
+	directors
+	writers
+	awards
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 19:
+	_id
+	plot
+	genres
+	runtime
+	metacritic
+	cast
+	poster
+	title
+	fullplot
+	languages
+	released
+	rated
+	awards
+	lastupdated
+	year
+	imdb
+	countries
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 3
+Edge vertices 17:
+	_id
+	plot
+	genres
+	title
+	num_mflix_comments
+	poster
+	countries
+	fullplot
+	languages
+	released
+	directors
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 17:
+	_id
+	plot
+	genres
+	runtime
+	title
+	num_mflix_comments
+	countries
+	fullplot
+	languages
+	cast
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 2
+Edge vertices 19:
+	_id
+	plot
+	genres
+	countries
+	metacritic
+	cast
+	num_mflix_comments
+	poster
+	title
+	fullplot
+	languages
+	released
+	directors
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 14:
+	_id
+	plot
+	genres
+	countries
+	cast
+	title
+	fullplot
+	languages
+	released
+	awards
+	lastupdated
+	year
+	imdb
+	type
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 17:
+	_id
+	plot
+	genres
+	countries
+	cast
+	poster
+	title
+	fullplot
+	languages
+	released
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 17:
+	_id
+	plot
+	genres
+	countries
+	metacritic
+	cast
+	poster
+	title
+	lastupdated
+	languages
+	released
+	directors
+	awards
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 19:
+	_id
+	plot
+	genres
+	runtime
+	metacritic
+	cast
+	num_mflix_comments
+	poster
+	title
+	lastupdated
+	languages
+	released
+	directors
+	awards
+	year
+	imdb
+	countries
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 17:
+	_id
+	plot
+	genres
+	cast
+	poster
+	title
+	fullplot
+	num_mflix_comments
+	released
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 3
+Edge vertices 18:
+	_id
+	plot
+	genres
+	runtime
+	metacritic
+	title
+	poster
+	countries
+	fullplot
+	languages
+	released
+	directors
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 2
+Edge vertices 15:
+	_id
+	plot
+	genres
+	runtime
+	title
+	countries
+	fullplot
+	languages
+	released
+	directors
+	awards
+	lastupdated
+	year
+	imdb
+	type
+--------------------------------------------------
+Edge weight: 2
+Edge vertices 19:
+	_id
+	plot
+	genres
+	runtime
+	rated
+	title
+	num_mflix_comments
+	poster
+	countries
+	fullplot
+	languages
+	released
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	type
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 19:
+	_id
+	plot
+	genres
+	runtime
+	rated
+	cast
+	poster
+	title
+	fullplot
+	languages
+	released
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	countries
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 3
+Edge vertices 15:
+	_id
+	countries
+	genres
+	runtime
+	cast
+	num_mflix_comments
+	title
+	lastupdated
+	languages
+	released
+	directors
+	awards
+	year
+	imdb
+	type
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 16:
+	_id
+	plot
+	genres
+	runtime
+	title
+	poster
+	countries
+	fullplot
+	languages
+	cast
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 19:
+	_id
+	plot
+	genres
+	runtime
+	metacritic
+	rated
+	title
+	countries
+	fullplot
+	languages
+	cast
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 3
+Edge vertices 16:
+	_id
+	plot
+	genres
+	runtime
+	title
+	poster
+	countries
+	fullplot
+	languages
+	released
+	directors
+	awards
+	lastupdated
+	year
+	imdb
+	type
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 17:
+	_id
+	plot
+	genres
+	countries
+	cast
+	poster
+	title
+	fullplot
+	languages
+	released
+	rated
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 20:
+	_id
+	plot
+	genres
+	runtime
+	metacritic
+	rated
+	title
+	num_mflix_comments
+	poster
+	countries
+	fullplot
+	languages
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 14:
+	_id
+	countries
+	cast
+	num_mflix_comments
+	poster
+	title
+	lastupdated
+	languages
+	released
+	awards
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 2
+Edge vertices 18:
+	_id
+	plot
+	genres
+	countries
+	cast
+	num_mflix_comments
+	poster
+	title
+	fullplot
+	languages
+	released
+	rated
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 3
+Edge vertices 18:
+	_id
+	plot
+	genres
+	runtime
+	metacritic
+	title
+	poster
+	countries
+	fullplot
+	languages
+	released
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	type
+--------------------------------------------------
+Edge weight: 2
+Edge vertices 15:
+	_id
+	num_mflix_comments
+	genres
+	runtime
+	title
+	countries
+	lastupdated
+	languages
+	released
+	directors
+	writers
+	awards
+	year
+	imdb
+	type
+--------------------------------------------------
+Edge weight: 6
+Edge vertices 16:
+	_id
+	plot
+	genres
+	runtime
+	title
+	countries
+	fullplot
+	num_mflix_comments
+	released
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	type
+--------------------------------------------------
+Edge weight: 3
+Edge vertices 18:
+	_id
+	plot
+	genres
+	runtime
+	cast
+	num_mflix_comments
+	poster
+	title
+	fullplot
+	countries
+	released
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	type
+--------------------------------------------------
+Edge weight: 5
+Edge vertices 17:
+	_id
+	plot
+	genres
+	runtime
+	cast
+	poster
+	title
+	fullplot
+	countries
+	released
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	type
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 15:
+	_id
+	countries
+	genres
+	runtime
+	cast
+	title
+	lastupdated
+	num_mflix_comments
+	released
+	directors
+	writers
+	awards
+	year
+	imdb
+	type
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 19:
+	_id
+	plot
+	genres
+	runtime
+	metacritic
+	title
+	num_mflix_comments
+	poster
+	countries
+	fullplot
+	languages
+	cast
+	directors
+	rated
+	awards
+	lastupdated
+	year
+	imdb
+	type
+--------------------------------------------------
+Edge weight: 6
+Edge vertices 16:
+	_id
+	plot
+	genres
+	runtime
+	title
+	num_mflix_comments
+	countries
+	fullplot
+	languages
+	released
+	directors
+	awards
+	lastupdated
+	year
+	imdb
+	type
+--------------------------------------------------
+Edge weight: 2
+Edge vertices 18:
+	_id
+	plot
+	genres
+	runtime
+	metacritic
+	title
+	poster
+	countries
+	fullplot
+	languages
+	released
+	directors
+	rated
+	awards
+	lastupdated
+	year
+	imdb
+	type
+--------------------------------------------------
+Edge weight: 4
+Edge vertices 19:
+	_id
+	plot
+	genres
+	countries
+	rated
+	cast
+	num_mflix_comments
+	poster
+	title
+	fullplot
+	languages
+	released
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	type
+--------------------------------------------------
+Edge weight: 2
+Edge vertices 15:
+	_id
+	plot
+	genres
+	runtime
+	title
+	countries
+	fullplot
+	num_mflix_comments
+	released
+	directors
+	awards
+	lastupdated
+	year
+	imdb
+	type
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 15:
+	_id
+	plot
+	genres
+	countries
+	cast
+	title
+	fullplot
+	num_mflix_comments
+	released
+	directors
+	awards
+	lastupdated
+	year
+	imdb
+	type
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 19:
+	_id
+	plot
+	genres
+	runtime
+	metacritic
+	title
+	num_mflix_comments
+	poster
+	countries
+	fullplot
+	languages
+	released
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	type
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 17:
+	_id
+	plot
+	genres
+	rated
+	title
+	poster
+	countries
+	fullplot
+	languages
+	cast
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	type
+--------------------------------------------------
+Edge weight: 7
+Edge vertices 16:
+	_id
+	plot
+	genres
+	countries
+	cast
+	title
+	fullplot
+	languages
+	released
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	type
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 17:
+	_id
+	plot
+	genres
+	runtime
+	metacritic
+	title
+	num_mflix_comments
+	countries
+	fullplot
+	languages
+	released
+	directors
+	awards
+	lastupdated
+	year
+	imdb
+	type
+--------------------------------------------------
+Edge weight: 5
+Edge vertices 14:
+	_id
+	num_mflix_comments
+	genres
+	runtime
+	title
+	countries
+	lastupdated
+	languages
+	released
+	directors
+	awards
+	year
+	imdb
+	type
+--------------------------------------------------
+Edge weight: 4
+Edge vertices 16:
+	_id
+	plot
+	genres
+	countries
+	cast
+	num_mflix_comments
+	poster
+	title
+	fullplot
+	languages
+	released
+	awards
+	lastupdated
+	year
+	imdb
+	type
+--------------------------------------------------
+Edge weight: 9
+Edge vertices 17:
+	_id
+	plot
+	genres
+	countries
+	cast
+	poster
+	title
+	fullplot
+	languages
+	released
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	type
+--------------------------------------------------
+Edge weight: 2
+Edge vertices 19:
+	_id
+	plot
+	genres
+	runtime
+	rated
+	cast
+	num_mflix_comments
+	title
+	lastupdated
+	languages
+	released
+	directors
+	writers
+	awards
+	year
+	imdb
+	countries
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 18:
+	_id
+	plot
+	genres
+	runtime
+	rated
+	cast
+	num_mflix_comments
+	title
+	lastupdated
+	languages
+	released
+	directors
+	writers
+	awards
+	year
+	imdb
+	countries
+	type
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 17:
+	_id
+	plot
+	genres
+	countries
+	cast
+	poster
+	title
+	fullplot
+	num_mflix_comments
+	released
+	directors
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 15:
+	_id
+	plot
+	genres
+	runtime
+	title
+	countries
+	lastupdated
+	languages
+	cast
+	writers
+	awards
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 20:
+	_id
+	plot
+	genres
+	runtime
+	metacritic
+	rated
+	cast
+	num_mflix_comments
+	title
+	fullplot
+	languages
+	released
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	countries
+	type
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 17:
+	_id
+	plot
+	genres
+	title
+	num_mflix_comments
+	poster
+	countries
+	fullplot
+	languages
+	cast
+	directors
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 17:
+	_id
+	plot
+	runtime
+	cast
+	poster
+	title
+	lastupdated
+	languages
+	released
+	directors
+	writers
+	awards
+	year
+	imdb
+	countries
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 4
+Edge vertices 21:
+	_id
+	plot
+	genres
+	runtime
+	metacritic
+	rated
+	title
+	num_mflix_comments
+	poster
+	countries
+	fullplot
+	languages
+	released
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 15:
+	_id
+	plot
+	genres
+	title
+	poster
+	countries
+	fullplot
+	languages
+	directors
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 18:
+	_id
+	plot
+	genres
+	runtime
+	metacritic
+	cast
+	poster
+	title
+	fullplot
+	languages
+	released
+	awards
+	lastupdated
+	year
+	imdb
+	countries
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 18:
+	_id
+	plot
+	genres
+	runtime
+	rated
+	title
+	countries
+	fullplot
+	languages
+	released
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 2
+Edge vertices 20:
+	_id
+	plot
+	genres
+	runtime
+	metacritic
+	cast
+	num_mflix_comments
+	poster
+	title
+	lastupdated
+	languages
+	released
+	directors
+	rated
+	awards
+	year
+	imdb
+	countries
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 21:
+	_id
+	plot
+	genres
+	countries
+	metacritic
+	rated
+	cast
+	num_mflix_comments
+	poster
+	title
+	fullplot
+	languages
+	released
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 16:
+	_id
+	plot
+	genres
+	title
+	countries
+	fullplot
+	languages
+	cast
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 18:
+	_id
+	plot
+	genres
+	runtime
+	metacritic
+	title
+	countries
+	fullplot
+	languages
+	cast
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 19:
+	_id
+	plot
+	genres
+	countries
+	rated
+	cast
+	poster
+	title
+	fullplot
+	num_mflix_comments
+	released
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 17:
+	_id
+	plot
+	genres
+	runtime
+	metacritic
+	title
+	countries
+	fullplot
+	num_mflix_comments
+	released
+	directors
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 20:
+	_id
+	plot
+	genres
+	runtime
+	metacritic
+	rated
+	title
+	poster
+	countries
+	fullplot
+	num_mflix_comments
+	released
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 17:
+	_id
+	countries
+	genres
+	runtime
+	metacritic
+	cast
+	num_mflix_comments
+	title
+	lastupdated
+	languages
+	released
+	directors
+	awards
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 16:
+	_id
+	plot
+	countries
+	cast
+	poster
+	title
+	lastupdated
+	languages
+	released
+	directors
+	writers
+	awards
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 16:
+	_id
+	plot
+	genres
+	title
+	num_mflix_comments
+	poster
+	countries
+	fullplot
+	languages
+	cast
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	type
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 16:
+	_id
+	plot
+	genres
+	countries
+	cast
+	title
+	fullplot
+	released
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 18:
+	_id
+	plot
+	genres
+	runtime
+	title
+	num_mflix_comments
+	poster
+	countries
+	fullplot
+	languages
+	cast
+	rated
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 14:
+	_id
+	countries
+	runtime
+	cast
+	title
+	lastupdated
+	languages
+	released
+	directors
+	awards
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 14:
+	_id
+	countries
+	genres
+	runtime
+	cast
+	title
+	lastupdated
+	released
+	directors
+	awards
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 20:
+	_id
+	plot
+	genres
+	countries
+	metacritic
+	cast
+	num_mflix_comments
+	poster
+	title
+	fullplot
+	languages
+	released
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 16:
+	_id
+	plot
+	genres
+	title
+	poster
+	countries
+	fullplot
+	languages
+	released
+	directors
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 14:
+	_id
+	countries
+	genres
+	cast
+	poster
+	title
+	lastupdated
+	languages
+	released
+	awards
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 19:
+	_id
+	plot
+	genres
+	countries
+	metacritic
+	cast
+	poster
+	title
+	fullplot
+	languages
+	released
+	directors
+	rated
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 16:
+	_id
+	countries
+	cast
+	num_mflix_comments
+	poster
+	title
+	lastupdated
+	languages
+	released
+	directors
+	writers
+	awards
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 16:
+	_id
+	plot
+	genres
+	runtime
+	cast
+	title
+	lastupdated
+	languages
+	released
+	directors
+	awards
+	year
+	imdb
+	countries
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 18:
+	_id
+	plot
+	genres
+	runtime
+	metacritic
+	cast
+	poster
+	title
+	fullplot
+	countries
+	released
+	directors
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 17:
+	_id
+	plot
+	genres
+	runtime
+	metacritic
+	title
+	poster
+	countries
+	fullplot
+	languages
+	directors
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 18:
+	_id
+	plot
+	genres
+	runtime
+	cast
+	poster
+	title
+	fullplot
+	num_mflix_comments
+	released
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 17:
+	_id
+	plot
+	runtime
+	cast
+	num_mflix_comments
+	poster
+	title
+	fullplot
+	languages
+	released
+	directors
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 17:
+	_id
+	plot
+	genres
+	runtime
+	cast
+	title
+	fullplot
+	languages
+	released
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 16:
+	_id
+	plot
+	genres
+	runtime
+	title
+	countries
+	lastupdated
+	num_mflix_comments
+	released
+	directors
+	writers
+	awards
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 18:
+	_id
+	plot
+	genres
+	title
+	num_mflix_comments
+	poster
+	countries
+	fullplot
+	languages
+	released
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 16:
+	_id
+	plot
+	genres
+	title
+	countries
+	fullplot
+	num_mflix_comments
+	cast
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 16:
+	_id
+	countries
+	genres
+	runtime
+	cast
+	num_mflix_comments
+	title
+	lastupdated
+	languages
+	released
+	rated
+	awards
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 16:
+	_id
+	plot
+	cast
+	poster
+	title
+	fullplot
+	languages
+	released
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 19:
+	_id
+	plot
+	genres
+	runtime
+	rated
+	cast
+	num_mflix_comments
+	poster
+	title
+	fullplot
+	countries
+	released
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	type
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 19:
+	_id
+	plot
+	genres
+	runtime
+	cast
+	num_mflix_comments
+	poster
+	title
+	fullplot
+	languages
+	released
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 17:
+	_id
+	num_mflix_comments
+	genres
+	runtime
+	title
+	poster
+	countries
+	lastupdated
+	languages
+	released
+	directors
+	rated
+	awards
+	year
+	imdb
+	type
+	tomatoes
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 18:
+	_id
+	plot
+	genres
+	runtime
+	metacritic
+	cast
+	poster
+	title
+	lastupdated
+	languages
+	released
+	directors
+	writers
+	awards
+	year
+	imdb
+	countries
+	type
+--------------------------------------------------
+Edge weight: 2
+Edge vertices 17:
+	_id
+	plot
+	genres
+	runtime
+	title
+	poster
+	countries
+	fullplot
+	num_mflix_comments
+	released
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	type
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 15:
+	_id
+	plot
+	countries
+	cast
+	num_mflix_comments
+	title
+	lastupdated
+	languages
+	released
+	directors
+	writers
+	awards
+	year
+	imdb
+	type
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 19:
+	_id
+	plot
+	genres
+	runtime
+	metacritic
+	title
+	num_mflix_comments
+	poster
+	countries
+	fullplot
+	languages
+	released
+	directors
+	rated
+	awards
+	lastupdated
+	year
+	imdb
+	type
+--------------------------------------------------
+Edge weight: 5
+Edge vertices 17:
+	_id
+	plot
+	genres
+	runtime
+	title
+	poster
+	countries
+	fullplot
+	languages
+	released
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	type
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 14:
+	_id
+	plot
+	genres
+	runtime
+	title
+	countries
+	fullplot
+	released
+	directors
+	awards
+	lastupdated
+	year
+	imdb
+	type
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 14:
+	_id
+	plot
+	genres
+	title
+	countries
+	fullplot
+	languages
+	released
+	directors
+	awards
+	lastupdated
+	year
+	imdb
+	type
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 17:
+	_id
+	plot
+	genres
+	runtime
+	title
+	poster
+	countries
+	fullplot
+	languages
+	released
+	directors
+	rated
+	awards
+	lastupdated
+	year
+	imdb
+	type
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 16:
+	_id
+	plot
+	countries
+	cast
+	poster
+	title
+	fullplot
+	languages
+	released
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	type
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 16:
+	_id
+	plot
+	genres
+	runtime
+	title
+	poster
+	countries
+	fullplot
+	cast
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	type
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 15:
+	_id
+	countries
+	genres
+	cast
+	poster
+	title
+	lastupdated
+	languages
+	released
+	directors
+	writers
+	awards
+	year
+	imdb
+	type
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 14:
+	_id
+	plot
+	genres
+	title
+	num_mflix_comments
+	countries
+	fullplot
+	languages
+	cast
+	awards
+	lastupdated
+	year
+	imdb
+	type
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 15:
+	_id
+	countries
+	runtime
+	cast
+	poster
+	title
+	lastupdated
+	languages
+	released
+	directors
+	writers
+	awards
+	year
+	imdb
+	type
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 16:
+	_id
+	plot
+	genres
+	runtime
+	cast
+	title
+	fullplot
+	languages
+	released
+	directors
+	awards
+	lastupdated
+	year
+	imdb
+	countries
+	type
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 16:
+	_id
+	num_mflix_comments
+	genres
+	runtime
+	title
+	poster
+	countries
+	lastupdated
+	languages
+	cast
+	directors
+	writers
+	awards
+	year
+	imdb
+	type
+--------------------------------------------------
+Edge weight: 3
+Edge vertices 15:
+	_id
+	plot
+	genres
+	countries
+	cast
+	title
+	fullplot
+	languages
+	released
+	directors
+	awards
+	lastupdated
+	year
+	imdb
+	type
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 17:
+	_id
+	plot
+	genres
+	runtime
+	cast
+	num_mflix_comments
+	poster
+	title
+	lastupdated
+	languages
+	released
+	directors
+	awards
+	year
+	imdb
+	countries
+	type
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 16:
+	_id
+	plot
+	genres
+	countries
+	cast
+	title
+	fullplot
+	languages
+	released
+	directors
+	rated
+	awards
+	lastupdated
+	year
+	imdb
+	type
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 16:
+	_id
+	plot
+	genres
+	runtime
+	cast
+	poster
+	title
+	fullplot
+	countries
+	released
+	directors
+	awards
+	lastupdated
+	year
+	imdb
+	type
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 15:
+	_id
+	countries
+	genres
+	cast
+	num_mflix_comments
+	poster
+	title
+	lastupdated
+	languages
+	released
+	directors
+	awards
+	year
+	imdb
+	type
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 15:
+	_id
+	plot
+	genres
+	runtime
+	title
+	countries
+	fullplot
+	num_mflix_comments
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	type
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 16:
+	_id
+	plot
+	genres
+	title
+	num_mflix_comments
+	poster
+	countries
+	fullplot
+	languages
+	cast
+	directors
+	awards
+	lastupdated
+	year
+	imdb
+	type
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 17:
+	_id
+	plot
+	genres
+	runtime
+	metacritic
+	title
+	poster
+	countries
+	fullplot
+	languages
+	released
+	directors
+	awards
+	lastupdated
+	year
+	imdb
+	type
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 13:
+	_id
+	genres
+	title
+	countries
+	lastupdated
+	languages
+	cast
+	directors
+	writers
+	awards
+	year
+	imdb
+	type
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 17:
+	_id
+	plot
+	genres
+	countries
+	cast
+	num_mflix_comments
+	poster
+	title
+	fullplot
+	languages
+	released
+	rated
+	awards
+	lastupdated
+	year
+	imdb
+	type
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 20:
+	_id
+	plot
+	genres
+	runtime
+	metacritic
+	rated
+	title
+	num_mflix_comments
+	poster
+	countries
+	fullplot
+	languages
+	released
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	type
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 13:
+	_id
+	genres
+	title
+	countries
+	lastupdated
+	languages
+	released
+	directors
+	writers
+	awards
+	year
+	imdb
+	type
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 16:
+	_id
+	countries
+	runtime
+	cast
+	num_mflix_comments
+	poster
+	title
+	lastupdated
+	languages
+	released
+	directors
+	writers
+	awards
+	year
+	imdb
+	type
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 17:
+	_id
+	plot
+	genres
+	countries
+	cast
+	poster
+	title
+	fullplot
+	num_mflix_comments
+	released
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	type
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 16:
+	_id
+	plot
+	genres
+	runtime
+	cast
+	num_mflix_comments
+	poster
+	title
+	fullplot
+	languages
+	released
+	awards
+	lastupdated
+	year
+	imdb
+	type
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 16:
+	_id
+	plot
+	genres
+	countries
+	cast
+	num_mflix_comments
+	title
+	fullplot
+	languages
+	released
+	directors
+	awards
+	lastupdated
+	year
+	imdb
+	type
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 15:
+	_id
+	plot
+	genres
+	title
+	num_mflix_comments
+	poster
+	countries
+	fullplot
+	languages
+	cast
+	awards
+	lastupdated
+	year
+	imdb
+	type
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 19:
+	_id
+	plot
+	genres
+	runtime
+	metacritic
+	cast
+	num_mflix_comments
+	title
+	fullplot
+	languages
+	released
+	directors
+	rated
+	awards
+	lastupdated
+	year
+	imdb
+	countries
+	type
+--------------------------------------------------
+Edge weight: 2
+Edge vertices 17:
+	_id
+	countries
+	genres
+	runtime
+	metacritic
+	cast
+	poster
+	title
+	lastupdated
+	languages
+	released
+	directors
+	writers
+	awards
+	year
+	imdb
+	type
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 18:
+	_id
+	plot
+	genres
+	runtime
+	cast
+	num_mflix_comments
+	poster
+	title
+	fullplot
+	languages
+	released
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	type
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 17:
+	_id
+	plot
+	genres
+	countries
+	cast
+	num_mflix_comments
+	poster
+	title
+	fullplot
+	languages
+	released
+	directors
+	awards
+	lastupdated
+	year
+	imdb
+	type
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 15:
+	_id
+	plot
+	countries
+	cast
+	title
+	fullplot
+	languages
+	released
+	directors
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	type
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 14:
+	_id
+	plot
+	genres
+	title
+	poster
+	fullplot
+	languages
+	released
+	directors
+	awards
+	lastupdated
+	year
+	imdb
+	type
+--------------------------------------------------
+Edge weight: 2
+Edge vertices 16:
+	_id
+	countries
+	genres
+	runtime
+	cast
+	num_mflix_comments
+	poster
+	title
+	lastupdated
+	languages
+	released
+	directors
+	awards
+	year
+	imdb
+	type
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 16:
+	_id
+	plot
+	genres
+	runtime
+	title
+	num_mflix_comments
+	countries
+	fullplot
+	languages
+	released
+	writers
+	awards
+	lastupdated
+	year
+	imdb
+	type
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 14:
+	_id
+	genres
+	runtime
+	title
+	poster
+	countries
+	lastupdated
+	languages
+	cast
+	directors
+	awards
+	year
+	imdb
+	type
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 15:
+	_id
+	plot
+	runtime
+	cast
+	title
+	fullplot
+	languages
+	released
+	directors
+	awards
+	lastupdated
+	year
+	imdb
+	countries
+	type
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 19:
+	_id
+	plot
+	genres
+	runtime
+	metacritic
+	cast
+	num_mflix_comments
+	poster
+	title
+	lastupdated
+	languages
+	released
+	directors
+	rated
+	awards
+	year
+	imdb
+	countries
+	type
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 14:
+	_id
+	plot
+	runtime
+	metacritic
+	cast
+	title
+	fullplot
+	released
+	directors
+	awards
+	lastupdated
+	year
+	imdb
+	type
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 17:
+	_id
+	plot
+	runtime
+	cast
+	num_mflix_comments
+	poster
+	title
+	lastupdated
+	languages
+	released
+	directors
+	writers
+	awards
+	year
+	imdb
+	countries
+	type
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 16:
+	_id
+	plot
+	runtime
+	title
+	num_mflix_comments
+	poster
+	countries
+	fullplot
+	languages
+	released
+	directors
+	awards
+	lastupdated
+	year
+	imdb
+	type
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 13:
+	_id
+	countries
+	runtime
+	cast
+	title
+	lastupdated
+	languages
+	released
+	directors
+	awards
+	year
+	imdb
+	type
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 14:
+	_id
+	countries
+	runtime
+	cast
+	num_mflix_comments
+	title
+	lastupdated
+	languages
+	released
+	directors
+	awards
+	year
+	imdb
+	type
+--------------------------------------------------
+Edge weight: 1
+Edge vertices 14:
+	_id
+	num_mflix_comments
+	genres
+	title
+	countries
+	lastupdated
+	languages
+	cast
+	directors
+	writers
+	awards
+	year
+	imdb
+	type
+--------------------------------------------------
+Vertices count: 22
+Edges count: 514

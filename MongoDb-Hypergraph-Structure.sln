@@ -12,6 +12,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GraphSharp", "GraphSharp\Gr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GraphSharp.Wpf", "GraphSharp.Wpf\GraphSharp.Wpf.csproj", "{BC94D6A5-EF4F-4773-99B8-90A08A2F1E30}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests", "UnitTests\UnitTests.csproj", "{015976EA-170F-442C-B79F-73817CEA82D5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -42,5 +44,9 @@ Global
 		{BC94D6A5-EF4F-4773-99B8-90A08A2F1E30}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BC94D6A5-EF4F-4773-99B8-90A08A2F1E30}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BC94D6A5-EF4F-4773-99B8-90A08A2F1E30}.Release|Any CPU.Build.0 = Release|Any CPU
+		{015976EA-170F-442C-B79F-73817CEA82D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{015976EA-170F-442C-B79F-73817CEA82D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{015976EA-170F-442C-B79F-73817CEA82D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{015976EA-170F-442C-B79F-73817CEA82D5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

@@ -14,19 +14,19 @@ namespace GraphSharp.Helpers
 	public class ObjectPool<T>
 		where T : class, IPoolObject, new()
 	{
-		private const int POOL_SIZE = 1024;
+		private const int PoolSize = 1024;
 
-		private readonly bool allowPoolGrowth = true;
-		private readonly int initialPoolSize;
+		private readonly bool _allowPoolGrowth = true;
+		private readonly int _initialPoolSize;
 
-		private readonly Queue<T> pool = new Queue<T>();
-		private int activePoolObjectCount;
+		private readonly Queue<T> _pool = new Queue<T>();
+		private int _activePoolObjectCount;
 
 		/// <summary>
 		///     Pool constructor, pool will allow growth.
 		/// </summary>
 		public ObjectPool()
-			: this(POOL_SIZE, true)
+			: this(PoolSize, true)
 		{
 		}
 
@@ -37,8 +37,8 @@ namespace GraphSharp.Helpers
 		/// <param name="allowPoolGrowth">Allow pool growth or not.</param>
 		public ObjectPool(int initialPoolSize, bool allowPoolGrowth)
 		{
-			this.initialPoolSize = initialPoolSize;
-			this.allowPoolGrowth = allowPoolGrowth;
+			this._initialPoolSize = initialPoolSize;
+			this._allowPoolGrowth = allowPoolGrowth;
 
 			InitializePool();
 		}
@@ -49,7 +49,7 @@ namespace GraphSharp.Helpers
 		private void InitializePool()
 		{
 			//adds some objects to the pool
-			for (var i = 0; i < initialPoolSize; i++)
+			for (var i = 0; i < _initialPoolSize; i++)
 				CreateObject();
 		}
 
@@ -62,7 +62,7 @@ namespace GraphSharp.Helpers
 		/// </returns>
 		private T CreateObject()
 		{
-			if (activePoolObjectCount >= initialPoolSize && !allowPoolGrowth)
+			if (_activePoolObjectCount >= _initialPoolSize && !_allowPoolGrowth)
 				return null;
 
 			var newObject = new T();
@@ -79,8 +79,8 @@ namespace GraphSharp.Helpers
 		/// <param name="poolObject">The object which should be added to the pool.</param>
 		private void Add(T poolObject)
 		{
-			pool.Enqueue(poolObject);
-			activePoolObjectCount += 1;
+			_pool.Enqueue(poolObject);
+			_activePoolObjectCount += 1;
 		}
 
 		/// <summary>
@@ -92,8 +92,8 @@ namespace GraphSharp.Helpers
 			lock (this)
 			{
 				var poolObject = sender as T;
-				activePoolObjectCount -= 1;
-				if (pool.Count < initialPoolSize)
+				_activePoolObjectCount -= 1;
+				if (_pool.Count < _initialPoolSize)
 				{
 					poolObject.Reset();
 					Add(poolObject);
@@ -116,17 +116,17 @@ namespace GraphSharp.Helpers
 		{
 			lock (this)
 			{
-				if (pool.Count == 0)
+				if (_pool.Count == 0)
 				{
-					if (!allowPoolGrowth)
+					if (!_allowPoolGrowth)
 						return null;
 
 					var newObject = CreateObject();
-					pool.Clear();
+					_pool.Clear();
 					return newObject;
 				}
 
-				return pool.Dequeue();
+				return _pool.Dequeue();
 			}
 		}
 	}

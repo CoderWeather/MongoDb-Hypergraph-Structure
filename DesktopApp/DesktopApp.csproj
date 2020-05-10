@@ -4,10 +4,28 @@
         <OutputType>WinExe</OutputType>
         <TargetFramework>netcoreapp3.1</TargetFramework>
         <UseWPF>true</UseWPF>
+        <Nullable>enable</Nullable>
     </PropertyGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\AppLib\AppLib.csproj" />
+        <ProjectReference Include="..\AppLib\AppLib.csproj"/>
+        <ProjectReference Include="..\GraphSharp.Wpf\GraphSharp.Wpf.csproj"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <Page Update="Views\MainView.xaml">
+            <Generator>MSBuild:Compile</Generator>
+        </Page>
+        <Page Update="Resources\PocGraphDataTemplates.xaml">
+            <Generator></Generator>
+        </Page>
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="ReactiveUI.Events.WPF" Version="11.4.1"/>
+        <PackageReference Include="ReactiveUI.Fody" Version="11.4.1"/>
+        <PackageReference Include="ReactiveUI.WPF" Version="11.4.1"/>
+        <PackageReference Include="Wpf.Controls.PanAndZoom" Version="2.3.3"/>
     </ItemGroup>
 
 </Project>

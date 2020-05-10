@@ -20,10 +20,7 @@ namespace GraphSharp.Algorithms.Layout
 			Positions = positions;
 			OverlapRemovedPositions = overlapRemovedPositions != null ? overlapRemovedPositions : positions;
 
-			if (routeInfos != null)
-				RouteInfos = routeInfos;
-			else
-				RouteInfos = new Dictionary<TEdge, Point[]>(0);
+			RouteInfos = routeInfos ?? new Dictionary<TEdge, Point[]>(0);
 
 			ComputationTime = computationTime;
 			Iteration = iteration;

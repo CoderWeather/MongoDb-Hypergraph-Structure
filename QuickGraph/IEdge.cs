@@ -8,7 +8,7 @@ namespace QuickGraph
     /// </summary>
     /// <typeparam name="TVertex">type of the vertices</typeparam>
     [ContractClass(typeof(IEdgeContract<>))]
-	public interface IEdge<TVertex>
+	public interface IEdge<out TVertex>
 	{
         /// <summary>
         ///     Gets the source vertex

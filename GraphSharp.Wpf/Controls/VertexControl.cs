@@ -24,7 +24,7 @@ namespace GraphSharp.Controls
 				new FrameworkPropertyMetadata(typeof(VertexControl)));
 		}
 
-		public object Vertex
+		public object? Vertex
 		{
 			get => GetValue(VertexProperty);
 			set => SetValue(VertexProperty, value);
@@ -51,11 +51,7 @@ namespace GraphSharp.Controls
 
 		public event DisposingHandler Disposing;
 
-		public void Dispose()
-		{
-			if (Disposing != null)
-				Disposing(this);
-		}
+		public void Dispose() => Disposing?.Invoke(this);
 
 		#endregion
 	}

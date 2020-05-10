@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AppLib.GraphModels;
 using MongoDB.Bson;
 using MongoDB.Driver;
 
@@ -21,28 +22,28 @@ namespace AppLib.MongoDb
 
 				foreach (var key in keys)
 				{
-					var vertex = hyperGraph.VerticesList.FirstOrDefault(v => v.Data?.Equals(key) ?? false);
+					var vertex = hyperGraph.Vertices.FirstOrDefault(v => v.Data?.Equals(key) ?? false);
 					if (vertex is null)
 					{
-						vertex = new Vertex {Data = key};
-						hyperGraph.VerticesList.Add(vertex);
+						vertex = new Vertex(key);
+						hyperGraph.Vertices.Add(vertex);
 					}
 
-					vertex.Edges.Add(edge);
+					vertex.HyperEdges.Add(edge);
 					edge.Vertices.Add(vertex);
 				}
 
-				var existHyperEdge = hyperGraph.EdgesList.FirstOrDefault(he => he.Vertices.SetEquals(edge.Vertices));
+				var existHyperEdge = hyperGraph.HyperEdges.FirstOrDefault(he => he.Vertices.SetEquals(edge.Vertices));
 				if (existHyperEdge is null)
 				{
-					hyperGraph.EdgesList.Add(edge);
+					hyperGraph.HyperEdges.Add(edge);
 				}
 				else
 				{
 					foreach (var vertex in edge.Vertices)
 					{
-						vertex.Edges.RemoveWhere(e => e.Id == edge.Id);
-						vertex.Edges.Add(existHyperEdge);
+						vertex.HyperEdges.RemoveWhere(e => e.Id == edge.Id);
+						vertex.HyperEdges.Add(existHyperEdge);
 					}
 
 					existHyperEdge.Weight++;

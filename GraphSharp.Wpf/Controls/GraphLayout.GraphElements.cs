@@ -156,7 +156,8 @@ namespace GraphSharp.Controls
 				CreateEdgeControl(edge);
 			}
 
-			foreach (var vertex in verticesToInitPos) InitializePosition(vertex);
+			foreach (var vertex in verticesToInitPos) 
+				InitializePosition(vertex);
 		}
 
 		private void OnMutableGraph_EdgeRemoved(TEdge edge)

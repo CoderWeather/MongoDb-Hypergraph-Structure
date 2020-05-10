@@ -17,11 +17,7 @@ namespace GraphSharp.Controls
 
 		#region IDisposable Members
 
-		public void Dispose()
-		{
-			if (Disposing != null)
-				Disposing(this);
-		}
+		public void Dispose() => Disposing?.Invoke(this);
 
 		#endregion
 
@@ -55,25 +51,25 @@ namespace GraphSharp.Controls
 
 		#region Properties
 
-		public VertexControl Source
+		public VertexControl? Source
 		{
 			get => (VertexControl) GetValue(SourceProperty);
 			internal set => SetValue(SourceProperty, value);
 		}
 
-		public VertexControl Target
+		public VertexControl? Target
 		{
 			get => (VertexControl) GetValue(TargetProperty);
 			internal set => SetValue(TargetProperty, value);
 		}
 
-		public Point[] RoutePoints
+		public Point[]? RoutePoints
 		{
 			get => (Point[]) GetValue(RoutePointsProperty);
 			set => SetValue(RoutePointsProperty, value);
 		}
 
-		public object Edge
+		public object? Edge
 		{
 			get => GetValue(EdgeProperty);
 			set => SetValue(EdgeProperty, value);

@@ -17,17 +17,12 @@ namespace GraphSharp.Algorithms.Layout
 		where TEdge : IEdge<TVertex>
 		where TGraph : class, IBidirectionalGraph<TVertex, TEdge>
 	{
-		public IEnumerable<string> AlgorithmTypes
-		{
-			get
+		public IEnumerable<string> AlgorithmTypes =>
+			new[]
 			{
-				return new[]
-				{
-					"Circular", "Tree", "FR", "BoundedFR", "KK", "ISOM", "LinLog", "EfficientSugiyama", /*"Sugiyama",*/
-					"CompoundFDP"
-				};
-			}
-		}
+				"Circular", "Tree", "FR", "BoundedFR", "KK", "ISOM", "LinLog", "EfficientSugiyama", /*"Sugiyama",*/
+				"CompoundFDP"
+			};
 
 		public ILayoutAlgorithm<TVertex, TEdge, TGraph> CreateAlgorithm(string newAlgorithmType,
 			ILayoutContext<TVertex, TEdge, TGraph> context, ILayoutParameters parameters)
@@ -35,77 +30,55 @@ namespace GraphSharp.Algorithms.Layout
 			if (context == null || context.Graph == null)
 				return null;
 
-			if (context.Mode == LayoutMode.Simple)
-				switch (newAlgorithmType)
-				{
-					case "Tree":
-						return new SimpleTreeLayoutAlgorithm<TVertex, TEdge, TGraph>(context.Graph, context.Positions,
-							context.Sizes,
-							parameters as SimpleTreeLayoutParameters);
-					case "Circular":
-						return new CircularLayoutAlgorithm<TVertex, TEdge, TGraph>(context.Graph, context.Positions,
-							context.Sizes,
-							parameters as CircularLayoutParameters);
-					case "FR":
-						return new FRLayoutAlgorithm<TVertex, TEdge, TGraph>(context.Graph, context.Positions,
-							parameters as FRLayoutParametersBase);
-					case "BoundedFR":
-						return new FRLayoutAlgorithm<TVertex, TEdge, TGraph>(context.Graph, context.Positions,
-							parameters as BoundedFRLayoutParameters);
-					case "KK":
-						return new KKLayoutAlgorithm<TVertex, TEdge, TGraph>(context.Graph, context.Positions,
-							parameters as KKLayoutParameters);
-					case "ISOM":
-						return new ISOMLayoutAlgorithm<TVertex, TEdge, TGraph>(context.Graph, context.Positions,
-							parameters as ISOMLayoutParameters);
-					case "LinLog":
-						return new LinLogLayoutAlgorithm<TVertex, TEdge, TGraph>(context.Graph, context.Positions,
-							parameters as LinLogLayoutParameters);
-					case "EfficientSugiyama":
-						return new EfficientSugiyamaLayoutAlgorithm<TVertex, TEdge, TGraph>(context.Graph,
-							parameters as EfficientSugiyamaLayoutParameters,
-							context.Positions,
-							context.Sizes);
-
-					case "Sugiyama":
-						return new SugiyamaLayoutAlgorithm<TVertex, TEdge, TGraph>(context.Graph, context.Sizes,
-							context.Positions,
-							parameters as
-								SugiyamaLayoutParameters,
-							e => e is TypedEdge<TVertex>
-								? (e as TypedEdge<TVertex>).Type
-								: EdgeTypes.Hierarchical);
-					case "CompoundFDP":
-						return new CompoundFDPLayoutAlgorithm<TVertex, TEdge, TGraph>(
-							context.Graph,
-							context.Sizes,
-							new Dictionary<TVertex, Thickness>(),
-							new Dictionary<TVertex, CompoundVertexInnerLayoutType>(),
-							context.Positions,
-							parameters as CompoundFDPLayoutParameters);
-					default:
-						return null;
-				}
-
-			if (context.Mode == LayoutMode.Compound)
+			switch (context.Mode)
 			{
-				var compoundContext = context as ICompoundLayoutContext<TVertex, TEdge, TGraph>;
-				switch (newAlgorithmType)
-				{
-					case "CompoundFDP":
-						return new CompoundFDPLayoutAlgorithm<TVertex, TEdge, TGraph>(
-							compoundContext.Graph,
-							compoundContext.Sizes,
-							compoundContext.VertexBorders,
-							compoundContext.LayoutTypes,
-							compoundContext.Positions,
-							parameters as CompoundFDPLayoutParameters);
-					default:
-						return null;
-				}
-			}
+				case LayoutMode.Simple:
+					return newAlgorithmType switch
+					{
+						"Tree" => new SimpleTreeLayoutAlgorithm<TVertex, TEdge, TGraph>(context.Graph,
+							context.Positions, context.Sizes, parameters as SimpleTreeLayoutParameters),
+						"Circular" => new CircularLayoutAlgorithm<TVertex, TEdge, TGraph>(context.Graph,
+							context.Positions, context.Sizes, parameters as CircularLayoutParameters),
+						"FR" => new FRLayoutAlgorithm<TVertex, TEdge, TGraph>(context.Graph, context.Positions,
+							parameters as FRLayoutParametersBase),
+						"BoundedFR" => new FRLayoutAlgorithm<TVertex, TEdge, TGraph>(context.Graph, context.Positions,
+							parameters as BoundedFRLayoutParameters),
+						"KK" => new KKLayoutAlgorithm<TVertex, TEdge, TGraph>(context.Graph, context.Positions,
+							parameters as KKLayoutParameters),
+						"ISOM" => new ISOMLayoutAlgorithm<TVertex, TEdge, TGraph>(context.Graph, context.Positions,
+							parameters as ISOMLayoutParameters),
+						"LinLog" => new LinLogLayoutAlgorithm<TVertex, TEdge, TGraph>(context.Graph, context.Positions,
+							parameters as LinLogLayoutParameters),
+						"EfficientSugiyama" => new EfficientSugiyamaLayoutAlgorithm<TVertex, TEdge, TGraph>(
+							context.Graph, parameters as EfficientSugiyamaLayoutParameters, context.Positions,
+							context.Sizes),
+						"Sugiyama" => new SugiyamaLayoutAlgorithm<TVertex, TEdge, TGraph>(context.Graph, context.Sizes,
+							context.Positions, parameters as SugiyamaLayoutParameters,
+							e => e is TypedEdge<TVertex> ? (e as TypedEdge<TVertex>).Type : EdgeTypes.Hierarchical),
+						"CompoundFDP" => new CompoundFDPLayoutAlgorithm<TVertex, TEdge, TGraph>(context.Graph,
+							context.Sizes, new Dictionary<TVertex, Thickness>(),
+							new Dictionary<TVertex, CompoundVertexInnerLayoutType>(), context.Positions,
+							parameters as CompoundFDPLayoutParameters),
+						_ => null
+					};
 
-			return null;
+					break;
+				case LayoutMode.Compound:
+				{
+					var compoundContext = context as ICompoundLayoutContext<TVertex, TEdge, TGraph>;
+					return newAlgorithmType switch
+					{
+						"CompoundFDP" => new CompoundFDPLayoutAlgorithm<TVertex, TEdge, TGraph>(compoundContext.Graph,
+							compoundContext.Sizes, compoundContext.VertexBorders, compoundContext.LayoutTypes,
+							compoundContext.Positions, parameters as CompoundFDPLayoutParameters),
+						_ => null
+					};
+
+					break;
+				}
+				default:
+					return null;
+			}
 		}
 
 		public ILayoutParameters CreateParameters(string algorithmType, ILayoutParameters oldParameters)

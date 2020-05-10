@@ -83,7 +83,6 @@ namespace GraphSharp.Algorithms.Layout
 			// Count the crossings
 			//
 			var crossCount = 0;
-			int index;
 			foreach (var list in radixByFirst)
 			{
 				if (list == null)
@@ -91,7 +90,7 @@ namespace GraphSharp.Algorithms.Layout
 
 				foreach (var pair in list)
 				{
-					index = pair.Second + firstIndex;
+					var index = pair.Second + firstIndex;
 					tree[index] += pair.Weight;
 					while (index > 0)
 					{
@@ -118,7 +117,7 @@ namespace GraphSharp.Algorithms.Layout
 			for (var i = 0; i < 4; i++)
 				if (sides[i] <= 1)
 					fi = Math.Max(fi, sides[i]);
-			if (fi == 0)
+			if (!(Math.Abs(fi) < 0.0005)) return t + fi * (s - t);
 			{
 				fi = double.PositiveInfinity;
 				for (var i = 0; i < 4; i++)

@@ -3,7 +3,7 @@ using System.Diagnostics;
 using System.Windows;
 using System.Windows.Input;
 
-namespace WPFExtensions.AttachedBehaviours
+namespace GraphSharp.WPFExtensions.AttachedBehaviours
 {
 	public static class DragBehaviour
 	{
@@ -12,7 +12,7 @@ namespace WPFExtensions.AttachedBehaviours
 		private static void OnIsDragEnabledPropertyChanged(DependencyObject obj, DependencyPropertyChangedEventArgs e)
 		{
 			var element = obj as FrameworkElement;
-			FrameworkContentElement contentElement = null;
+			FrameworkContentElement? contentElement = null;
 			if (element == null)
 			{
 				contentElement = obj as FrameworkContentElement;
@@ -78,16 +78,14 @@ namespace WPFExtensions.AttachedBehaviours
 			Debug.WriteLine("Drag started on object: " + obj, "WPFExt");
 
 			//capture the mouse
-			var element = obj as FrameworkElement;
-			if (element != null)
+			if (obj is FrameworkElement element)
 			{
 				element.CaptureMouse();
 				element.MouseMove += OnDragging;
 			}
 			else
 			{
-				var contentElement = obj as FrameworkContentElement;
-				if (contentElement == null)
+				if (!(obj is FrameworkContentElement contentElement))
 					throw new ArgumentException(
 						"The control must be a descendent of the FrameworkElement or FrameworkContentElement!");
 				contentElement.CaptureMouse();
@@ -107,16 +105,14 @@ namespace WPFExtensions.AttachedBehaviours
 			Debug.WriteLine("Drag finished on object: " + obj, "WPFExt");
 
 			//we finished the drag, release the mouse
-			var element = sender as FrameworkElement;
-			if (element != null)
+			if (sender is FrameworkElement element)
 			{
 				element.MouseMove -= OnDragging;
 				element.ReleaseMouseCapture();
 			}
 			else
 			{
-				var contentElement = sender as FrameworkContentElement;
-				if (contentElement == null)
+				if (!(sender is FrameworkContentElement contentElement))
 					throw new ArgumentException(
 						"The control must be a descendent of the FrameworkElement or FrameworkContentElement!");
 				contentElement.MouseMove -= OnDragging;

@@ -2,10 +2,9 @@
 using System.Collections.Generic;
 using System.Windows;
 using System.Windows.Controls;
-using AppLib.GraphModels;
-using GraphSharp.Controls;
+using HyperGraphSharp.Models;
 
-namespace DesktopApp.GraphControls
+namespace HyperGraphSharp.Controls
 {
 	public class VertexControl : Control, IDisposable
 	{
@@ -44,9 +43,9 @@ namespace DesktopApp.GraphControls
 			set => SetValue(VertexProperty, value);
 		}
 
-		public GraphCanvas RootHyperGraphCanvas
+		public HyperGraphCanvas RootHyperGraphCanvas
 		{
-			get => (GraphCanvas) GetValue(RootHyperGraphCanvasProperty);
+			get => (HyperGraphCanvas) GetValue(RootHyperGraphCanvasProperty);
 			set => SetValue(RootHyperGraphCanvasProperty, value);
 		}
 
@@ -70,7 +69,7 @@ namespace DesktopApp.GraphControls
 			nameof(Vertex), typeof(object), typeof(VertexControl), new PropertyMetadata(default(Vertex)));
 
 		public static readonly DependencyProperty RootHyperGraphCanvasProperty = DependencyProperty.Register(
-			"RootHyperGraphCanvas", typeof(GraphCanvas), typeof(VertexControl), new PropertyMetadata(default(Canvas)));
+			"RootHyperGraphCanvas", typeof(HyperGraphCanvas), typeof(VertexControl), new PropertyMetadata(default(Canvas)));
 
 		public static readonly DependencyProperty HyperEdgesProperty = DependencyProperty.Register(
 			"HyperEdges", typeof(List<HyperEdgeControl>), typeof(VertexControl),

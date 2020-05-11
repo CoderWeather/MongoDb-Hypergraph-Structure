@@ -1,10 +1,10 @@
 ﻿using System.Collections.Generic;
-using AppLib.GraphModels;
-using GraphSharp.Controls;
+using System.Linq;
+using HyperGraphSharp.Models;
 
-namespace DesktopApp.GraphControls
+namespace HyperGraphSharp.Controls
 {
-	public partial class HyperGraphLayout : GraphCanvas
+	public partial class HyperGraphLayout : HyperGraphCanvas
 	{
 		#region Protected Constructor
 
@@ -34,9 +34,8 @@ namespace DesktopApp.GraphControls
 				Graph, LatestVertexPositions, ActualVertexSizes);
 			layoutAlgorithm.Compute();
 
-			foreach (var edge in Graph.HyperEdges)
-				if (layoutAlgorithm.EdgeRoutes != null)
-					HyperEdgeControls[edge].RoutePoints = layoutAlgorithm.EdgeRoutes[edge];
+			foreach (var edge in Graph.HyperEdges.Where(edge => layoutAlgorithm.EdgeRoutes != null))
+                HyperEdgeControls[edge].RoutePoints = layoutAlgorithm.EdgeRoutes?[edge];
 		}
 
 		#endregion

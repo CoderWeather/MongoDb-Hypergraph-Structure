@@ -9,7 +9,7 @@ namespace GraphSharp.Algorithms.Highlight
 		where TGraph : class, IBidirectionalGraph<TVertex, TEdge>
 	{
 		IEnumerable<string> HighlightModes { get; }
-		bool IsValidMode(string mode);
+		bool IsValidMode(string? mode);
 
 		IHighlightAlgorithm<TVertex, TEdge, TGraph> CreateAlgorithm(
 			string highlightMode,

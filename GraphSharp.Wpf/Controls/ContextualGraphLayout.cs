@@ -21,7 +21,7 @@ namespace GraphSharp.Controls
 		protected override bool CanLayout => SelectedVertex != null && base.CanLayout;
 
 		protected override ILayoutContext<TVertex, TEdge, TGraph> CreateLayoutContext(
-			IDictionary<TVertex, Point> positions, IDictionary<TVertex, Size> sizes)
+            IDictionary<TVertex, Point>? positions, IDictionary<TVertex, Size> sizes)
 		{
 			return new ContextualLayoutContext<TVertex, TEdge, TGraph>(Graph, SelectedVertex, positions, sizes);
 		}
@@ -49,7 +49,7 @@ namespace GraphSharp.Controls
 				return;
 
 			//refresh the layout on context change
-			gl.Relayout();
+			gl.ReLayout();
 		}
 
 		#endregion

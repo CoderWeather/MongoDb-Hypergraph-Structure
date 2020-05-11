@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using System.Windows;
-using AppLib.GraphModels;
+using HyperGraphSharp.Models;
 
-namespace DesktopApp.GraphControls
+namespace HyperGraphSharp.Controls
 {
 	public partial class HyperGraphLayout
 	{
@@ -45,7 +45,7 @@ namespace DesktopApp.GraphControls
 				}
 			);
 
-		private IDictionary<Vertex, Point> GetVertexPositions()
+		private IDictionary<Vertex, Point> GetRelativeVertexPositions()
 		{
 			return VertexControls.ToDictionary(
 				pair => pair.Key,

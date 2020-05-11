@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace AppLib.GraphModels
+namespace HyperGraphSharp.Models
 {
 	public class HyperEdge : IEquatable<HyperEdge>
 	{
@@ -18,15 +18,10 @@ namespace AppLib.GraphModels
 
 		public static IEqualityComparer<HyperEdge> Comparer { get; } = new EqualityComparer();
 
-		public bool Equals(HyperEdge other)
-		{
-			return Id.Equals(other.Id);
-		}
+		public bool Equals(HyperEdge? other) =>
+			other != null && Id.Equals(other.Id);
 
-		public override string ToString()
-		{
-			return $"[{Weight}]";
-		}
+		public override string ToString() => $"[{Weight}]";
 
 		public override bool Equals(object? obj)
 		{

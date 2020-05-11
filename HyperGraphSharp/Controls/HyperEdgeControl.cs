@@ -3,9 +3,8 @@ using System.Collections.Generic;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Shapes;
-using GraphSharp.Controls;
 
-namespace DesktopApp.GraphControls
+namespace HyperGraphSharp.Controls
 {
 	public class HyperEdgeControl : Control, IDisposable
 	{
@@ -35,7 +34,7 @@ namespace DesktopApp.GraphControls
 			set => SetValue(VerticesProperty, value);
 		}
 
-		public Point[] RoutePoints
+		public Point[]? RoutePoints
 		{
 			get => (Point[]) GetValue(RoutePointsProperty);
 			set => SetValue(RoutePointsProperty, value);
@@ -68,7 +67,7 @@ namespace DesktopApp.GraphControls
 			"HyperEdge", typeof(object), typeof(HyperEdgeControl), new PropertyMetadata(default(object?)));
 
 		public static readonly DependencyProperty StrokeThicknessProperty = Shape.StrokeThicknessProperty.AddOwner(
-			typeof(EdgeControl), new UIPropertyMetadata(2.0));
+			typeof(HyperEdgeControl), new UIPropertyMetadata(2.0));
 
 		#endregion
 	}

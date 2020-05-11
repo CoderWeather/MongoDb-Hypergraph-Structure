@@ -4,7 +4,7 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
 
-namespace DesktopApp.GraphControls
+namespace HyperGraphSharp.Controls
 {
 	public class EdgeContentPresenter : ContentPresenter
 	{

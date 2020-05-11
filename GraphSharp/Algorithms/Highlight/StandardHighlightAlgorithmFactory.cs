@@ -14,7 +14,7 @@ namespace GraphSharp.Algorithms.Highlight
 
 		public IEnumerable<string> HighlightModes => highlightModes;
 
-		public bool IsValidMode(string mode)
+		public bool IsValidMode(string? mode)
 		{
 			return string.IsNullOrEmpty(mode) || highlightModes.Contains(mode);
 		}

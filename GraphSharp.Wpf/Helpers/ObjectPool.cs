@@ -37,8 +37,8 @@ namespace GraphSharp.Helpers
 		/// <param name="allowPoolGrowth">Allow pool growth or not.</param>
 		public ObjectPool(int initialPoolSize, bool allowPoolGrowth)
 		{
-			this._initialPoolSize = initialPoolSize;
-			this._allowPoolGrowth = allowPoolGrowth;
+			_initialPoolSize = initialPoolSize;
+			_allowPoolGrowth = allowPoolGrowth;
 
 			InitializePool();
 		}

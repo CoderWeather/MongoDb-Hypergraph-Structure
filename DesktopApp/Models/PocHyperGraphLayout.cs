@@ -1,4 +1,4 @@
-﻿using DesktopApp.GraphControls;
+﻿using HyperGraphSharp.Controls;
 
 namespace DesktopApp.Models
 {

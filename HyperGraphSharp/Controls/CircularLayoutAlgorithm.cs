@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Windows;
-using AppLib.GraphModels;
+using HyperGraphSharp.Models;
 
-namespace DesktopApp.GraphControls
+namespace HyperGraphSharp.Controls
 {
 	public class CircularLayoutAlgorithm
 	{

@@ -1,6 +1,6 @@
 using System.Linq;
-using AppLib.GraphModels;
-using DesktopApp.GraphControls;
+using HyperGraphSharp.Controls;
+using HyperGraphSharp.Models;
 using NUnit.Framework;
 
 namespace UnitTests

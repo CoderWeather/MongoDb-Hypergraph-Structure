@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace AppLib.GraphModels
+namespace HyperGraphSharp.Models
 {
 	public class HyperGraph
 	{

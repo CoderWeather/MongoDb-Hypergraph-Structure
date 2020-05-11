@@ -1,6 +1,6 @@
 ﻿namespace GraphSharp.Controls
 {
-	public enum LayoutMode
+	public enum UiLayoutMode
 	{
 		/// <summary>
 		///     Decide about the layout mode automatically.

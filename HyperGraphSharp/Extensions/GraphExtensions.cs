@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using AppLib.GraphModels;
+using HyperGraphSharp.Models;
 
-namespace DesktopApp.Extensions
+namespace HyperGraphSharp.Extensions
 {
 	public static class GraphExtensions
 	{

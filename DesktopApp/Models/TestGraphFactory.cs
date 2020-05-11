@@ -1,4 +1,4 @@
-﻿using AppLib.GraphModels;
+﻿using HyperGraphSharp.Models;
 
 namespace DesktopApp.Models
 {

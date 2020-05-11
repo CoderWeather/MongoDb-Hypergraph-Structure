@@ -36,7 +36,7 @@ namespace GraphSharp.Controls
 				new UIPropertyMetadata(new Vector()));
 
 
-		private IAnimationContext animationContext;
+		private IAnimationContext _animationContext;
 
 		static GraphCanvas()
 		{
@@ -57,10 +57,10 @@ namespace GraphSharp.Controls
 		{
 			get
 			{
-				if (animationContext == null)
-					animationContext = new AnimationContext(this);
+				if (_animationContext == null)
+					_animationContext = new AnimationContext(this);
 
-				return animationContext;
+				return _animationContext;
 			}
 		}
 
@@ -81,7 +81,7 @@ namespace GraphSharp.Controls
         ///     The layout process will be started without initial
         ///     vertex positions.
         /// </summary>
-        public virtual void Relayout()
+        public virtual void ReLayout()
 		{
 		}
 
@@ -90,13 +90,7 @@ namespace GraphSharp.Controls
         ///     to this container.
         /// </summary>
         /// <param name="control">The control which has been added.</param>
-        protected virtual void RunCreationTransition(Control control)
-		{
-			if (CreationTransition == null)
-				return;
-
-			CreationTransition.Run(AnimationContext, control, AnimationLength);
-		}
+        protected virtual void RunCreationTransition(Control control) => CreationTransition?.Run(AnimationContext, control, AnimationLength);
 
         /// <summary>
         ///     Animates the position of the given control to
@@ -157,8 +151,7 @@ namespace GraphSharp.Controls
 
 		private static void PositionChanged(DependencyObject d, double xChange, double yChange)
 		{
-			var e = d as UIElement;
-			if (e != null)
+            if (d is UIElement e)
 				e.RaiseEvent(new PositionChangedEventArgs(PositionChangedEvent, e, xChange, yChange));
 		}
 
@@ -167,28 +160,16 @@ namespace GraphSharp.Controls
 		#region Attached Properties
 
 		[AttachedPropertyBrowsableForChildren]
-		public static double GetX(DependencyObject obj)
-		{
-			return (double) obj.GetValue(XProperty);
-		}
+		public static double GetX(DependencyObject obj) => (double) obj.GetValue(XProperty);
 
-		public static void SetX(DependencyObject obj, double value)
-		{
-			obj.SetValue(XProperty, value);
-		}
+        public static void SetX(DependencyObject obj, double value) => obj.SetValue(XProperty, value);
 
-		[AttachedPropertyBrowsableForChildren]
-		public static double GetY(DependencyObject obj)
-		{
-			return (double) obj.GetValue(YProperty);
-		}
+        [AttachedPropertyBrowsableForChildren]
+		public static double GetY(DependencyObject obj) => (double) obj.GetValue(YProperty);
 
-		public static void SetY(DependencyObject obj, double value)
-		{
-			obj.SetValue(YProperty, value);
-		}
+        public static void SetY(DependencyObject obj, double value) => obj.SetValue(YProperty, value);
 
-		#endregion
+        #endregion
 
 		#region Attached Routed Events
 
@@ -198,15 +179,13 @@ namespace GraphSharp.Controls
 
 		public static void AddPositionChangedHandler(DependencyObject d, RoutedEventHandler handler)
 		{
-			var e = d as UIElement;
-			if (e != null)
+            if (d is UIElement e)
 				e.AddHandler(PositionChangedEvent, handler);
 		}
 
 		public static void RemovePositionChangedHandler(DependencyObject d, RoutedEventHandler handler)
 		{
-			var e = d as UIElement;
-			if (e != null)
+            if (d is UIElement e)
 				e.RemoveHandler(PositionChangedEvent, handler);
 		}
 

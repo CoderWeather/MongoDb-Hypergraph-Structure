@@ -68,12 +68,12 @@ namespace GraphSharp.Converters
 				for (var i = 0; i < routeInformation.Length; i++)
 					segments[i] = new LineSegment(routeInformation[i], true);
 
-			var pLast = hasRouteInfo ? routeInformation[routeInformation.Length - 1] : p1;
+			var pLast = hasRouteInfo ? routeInformation[^1] : p1;
 			var v = pLast - p2;
 			v = v / v.Length * 5;
 			var n = new Vector(-v.Y, v.X) * 0.3;
 
-			segments[segments.Length - 1] = new LineSegment(p2 + v, true);
+			segments[^1] = new LineSegment(p2 + v, true);
 
 			var pfc = new PathFigureCollection(2);
 			pfc.Add(new PathFigure(p1, segments, false));

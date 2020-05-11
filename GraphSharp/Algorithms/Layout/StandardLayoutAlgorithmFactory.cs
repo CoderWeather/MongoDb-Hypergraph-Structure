@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Windows;
 using GraphSharp.Algorithms.Layout.Compound;
@@ -81,34 +82,21 @@ namespace GraphSharp.Algorithms.Layout
 			}
 		}
 
-		public ILayoutParameters CreateParameters(string algorithmType, ILayoutParameters oldParameters)
-		{
-			switch (algorithmType)
+		public ILayoutParameters CreateParameters(string algorithmType, ILayoutParameters oldParameters) =>
+			algorithmType switch
 			{
-				case "Tree":
-					return oldParameters.CreateNewParameter<SimpleTreeLayoutParameters>();
-				case "Circular":
-					return oldParameters.CreateNewParameter<CircularLayoutParameters>();
-				case "FR":
-					return oldParameters.CreateNewParameter<FreeFRLayoutParameters>();
-				case "BoundedFR":
-					return oldParameters.CreateNewParameter<BoundedFRLayoutParameters>();
-				case "KK":
-					return oldParameters.CreateNewParameter<KKLayoutParameters>();
-				case "ISOM":
-					return oldParameters.CreateNewParameter<ISOMLayoutParameters>();
-				case "LinLog":
-					return oldParameters.CreateNewParameter<LinLogLayoutParameters>();
-				case "EfficientSugiyama":
-					return oldParameters.CreateNewParameter<EfficientSugiyamaLayoutParameters>();
-				case "Sugiyama":
-					return oldParameters.CreateNewParameter<SugiyamaLayoutParameters>();
-				case "CompoundFDP":
-					return oldParameters.CreateNewParameter<CompoundFDPLayoutParameters>();
-				default:
-					return null;
-			}
-		}
+				"Tree"              => oldParameters.CreateNewParameter<SimpleTreeLayoutParameters>(),
+				"Circular"          => oldParameters.CreateNewParameter<CircularLayoutParameters>(),
+				"FR"                => oldParameters.CreateNewParameter<FreeFRLayoutParameters>(),
+				"BoundedFR"         => oldParameters.CreateNewParameter<BoundedFRLayoutParameters>(),
+				"KK"                => oldParameters.CreateNewParameter<KKLayoutParameters>(),
+				"ISOM"              => oldParameters.CreateNewParameter<ISOMLayoutParameters>(),
+				"LinLog"            => oldParameters.CreateNewParameter<LinLogLayoutParameters>(),
+				"EfficientSugiyama" => oldParameters.CreateNewParameter<EfficientSugiyamaLayoutParameters>(),
+				"Sugiyama"          => oldParameters.CreateNewParameter<SugiyamaLayoutParameters>(),
+				"CompoundFDP"       => oldParameters.CreateNewParameter<CompoundFDPLayoutParameters>(),
+				_                   => null
+			};
 
 
 		public bool IsValidAlgorithm(string algorithmType)
@@ -121,12 +109,12 @@ namespace GraphSharp.Algorithms.Layout
 			if (algorithm == null)
 				return string.Empty;
 
-			var index = algorithm.GetType().Name.IndexOf("LayoutAlgorithm");
+			var index = algorithm.GetType().Name.IndexOf("LayoutAlgorithm", StringComparison.Ordinal);
 			if (index == -1)
 				return string.Empty;
 
-			var algoType = algorithm.GetType().Name;
-			return algoType.Substring(0, algoType.Length - index);
+			var algType = algorithm.GetType().Name;
+			return algType.Substring(0, algType.Length - index);
 		}
 
 		public bool NeedEdgeRouting(string algorithmType)

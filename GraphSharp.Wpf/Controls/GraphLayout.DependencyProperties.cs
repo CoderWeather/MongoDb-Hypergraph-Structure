@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Diagnostics;
 using System.Windows;
 using GraphSharp.Algorithms.EdgeRouting;
 using GraphSharp.Algorithms.Highlight;
@@ -8,7 +10,7 @@ using QuickGraph;
 
 namespace GraphSharp.Controls
 {
-    public partial class GraphLayout<TVertex, TEdge, TGraph> : GraphCanvas
+    public partial class GraphLayout<TVertex, TEdge, TGraph> 
         where TVertex : class
         where TEdge : IEdge<TVertex>
         where TGraph : class, IBidirectionalGraph<TVertex, TEdge>
@@ -148,14 +150,14 @@ namespace GraphSharp.Controls
                 typeof(GraphLayout<TVertex, TEdge, TGraph>),
                 new PropertyMetadata(string.Empty, LayoutAlgorithmType_PropertyChanged));
 
-        public static readonly DependencyProperty LayoutModeProperty = DependencyProperty.Register("LayoutMode",
-            typeof(LayoutMode),
+        public static readonly DependencyProperty UiLayoutModeProperty = DependencyProperty.Register("UiLayoutMode",
+            typeof(UiLayoutMode),
             typeof(
                 GraphLayout
                 <TVertex, TEdge,
                     TGraph>),
             new PropertyMetadata(
-                LayoutMode.Automatic,
+                UiLayoutMode.Automatic,
                 LayoutMode_PropertyChanged,
                 LayoutMode_Coerce));
 
@@ -251,6 +253,17 @@ namespace GraphSharp.Controls
 
         public GraphLayout()
         {
+            _lastNotificationTimestamp = DateTime.Now;
+            _stopWatch = new Stopwatch();
+            _verticesRemoved = new Queue<TVertex>();
+            _verticesAdded = new Queue<TVertex>();
+            VertexControls = new Dictionary<TVertex, VertexControl>();
+            _notificationSyncRoot = new object();
+            _notificationLayoutDelay = new TimeSpan(0, 0, 0, 0, 5);
+            _layoutStates = new List<LayoutState<TVertex, TEdge>>();
+            _edgesRemoved = new Queue<TEdge>();
+            _edgesAdded = new Queue<TEdge>();
+            EdgeControls = new Dictionary<TEdge, EdgeControl>();
             AddHandler(GraphElementBehaviour.HighlightTriggeredEvent,
                 new HighlightTriggerEventHandler(HighlightTriggerEventHandler));
         }
@@ -263,8 +276,7 @@ namespace GraphSharp.Controls
             if (args.OriginalSource is VertexControl)
             {
                 var vc = (VertexControl)args.OriginalSource;
-                var vertex = vc.Vertex as TVertex;
-                if (vertex == null || !Graph.ContainsVertex(vertex))
+                if (!(vc.Vertex is TVertex vertex) || !Graph.ContainsVertex(vertex))
                     return;
 
                 if (args.IsPositiveTrigger)
@@ -272,9 +284,8 @@ namespace GraphSharp.Controls
                 else
                     HighlightAlgorithm.OnVertexHighlightRemoving(vertex);
             }
-            else if (args.OriginalSource is EdgeControl)
+            else if (args.OriginalSource is EdgeControl ec)
             {
-                var ec = (EdgeControl)args.OriginalSource;
                 var edge = default(TEdge);
                 try
                 {
@@ -282,6 +293,7 @@ namespace GraphSharp.Controls
                 }
                 catch
                 {
+                    // ignored
                 }
 
                 if (Equals(edge, default(TEdge)) || !Graph.ContainsEdge(edge))
@@ -304,8 +316,7 @@ namespace GraphSharp.Controls
         /// </summary>
         protected static void StateIndex_PropertyChanged(DependencyObject obj, DependencyPropertyChangedEventArgs e)
         {
-            var gl = obj as GraphLayout<TVertex, TEdge, TGraph>;
-            if (gl == null) return;
+            if (!(obj is GraphLayout<TVertex, TEdge, TGraph> gl)) return;
 
             var p = (int)e.NewValue;
             gl.ChangeState(p);
@@ -333,8 +344,7 @@ namespace GraphSharp.Controls
         /// </summary>
         protected static void StateCount_PropertyChanged(DependencyObject obj, DependencyPropertyChangedEventArgs e)
         {
-            var gl = obj as GraphLayout<TVertex, TEdge, TGraph>;
-            if (gl != null)
+            if (obj is GraphLayout<TVertex, TEdge, TGraph> gl)
                 gl.CoerceValue(StateIndexProperty);
         }
 
@@ -345,13 +355,13 @@ namespace GraphSharp.Controls
         }
 
         /// <summary>
-        ///     Coerce callback of the <see cref="LayoutMode" /> dependency property.
+        ///     Coerce callback of the <see cref="UiLayoutMode" /> dependency property.
         /// </summary>
         private static object LayoutMode_Coerce(DependencyObject obj, object newValue)
         {
             var gl = (GraphLayout<TVertex, TEdge, TGraph>)obj;
             if (gl.Graph == null)
-                return LayoutMode.Automatic;
+                return UiLayoutMode.Automatic;
 
             return newValue;
         }
@@ -365,10 +375,9 @@ namespace GraphSharp.Controls
         {
             var gl = (GraphLayout<TVertex, TEdge, TGraph>)obj;
 
-            var g = e.NewValue as TGraph;
-            if (g == null)
+            if (!(e.NewValue is TGraph g))
             {
-                gl.LayoutMode = LayoutMode.Automatic;
+                gl.UiLayoutMode = UiLayoutMode.Automatic;
                 return;
             }
 
@@ -377,14 +386,13 @@ namespace GraphSharp.Controls
 
         private void OnRelayoutInduction(bool tryKeepControls)
         {
-            if (HighlightAlgorithm != null)
-                HighlightAlgorithm.ResetHighlight();
+            HighlightAlgorithm?.ResetHighlight();
 
             //recreate the graph elements
             RecreateGraphElements(tryKeepControls);
 
             //do the layout process again
-            Relayout();
+            ReLayout();
         }
 
         protected static object LayoutAlgorithmFactory_Coerce(DependencyObject obj, object newValue)
@@ -425,12 +433,13 @@ namespace GraphSharp.Controls
             DependencyPropertyChangedEventArgs e)
         {
             var gl = (GraphLayout<TVertex, TEdge, TGraph>)obj;
-            var newAlgoType = e.NewValue == null ? string.Empty : e.NewValue.ToString();
+            var newAlgType = e.NewValue == null ? string.Empty : e.NewValue.ToString();
 
             //regenerate parameters
-            gl.LayoutParameters = gl.LayoutAlgorithmFactory.CreateParameters(newAlgoType, gl.LayoutParameters);
+            gl.LayoutParameters = gl.LayoutAlgorithmFactory.CreateParameters(newAlgType, gl.LayoutParameters);
 
-            if (gl.Graph != null) gl.Relayout();
+            if (gl.Graph != null) 
+                gl.ReLayout();
         }
 
         protected static void EdgeRoutingAlgorithmType_PropertyChanged(DependencyObject obj,
@@ -438,10 +447,10 @@ namespace GraphSharp.Controls
         {
             var gl = (GraphLayout<TVertex, TEdge, TGraph>)obj;
 
-            var newAlgoType = e.NewValue == null ? string.Empty : e.NewValue.ToString();
+            var newAlgType = e.NewValue == null ? string.Empty : e.NewValue.ToString();
 
             //regenerate parameters
-            gl.EdgeRoutingParameters = gl.EdgeRoutingAlgorithmFactory.CreateParameters(newAlgoType,
+            gl.EdgeRoutingParameters = gl.EdgeRoutingAlgorithmFactory.CreateParameters(newAlgType,
                 gl.EdgeRoutingParameters);
 
             if (gl.Graph != null) gl.RecalculateEdgeRouting();
@@ -462,10 +471,10 @@ namespace GraphSharp.Controls
         {
             var gl = (GraphLayout<TVertex, TEdge, TGraph>)obj;
 
-            var newAlgoType = e.NewValue == null ? string.Empty : e.NewValue.ToString();
+            var newAlgType = e.NewValue == null ? string.Empty : e.NewValue.ToString();
 
             //regenerate parameters
-            gl.OverlapRemovalParameters = gl.OverlapRemovalAlgorithmFactory.CreateParameters(newAlgoType,
+            gl.OverlapRemovalParameters = gl.OverlapRemovalAlgorithmFactory.CreateParameters(newAlgType,
                 gl.OverlapRemovalParameters);
 
             if (gl.Graph != null) gl.RecalculateOverlapRemoval();
@@ -481,14 +490,13 @@ namespace GraphSharp.Controls
                 gl.RecalculateOverlapRemoval();
         }
 
-        private static object HighlightAlgorithmType_Coerce(DependencyObject obj, object newValue)
+        private static object? HighlightAlgorithmType_Coerce(DependencyObject obj, object newValue)
         {
             var gl = (GraphLayout<TVertex, TEdge, TGraph>)obj;
 
-            if (!gl.HighlightAlgorithmFactory.IsValidMode(newValue as string))
-                return null;
-
-            return newValue;
+            return !gl.HighlightAlgorithmFactory.IsValidMode(newValue as string) 
+                ? null 
+                : newValue;
         }
 
         protected static void HighlightAlgorithmType_PropertyChanged(DependencyObject obj,
@@ -496,19 +504,18 @@ namespace GraphSharp.Controls
         {
             var gl = (GraphLayout<TVertex, TEdge, TGraph>)obj;
 
-            var newAlgoType = e.NewValue == null ? string.Empty : e.NewValue.ToString();
+            var newAlgType = e.NewValue == null ? string.Empty : e.NewValue.ToString();
 
             //regenerate algorithm, parameters
-            var parameters = gl.HighlightAlgorithmFactory.CreateParameters(newAlgoType, gl.HighlightParameters);
-            gl.HighlightAlgorithm = gl.HighlightAlgorithmFactory.CreateAlgorithm(newAlgoType,
+            var parameters = gl.HighlightAlgorithmFactory.CreateParameters(newAlgType, gl.HighlightParameters);
+            gl.HighlightAlgorithm = gl.HighlightAlgorithmFactory.CreateAlgorithm(newAlgType,
                 gl.CreateHighlightContext(), gl,
                 parameters);
         }
 
         private static void HighlightAlgorithm_PropertyChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
         {
-            var algo = e.NewValue as IHighlightAlgorithm<TVertex, TEdge, TGraph>;
-            if (algo != null)
+            if (e.NewValue is IHighlightAlgorithm<TVertex, TEdge, TGraph> algo)
                 algo.ResetHighlight();
         }
 
@@ -542,10 +549,10 @@ namespace GraphSharp.Controls
         /// <summary>
         ///     Dependency property. Gets or sets the layout mode.
         /// </summary>
-        public LayoutMode LayoutMode
+        public UiLayoutMode UiLayoutMode
         {
-            get => (LayoutMode)GetValue(LayoutModeProperty);
-            set => SetValue(LayoutModeProperty, value);
+            get => (UiLayoutMode)GetValue(UiLayoutModeProperty);
+            set => SetValue(UiLayoutModeProperty, value);
         }
 
         /// <summary>

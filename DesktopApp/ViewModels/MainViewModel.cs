@@ -1,5 +1,5 @@
-﻿using AppLib.GraphModels;
-using DesktopApp.Models;
+﻿using DesktopApp.Models;
+using HyperGraphSharp.Models;
 using ReactiveUI.Fody.Helpers;
 
 namespace DesktopApp.ViewModels

@@ -4,212 +4,206 @@ using GraphSharp.Algorithms.Layout.Compound;
 
 namespace GraphSharp.Controls
 {
-	[TemplatePart(Name = PartInnerCanvas, Type = typeof(FrameworkElement))]
-	public class CompoundVertexControl : VertexControl, ICompoundVertexControl
-	{
-		//Constants for PARTs
-		protected const string PartInnerCanvas = "PART_InnerCanvas";
+    [TemplatePart(Name = PartInnerCanvas, Type = typeof(FrameworkElement))]
+    public class CompoundVertexControl : VertexControl, ICompoundVertexControl
+    {
+        //Constants for PARTs
+        protected const string PartInnerCanvas = "PART_InnerCanvas";
 
-		private bool _activePositionChangeReaction;
+        private bool _activePositionChangeReaction;
 
-		//PARTs
-		protected FrameworkElement _innerCanvas;
+        //PARTs
+        protected FrameworkElement? _innerCanvas;
 
         /// <summary>
         ///     Gets the control of the inner canvas.
         /// </summary>
         public override void OnApplyTemplate()
-		{
-			base.OnApplyTemplate();
+        {
+            base.OnApplyTemplate();
 
-			//get the control of the inner canvas
-			_innerCanvas = Template.FindName(PartInnerCanvas, this) as FrameworkElement ?? this;
-		}
+            //get the control of the inner canvas
+            _innerCanvas = Template.FindName(PartInnerCanvas, this) as FrameworkElement ?? this;
+        }
 
-		#region Dependency Properties
+        #region Dependency Properties
 
-		public ObservableCollection<VertexControl> Vertices
-		{
-			get => (ObservableCollection<VertexControl>) GetValue(VerticesProperty);
-			protected set => SetValue(VerticesPropertyKey, value);
-		}
+        public ObservableCollection<VertexControl> Vertices
+        {
+            get => (ObservableCollection<VertexControl>) GetValue(VerticesProperty);
+            protected set => SetValue(VerticesPropertyKey, value);
+        }
 
-		public static readonly DependencyProperty VerticesProperty;
+        public static readonly DependencyProperty VerticesProperty;
 
-		protected static readonly DependencyPropertyKey VerticesPropertyKey =
-			DependencyProperty.RegisterReadOnly("Vertices", typeof(ObservableCollection<VertexControl>),
-				typeof(CompoundVertexControl), new UIPropertyMetadata(null));
-
-
-		public CompoundVertexInnerLayoutType LayoutMode
-		{
-			get => (CompoundVertexInnerLayoutType) GetValue(LayoutModeProperty);
-			set => SetValue(LayoutModeProperty, value);
-		}
-
-		// Using a DependencyProperty as the backing store for LayoutMode.  This enables animation, styling, binding, etc...
-		public static readonly DependencyProperty LayoutModeProperty =
-			DependencyProperty.Register("LayoutMode", typeof(CompoundVertexInnerLayoutType),
-				typeof(CompoundVertexControl), new UIPropertyMetadata(CompoundVertexInnerLayoutType.Automatic));
+        protected static readonly DependencyPropertyKey VerticesPropertyKey =
+            DependencyProperty.RegisterReadOnly("Vertices", typeof(ObservableCollection<VertexControl>),
+                typeof(CompoundVertexControl), new UIPropertyMetadata(null));
 
 
-		public bool IsExpanded
-		{
-			get => (bool) GetValue(IsExpandedProperty);
-			set => SetValue(IsExpandedProperty, value);
-		}
+        public CompoundVertexInnerLayoutType LayoutMode
+        {
+            get => (CompoundVertexInnerLayoutType) GetValue(LayoutModeProperty);
+            set => SetValue(LayoutModeProperty, value);
+        }
 
-		public static readonly DependencyProperty IsExpandedProperty =
-			DependencyProperty.Register("IsExpanded", typeof(bool), typeof(CompoundVertexControl),
-				new UIPropertyMetadata(true, IsExpanded_PropertyChanged));
-
-		private static void IsExpanded_PropertyChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
-		{
-			var compoundVertexControl = (CompoundVertexControl) d;
-			if ((bool) e.NewValue)
-				compoundVertexControl.RaiseEvent(new RoutedEventArgs(ExpandedEvent, compoundVertexControl));
-			else
-				compoundVertexControl.RaiseEvent(new RoutedEventArgs(CollapsedEvent, compoundVertexControl));
-		}
-
-		public Point InnerCanvasOrigo
-		{
-			get => (Point) GetValue(InnerCanvasOrigoProperty);
-			set => SetValue(InnerCanvasOrigoProperty, value);
-		}
-
-		// Using a DependencyProperty as the backing store for InnerCanvasOrigo.  This enables animation, styling, binding, etc...
-		public static readonly DependencyProperty InnerCanvasOrigoProperty =
-			DependencyProperty.Register("InnerCanvasOrigo", typeof(Point), typeof(CompoundVertexControl),
-				new UIPropertyMetadata(new Point()));
+        // Using a DependencyProperty as the backing store for LayoutMode.  This enables animation, styling, binding, etc...
+        public static readonly DependencyProperty LayoutModeProperty =
+            DependencyProperty.Register("LayoutMode", typeof(CompoundVertexInnerLayoutType),
+                typeof(CompoundVertexControl), new UIPropertyMetadata(CompoundVertexInnerLayoutType.Automatic));
 
 
-		static CompoundVertexControl()
-		{
-			//readonly DPs
-			VerticesProperty = VerticesPropertyKey.DependencyProperty;
+        public bool IsExpanded
+        {
+            get => (bool) GetValue(IsExpandedProperty);
+            set => SetValue(IsExpandedProperty, value);
+        }
 
-			//override the StyleKey Property
-			DefaultStyleKeyProperty.OverrideMetadata(typeof(CompoundVertexControl),
-				new FrameworkPropertyMetadata(typeof(CompoundVertexControl)));
+        public static readonly DependencyProperty IsExpandedProperty =
+            DependencyProperty.Register("IsExpanded", typeof(bool), typeof(CompoundVertexControl),
+                new UIPropertyMetadata(true, IsExpanded_PropertyChanged));
 
-			//register a class handler for the GraphCanvas.PositionChanged routed event
-			EventManager.RegisterClassHandler(typeof(CompoundVertexControl), GraphCanvas.PositionChangedEvent,
-				new PositionChangedEventHandler(OnPositionChanged));
-		}
+        private static void IsExpanded_PropertyChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
+        {
+            var compoundVertexControl = (CompoundVertexControl) d;
+            if ((bool) e.NewValue)
+                compoundVertexControl.RaiseEvent(new RoutedEventArgs(ExpandedEvent, compoundVertexControl));
+            else
+                compoundVertexControl.RaiseEvent(new RoutedEventArgs(CollapsedEvent, compoundVertexControl));
+        }
 
-		private static void OnPositionChanged(object sender, PositionChangedEventArgs args)
-		{
-			var compoundVertexControl = args.Source as CompoundVertexControl;
-			if (compoundVertexControl == null || compoundVertexControl._activePositionChangeReaction)
-				return;
+        public Point InnerCanvasOrigo
+        {
+            get => (Point) GetValue(InnerCanvasOrigoProperty);
+            set => SetValue(InnerCanvasOrigoProperty, value);
+        }
 
-			compoundVertexControl._activePositionChangeReaction = true;
+        // Using a DependencyProperty as the backing store for InnerCanvasOrigo.  This enables animation, styling, binding, etc...
+        public static readonly DependencyProperty InnerCanvasOrigoProperty =
+            DependencyProperty.Register("InnerCanvasOrigo", typeof(Point), typeof(CompoundVertexControl),
+                new UIPropertyMetadata(new Point()));
 
-			//we are moving the compound vertex itself
-			if (compoundVertexControl == args.OriginalSource)
-			{
-				//move the children with the same amount
-				foreach (var childVertexControl in compoundVertexControl.Vertices)
-				{
-					GraphCanvas.SetX(childVertexControl, GraphCanvas.GetX(childVertexControl) + args.XChange);
-					GraphCanvas.SetY(childVertexControl, GraphCanvas.GetY(childVertexControl) + args.YChange);
-				}
-			}
-			else
-			{
-				//we are moving the parent or one of it's child
-				var childVertexControl = args.OriginalSource as VertexControl;
-				if (childVertexControl == null)
-					return;
-				if (compoundVertexControl.Vertices.Contains(childVertexControl))
-					//update the position of all child vertices
-					foreach (var cvc in compoundVertexControl.Vertices)
-					{
-						if (cvc == childVertexControl)
-							continue;
-						var childCenterPos = new Point(cvc.ActualWidth / 2, cvc.ActualHeight / 2);
-						var translatedChildCenterPos = cvc.TranslatePoint(childCenterPos, cvc.RootCanvas);
-						GraphCanvas.SetX(cvc, translatedChildCenterPos.X - cvc.RootCanvas.Translation.X);
-						GraphCanvas.SetY(cvc, translatedChildCenterPos.Y - cvc.RootCanvas.Translation.Y);
-					}
-			}
 
-			compoundVertexControl._activePositionChangeReaction = false;
-		}
+        static CompoundVertexControl()
+        {
+            //readonly DPs
+            VerticesProperty = VerticesPropertyKey.DependencyProperty;
 
-		public CompoundVertexControl()
-		{
-			Vertices = new ObservableCollection<VertexControl>();
-		}
+            //override the StyleKey Property
+            DefaultStyleKeyProperty.OverrideMetadata(typeof(CompoundVertexControl),
+                new FrameworkPropertyMetadata(typeof(CompoundVertexControl)));
 
-		#endregion
+            //register a class handler for the GraphCanvas.PositionChanged routed event
+            EventManager.RegisterClassHandler(typeof(CompoundVertexControl), GraphCanvas.PositionChangedEvent,
+                new PositionChangedEventHandler(OnPositionChanged));
+        }
 
-		#region Routed Events
+        private static void OnPositionChanged(object sender, PositionChangedEventArgs args)
+        {
+            if (!(args.Source is CompoundVertexControl compoundVertexControl) ||
+                compoundVertexControl._activePositionChangeReaction)
+                return;
 
-		public static readonly RoutedEvent ExpandedEvent =
-			EventManager.RegisterRoutedEvent("Expanded", RoutingStrategy.Bubble, typeof(RoutedEventHandler),
-				typeof(CompoundVertexControl));
+            compoundVertexControl._activePositionChangeReaction = true;
 
-		public event RoutedEventHandler Expanded
-		{
-			add => AddHandler(ExpandedEvent, value);
-			remove => RemoveHandler(ExpandedEvent, value);
-		}
+            //we are moving the compound vertex itself
+            if (compoundVertexControl == args.OriginalSource)
+            {
+                //move the children with the same amount
+                foreach (var childVertexControl in compoundVertexControl.Vertices)
+                {
+                    GraphCanvas.SetX(childVertexControl, GraphCanvas.GetX(childVertexControl) + args.XChange);
+                    GraphCanvas.SetY(childVertexControl, GraphCanvas.GetY(childVertexControl) + args.YChange);
+                }
+            }
+            else
+            {
+                //we are moving the parent or one of it's child
+                var childVertexControl = args.OriginalSource as VertexControl;
+                if (childVertexControl == null)
+                    return;
+                if (compoundVertexControl.Vertices.Contains(childVertexControl))
+                    //update the position of all child vertices
+                    foreach (var cvc in compoundVertexControl.Vertices)
+                    {
+                        if (cvc == childVertexControl)
+                            continue;
+                        var childCenterPos = new Point(cvc.ActualWidth / 2, cvc.ActualHeight / 2);
+                        var translatedChildCenterPos = cvc.TranslatePoint(childCenterPos, cvc.RootCanvas);
+                        GraphCanvas.SetX(cvc, translatedChildCenterPos.X - cvc.RootCanvas.Translation.X);
+                        GraphCanvas.SetY(cvc, translatedChildCenterPos.Y - cvc.RootCanvas.Translation.Y);
+                    }
+            }
 
-		public static readonly RoutedEvent CollapsedEvent =
-			EventManager.RegisterRoutedEvent("Collapsed", RoutingStrategy.Bubble, typeof(RoutedEventHandler),
-				typeof(CompoundVertexControl));
+            compoundVertexControl._activePositionChangeReaction = false;
+        }
 
-		public event RoutedEventHandler Collapsed
-		{
-			add => AddHandler(CollapsedEvent, value);
-			remove => RemoveHandler(CollapsedEvent, value);
-		}
+        public CompoundVertexControl()
+        {
+            Vertices = new ObservableCollection<VertexControl>();
+        }
 
-		#endregion
+        #endregion
 
-		#region ICompoundVertexControl Members
+        #region Routed Events
+
+        public static readonly RoutedEvent ExpandedEvent =
+            EventManager.RegisterRoutedEvent("Expanded", RoutingStrategy.Bubble, typeof(RoutedEventHandler),
+                typeof(CompoundVertexControl));
+
+        public event RoutedEventHandler Expanded
+        {
+            add => AddHandler(ExpandedEvent, value);
+            remove => RemoveHandler(ExpandedEvent, value);
+        }
+
+        public static readonly RoutedEvent CollapsedEvent =
+            EventManager.RegisterRoutedEvent("Collapsed", RoutingStrategy.Bubble, typeof(RoutedEventHandler),
+                typeof(CompoundVertexControl));
+
+        public event RoutedEventHandler Collapsed
+        {
+            add => AddHandler(CollapsedEvent, value);
+            remove => RemoveHandler(CollapsedEvent, value);
+        }
+
+        #endregion
+
+        #region ICompoundVertexControl Members
 
         /// <summary>
         ///     Gets the size of the inner canvas control.
         /// </summary>
-        public Size InnerCanvasSize
-		{
-			get
-			{
-				if (_innerCanvas == null)
-					return new Size();
-
-				return new Size(_innerCanvas.ActualWidth, _innerCanvas.ActualHeight);
-			}
-		}
+        public Size InnerCanvasSize =>
+            _innerCanvas == null 
+                ? new Size() 
+                : new Size(_innerCanvas.ActualWidth, _innerCanvas.ActualHeight);
 
         /// <summary>
         ///     Gets the 'borderthickness' of the control around the inner canvas.
         /// </summary>
         public Thickness VertexBorderThickness
-		{
-			get
-			{
-				var thickness = new Thickness();
-				if (_innerCanvas == null)
-					return thickness;
+        {
+            get
+            {
+                var thickness = new Thickness();
+                if (_innerCanvas == null)
+                    return thickness;
 
-				var innerCanvasPosition = _innerCanvas.TranslatePoint(new Point(), this);
-				var innerCanvasSize = InnerCanvasSize;
-				var size = new Size(ActualWidth, ActualHeight);
+                var innerCanvasPosition = _innerCanvas.TranslatePoint(new Point(), this);
+                var innerCanvasSize = InnerCanvasSize;
+                var size = new Size(ActualWidth, ActualHeight);
 
-				//calculate the thickness
-				thickness.Left = innerCanvasPosition.X;
-				thickness.Top = innerCanvasPosition.Y;
-				thickness.Right = size.Width - (innerCanvasPosition.X + innerCanvasSize.Width);
-				thickness.Bottom = size.Height - (innerCanvasPosition.Y + innerCanvasSize.Height);
+                //calculate the thickness
+                thickness.Left = innerCanvasPosition.X;
+                thickness.Top = innerCanvasPosition.Y;
+                thickness.Right = size.Width - (innerCanvasPosition.X + innerCanvasSize.Width);
+                thickness.Bottom = size.Height - (innerCanvasPosition.Y + innerCanvasSize.Height);
 
-				return thickness;
-			}
-		}
+                return thickness;
+            }
+        }
 
-		#endregion
-	}
+        #endregion
+    }
 }

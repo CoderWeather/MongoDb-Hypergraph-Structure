@@ -5,66 +5,63 @@ using HyperGraphSharp.Models;
 
 namespace HyperGraphSharp.Controls
 {
-	public partial class HyperGraphLayout
-	{
-		protected IDictionary<Vertex, Point> RelativeVertexPositions =>
-			VertexControls.ToDictionary(
-				pair => pair.Key,
-				pair => GetRelativePosition(pair.Value));
+    public partial class HyperGraphLayout
+    {
+        protected IDictionary<Vertex, Point> RelativeVertexPositions =>
+            VertexControls.ToDictionary(
+                pair => pair.Key,
+                pair => GetRelativePosition(pair.Value));
 
-		protected IDictionary<Vertex, Point> LatestVertexPositions =>
-			VertexControls.ToDictionary(
-				pair => pair.Key,
-				pair =>
-				{
-					var (_, vertexControl) = pair;
-					var x = GetX(vertexControl);
-					var y = GetY(vertexControl);
-					return new Point
-					{
-						X = double.IsNaN(x) ? 0.0 : x,
-						Y = double.IsNaN(y) ? 0.0 : y
-					};
-				});
+        protected IDictionary<Vertex, Point> LatestVertexPositions =>
+            VertexControls.ToDictionary(
+                pair => pair.Key,
+                pair =>
+                {
+                    var (_, vertexControl) = pair;
+                    var x = GetX(vertexControl);
+                    var y = GetY(vertexControl);
+                    return new Point
+                    {
+                        X = double.IsNaN(x) ? 0.0 : x,
+                        Y = double.IsNaN(y) ? 0.0 : y
+                    };
+                });
 
-		private IDictionary<Vertex, Size> ActualVertexSizes =>
-			VertexControls.ToDictionary(
-				pair => pair.Key,
-				pair =>
-				{
-					if (IsMeasureValid is false)
-						Measure(new Size(double.PositiveInfinity, double.PositiveInfinity));
-					InvalidateMeasure();
-					UpdateLayout();
-					var (_, vControl) = pair;
-					return new Size
-					{
-						Width = vControl.ActualWidth,
-						Height = vControl.ActualHeight
-					};
-				}
-			);
+        private IDictionary<Vertex, Size> ActualVertexSizes =>
+            GetLatestVertexSizes();
 
-		private IDictionary<Vertex, Point> GetRelativeVertexPositions()
-		{
-			return VertexControls.ToDictionary(
-				pair => pair.Key,
-				pair => GetRelativePosition(pair.Value));
-		}
+        private IDictionary<Vertex, Size> GetLatestVertexSizes()
+        {
+            if (IsMeasureValid is false)
+                Measure(new Size(double.PositiveInfinity, double.PositiveInfinity));
 
-		private Point GetRelativePosition(FrameworkElement vc)
-		{
-			return GetRelativePosition(vc, this);
-		}
+            var vertexSizes = new Dictionary<Vertex, Size>(VertexControls.Count);
 
-		private static Point GetRelativePosition(FrameworkElement vc, UIElement relativeTo)
-		{
-			return vc.TranslatePoint(new Point
-				{
-					X = vc.ActualWidth / 2.0,
-					Y = vc.ActualHeight / 2.0
-				},
-				relativeTo);
-		}
-	}
+            foreach (var (vertex, vControl) in VertexControls)
+            {
+                vertexSizes[vertex] = new Size
+                {
+                    Width = vControl.ActualWidth, Height = vControl.ActualHeight
+                };
+            }
+
+            return vertexSizes;
+        }
+
+        private IDictionary<Vertex, Point> GetRelativeVertexPositions() =>
+            VertexControls.ToDictionary(
+                pair => pair.Key,
+                pair => GetRelativePosition(pair.Value));
+
+        private Point GetRelativePosition(FrameworkElement vc) =>
+            GetRelativePosition(vc, this);
+
+        private static Point GetRelativePosition(FrameworkElement vc, UIElement relativeTo) =>
+            vc.TranslatePoint(new Point
+                {
+                    X = vc.ActualWidth / 2.0,
+                    Y = vc.ActualHeight / 2.0
+                },
+                relativeTo);
+    }
 }

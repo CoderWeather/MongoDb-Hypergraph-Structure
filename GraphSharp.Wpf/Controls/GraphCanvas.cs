@@ -2,67 +2,70 @@
 using System.Windows;
 using System.Windows.Controls;
 using GraphSharp.Controls.Animations;
+using GraphSharp.Controls.Transitions;
 
 namespace GraphSharp.Controls
 {
-	public class GraphCanvas : Panel
-	{
-		public static readonly DependencyProperty XProperty =
-			DependencyProperty.RegisterAttached("X", typeof(double), typeof(GraphCanvas),
-				new FrameworkPropertyMetadata(double.NaN,
-					FrameworkPropertyMetadataOptions.AffectsMeasure |
-					FrameworkPropertyMetadataOptions.AffectsArrange |
-					FrameworkPropertyMetadataOptions.AffectsRender |
-					FrameworkPropertyMetadataOptions.AffectsParentMeasure |
-					FrameworkPropertyMetadataOptions.AffectsParentArrange |
-					FrameworkPropertyMetadataOptions.BindsTwoWayByDefault,
-					X_PropertyChanged));
+    public class GraphCanvas : Panel
+    {
+        public static readonly DependencyProperty XProperty =
+            DependencyProperty.RegisterAttached(
+                "X", typeof(double), typeof(GraphCanvas),
+                new FrameworkPropertyMetadata(double.NaN,
+                    FrameworkPropertyMetadataOptions.AffectsMeasure |
+                    FrameworkPropertyMetadataOptions.AffectsArrange |
+                    FrameworkPropertyMetadataOptions.AffectsRender |
+                    FrameworkPropertyMetadataOptions.AffectsParentMeasure |
+                    FrameworkPropertyMetadataOptions.AffectsParentArrange |
+                    FrameworkPropertyMetadataOptions.BindsTwoWayByDefault,
+                    X_PropertyChanged));
 
-		public static readonly DependencyProperty YProperty =
-			DependencyProperty.RegisterAttached("Y", typeof(double), typeof(GraphCanvas),
-				new FrameworkPropertyMetadata(double.NaN,
-					FrameworkPropertyMetadataOptions.AffectsMeasure |
-					FrameworkPropertyMetadataOptions.AffectsArrange |
-					FrameworkPropertyMetadataOptions.AffectsRender |
-					FrameworkPropertyMetadataOptions.AffectsParentMeasure |
-					FrameworkPropertyMetadataOptions.AffectsParentArrange |
-					FrameworkPropertyMetadataOptions.BindsTwoWayByDefault,
-					Y_PropertyChanged));
+        public static readonly DependencyProperty YProperty =
+            DependencyProperty.RegisterAttached(
+                "Y", typeof(double), typeof(GraphCanvas),
+                new FrameworkPropertyMetadata(double.NaN,
+                    FrameworkPropertyMetadataOptions.AffectsMeasure |
+                    FrameworkPropertyMetadataOptions.AffectsArrange |
+                    FrameworkPropertyMetadataOptions.AffectsRender |
+                    FrameworkPropertyMetadataOptions.AffectsParentMeasure |
+                    FrameworkPropertyMetadataOptions.AffectsParentArrange |
+                    FrameworkPropertyMetadataOptions.BindsTwoWayByDefault,
+                    Y_PropertyChanged));
 
-		public static readonly DependencyProperty TranslationProperty;
+        public static readonly DependencyProperty TranslationProperty;
 
-		protected static readonly DependencyPropertyKey TranslationPropertyKey =
-			DependencyProperty.RegisterReadOnly("Translation", typeof(Vector), typeof(GraphCanvas),
-				new UIPropertyMetadata(new Vector()));
-
-
-		private IAnimationContext _animationContext;
-
-		static GraphCanvas()
-		{
-			TranslationProperty = TranslationPropertyKey.DependencyProperty;
-		}
+        protected static readonly DependencyPropertyKey TranslationPropertyKey =
+            DependencyProperty.RegisterReadOnly("Translation", typeof(Vector), typeof(GraphCanvas),
+                new UIPropertyMetadata(new Vector()));
 
 
-		public Vector Translation
-		{
-			get => (Vector) GetValue(TranslationProperty);
-			protected set => SetValue(TranslationPropertyKey, value);
-		}
+        private IAnimationContext _animationContext;
+
+        static GraphCanvas()
+        {
+            TranslationProperty = TranslationPropertyKey.DependencyProperty;
+        }
+
+
+        public Vector Translation
+        {
+            get => (Vector) GetValue(TranslationProperty);
+            protected set => SetValue(TranslationPropertyKey, value);
+        }
 
         /// <summary>
         ///     Gets the context of the animation.
         /// </summary>
         public virtual IAnimationContext AnimationContext
-		{
-			get
-			{
-				if (_animationContext == null)
-					_animationContext = new AnimationContext(this);
+        {
+            get
+            {
+                if (_animationContext == null)
+                    _animationContext = new AnimationContext(this);
 
-				return _animationContext;
-			}
-		}
+                return _animationContext;
+            }
+        }
 
         /// <summary>
         ///     Gets whether the animation could be run, or not.
@@ -74,23 +77,24 @@ namespace GraphSharp.Controls
         ///     vertex positions.
         /// </summary>
         public virtual void ContinueLayout()
-		{
-		}
+        {
+        }
 
         /// <summary>
         ///     The layout process will be started without initial
         ///     vertex positions.
         /// </summary>
         public virtual void ReLayout()
-		{
-		}
+        {
+        }
 
         /// <summary>
         ///     Does a transition for the control which has been already added
         ///     to this container.
         /// </summary>
         /// <param name="control">The control which has been added.</param>
-        protected virtual void RunCreationTransition(Control control) => CreationTransition?.Run(AnimationContext, control, AnimationLength);
+        protected virtual void RunCreationTransition(Control control) =>
+            CreationTransition?.Run(AnimationContext, control, AnimationLength);
 
         /// <summary>
         ///     Animates the position of the given control to
@@ -100,19 +104,19 @@ namespace GraphSharp.Controls
         /// <param name="x">The new horizontal position of the control.</param>
         /// <param name="y">The new vertical position of the control.</param>
         protected virtual void RunMoveAnimation(Control control, double x, double y)
-		{
-			if (MoveAnimation != null && CanAnimate)
-				//animate to the given position
-			{
-				MoveAnimation.Animate(AnimationContext, control, x, y, AnimationLength);
-			}
-			else
-			{
-				//cannot animate, only the given positions
-				SetX(control, x);
-				SetY(control, y);
-			}
-		}
+        {
+            if (MoveAnimation != null && CanAnimate)
+                //animate to the given position
+            {
+                MoveAnimation.Animate(AnimationContext, control, x, y, AnimationLength);
+            }
+            else
+            {
+                //cannot animate, only the given positions
+                SetX(control, x);
+                SetY(control, y);
+            }
+        }
 
         /// <summary>
         ///     Transites a control which gonna' be removed from this
@@ -124,74 +128,74 @@ namespace GraphSharp.Controls
         ///     automatically from this container's Children.
         /// </param>
         protected virtual void RunDestructionTransition(Control control, bool dontRemoveAfter)
-		{
-			if (DestructionTransition == null)
-				return;
+        {
+            if (DestructionTransition == null)
+                return;
 
-			if (dontRemoveAfter)
-				DestructionTransition.Run(AnimationContext, control, AnimationLength);
-			else
-				DestructionTransition.Run(AnimationContext, control, AnimationLength, Children.Remove);
-		}
+            if (dontRemoveAfter)
+                DestructionTransition.Run(AnimationContext, control, AnimationLength);
+            else
+                DestructionTransition.Run(AnimationContext, control, AnimationLength, Children.Remove);
+        }
 
-		#region Attached Dependency Property registrations
+        #region Attached Dependency Property registrations
 
-		private static void X_PropertyChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
-		{
-			var xChange = (double) e.NewValue - (double) e.OldValue;
-			PositionChanged(d, xChange, 0);
-		}
+        private static void X_PropertyChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
+        {
+            var xChange = (double) e.NewValue - (double) e.OldValue;
+            PositionChanged(d, xChange, 0);
+        }
 
 
-		private static void Y_PropertyChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
-		{
-			var yChange = (double) e.NewValue - (double) e.OldValue;
-			PositionChanged(d, 0, yChange);
-		}
+        private static void Y_PropertyChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
+        {
+            var yChange = (double) e.NewValue - (double) e.OldValue;
+            PositionChanged(d, 0, yChange);
+        }
 
-		private static void PositionChanged(DependencyObject d, double xChange, double yChange)
-		{
+        private static void PositionChanged(DependencyObject d, double xChange, double yChange)
+        {
             if (d is UIElement e)
-				e.RaiseEvent(new PositionChangedEventArgs(PositionChangedEvent, e, xChange, yChange));
-		}
+                e.RaiseEvent(new PositionChangedEventArgs(PositionChangedEvent, e, xChange, yChange));
+        }
 
-		#endregion
+        #endregion
 
-		#region Attached Properties
+        #region Attached Properties
 
-		[AttachedPropertyBrowsableForChildren]
-		public static double GetX(DependencyObject obj) => (double) obj.GetValue(XProperty);
+        [AttachedPropertyBrowsableForChildren]
+        public static double GetX(DependencyObject obj) => (double) obj.GetValue(XProperty);
 
         public static void SetX(DependencyObject obj, double value) => obj.SetValue(XProperty, value);
 
         [AttachedPropertyBrowsableForChildren]
-		public static double GetY(DependencyObject obj) => (double) obj.GetValue(YProperty);
+        public static double GetY(DependencyObject obj) => (double) obj.GetValue(YProperty);
 
         public static void SetY(DependencyObject obj, double value) => obj.SetValue(YProperty, value);
 
         #endregion
 
-		#region Attached Routed Events
+        #region Attached Routed Events
 
-		public static readonly RoutedEvent PositionChangedEvent =
-			EventManager.RegisterRoutedEvent("PositionChanged", RoutingStrategy.Bubble,
-				typeof(PositionChangedEventHandler), typeof(GraphCanvas));
+        public static readonly RoutedEvent PositionChangedEvent =
+            EventManager.RegisterRoutedEvent("PositionChanged", RoutingStrategy.Bubble,
+                typeof(PositionChangedEventHandler), typeof(GraphCanvas));
 
-		public static void AddPositionChangedHandler(DependencyObject d, RoutedEventHandler handler)
-		{
+        public static void AddPositionChangedHandler(DependencyObject d, RoutedEventHandler handler)
+        {
             if (d is UIElement e)
-				e.AddHandler(PositionChangedEvent, handler);
-		}
+                e.AddHandler(PositionChangedEvent, handler);
+        }
 
-		public static void RemovePositionChangedHandler(DependencyObject d, RoutedEventHandler handler)
-		{
+        public static void RemovePositionChangedHandler(DependencyObject d, RoutedEventHandler handler)
+        {
             if (d is UIElement e)
-				e.RemoveHandler(PositionChangedEvent, handler);
-		}
+                e.RemoveHandler(PositionChangedEvent, handler);
+        }
 
-		#endregion
+        #endregion
 
-		#region Measure & Arrange
+        #region Measure & Arrange
 
         /// <summary>
         ///     The position of the topLeft corner of the most top-left
@@ -211,50 +215,53 @@ namespace GraphSharp.Controls
         /// <param name="arrangeSize">The arranged size of the control.</param>
         /// <returns>The size of the control.</returns>
         protected override Size ArrangeOverride(Size arrangeSize)
-		{
-			var translate = new Vector(-topLeft.X, -topLeft.Y);
-			var graphSize = bottomRight - topLeft;
+        {
+            var translate = new Vector(-topLeft.X, -topLeft.Y);
+            var graphSize = bottomRight - topLeft;
 
-			if (double.IsNaN(graphSize.X) || double.IsNaN(graphSize.Y) ||
-				double.IsInfinity(graphSize.X) || double.IsInfinity(graphSize.Y))
-				translate = new Vector(0, 0);
+            if (double.IsNaN(graphSize.X) || double.IsNaN(graphSize.Y) ||
+                double.IsInfinity(graphSize.X) || double.IsInfinity(graphSize.Y))
+                translate = new Vector(0, 0);
 
-			Translation = translate;
+            Translation = translate;
 
-			graphSize = InternalChildren.Count > 0
-				? new Vector(double.NegativeInfinity, double.NegativeInfinity)
-				: new Vector(0, 0);
+            graphSize = InternalChildren.Count > 0
+                ? new Vector(double.NegativeInfinity, double.NegativeInfinity)
+                : new Vector(0, 0);
 
-			//translate with the topLeft
-			foreach (UIElement child in InternalChildren)
-			{
-				var x = GetX(child);
-				var y = GetY(child);
-				if (double.IsNaN(x) || double.IsNaN(y))
-				{
-					//not a vertex, set the coordinates of the top-left corner
-					x = double.IsNaN(x) ? translate.X : x;
-					y = double.IsNaN(y) ? translate.Y : y;
-				}
-				else
-				{
-					//this is a vertex
-					x += translate.X;
-					y += translate.Y;
+            //translate with the topLeft
+            foreach (UIElement? child in InternalChildren)
+            {
+                if (child is null)
+                    continue;
 
-					//get the top-left corner
-					x -= child.DesiredSize.Width * 0.5;
-					y -= child.DesiredSize.Height * 0.5;
-				}
+                var x = GetX(child);
+                var y = GetY(child);
+                if (double.IsNaN(x) || double.IsNaN(y))
+                {
+                    //not a vertex, set the coordinates of the top-left corner
+                    x = double.IsNaN(x) ? translate.X : x;
+                    y = double.IsNaN(y) ? translate.Y : y;
+                }
+                else
+                {
+                    //this is a vertex
+                    x += translate.X;
+                    y += translate.Y;
 
-				child.Arrange(new Rect(new Point(x, y), child.DesiredSize));
+                    //get the top-left corner
+                    x -= child.DesiredSize.Width * 0.5;
+                    y -= child.DesiredSize.Height * 0.5;
+                }
 
-				graphSize.X = Math.Max(0, Math.Max(graphSize.X, x + child.DesiredSize.Width));
-				graphSize.Y = Math.Max(0, Math.Max(graphSize.Y, y + child.DesiredSize.Height));
-			}
+                child.Arrange(new Rect(new Point(x, y), child.DesiredSize));
 
-			return new Size(graphSize.X, graphSize.Y);
-		}
+                graphSize.X = Math.Max(0, Math.Max(graphSize.X, x + child.DesiredSize.Width));
+                graphSize.Y = Math.Max(0, Math.Max(graphSize.Y, y + child.DesiredSize.Height));
+            }
+
+            return new Size(graphSize.X, graphSize.Y);
+        }
 
         /// <summary>
         ///     Overridden measure. It calculates a size where all of
@@ -263,51 +270,51 @@ namespace GraphSharp.Controls
         /// <param name="constraint">The size constraint.</param>
         /// <returns>The calculated size.</returns>
         protected override Size MeasureOverride(Size constraint)
-		{
-			topLeft = new Point(double.PositiveInfinity, double.PositiveInfinity);
-			bottomRight = new Point(double.NegativeInfinity, double.NegativeInfinity);
+        {
+            topLeft = new Point(double.PositiveInfinity, double.PositiveInfinity);
+            bottomRight = new Point(double.NegativeInfinity, double.NegativeInfinity);
 
-			foreach (UIElement child in InternalChildren)
-			{
-				//measure the child
-				child.Measure(constraint);
+            foreach (UIElement child in InternalChildren)
+            {
+                //measure the child
+                child.Measure(constraint);
 
-				//get the position of the vertex
-				var left = GetX(child);
-				var top = GetY(child);
+                //get the position of the vertex
+                var left = GetX(child);
+                var top = GetY(child);
 
-				var halfWidth = child.DesiredSize.Width * 0.5;
-				var halfHeight = child.DesiredSize.Height * 0.5;
+                var halfWidth = child.DesiredSize.Width * 0.5;
+                var halfHeight = child.DesiredSize.Height * 0.5;
 
-				if (double.IsNaN(left) || double.IsNaN(top))
-				{
-					left = halfWidth;
-					top = halfHeight;
-				}
+                if (double.IsNaN(left) || double.IsNaN(top))
+                {
+                    left = halfWidth;
+                    top = halfHeight;
+                }
 
-				//get the top left corner point
-				topLeft.X = Math.Min(topLeft.X, left - halfWidth - Origo.X);
-				topLeft.Y = Math.Min(topLeft.Y, top - halfHeight - Origo.Y);
+                //get the top left corner point
+                topLeft.X = Math.Min(topLeft.X, left - halfWidth - Origo.X);
+                topLeft.Y = Math.Min(topLeft.Y, top - halfHeight - Origo.Y);
 
-				//calculate the bottom right corner point
-				bottomRight.X = Math.Max(bottomRight.X, left + halfWidth - Origo.X);
-				bottomRight.Y = Math.Max(bottomRight.Y, top + halfHeight - Origo.Y);
-			}
+                //calculate the bottom right corner point
+                bottomRight.X = Math.Max(bottomRight.X, left + halfWidth - Origo.X);
+                bottomRight.Y = Math.Max(bottomRight.Y, top + halfHeight - Origo.Y);
+            }
 
-			var graphSize = (Size) (bottomRight - topLeft);
-			graphSize.Width = Math.Max(0, graphSize.Width);
-			graphSize.Height = Math.Max(0, graphSize.Height);
+            var graphSize = (Size) (bottomRight - topLeft);
+            graphSize.Width = Math.Max(0, graphSize.Width);
+            graphSize.Height = Math.Max(0, graphSize.Height);
 
-			if (double.IsNaN(graphSize.Width) || double.IsNaN(graphSize.Height) ||
-				double.IsInfinity(graphSize.Width) || double.IsInfinity(graphSize.Height))
-				return new Size(0, 0);
+            if (double.IsNaN(graphSize.Width) || double.IsNaN(graphSize.Height) ||
+                double.IsInfinity(graphSize.Width) || double.IsInfinity(graphSize.Height))
+                return new Size(0, 0);
 
-			return graphSize;
-		}
+            return graphSize;
+        }
 
-		#endregion
+        #endregion
 
-		#region DP - Animation length
+        #region DP - Animation length
 
         /// <summary>
         ///     Gets or sets the length of the animation.
@@ -316,35 +323,35 @@ namespace GraphSharp.Controls
         ///     Default value is 500 ms.
         /// </summary>
         public TimeSpan AnimationLength
-		{
-			get => (TimeSpan) GetValue(AnimationLengthProperty);
-			set => SetValue(AnimationLengthProperty, value);
-		}
+        {
+            get => (TimeSpan) GetValue(AnimationLengthProperty);
+            set => SetValue(AnimationLengthProperty, value);
+        }
 
-		public static readonly DependencyProperty AnimationLengthProperty =
-			DependencyProperty.Register("AnimationLength", typeof(TimeSpan), typeof(GraphCanvas),
-				new UIPropertyMetadata(new TimeSpan(0, 0, 0, 0, 500)));
+        public static readonly DependencyProperty AnimationLengthProperty =
+            DependencyProperty.Register("AnimationLength", typeof(TimeSpan), typeof(GraphCanvas),
+                new UIPropertyMetadata(new TimeSpan(0, 0, 0, 0, 500)));
 
-		#endregion
+        #endregion
 
-		#region DP - CreationAnimation
+        #region DP - CreationAnimation
 
         /// <summary>
         ///     Gets or sets the animation controller for the 'Control Creation' animation.
         /// </summary>
         public ITransition CreationTransition
-		{
-			get => (ITransition) GetValue(CreationTransitionProperty);
-			set => SetValue(CreationTransitionProperty, value);
-		}
+        {
+            get => (ITransition) GetValue(CreationTransitionProperty);
+            set => SetValue(CreationTransitionProperty, value);
+        }
 
-		public static readonly DependencyProperty CreationTransitionProperty =
-			DependencyProperty.Register("CreationTransition", typeof(ITransition), typeof(GraphCanvas),
-				new UIPropertyMetadata(new FadeInTransition()));
+        public static readonly DependencyProperty CreationTransitionProperty =
+            DependencyProperty.Register("CreationTransition", typeof(ITransition), typeof(GraphCanvas),
+                new UIPropertyMetadata(new FadeInTransition()));
 
-		#endregion
+        #endregion
 
-		#region IsAnimationEnabled
+        #region IsAnimationEnabled
 
         /// <summary>
         ///     If this property is true, and the other animation disabler
@@ -352,73 +359,73 @@ namespace GraphSharp.Controls
         ///     If this is false, the animations will be disabled.
         /// </summary>
         public bool IsAnimationEnabled
-		{
-			get => (bool) GetValue(IsAnimationEnabledProperty);
-			set => SetValue(IsAnimationEnabledProperty, value);
-		}
+        {
+            get => (bool) GetValue(IsAnimationEnabledProperty);
+            set => SetValue(IsAnimationEnabledProperty, value);
+        }
 
-		public static readonly DependencyProperty IsAnimationEnabledProperty =
-			DependencyProperty.Register("IsAnimationEnabled", typeof(bool), typeof(GraphCanvas),
-				new UIPropertyMetadata(true));
+        public static readonly DependencyProperty IsAnimationEnabledProperty =
+            DependencyProperty.Register("IsAnimationEnabled", typeof(bool), typeof(GraphCanvas),
+                new UIPropertyMetadata(true));
 
-		#endregion
+        #endregion
 
-		#region DP - MoveAnimation
+        #region DP - MoveAnimation
 
         /// <summary>
         ///     Gets or sets the animation controller for the 'Control Moving' animation.
         /// </summary>
         public IAnimation MoveAnimation
-		{
-			get => (IAnimation) GetValue(MoveAnimationProperty);
-			set => SetValue(MoveAnimationProperty, value);
-		}
+        {
+            get => (IAnimation) GetValue(MoveAnimationProperty);
+            set => SetValue(MoveAnimationProperty, value);
+        }
 
-		public static readonly DependencyProperty MoveAnimationProperty =
-			DependencyProperty.Register("MoveAnimation", typeof(IAnimation), typeof(GraphCanvas),
-				new UIPropertyMetadata(new SimpleMoveAnimation()));
+        public static readonly DependencyProperty MoveAnimationProperty =
+            DependencyProperty.Register("MoveAnimation", typeof(IAnimation), typeof(GraphCanvas),
+                new UIPropertyMetadata(new SimpleMoveAnimation()));
 
-		#endregion
+        #endregion
 
-		#region DP - DestructionAnimation
+        #region DP - DestructionAnimation
 
         /// <summary>
         ///     Gets or sets the transition controller for the 'Control Descruction' animation.
         /// </summary>
         public ITransition DestructionTransition
-		{
-			get => (ITransition) GetValue(DestructionTransitionProperty);
-			set => SetValue(DestructionTransitionProperty, value);
-		}
+        {
+            get => (ITransition) GetValue(DestructionTransitionProperty);
+            set => SetValue(DestructionTransitionProperty, value);
+        }
 
-		// Using a DependencyProperty as the backing store for DestructionAnimation.  This enables animation, styling, binding, etc...
-		public static readonly DependencyProperty DestructionTransitionProperty =
-			DependencyProperty.Register("DestructionTransition", typeof(ITransition), typeof(GraphCanvas),
-				new UIPropertyMetadata(new FadeOutTransition()));
+        // Using a DependencyProperty as the backing store for DestructionAnimation.  This enables animation, styling, binding, etc...
+        public static readonly DependencyProperty DestructionTransitionProperty =
+            DependencyProperty.Register("DestructionTransition", typeof(ITransition), typeof(GraphCanvas),
+                new UIPropertyMetadata(new FadeOutTransition()));
 
-		#endregion
+        #endregion
 
-		#region DP - Origo
+        #region DP - Origo
 
         /// <summary>
         ///     Gets or sets the virtual origo of the canvas.
         /// </summary>
         public Point Origo
-		{
-			get => (Point) GetValue(OrigoProperty);
-			set => SetValue(OrigoProperty, value);
-		}
+        {
+            get => (Point) GetValue(OrigoProperty);
+            set => SetValue(OrigoProperty, value);
+        }
 
-		public static readonly DependencyProperty OrigoProperty =
-			DependencyProperty.Register("Origo", typeof(Point), typeof(GraphCanvas),
-				new FrameworkPropertyMetadata(
-					new Point(),
-					FrameworkPropertyMetadataOptions.AffectsMeasure |
-					FrameworkPropertyMetadataOptions.AffectsArrange |
-					FrameworkPropertyMetadataOptions.AffectsRender |
-					FrameworkPropertyMetadataOptions.AffectsParentMeasure |
-					FrameworkPropertyMetadataOptions.AffectsParentArrange));
+        public static readonly DependencyProperty OrigoProperty =
+            DependencyProperty.Register("Origo", typeof(Point), typeof(GraphCanvas),
+                new FrameworkPropertyMetadata(
+                    new Point(),
+                    FrameworkPropertyMetadataOptions.AffectsMeasure |
+                    FrameworkPropertyMetadataOptions.AffectsArrange |
+                    FrameworkPropertyMetadataOptions.AffectsRender |
+                    FrameworkPropertyMetadataOptions.AffectsParentMeasure |
+                    FrameworkPropertyMetadataOptions.AffectsParentArrange));
 
-		#endregion
-	}
+        #endregion
+    }
 }

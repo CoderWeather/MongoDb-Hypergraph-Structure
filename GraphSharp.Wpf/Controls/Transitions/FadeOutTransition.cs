@@ -1,4 +1,4 @@
-﻿namespace GraphSharp.Controls
+﻿namespace GraphSharp.Controls.Transitions
 {
 	public class FadeOutTransition : FadeTransition
 	{

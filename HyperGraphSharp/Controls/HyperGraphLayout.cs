@@ -1,5 +1,5 @@
 ﻿using System.Collections.Generic;
-using System.Linq;
+using System.Windows;
 using HyperGraphSharp.Models;
 
 namespace HyperGraphSharp.Controls
@@ -20,25 +20,43 @@ namespace HyperGraphSharp.Controls
 
 		#endregion
 
-		#region Protected Methods
+		#region Public Methods
 
-		public virtual void Layout()
+        public virtual void Layout()
 		{
-			if (Graph is null || Graph.Vertices.Count == 0) return;
+			if (Graph is null || Graph.Vertices.Count == 0) 
+                return;
 
 			UpdateLayout();
 
-			OnMutation();
+            if (!IsLoaded)
+            {
+				void Handler(object s, RoutedEventArgs e)
+                {
+                    Layout();
+					if(e.Source is HyperGraphLayout graphLayout)
+                        graphLayout.Loaded -= Handler;
+                }
+
+                Loaded += Handler;
+                return;
+			}
 
 			var layoutAlgorithm = new CircularLayoutAlgorithm(
 				Graph, LatestVertexPositions, ActualVertexSizes);
 			layoutAlgorithm.Compute();
 
-			foreach (var edge in Graph.HyperEdges.Where(edge => layoutAlgorithm.EdgeRoutes != null))
-                HyperEdgeControls[edge].RoutePoints = layoutAlgorithm.EdgeRoutes?[edge];
+            foreach (var (vertex, newPos) in layoutAlgorithm.VertexPositions)
+            {
+				SetX(VertexControls[vertex], newPos.X);
+				SetY(VertexControls[vertex], newPos.Y);
+            }
+			// InitVertexPositions();
+			// foreach (var edge in Graph.HyperEdges.Where(edge => layoutAlgorithm.EdgeRoutes != null))
+   //              HyperEdgeControls[edge].RoutePoints = layoutAlgorithm.EdgeRoutes?[edge];
 		}
 
-		#endregion
+        #endregion
 
 		#region Private Fields
 

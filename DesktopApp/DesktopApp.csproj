@@ -17,9 +17,6 @@
         <Page Update="Views\MainView.xaml">
             <Generator>MSBuild:Compile</Generator>
         </Page>
-        <Page Update="Resources\PocGraphDataTemplates.xaml">
-            <Generator></Generator>
-        </Page>
         <Page Update="Resources\HyperGraphTemplates.xaml">
           <Generator></Generator>
         </Page>
@@ -30,10 +27,6 @@
         <PackageReference Include="ReactiveUI.Fody" Version="11.4.1" />
         <PackageReference Include="ReactiveUI.WPF" Version="11.4.1" />
         <PackageReference Include="Wpf.Controls.PanAndZoom" Version="2.3.3" />
-    </ItemGroup>
-
-    <ItemGroup>
-      <Folder Include="GraphControls" />
     </ItemGroup>
 
 </Project>

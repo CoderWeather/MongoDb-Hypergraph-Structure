@@ -5,67 +5,88 @@ using System.Linq;
 using System.Windows;
 using System.Windows.Data;
 using System.Windows.Media;
+using HyperGraphSharp.Controls;
 
 namespace DesktopApp.Converters
 {
-	public class EdgeRouteToPathConverter : IMultiValueConverter
-	{
-		public object Convert(object[] values, Type targetType, object parameter, CultureInfo culture)
-		{
-			#region Get the inputs
+    public class EdgeRouteToPathConverter : IMultiValueConverter
+    {
+        private static double GetAngleBetweenPoints(Point point1, Point point2) => 
+            Math.Atan2(point1.Y - point2.Y, point2.X - point1.X);
 
-			//get the route points
-			var routePoints = values[0] != DependencyProperty.UnsetValue ? (Point[]) values[1] : null;
+        private static double GetDistanceBetweenPoints(Point point1, Point point2) => 
+            Math.Sqrt(Math.Pow(point2.X - point1.X, 2) + Math.Pow(point2.Y - point1.Y, 2));
 
-			#endregion
+        private static Point CalculateAttachPoint(Point s, Size sourceSize, Point t)
+        {
+            var sides = new double[4];
+            sides[0] = (s.X - sourceSize.Width / 2.0 - t.X) / (s.X - t.X);
+            sides[1] = (s.Y - sourceSize.Height / 2.0 - t.Y) / (s.Y - t.Y);
+            sides[2] = (s.X + sourceSize.Width / 2.0 - t.X) / (s.X - t.X);
+            sides[3] = (s.Y + sourceSize.Height / 2.0 - t.Y) / (s.Y - t.Y);
 
-			var hasRouteInfo = routePoints != null && routePoints.Length > 0;
+            double fi = 0;
+            for (var i = 0; i < 4; i++)
+                if (sides[i] <= 1)
+                    fi = Math.Max(fi, sides[i]);
 
-			// Create the path
-			//
-			// var p1 = GraphConverterUtils.CalculateAttachPoint(sourcePos, sourceSize,
-			// 	hasRouteInfo ? routePoints[0] : targetPos);
-			// var p2 = GraphConverterUtils.CalculateAttachPoint(targetPos, targetSize,
-			// 	hasRouteInfo ? routePoints[routePoints.Length - 1] : sourcePos);
+            return t + fi * (s - t);
+        }
 
-			Debug.Assert(routePoints != null, nameof(routePoints) + " != null");
+        public object Convert(object[] values, Type targetType, object parameter, CultureInfo culture)
+        {
+            var vertexControls = values[0] != DependencyProperty.UnsetValue
+                ? (VertexControl[]) values[0]
+                : null;
 
-			// var segments = new PathSegment[1 + (hasRouteInfo ? routePoints.Length : 0)];
-			// if (hasRouteInfo)
-			// 	//append route points
-			// 	for (var i = 0; i < routePoints.Length; i++)
-			// 		segments[i] = new LineSegment(routePoints[i], true);
-			//
-			// var pLast = hasRouteInfo ? routePoints[^1] : p1;
-			// var v = pLast - p2;
-			// v = v / v.Length * 5;
-			// var n = new Vector(-v.Y, v.X) * 0.3;
-			//
-			// segments[^1] = new LineSegment(p2 + v, true);
-			//
-			// var pfc = new PathFigureCollection(2);
-			// pfc.Add(new PathFigure(p1, segments, false));
-			// pfc.Add(new PathFigure(p2,
-			// 	new PathSegment[]
-			// 	{
-			// 		new LineSegment(p2 + v - n, true),
-			// 		new LineSegment(p2 + v + n, true)
-			// 	}, true));
-			var hyperEdgeCenterPoint = routePoints.Last();
-			var pfc = new PathFigureCollection(routePoints.Length);
-			if (hasRouteInfo)
-				pfc.Add(new PathFigure(hyperEdgeCenterPoint,
-					routePoints
-					   .Take(routePoints.Length - 1)
-					   .Select(p => new LineSegment(p, true)),
-					false));
+            Debug.Assert(vertexControls != null);
 
-			return pfc;
-		}
+            var verticesInfo = vertexControls
+                .Select(vc => new
+                {
+                    Size = new Size(vc.ActualWidth, vc.ActualHeight),
+                    Center = new Point
+                    {
+                        X = double.IsNaN(HyperGraphCanvas.GetX(vc)) ? 0.0 : HyperGraphCanvas.GetX(vc),
+                        Y = double.IsNaN(HyperGraphCanvas.GetY(vc)) ? 0.0 : HyperGraphCanvas.GetY(vc)
+                    }
+                })
+                .ToArray();
 
-		public object[] ConvertBack(object value, Type[] targetTypes, object parameter, CultureInfo culture)
-		{
-			throw new NotImplementedException();
-		}
-	}
+            var hyperEdgeCenter = new Point
+            {
+                X = verticesInfo.Average(p => p.Center.X),
+                Y = verticesInfo.Average(p => p.Center.Y)
+            };
+            var attachPoints = verticesInfo
+                // .Select(vi => GetAttachPoint(vi.Center, vi.Size, hyperEdgeCenter))
+                .Select(vi => CalculateAttachPoint(vi.Center, vi.Size, hyperEdgeCenter))
+                // .Select(vi => vi.Center)
+                // .Append(hyperEdgeCenter)
+                .ToArray();
+
+            var lines = attachPoints
+                .SelectMany(p => new[]
+                {
+                    new LineSegment(p, true),
+                    new LineSegment(hyperEdgeCenter, true),
+                })
+                .ToArray();
+
+            var tracingFigures = verticesInfo
+                .Select(vi => new LineSegment(vi.Center, true));
+
+            return new PathFigureCollection(new[]
+            {
+                new PathFigure(hyperEdgeCenter, lines, false),
+                // new PathFigure(verticesInfo.First().Center, tracingFigures, true),
+            });
+        }
+
+        public object[] ConvertBack(object value, Type[] targetTypes, object parameter, CultureInfo culture)
+        {
+            // ignore
+            throw new NotImplementedException();
+        }
+    }
 }

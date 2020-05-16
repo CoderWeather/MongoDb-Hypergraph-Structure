@@ -2,7 +2,9 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     xmlns:converters="clr-namespace:DesktopApp.Converters"
                     xmlns:controls="clr-namespace:HyperGraphSharp.Controls;assembly=HyperGraphSharp"
-                    xmlns:graphModels="clr-namespace:HyperGraphSharp.Models;assembly=HyperGraphSharp">
+                    xmlns:graphModels="clr-namespace:HyperGraphSharp.Models;assembly=HyperGraphSharp"
+                    xmlns:attachedBehaviors="clr-namespace:GraphSharp.WPFExtensions.AttachedBehaviors;assembly=GraphSharp.Wpf">
+
     <converters:EdgeRouteToPathConverter x:Key="RouteToPathConverter" />
 
     <DataTemplate DataType="{x:Type graphModels:Vertex}">
@@ -25,16 +27,79 @@
                 </ControlTemplate>
             </Setter.Value>
         </Setter>
+        <Setter Property="attachedBehaviors:DragBehavior.IsDragEnabled"
+                Value="True" />
+        <Setter Property="attachedBehaviors:DragBehavior.X">
+            <Setter.Value>
+                <Binding RelativeSource="{RelativeSource Self}"
+                         Path="(controls:HyperGraphCanvas.X)"
+                         Mode="TwoWay" />
+            </Setter.Value>
+        </Setter>
+        <Setter Property="attachedBehaviors:DragBehavior.Y">
+            <Setter.Value>
+                <Binding RelativeSource="{RelativeSource Self}"
+                         Path="(controls:HyperGraphCanvas.Y)"
+                         Mode="TwoWay" />
+            </Setter.Value>
+        </Setter>
         <Setter Property="Background"
                 Value="#FFE3E3E3" />
         <Setter Property="BorderThickness"
                 Value="5,3,5,3" />
-        <!-- <Setter Property="Padding" Value="10,5,10,5" /> -->
+        <!-- <Setter Property="Padding" -->
+        <!--         Value="10,5,10,5" /> -->
         <Setter Property="Padding"
                 Value="2,1,2,1" />
         <Setter Property="BorderBrush"
                 Value="#FF393939" />
     </Style>
 
+    <!-- EDGE CONTROL -->
+    <Style TargetType="{x:Type controls:HyperEdgeControl}">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type controls:HyperEdgeControl}">
+                    <Canvas>
+                        <Path Stroke="{TemplateBinding Foreground}"
+                              StrokeThickness="{TemplateBinding StrokeThickness}"
+                              MinWidth="1"
+                              MinHeight="1"
+                              ToolTip="{TemplateBinding ToolTip}"
+                              Opacity="{TemplateBinding Opacity}"
+                              x:Name="edgePath">
+                            <Path.Data>
+                                <PathGeometry>
+                                    <PathGeometry.Figures>
+                                        <MultiBinding Converter="{StaticResource RouteToPathConverter}">
+                                            <Binding RelativeSource="{RelativeSource TemplatedParent}"
+                                                     Path="Vertices" />
+                                        </MultiBinding>
+                                    </PathGeometry.Figures>
+                                </PathGeometry>
+                            </Path.Data>
+                        </Path>
+                        <controls:HyperEdgeContentPresenter Content="{TemplateBinding HyperEdge}"
+                                                            TextBlock.FontSize="12"
+                                                            Margin="-5, 0, 0, 0"
+                                                            Width="Auto"
+                                                            Height="Auto"
+                                                            HorizontalAlignment="Stretch"
+                                                            VerticalAlignment="Stretch" />
+                    </Canvas>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="MinWidth"
+                Value="1" />
+        <Setter Property="MinHeight"
+                Value="1" />
+        <Setter Property="Background"
+                Value="Red" />
+        <Setter Property="Foreground"
+                Value="DimGray" />
+        <!-- <Setter Property="Opacity" -->
+        <!--         Value="0.5" /> -->
+    </Style>
 
 </ResourceDictionary>

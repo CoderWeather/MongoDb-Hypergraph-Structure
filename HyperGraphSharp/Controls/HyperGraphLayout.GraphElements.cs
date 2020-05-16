@@ -34,13 +34,13 @@ namespace HyperGraphSharp.Controls
             var vertexControl = new VertexControl
             {
                 Vertex = vertex,
-                DataContext = vertex
+                DataContext = vertex,
+                RootHyperGraphCanvas = this
             };
 
             if (VertexControls.TryAdd(vertex, vertexControl) is false)
             {
                 VertexControls[vertex] = vertexControl;
-                vertexControl.RootHyperGraphCanvas = this;
             }
 
             // Children.Add(vertexControl);
@@ -64,7 +64,8 @@ namespace HyperGraphSharp.Controls
 
             hyperEdgeControl.Vertices =
                 hyperEdge.Vertices.Select(v => VertexControls[v]).ToArray();
-            foreach (var vertexControl in hyperEdgeControl.Vertices) vertexControl.HyperEdges.Add(hyperEdgeControl);
+            foreach (var vertexControl in hyperEdgeControl.Vertices)
+                vertexControl.HyperEdges.Add(hyperEdgeControl);
 
             // Children.Add(hyperEdgeControl);
             InternalChildren.Add(hyperEdgeControl);
@@ -114,14 +115,16 @@ namespace HyperGraphSharp.Controls
         {
             var vertexControl = VertexControls[vertex];
 
-            if (Graph.Vertices.Contains(vertex) || vertex.HyperEdges.Count == 0)
+            if (Graph.Vertices.Contains(vertex) is false || vertex.HyperEdges.Count == 0)
                 return;
 
             var pos = new Point();
             var count = 0;
             foreach (var neighbour in vertex.GetNeighbours())
             {
-                if (!VertexControls.TryGetValue(neighbour, out var neighbourControl))
+                if(neighbour is null) continue;
+
+                if (VertexControls.TryGetValue(neighbour, out var neighbourControl) is false)
                     continue;
                 var x = GetX(neighbourControl);
                 var y = GetY(neighbourControl);
@@ -138,7 +141,7 @@ namespace HyperGraphSharp.Controls
             SetY(vertexControl, pos.Y);
         }
 
-        private void OnMutation()
+        private void InitVertexPositions()
         {
             foreach (var vertex in Graph.Vertices)
                 InitializePosition(vertex);

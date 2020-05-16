@@ -1,4 +1,5 @@
-﻿using DesktopApp.Models;
+﻿using AppLib.MongoDb;
+using DesktopApp.Models;
 using HyperGraphSharp.Models;
 using ReactiveUI.Fody.Helpers;
 
@@ -11,22 +12,32 @@ namespace DesktopApp.ViewModels
 		public MainViewModel()
 		{
 			HyperGraph = TestGraphFactory.GenerateTest1();
+			// InitGraph();
 		}
 
 		#endregion
 
 		#region Public Properties
 
-		[Reactive] public HyperGraph HyperGraph { get; set; }
+		[Reactive] public HyperGraph? HyperGraph { get; set; }
 
-		#endregion
+        #endregion
 
-		#region Private Methods
+        #region Private Methods
 
-		#endregion
+        private void InitGraph()
+        {
+            var db = new MongoDbContext();
+            var collection = db.SampleWeatherdata.Data;
+            var graphTask = BsonParser.CollectionToHyperGraphTaskAsync(collection);
+            graphTask.Wait();
+            HyperGraph = graphTask.Result;
+        }
 
-		#region Public Methods
+        #endregion
 
-		#endregion
-	}
+        #region Public Methods
+
+        #endregion
+    }
 }

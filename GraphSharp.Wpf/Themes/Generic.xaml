@@ -2,7 +2,7 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     xmlns:Converters="clr-namespace:GraphSharp.Converters"
                     xmlns:Controls="clr-namespace:GraphSharp.Controls"
-                    xmlns:attachedBehaviours="clr-namespace:GraphSharp.WPFExtensions.AttachedBehaviours">
+                    xmlns:attachedBehaviors="clr-namespace:GraphSharp.WPFExtensions.AttachedBehaviors">
 
 	<Converters:EdgeRouteToPathConverter x:Key="routeToPathConverter" />
 	<Converters:PointArrayToString x:Key="pointsToStringConverter" />
@@ -108,11 +108,11 @@
 		</Setter>
 		<Setter Property="Controls:GraphElementBehaviour.HighlightTrigger"
 		        Value="{Binding RelativeSource={RelativeSource Self},Path=IsMouseOver}" />
-		<Setter Property="attachedBehaviours:DragBehaviour.IsDragEnabled"
+		<Setter Property="attachedBehaviors:DragBehavior.IsDragEnabled"
 		        Value="True" />
-		<Setter Property="attachedBehaviours:DragBehaviour.X"
+		<Setter Property="attachedBehaviors:DragBehavior.X"
 		        Value="{Binding RelativeSource={RelativeSource Self},Path=(Controls:GraphCanvas.X),Mode=TwoWay}" />
-		<Setter Property="attachedBehaviours:DragBehaviour.Y"
+		<Setter Property="attachedBehaviors:DragBehavior.Y"
 		        Value="{Binding RelativeSource={RelativeSource Self},Path=(Controls:GraphCanvas.Y),Mode=TwoWay}" />
 		<Setter Property="BorderThickness"
 		        Value="2" />
@@ -121,7 +121,7 @@
 		<Style.Triggers>
 			<Trigger Property="Controls:GraphElementBehaviour.IsHighlighted"
 			         Value="True">
-				<Setter Property="BorderBrush"
+				<Setter Property="BorderBrush" 
 				        Value="Orange" />
 				<Setter Property="BorderThickness"
 				        Value="2" />
@@ -194,11 +194,11 @@
 
 		<Setter Property="Controls:GraphElementBehaviour.HighlightTrigger"
 		        Value="{Binding RelativeSource={RelativeSource Self},Path=IsMouseOver}" />
-		<Setter Property="attachedBehaviours:DragBehaviour.IsDragEnabled"
+		<Setter Property="attachedBehaviors:DragBehavior.IsDragEnabled"
 		        Value="True" />
-		<Setter Property="attachedBehaviours:DragBehaviour.X"
+		<Setter Property="attachedBehaviors:DragBehavior.X"
 		        Value="{Binding RelativeSource={RelativeSource Self},Path=(Controls:GraphCanvas.X),Mode=TwoWay}" />
-		<Setter Property="attachedBehaviours:DragBehaviour.Y"
+		<Setter Property="attachedBehaviors:DragBehavior.Y"
 		        Value="{Binding RelativeSource={RelativeSource Self},Path=(Controls:GraphCanvas.Y),Mode=TwoWay}" />
 		<Setter Property="BorderThickness"
 		        Value="2" />

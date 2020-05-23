@@ -119,8 +119,7 @@ namespace GraphSharp.Controls
             else
             {
                 //we are moving the parent or one of it's child
-                var childVertexControl = args.OriginalSource as VertexControl;
-                if (childVertexControl == null)
+                if (!(args.OriginalSource is VertexControl childVertexControl))
                     return;
                 if (compoundVertexControl.Vertices.Contains(childVertexControl))
                     //update the position of all child vertices

@@ -18,7 +18,7 @@ namespace AppLib.MongoDb
 
             await foreach (var keys in ParseCollectionAsync(bsonDocCollection.AsQueryable()))
             {
-                var edge = new HyperEdge();
+                var edge = new HyperEdge{Weight=1};
 
                 foreach (var key in keys)
                 {
@@ -45,6 +45,8 @@ namespace AppLib.MongoDb
                         vertex.HyperEdges.RemoveWhere(e => e.Id == edge.Id);
                         vertex.HyperEdges.Add(existHyperEdge);
                     }
+
+                    existHyperEdge.Weight++;
                 }
             }
 
@@ -62,10 +64,8 @@ namespace AppLib.MongoDb
 
         #region Sinchronize Parse
 
-        private static IEnumerable<string> ParseDocument(BsonDocument doc, string? ketPrefix = null)
-        {
-            return doc.SelectMany(el => ParseElement(el, ketPrefix));
-        }
+        private static IEnumerable<string> ParseDocument(BsonDocument doc, string? ketPrefix = null) => 
+            doc.SelectMany(el => ParseElement(el, ketPrefix));
 
         private static IEnumerable<string> ParseElement(BsonElement el, string? keyPrefix = null)
         {

@@ -12,7 +12,6 @@ namespace DesktopApp.ViewModels
 		public MainViewModel()
 		{
 			HyperGraph = TestGraphFactory.GenerateTest1();
-			// InitGraph();
 		}
 
 		#endregion
@@ -21,7 +20,7 @@ namespace DesktopApp.ViewModels
 
 		[Reactive] public HyperGraph? HyperGraph { get; set; }
 
-        #endregion
+		#endregion
 
         #region Private Methods
 

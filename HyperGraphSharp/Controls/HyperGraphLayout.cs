@@ -52,8 +52,6 @@ namespace HyperGraphSharp.Controls
 				SetY(VertexControls[vertex], newPos.Y);
             }
 			// InitVertexPositions();
-			// foreach (var edge in Graph.HyperEdges.Where(edge => layoutAlgorithm.EdgeRoutes != null))
-   //              HyperEdgeControls[edge].RoutePoints = layoutAlgorithm.EdgeRoutes?[edge];
 		}
 
         #endregion

@@ -6,40 +6,47 @@
         xmlns:paz="clr-namespace:Wpf.Controls.PanAndZoom;assembly=Wpf.Controls.PanAndZoom"
         xmlns:viewModels="clr-namespace:DesktopApp.ViewModels"
         xmlns:models="clr-namespace:DesktopApp.Models"
+        xmlns:zoom="clr-namespace:GraphSharp.WPFExtensions.Zoom;assembly=GraphSharp.Wpf"
         mc:Ignorable="d"
         Title="MainWindow"
         Height="450" Width="800">
 
-    <Window.DataContext>
-        <viewModels:MainViewModel />
-    </Window.DataContext>
+	<Window.DataContext>
+		<viewModels:MainViewModel />
+	</Window.DataContext>
 
-    <Window.Resources>
-        <ResourceDictionary>
-            <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="../Resources/HyperGraphTemplates.xaml" />
-            </ResourceDictionary.MergedDictionaries>
-        </ResourceDictionary>
-    </Window.Resources>
+	<Window.Resources>
+		<ResourceDictionary>
+			<ResourceDictionary.MergedDictionaries>
+				<ResourceDictionary Source="../Resources/HyperGraphTemplates.xaml" />
+			</ResourceDictionary.MergedDictionaries>
+		</ResourceDictionary>
+	</Window.Resources>
 
-    <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="*" />
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="Auto" />
-        </Grid.RowDefinitions>
+	<Grid>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="*" />
+			<RowDefinition Height="Auto" />
+		</Grid.RowDefinitions>
 
-        <paz:ZoomBorder Grid.Row="0"
-                        Stretch="None"
-                        VerticalAlignment="Stretch"
-                        HorizontalAlignment="Stretch"
-                        MinZoomX="0.5"
-                        MinZoomY="0.5"
-                        BorderThickness="0">
-            <models:PocHyperGraphLayout x:Name="GraphLayout"
-                                        MaxHeight="1500"
-                                        MaxWidth="1500"
-                                        Graph="{Binding HyperGraph}" />
-        </paz:ZoomBorder>
-    </Grid>
+		<!-- <paz:ZoomBorder Grid.Row="0" -->
+		<!--                 Stretch="None" -->
+		<!--                 VerticalAlignment="Stretch" -->
+		<!--                 HorizontalAlignment="Stretch" -->
+		<!--                 MinZoomX="0.5" -->
+		<!--                 MinZoomY="0.5" -->
+		<!--                 BorderThickness="0"> -->
+		<!-- 	<models:PocHyperGraphLayout x:Name="GraphLayout" -->
+		<!-- 	                            Graph="{Binding HyperGraph}" /> -->
+		<!-- </paz:ZoomBorder> -->
+
+		<zoom:ZoomControl Grid.Row="0"
+		                  Mode="Original">
+			<models:PocHyperGraphLayout x:Name="GraphLayout"
+			                            Graph="{Binding HyperGraph}" />
+		</zoom:ZoomControl>
+		<StackPanel Grid.Row="1">
+			<Button Click="UpdateGraphBtn_OnClick" Content="Update Graph" />
+		</StackPanel>
+	</Grid>
 </Window>

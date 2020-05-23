@@ -519,17 +519,14 @@ namespace GraphSharp.Controls
                 algo.ResetHighlight();
         }
 
-        private static object HighlightParameters_Coerce(DependencyObject obj, object newValue)
+        private static object? HighlightParameters_Coerce(DependencyObject obj, object newValue)
         {
             var gl = (GraphLayout<TVertex, TEdge, TGraph>)obj;
 
-            if (gl.HighlightAlgorithm != null)
-            {
-                gl.HighlightAlgorithm.TrySetParameters(newValue as IHighlightParameters);
-                return gl.HighlightAlgorithm.Parameters;
-            }
+            if (gl.HighlightAlgorithm == null) return null;
+            gl.HighlightAlgorithm.TrySetParameters(newValue as IHighlightParameters);
+            return gl.HighlightAlgorithm.Parameters;
 
-            return null;
         }
 
         #endregion
@@ -671,7 +668,7 @@ namespace GraphSharp.Controls
             set => SetValue(HighlightAlgorithmFactoryProperty, value);
         }
 
-        public string HighlightAlgorithmType
+        public string? HighlightAlgorithmType
         {
             get => (string)GetValue(HighlightAlgorithmTypeProperty);
             set => SetValue(HighlightAlgorithmTypeProperty, value);

@@ -71,7 +71,7 @@ namespace HyperGraphSharp.Controls
 			"HyperEdge", typeof(object), typeof(HyperEdgeControl), new PropertyMetadata(default(object?)));
 
 		public static readonly DependencyProperty StrokeThicknessProperty = Shape.StrokeThicknessProperty.AddOwner(
-			typeof(HyperEdgeControl), new UIPropertyMetadata(1.0));
+			typeof(HyperEdgeControl), new UIPropertyMetadata(2.0));
 
 		#endregion
 	}

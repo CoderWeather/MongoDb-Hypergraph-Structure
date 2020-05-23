@@ -4,251 +4,245 @@ using System.Windows.Controls;
 
 namespace HyperGraphSharp.Controls
 {
-    public class HyperGraphCanvas : Panel
-    {
-        #region Static Constructor
+	public class HyperGraphCanvas : Panel
+	{
+		#region Static Constructor
 
-        static HyperGraphCanvas()
-        {
-            TranslationProperty = TranslationPropertyKey.DependencyProperty;
-        }
+		static HyperGraphCanvas() => TranslationProperty = TranslationPropertyKey.DependencyProperty;
 
-        #endregion
+		#endregion
 
-        #region Dependency Properties
+		#region Dependency Properties
 
-        public static readonly DependencyProperty XProperty = DependencyProperty.Register(
-            "X", typeof(double), typeof(HyperGraphCanvas),
-            new FrameworkPropertyMetadata(double.NaN,
-                FrameworkPropertyMetadataOptions.AffectsMeasure |
-                FrameworkPropertyMetadataOptions.AffectsArrange |
-                FrameworkPropertyMetadataOptions.AffectsRender |
-                FrameworkPropertyMetadataOptions.AffectsParentMeasure |
-                FrameworkPropertyMetadataOptions.AffectsParentArrange |
-                FrameworkPropertyMetadataOptions.BindsTwoWayByDefault,
-                X_PropertyChanged));
+		public static readonly DependencyProperty XProperty = DependencyProperty.Register(
+			"X", typeof(double), typeof(HyperGraphCanvas),
+			new FrameworkPropertyMetadata(double.NaN,
+				FrameworkPropertyMetadataOptions.AffectsMeasure |
+				FrameworkPropertyMetadataOptions.AffectsArrange |
+				FrameworkPropertyMetadataOptions.AffectsRender |
+				FrameworkPropertyMetadataOptions.AffectsParentMeasure |
+				FrameworkPropertyMetadataOptions.AffectsParentArrange |
+				FrameworkPropertyMetadataOptions.BindsTwoWayByDefault,
+				X_PropertyChanged));
 
-        public static readonly DependencyProperty YProperty = DependencyProperty.Register(
-            "Y", typeof(double), typeof(HyperGraphCanvas),
-            new FrameworkPropertyMetadata(double.NaN,
-                FrameworkPropertyMetadataOptions.AffectsMeasure |
-                FrameworkPropertyMetadataOptions.AffectsArrange |
-                FrameworkPropertyMetadataOptions.AffectsRender |
-                FrameworkPropertyMetadataOptions.AffectsParentMeasure |
-                FrameworkPropertyMetadataOptions.AffectsParentArrange |
-                FrameworkPropertyMetadataOptions.BindsTwoWayByDefault,
-                Y_PropertyChanged));
+		public static readonly DependencyProperty YProperty = DependencyProperty.Register(
+			"Y", typeof(double), typeof(HyperGraphCanvas),
+			new FrameworkPropertyMetadata(double.NaN,
+				FrameworkPropertyMetadataOptions.AffectsMeasure |
+				FrameworkPropertyMetadataOptions.AffectsArrange |
+				FrameworkPropertyMetadataOptions.AffectsRender |
+				FrameworkPropertyMetadataOptions.AffectsParentMeasure |
+				FrameworkPropertyMetadataOptions.AffectsParentArrange |
+				FrameworkPropertyMetadataOptions.BindsTwoWayByDefault,
+				Y_PropertyChanged));
 
-        public static readonly DependencyProperty TranslationProperty;
+		public static readonly DependencyProperty TranslationProperty;
 
-        protected static readonly DependencyPropertyKey TranslationPropertyKey =
-            DependencyProperty.RegisterReadOnly("Translation", typeof(Vector), typeof(HyperGraphCanvas),
-                new UIPropertyMetadata(new Vector()));
+		protected static readonly DependencyPropertyKey TranslationPropertyKey =
+			DependencyProperty.RegisterReadOnly("Translation", typeof(Vector), typeof(HyperGraphCanvas),
+				new UIPropertyMetadata(new Vector()));
 
-        public Vector Translation
-        {
-            get => (Vector) GetValue(TranslationProperty);
-            protected set => SetValue(TranslationPropertyKey, value);
-        }
+		public Vector Translation
+		{
+			get => (Vector) GetValue(TranslationProperty);
+			protected set => SetValue(TranslationPropertyKey, value);
+		}
 
-        #endregion
+		#endregion
 
-        #region Virtual Methods
+		#region Virtual Methods
 
-        public virtual void ContinueLayout()
-        {
-        }
+		public virtual void ContinueLayout()
+		{
+		}
 
-        public virtual void ReLayout()
-        {
-        }
+		public virtual void ReLayout()
+		{
+		}
 
-        #endregion
+		#endregion
 
-        #region Attached Dependency Property Registrations
+		#region Attached Dependency Property Registrations
 
-        private static void X_PropertyChanged(DependencyObject dependencyObject,
-            DependencyPropertyChangedEventArgs eventArgs)
-        {
-            var deltaX = (double) eventArgs.NewValue - (double) eventArgs.OldValue;
-            PositionChanged(dependencyObject, deltaX, 0);
-        }
+		private static void X_PropertyChanged(DependencyObject dependencyObject,
+			DependencyPropertyChangedEventArgs eventArgs)
+		{
+			var deltaX = (double) eventArgs.NewValue - (double) eventArgs.OldValue;
+			PositionChanged(dependencyObject, deltaX, 0);
+		}
 
-        private static void Y_PropertyChanged(DependencyObject dependencyObject,
-            DependencyPropertyChangedEventArgs eventArgs)
-        {
-            var deltaY = (double) eventArgs.NewValue - (double) eventArgs.OldValue;
-            PositionChanged(dependencyObject, 0, deltaY);
-        }
+		private static void Y_PropertyChanged(DependencyObject dependencyObject,
+			DependencyPropertyChangedEventArgs eventArgs)
+		{
+			var deltaY = (double) eventArgs.NewValue - (double) eventArgs.OldValue;
+			PositionChanged(dependencyObject, 0, deltaY);
+		}
 
-        private static void PositionChanged(DependencyObject dependencyObject, double deltaX, double deltaY)
-        {
-            if (dependencyObject is UIElement uiElement)
-            {
-                uiElement.RaiseEvent(new PositionChangedEventArgs(PositionChangedEvent, uiElement, deltaX, deltaY));
-                Console.WriteLine($"{uiElement}; dX: {deltaX}; dY: {deltaY}");
-            }
-        }
+		private static void PositionChanged(DependencyObject dependencyObject, double deltaX, double deltaY)
+		{
+			if (dependencyObject is UIElement uiElement)
+			{
+				uiElement.RaiseEvent(new PositionChangedEventArgs(PositionChangedEvent, uiElement, deltaX, deltaY));
+				Console.WriteLine($"{uiElement}; dX: {deltaX}; dY: {deltaY}");
+			}
+		}
 
-        #endregion
+		#endregion
 
-        #region Attached Properties
+		#region Attached Properties
 
-        [AttachedPropertyBrowsableForChildren]
-        public static double GetX(DependencyObject? obj) =>
-            (double) obj.GetValue(XProperty);
+		[AttachedPropertyBrowsableForChildren]
+		public static double GetX(DependencyObject obj) =>
+			(double) obj.GetValue(XProperty);
 
-        public static void SetX(DependencyObject obj, double value) =>
-            obj.SetValue(XProperty, value);
+		public static void SetX(DependencyObject obj, double value) =>
+			obj.SetValue(XProperty, value);
 
-        [AttachedPropertyBrowsableForChildren]
-        public static double GetY(DependencyObject? obj) =>
-            (double) obj.GetValue(YProperty);
+		[AttachedPropertyBrowsableForChildren]
+		public static double GetY(DependencyObject obj) =>
+			(double) obj.GetValue(YProperty);
 
-        public static void SetY(DependencyObject obj, double value) =>
-            obj.SetValue(YProperty, value);
+		public static void SetY(DependencyObject obj, double value) =>
+			obj.SetValue(YProperty, value);
 
-        #endregion
+		#endregion
 
-        #region Attached Routed Events
+		#region Attached Routed Events
 
-        public static readonly RoutedEvent PositionChangedEvent =
-            EventManager.RegisterRoutedEvent("PositionChanged", RoutingStrategy.Bubble,
-                typeof(PositionChangedEventHandler), typeof(HyperGraphCanvas));
+		public static readonly RoutedEvent PositionChangedEvent =
+			EventManager.RegisterRoutedEvent("PositionChanged", RoutingStrategy.Bubble,
+				typeof(PositionChangedEventHandler), typeof(HyperGraphCanvas));
 
-        public static void AddPositionChangedHandler(DependencyObject d, RoutedEventHandler handler)
-        {
-            if (d is UIElement e)
-                e.AddHandler(PositionChangedEvent, handler);
-        }
+		public static void AddPositionChangedHandler(DependencyObject d, RoutedEventHandler handler)
+		{
+			if (d is UIElement e)
+				e.AddHandler(PositionChangedEvent, handler);
+		}
 
-        public static void RemovePositionChangedHandler(DependencyObject d, RoutedEventHandler handler)
-        {
-            if (d is UIElement e)
-                e.RemoveHandler(PositionChangedEvent, handler);
-        }
+		public static void RemovePositionChangedHandler(DependencyObject d, RoutedEventHandler handler)
+		{
+			if (d is UIElement e)
+				e.RemoveHandler(PositionChangedEvent, handler);
+		}
 
-        #endregion
+		#endregion
 
-        #region Measure & Arrange
+		#region Measure & Arrange
 
-        private Point _topLeft;
+		private Point _topLeft;
 
-        private Point _bottomRight;
+		private Point _bottomRight;
 
-        protected override Size ArrangeOverride(Size arrangeSize)
-        {
-            var translate = new Vector(-_topLeft.X, -_topLeft.Y);
-            var graphSize = _bottomRight - _topLeft;
+		protected override Size ArrangeOverride(Size arrangeSize)
+		{
+			var translate = new Vector(-_topLeft.X, -_topLeft.Y);
+			var graphSize = _bottomRight - _topLeft;
 
-            if (double.IsNaN(graphSize.X) || double.IsNaN(graphSize.Y) ||
-                double.IsInfinity(graphSize.X) || double.IsInfinity(graphSize.Y))
-                translate = new Vector(0, 0);
+			if (double.IsNaN(graphSize.X) || double.IsNaN(graphSize.Y) ||
+				double.IsInfinity(graphSize.X) || double.IsInfinity(graphSize.Y))
+				translate = new Vector(0, 0);
 
-            Translation = translate;
+			Translation = translate;
 
-            graphSize = InternalChildren.Count > 0
-                ? new Vector(double.NegativeInfinity, double.NegativeInfinity)
-                : new Vector(0, 0);
+			graphSize = InternalChildren.Count > 0
+				? new Vector(double.NegativeInfinity, double.NegativeInfinity)
+				: new Vector(0, 0);
 
-            //translate with the topLeft
-            foreach (UIElement? child in InternalChildren)
-            {
-                if (child is null) continue;
+			//translate with the topLeft
+			foreach (UIElement? child in InternalChildren)
+			{
+				if (child is null) continue;
 
-                var x = GetX(child);
-                var y = GetY(child);
-                if (double.IsNaN(x) || double.IsNaN(y))
-                {
-                    x = double.IsNaN(x) ? translate.X : x;
-                    y = double.IsNaN(y) ? translate.Y : y;
-                }
-                else
-                {
-                    x += translate.X;
-                    y += translate.Y;
+				var x = GetX(child);
+				var y = GetY(child);
+				if (double.IsNaN(x) || double.IsNaN(y))
+				{
+					x = double.IsNaN(x) ? translate.X : x;
+					y = double.IsNaN(y) ? translate.Y : y;
+				}
+				else
+				{
+					x += translate.X;
+					y += translate.Y;
 
-                    x -= child.DesiredSize.Width * 0.5;
-                    y -= child.DesiredSize.Height * 0.5;
-                }
+					x -= child.DesiredSize.Width * 0.5;
+					y -= child.DesiredSize.Height * 0.5;
+				}
 
-                child.Arrange(new Rect(new Point(x, y), child.DesiredSize));
+				child.Arrange(new Rect(new Point(x, y), child.DesiredSize));
 
-                graphSize.X = Math.Max(0, Math.Max(graphSize.X, x + child.DesiredSize.Width));
-                graphSize.Y = Math.Max(0, Math.Max(graphSize.Y, y + child.DesiredSize.Height));
-            }
+				graphSize.X = Math.Max(0, Math.Max(graphSize.X, x + child.DesiredSize.Width));
+				graphSize.Y = Math.Max(0, Math.Max(graphSize.Y, y + child.DesiredSize.Height));
+			}
 
-            return new Size(graphSize.X, graphSize.Y);
-        }
+			return new Size(graphSize.X, graphSize.Y);
+		}
 
-        protected override Size MeasureOverride(Size constraint)
-        {
-            _topLeft = new Point(double.PositiveInfinity, double.PositiveInfinity);
-            _bottomRight = new Point(double.NegativeInfinity, double.NegativeInfinity);
+		protected override Size MeasureOverride(Size constraint)
+		{
+			_topLeft = new Point(double.PositiveInfinity, double.PositiveInfinity);
+			_bottomRight = new Point(double.NegativeInfinity, double.NegativeInfinity);
 
-            foreach (UIElement? child in InternalChildren)
-            {
-                if (child is null) continue;
+			foreach (UIElement? child in InternalChildren)
+			{
+				if (child is null) continue;
 
-                //measure the chi
-                child.Measure(constraint);
+				//measure the chi
+				child.Measure(constraint);
 
-                //get the position of the vertex
-                var left = GetX(child);
-                var top = GetY(child);
+				//get the position of the vertex
+				var left = GetX(child);
+				var top = GetY(child);
 
-                var halfWidth = child.DesiredSize.Width * 0.5;
-                var halfHeight = child.DesiredSize.Height * 0.5;
+				var halfWidth = child.DesiredSize.Width * 0.5;
+				var halfHeight = child.DesiredSize.Height * 0.5;
 
-                if (double.IsNaN(left) || double.IsNaN(top))
-                {
-                    left = halfWidth;
-                    top = halfHeight;
-                }
+				if (double.IsNaN(left) || double.IsNaN(top))
+				{
+					left = halfWidth;
+					top = halfHeight;
+				}
 
-                //get the top left corner point
-                _topLeft.X = Math.Min(_topLeft.X, left - halfWidth - Origo.X);
-                _topLeft.Y = Math.Min(_topLeft.Y, top - halfHeight - Origo.Y);
+				//get the top left corner point
+				_topLeft.X = Math.Min(_topLeft.X, left - halfWidth - Origo.X);
+				_topLeft.Y = Math.Min(_topLeft.Y, top - halfHeight - Origo.Y);
 
-                //calculate the bottom right corner point
-                _bottomRight.X = Math.Max(_bottomRight.X, left + halfWidth - Origo.X);
-                _bottomRight.Y = Math.Max(_bottomRight.Y, top + halfHeight - Origo.Y);
-            }
+				//calculate the bottom right corner point
+				_bottomRight.X = Math.Max(_bottomRight.X, left + halfWidth - Origo.X);
+				_bottomRight.Y = Math.Max(_bottomRight.Y, top + halfHeight - Origo.Y);
+			}
 
-            var graphSize = (Size) (_bottomRight - _topLeft);
-            graphSize.Width = Math.Max(0, graphSize.Width);
-            graphSize.Height = Math.Max(0, graphSize.Height);
+			var graphSize = (Size) (_bottomRight - _topLeft);
+			graphSize.Width = Math.Max(0, graphSize.Width);
+			graphSize.Height = Math.Max(0, graphSize.Height);
 
-            if (double.IsNaN(graphSize.Width) || double.IsNaN(graphSize.Height) ||
-                double.IsInfinity(graphSize.Width) || double.IsInfinity(graphSize.Height))
-                return new Size(0, 0);
+			if (double.IsNaN(graphSize.Width) || double.IsNaN(graphSize.Height) ||
+				double.IsInfinity(graphSize.Width) || double.IsInfinity(graphSize.Height))
+				return new Size(0, 0);
 
-            return graphSize;
-        }
+			return graphSize;
+		}
 
-        #endregion
+		#endregion
 
-        #region Origo
+		#region Origo
 
-        /// <summary>
-        ///     Gets or sets the virtual origo of the canvas.
-        /// </summary>
-        public Point Origo
-        {
-            get => (Point) GetValue(OrigoProperty);
-            set => SetValue(OrigoProperty, value);
-        }
+		public Point Origo
+		{
+			get => (Point) GetValue(OrigoProperty);
+			set => SetValue(OrigoProperty, value);
+		}
 
-        public static readonly DependencyProperty OrigoProperty =
-            DependencyProperty.Register("Origo", typeof(Point), typeof(HyperGraphCanvas),
-                new FrameworkPropertyMetadata(
-                    new Point(),
-                    FrameworkPropertyMetadataOptions.AffectsMeasure |
-                    FrameworkPropertyMetadataOptions.AffectsArrange |
-                    FrameworkPropertyMetadataOptions.AffectsRender |
-                    FrameworkPropertyMetadataOptions.AffectsParentMeasure |
-                    FrameworkPropertyMetadataOptions.AffectsParentArrange));
+		public static readonly DependencyProperty OrigoProperty =
+			DependencyProperty.Register("Origo", typeof(Point), typeof(HyperGraphCanvas),
+				new FrameworkPropertyMetadata(
+					new Point(),
+					FrameworkPropertyMetadataOptions.AffectsMeasure |
+					FrameworkPropertyMetadataOptions.AffectsArrange |
+					FrameworkPropertyMetadataOptions.AffectsRender |
+					FrameworkPropertyMetadataOptions.AffectsParentMeasure |
+					FrameworkPropertyMetadataOptions.AffectsParentArrange));
 
-        #endregion
-    }
+		#endregion
+	}
 }

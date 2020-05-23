@@ -34,7 +34,7 @@ namespace GraphSharp.Algorithms.Layout
 
 		public IDictionary<TVertex, Point> OverlapRemovedPositions { get; set; }
 
-		public IDictionary<TEdge, Point[]> RouteInfos { get; set; }
+		public IDictionary<TEdge, Point[]>? RouteInfos { get; set; }
 
 		/// <summary>
 		///     Gets how much time did it take to compute the position of the vertices (till the end of this iteration).

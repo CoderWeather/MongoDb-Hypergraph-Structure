@@ -20,8 +20,8 @@ namespace GraphSharp.Controls
 
 		protected override bool CanLayout => SelectedVertex != null && base.CanLayout;
 
-		protected override ILayoutContext<TVertex, TEdge, TGraph> CreateLayoutContext(
-            IDictionary<TVertex, Point>? positions, IDictionary<TVertex, Size> sizes)
+		protected override ILayoutContext<TVertex, TEdge, TGraph>? CreateLayoutContext(
+			IDictionary<TVertex, Point>? positions, IDictionary<TVertex, Size> sizes)
 		{
 			return new ContextualLayoutContext<TVertex, TEdge, TGraph>(Graph, SelectedVertex, positions, sizes);
 		}
@@ -44,8 +44,7 @@ namespace GraphSharp.Controls
 		private static void SelectedVertex_PropertyChanged(DependencyObject obj,
 			DependencyPropertyChangedEventArgs args)
 		{
-			var gl = obj as ContextualGraphLayout<TVertex, TEdge, TGraph>;
-			if (gl == null)
+			if (!(obj is ContextualGraphLayout<TVertex, TEdge, TGraph> gl))
 				return;
 
 			//refresh the layout on context change

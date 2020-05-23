@@ -4,14 +4,14 @@ namespace HyperGraphSharp.Controls
 {
 	public class PositionChangedEventArgs : RoutedEventArgs
 	{
-		public PositionChangedEventArgs(RoutedEvent evt, object source, double xChange, double yChange)
+		public PositionChangedEventArgs(RoutedEvent evt, object source, double deltaX, double deltaY)
 			: base(evt, source)
 		{
-			XChange = xChange;
-			YChange = yChange;
+			DeltaX = deltaX;
+			DeltaY = deltaY;
 		}
 
-		public double XChange { get; }
-		public double YChange { get; }
+		public double DeltaX { get; }
+		public double DeltaY { get; }
 	}
 }

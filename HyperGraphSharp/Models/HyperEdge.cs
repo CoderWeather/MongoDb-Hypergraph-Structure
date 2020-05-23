@@ -8,11 +8,12 @@ namespace HyperGraphSharp.Models
         public HyperEdge()
         {
             Id = Guid.NewGuid();
+            Weight = 0;
             Vertices = new HashSet<Vertex>(Vertex.Comparer);
         }
 
         public Guid Id { get; }
-        public int Weight => Vertices.Count;
+        public int Weight { get; set; }
         public ISet<Vertex> Vertices { get; }
 
         public static IEqualityComparer<HyperEdge> Comparer { get; } = new EqualityComparer();

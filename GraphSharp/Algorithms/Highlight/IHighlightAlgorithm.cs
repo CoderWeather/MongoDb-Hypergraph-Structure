@@ -20,6 +20,6 @@ namespace GraphSharp.Algorithms.Highlight
 		bool OnEdgeHighlightRemoving(TEdge edge);
 
 		bool IsParametersSettable(IHighlightParameters parameters);
-		bool TrySetParameters(IHighlightParameters parameters);
+		bool TrySetParameters(IHighlightParameters? parameters);
 	}
 }

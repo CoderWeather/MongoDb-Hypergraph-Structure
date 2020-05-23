@@ -35,7 +35,7 @@ namespace GraphSharp.Algorithms.Highlight
 			return parameters != null && parameters is TParameters;
 		}
 
-		public bool TrySetParameters(IHighlightParameters parameters)
+		public bool TrySetParameters(IHighlightParameters? parameters)
 		{
 			if (IsParametersSettable(parameters))
 			{

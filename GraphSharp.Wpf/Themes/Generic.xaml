@@ -4,8 +4,8 @@
                     xmlns:Controls="clr-namespace:GraphSharp.Controls"
                     xmlns:attachedBehaviors="clr-namespace:GraphSharp.WPFExtensions.AttachedBehaviors">
 
-	<Converters:EdgeRouteToPathConverter x:Key="routeToPathConverter" />
-	<Converters:PointArrayToString x:Key="pointsToStringConverter" />
+	<Converters:EdgeRouteToPathConverter x:Key="RouteToPathConverter" />
+	<Converters:PointArrayToString x:Key="PointsToStringConverter" />
 
 	<Style TargetType="{x:Type Controls:EdgeControl}">
 		<Setter Property="Template">
@@ -20,7 +20,7 @@
 						<Path.Data>
 							<PathGeometry>
 								<PathGeometry.Figures>
-									<MultiBinding Converter="{StaticResource routeToPathConverter}">
+									<MultiBinding Converter="{StaticResource RouteToPathConverter}">
 										<Binding RelativeSource="{RelativeSource TemplatedParent}"
 										         Path="Source.(Controls:GraphCanvas.X)" />
 										<Binding RelativeSource="{RelativeSource TemplatedParent}"
@@ -110,10 +110,20 @@
 		        Value="{Binding RelativeSource={RelativeSource Self},Path=IsMouseOver}" />
 		<Setter Property="attachedBehaviors:DragBehavior.IsDragEnabled"
 		        Value="True" />
-		<Setter Property="attachedBehaviors:DragBehavior.X"
-		        Value="{Binding RelativeSource={RelativeSource Self},Path=(Controls:GraphCanvas.X),Mode=TwoWay}" />
-		<Setter Property="attachedBehaviors:DragBehavior.Y"
-		        Value="{Binding RelativeSource={RelativeSource Self},Path=(Controls:GraphCanvas.Y),Mode=TwoWay}" />
+		<Setter Property="attachedBehaviors:DragBehavior.X">
+			<Setter.Value>
+				<Binding RelativeSource="{RelativeSource Self}"
+				         Path="(Controls:GraphCanvas.X)"
+				         Mode="TwoWay" />
+			</Setter.Value>
+		</Setter>
+		<Setter Property="attachedBehaviors:DragBehavior.Y">
+			<Setter.Value>
+				<Binding RelativeSource="{RelativeSource Self}"
+				         Path="(Controls:GraphCanvas.Y)"
+				         Mode="TwoWay" />
+			</Setter.Value>
+		</Setter>
 		<Setter Property="BorderThickness"
 		        Value="2" />
 		<Setter Property="BorderBrush"
@@ -121,7 +131,7 @@
 		<Style.Triggers>
 			<Trigger Property="Controls:GraphElementBehaviour.IsHighlighted"
 			         Value="True">
-				<Setter Property="BorderBrush" 
+				<Setter Property="BorderBrush"
 				        Value="Orange" />
 				<Setter Property="BorderThickness"
 				        Value="2" />

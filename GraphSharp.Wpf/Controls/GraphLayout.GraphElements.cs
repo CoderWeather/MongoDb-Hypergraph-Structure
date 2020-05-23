@@ -288,10 +288,8 @@ namespace GraphSharp.Controls
             }
         }
 
-        private void CompoundVertexControl_ExpandedOrCollapsed(object sender, RoutedEventArgs e)
-        {
-            //TODO relayout perhaps
-        }
+        private static void CompoundVertexControl_ExpandedOrCollapsed(object sender, RoutedEventArgs e) =>
+            throw new NotImplementedException();
 
         public EdgeControl? GetEdgeControl(TEdge edge)
         {

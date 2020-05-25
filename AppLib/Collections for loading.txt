@@ -1,0 +1,16 @@
+Samples.Training-Trips.bin
+Samples.AirBnb-ListingAndReviews.bin
+Samples.Analytics-Customers.bin
+Samples.Books.bin
+Samples.Companies.bin
+Samples.Countries-Small.bin
+Samples.Enron-Messages.bin
+Samples.Mflix-Movies.bin
+Samples.Products.bin
+Samples.Profiles.bin
+Samples.Trades.bin
+Samples.Training-Companies.bin
+Samples.Training-Stories.bin
+Samples.Training-Tweets.bin
+Samples.Tweets.bin
+Samples.Weatherdata-Data.bin

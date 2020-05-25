@@ -6,7 +6,7 @@ namespace DesktopApp.Models
 	{
 		public static HyperGraph GenerateTest1()
 		{
-			var graph = new HyperGraph();
+			var graph = new HyperGraph("Testing");
 
 			var v1 = new Vertex("1");
 			var v2 = new Vertex("22");

@@ -1,0 +1,1 @@
+{"Caption":"Mflix-Sessions","Vertices":[{"Data":"_id"},{"Data":"user_id"},{"Data":"jwt"}],"HyperEdges":[{"Weight":1,"Vertices":[{"Data":"_id"},{"Data":"user_id"},{"Data":"jwt"}]}]}

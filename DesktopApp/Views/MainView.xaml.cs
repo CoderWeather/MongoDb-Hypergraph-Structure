@@ -8,7 +8,7 @@ namespace DesktopApp.Views
 
 		private void UpdateGraphBtn_OnClick(object sender, RoutedEventArgs e)
 		{
-			GraphLayout.InvalidateMeasure();
+			// GraphLayout.InvalidateMeasure();
 		}
 	}
 }

@@ -1,0 +1,1 @@
+{"Caption":"Analytics-Accounts","Vertices":[{"Data":"_id"},{"Data":"account_id"},{"Data":"limit"},{"Data":"products"}],"HyperEdges":[{"Weight":1746,"Vertices":[{"Data":"_id"},{"Data":"account_id"},{"Data":"limit"},{"Data":"products"}]}]}

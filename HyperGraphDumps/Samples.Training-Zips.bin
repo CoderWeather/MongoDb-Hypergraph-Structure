@@ -1,0 +1,1 @@
+{"Caption":"Training-Zips","Vertices":[{"Data":"_id"},{"Data":"city"},{"Data":"zip"},{"Data":"loc.y"},{"Data":"loc.x"},{"Data":"pop"},{"Data":"state"}],"HyperEdges":[{"Weight":29470,"Vertices":[{"Data":"_id"},{"Data":"city"},{"Data":"zip"},{"Data":"loc.y"},{"Data":"loc.x"},{"Data":"pop"},{"Data":"state"}]}]}

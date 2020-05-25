@@ -1,0 +1,1 @@
+{"Caption":"Mflix-Comments","Vertices":[{"Data":"_id"},{"Data":"name"},{"Data":"email"},{"Data":"movie_id"},{"Data":"text"},{"Data":"date"}],"HyperEdges":[{"Weight":50304,"Vertices":[{"Data":"_id"},{"Data":"name"},{"Data":"email"},{"Data":"movie_id"},{"Data":"text"},{"Data":"date"}]}]}

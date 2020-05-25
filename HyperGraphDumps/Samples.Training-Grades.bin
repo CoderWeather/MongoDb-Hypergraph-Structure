@@ -1,0 +1,1 @@
+{"Caption":"Training-Grades","Vertices":[{"Data":"_id"},{"Data":"student_id"},{"Data":"scores"},{"Data":"class_id"}],"HyperEdges":[{"Weight":100000,"Vertices":[{"Data":"_id"},{"Data":"student_id"},{"Data":"scores"},{"Data":"class_id"}]}]}

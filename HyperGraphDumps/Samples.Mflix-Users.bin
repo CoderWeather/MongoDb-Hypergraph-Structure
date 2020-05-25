@@ -1,0 +1,1 @@
+{"Caption":"Mflix-Users","Vertices":[{"Data":"_id"},{"Data":"name"},{"Data":"email"},{"Data":"password"}],"HyperEdges":[{"Weight":185,"Vertices":[{"Data":"_id"},{"Data":"name"},{"Data":"email"},{"Data":"password"}]}]}

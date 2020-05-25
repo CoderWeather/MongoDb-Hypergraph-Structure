@@ -1,0 +1,1 @@
+{"Caption":"Training-Posts","Vertices":[{"Data":"_id"},{"Data":"body"},{"Data":"permalink"},{"Data":"author"},{"Data":"title"},{"Data":"tags"},{"Data":"comments"},{"Data":"date"}],"HyperEdges":[{"Weight":500,"Vertices":[{"Data":"_id"},{"Data":"body"},{"Data":"permalink"},{"Data":"author"},{"Data":"title"},{"Data":"tags"},{"Data":"comments"},{"Data":"date"}]}]}

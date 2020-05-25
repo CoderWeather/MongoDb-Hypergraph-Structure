@@ -1,0 +1,1 @@
+{"Caption":"Covers","Vertices":[{"Data":"_id"},{"Data":"book_id"},{"Data":"ratingcount"},{"Data":"ratingval"}],"HyperEdges":[{"Weight":5071,"Vertices":[{"Data":"_id"},{"Data":"book_id"},{"Data":"ratingcount"},{"Data":"ratingval"}]}]}

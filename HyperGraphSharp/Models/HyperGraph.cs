@@ -1,27 +1,47 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Runtime.Serialization;
+using Utf8Json;
 
 namespace HyperGraphSharp.Models
 {
-	public class HyperGraph
-	{
-		#region Public Constructor
+    public class HyperGraph
+    {
+        #region Public Properties
 
-		public HyperGraph()
-		{
-			Id = Guid.NewGuid();
-			Vertices = new List<Vertex>();
-			HyperEdges = new List<HyperEdge>();
-		}
+        [IgnoreDataMember] public Guid Id { get; }
+        public string Caption { get; }
+        public List<Vertex> Vertices { get; }
+        public List<HyperEdge> HyperEdges { get; }
 
-		#endregion
+        #endregion
 
-		#region Public Properties
+        #region Public Constructor
 
-		public Guid Id { get; }
-		public List<Vertex> Vertices { get; }
-		public List<HyperEdge> HyperEdges { get; }
+        public HyperGraph(string caption)
+        {
+            Id = Guid.NewGuid();
+            Caption = caption;
+            Vertices = new List<Vertex>();
+            HyperEdges = new List<HyperEdge>();
+        }
 
-		#endregion
-	}
+        [SerializationConstructor]
+        public HyperGraph(string caption, List<Vertex> vertices, List<HyperEdge> hyperEdges)
+        {
+            Id = Guid.NewGuid();
+            Caption = caption;
+            Vertices = vertices;
+            HyperEdges = hyperEdges;
+            foreach (var v in Vertices)
+            {
+                foreach (var edge in HyperEdges)
+                {
+                    
+                }
+            }
+        }
+
+        #endregion
+    }
 }

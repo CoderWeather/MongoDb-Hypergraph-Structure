@@ -1,0 +1,1 @@
+{"Caption":"Students","Vertices":[{"Data":"_id"},{"Data":"name"},{"Data":"scores"}],"HyperEdges":[{"Weight":200,"Vertices":[{"Data":"_id"},{"Data":"name"},{"Data":"scores"}]}]}

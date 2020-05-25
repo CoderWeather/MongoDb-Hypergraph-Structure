@@ -1,0 +1,1 @@
+{"Caption":"Images","Vertices":[{"Data":"_id"},{"Data":"height"},{"Data":"width"},{"Data":"tags"}],"HyperEdges":[{"Weight":100000,"Vertices":[{"Data":"_id"},{"Data":"height"},{"Data":"width"},{"Data":"tags"}]}]}

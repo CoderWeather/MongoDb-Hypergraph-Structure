@@ -8,17 +8,27 @@ namespace DesktopApp.ViewModels
 	public class HyperGraphViewModel : ViewModelBase
 	{
 		public HyperGraph Graph { get; }
-		public ReactiveCommand<PocHyperGraphLayout, Unit> InvalidateButtonCommand { get; }
+		public ReactiveCommand<PocHyperGraphLayout, Unit> InvalidateMeasureButtonCommand { get; }
+		public ReactiveCommand<PocHyperGraphLayout, Unit> InvalidateArrangeButtonCommand { get; }
 
 		public HyperGraphViewModel(HyperGraph graph)
 		{
 			Graph = graph;
-			InvalidateButtonCommand = ReactiveCommand.Create<PocHyperGraphLayout>(OnInvalidateButtonCommand);
+			InvalidateMeasureButtonCommand =
+				ReactiveCommand.Create<PocHyperGraphLayout>(OnInvalidateMeasureButtonCommand);
+			InvalidateArrangeButtonCommand =
+				ReactiveCommand.Create<PocHyperGraphLayout>(OnInvalidateArrangeButtonCommand);
 		}
 
-		private static void OnInvalidateButtonCommand(PocHyperGraphLayout layout)
+		private static void OnInvalidateMeasureButtonCommand(PocHyperGraphLayout layout)
 		{
 			layout.InvalidateMeasure();
+		}
+
+		private static void OnInvalidateArrangeButtonCommand(PocHyperGraphLayout layout)
+		{
+			// layout.InvalidateArrange();
+			layout.InvalidateVisual();
 		}
 	}
 }

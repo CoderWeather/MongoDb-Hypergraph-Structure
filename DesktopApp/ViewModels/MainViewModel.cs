@@ -24,7 +24,6 @@ namespace DesktopApp.ViewModels
 
 		public MainViewModel()
 		{
-			// HyperGraph = TestGraphFactory.GenerateTest1();
 			InitGraphs();
 		}
 

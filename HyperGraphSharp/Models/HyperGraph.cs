@@ -39,7 +39,8 @@ namespace HyperGraphSharp.Models
 			{
 				var findVertexList = Vertices
 				   .Where(v => edge.Vertices
-					   .Any(vIn => vIn.Data == v.Data)).ToList();
+					   .Any(vIn => vIn.Data == v.Data))
+				   .ToList();
 				edge.Vertices.Clear();
 				findVertexList.ForEach(vertex =>
 				{

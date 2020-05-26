@@ -52,7 +52,7 @@ namespace HyperGraphSharp.Converters
 			var verticesInfo = vertexControls
 			   .Select(vc =>
 				{
-					vc.InvalidateMeasure();
+					// vc.InvalidateMeasure();
 					var x = HyperGraphCanvas.GetX(vc);
 					var y = HyperGraphCanvas.GetY(vc);
 					return new

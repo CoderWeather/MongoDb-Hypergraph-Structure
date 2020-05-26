@@ -10,14 +10,18 @@ namespace DesktopApp.ViewModels
 		public HyperGraph Graph { get; }
 		public ReactiveCommand<PocHyperGraphLayout, Unit> InvalidateMeasureButtonCommand { get; }
 		public ReactiveCommand<PocHyperGraphLayout, Unit> InvalidateArrangeButtonCommand { get; }
+		public ReactiveCommand<PocHyperGraphLayout, Unit> ReLayoutCommand { get; }
+
 
 		public HyperGraphViewModel(HyperGraph graph)
 		{
 			Graph = graph;
+
 			InvalidateMeasureButtonCommand =
 				ReactiveCommand.Create<PocHyperGraphLayout>(OnInvalidateMeasureButtonCommand);
 			InvalidateArrangeButtonCommand =
 				ReactiveCommand.Create<PocHyperGraphLayout>(OnInvalidateArrangeButtonCommand);
+			ReLayoutCommand = ReactiveCommand.Create<PocHyperGraphLayout>(OnReLayoutCommand);
 		}
 
 		private static void OnInvalidateMeasureButtonCommand(PocHyperGraphLayout layout)
@@ -29,6 +33,11 @@ namespace DesktopApp.ViewModels
 		{
 			// layout.InvalidateArrange();
 			layout.InvalidateVisual();
+		}
+
+		private static void OnReLayoutCommand(PocHyperGraphLayout layout)
+		{
+			layout.Layout();
 		}
 	}
 }

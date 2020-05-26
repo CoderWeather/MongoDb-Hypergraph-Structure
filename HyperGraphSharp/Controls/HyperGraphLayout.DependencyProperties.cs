@@ -20,7 +20,7 @@ namespace HyperGraphSharp.Controls
         private static void OnGraphPropertyChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
         {
             var graphLayout = d as HyperGraphLayout;
-            graphLayout?.RecreateGraphElements();
+            graphLayout?.RecreateGraphElements(true);
             graphLayout?.Layout();
         }
     }

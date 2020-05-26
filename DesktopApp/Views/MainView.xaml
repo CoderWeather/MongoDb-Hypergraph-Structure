@@ -76,20 +76,13 @@
 							<models:PocHyperGraphLayout x:Name="GraphLayout"
 							                            Graph="{Binding Graph}" />
 						</zoom:ZoomControl>
-						<!-- <paz:ZoomBorder Grid.Row="0" -->
-						<!--                 MinZoomX="0.5" -->
-						<!--                 MinZoomY="0.5" -->
-						<!--                 BorderThickness="0"> -->
-						<!-- 	<models:PocHyperGraphLayout x:Name="GraphLayout" -->
-						<!-- 	                            Graph="{Binding Graph}" /> -->
-						<!-- </paz:ZoomBorder> -->
 						<StackPanel Grid.Row="1">
 							<Button Content="Invalidate measure"
 							        Command="{Binding InvalidateMeasureButtonCommand}"
 							        CommandParameter="{Binding ElementName=GraphLayout, Path=.}" />
-							<Button Content="Invalidate arrange"
-							        Command="{Binding InvalidateArrangeButtonCommand}"
-							        CommandParameter="{Binding ElementName=GraphLayout, Path=.}" />
+							<!-- <Button Content="Invalidate arrange" -->
+							<!--         Command="{Binding InvalidateArrangeButtonCommand}" -->
+							<!--         CommandParameter="{Binding ElementName=GraphLayout, Path=.}" /> -->
 						</StackPanel>
 					</Grid>
 				</DataTemplate>

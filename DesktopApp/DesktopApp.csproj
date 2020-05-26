@@ -20,6 +20,9 @@
         <Page Update="Resources\HyperGraphTemplates.xaml">
           <Generator></Generator>
         </Page>
+        <Page Update="Views\SecondMainView.xaml">
+          <Generator></Generator>
+        </Page>
     </ItemGroup>
 
     <ItemGroup>
@@ -27,6 +30,12 @@
         <PackageReference Include="ReactiveUI.Fody" Version="11.4.1" />
         <PackageReference Include="ReactiveUI.WPF" Version="11.4.1" />
         <PackageReference Include="Wpf.Controls.PanAndZoom" Version="2.3.3" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Update="Views\SecondMainView.xaml.cs">
+        <DependentUpon>SecondMainView.xaml</DependentUpon>
+      </Compile>
     </ItemGroup>
 
 </Project>

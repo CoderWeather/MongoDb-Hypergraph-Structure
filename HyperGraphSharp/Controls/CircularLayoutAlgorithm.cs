@@ -38,7 +38,7 @@ namespace HyperGraphSharp.Controls
             }
 
             var radius = perimeter / (2 * Math.PI);
-            // radius *= 2;
+            radius *= 2;
             var angleStep = 360d / Graph.Vertices.Count;
             var curAngle = 0d;
 

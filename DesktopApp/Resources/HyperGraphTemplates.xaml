@@ -82,7 +82,7 @@
 							</Path.Data>
 						</Path>
 						<controls:HyperEdgeContentPresenter Content="{TemplateBinding HyperEdge}"
-						                                    TextBlock.FontSize="12"
+						                                    TextBlock.FontSize="20"
 						                                    TextBlock.Foreground="Black"
 						                                    Opacity="1"
 						                                    Margin="-5, 0, 0, 0"

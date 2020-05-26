@@ -1,5 +1,9 @@
 ﻿using System.Collections.Generic;
+using System.IO;
+using System.Threading.Tasks;
 using System.Windows;
+using System.Windows.Media;
+using System.Windows.Media.Imaging;
 using HyperGraphSharp.Models;
 
 namespace HyperGraphSharp.Controls
@@ -22,39 +26,55 @@ namespace HyperGraphSharp.Controls
 
 		#region Public Methods
 
-        public virtual void Layout()
+		public virtual void Layout()
 		{
-			if (Graph is null || Graph.Vertices.Count == 0) 
-                return;
+			if (Graph is null || Graph.Vertices.Count == 0)
+				return;
 
 			UpdateLayout();
 
-            if (!IsLoaded)
-            {
+			if (!IsLoaded)
+			{
 				void Handler(object s, RoutedEventArgs e)
-                {
-                    Layout();
-					if(e.Source is HyperGraphLayout graphLayout)
-                        graphLayout.Loaded -= Handler;
-                }
+				{
+					Layout();
+					if (e.Source is HyperGraphLayout graphLayout)
+						graphLayout.Loaded -= Handler;
+				}
 
-                Loaded += Handler;
-                return;
+				Loaded += Handler;
+				return;
 			}
 
 			var layoutAlgorithm = new CircularLayoutAlgorithm(
 				Graph, LatestVertexPositions, ActualVertexSizes);
 			layoutAlgorithm.Compute();
 
-            foreach (var (vertex, newPos) in layoutAlgorithm.VertexPositions)
-            {
+			foreach (var (vertex, newPos) in layoutAlgorithm.VertexPositions)
+			{
 				SetX(VertexControls[vertex], newPos.X);
 				SetY(VertexControls[vertex], newPos.Y);
-            }
-			// InitVertexPositions();
+			}
+
+			InvalidateVisual();
+			InvalidateMeasure();
 		}
 
-        #endregion
+		public async Task ConvertGraphToImage()
+		{
+			var bmp = new RenderTargetBitmap((int) ActualWidth, (int) ActualHeight,
+				96, 96, PixelFormats.Pbgra32);
+			bmp.Render(this);
+			if (Directory.Exists("GraphImages") is false)
+				Directory.CreateDirectory("GraphImages");
+			await using var fs = File.Create($@"GraphImages\{Graph.Caption}.jpeg");
+			var encoder = new JpegBitmapEncoder {QualityLevel = 100};
+			var bmpFrame = BitmapFrame.Create(bmp);
+			encoder.Frames.Add(bmpFrame);
+			encoder.Save(fs);
+		}
+
+		#endregion
 
 		#region Private Fields
 

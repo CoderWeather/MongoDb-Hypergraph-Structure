@@ -1,19 +1,19 @@
 ﻿<Window x:Class="DesktopApp.Views.MainView"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:paz="clr-namespace:Wpf.Controls.PanAndZoom;assembly=Wpf.Controls.PanAndZoom"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:local="clr-namespace:DesktopApp.Views"
         xmlns:viewModels="clr-namespace:DesktopApp.ViewModels"
         xmlns:models="clr-namespace:DesktopApp.Models"
-        xmlns:zoom="clr-namespace:GraphSharp.WPFExtensions.Zoom;assembly=GraphSharp.Wpf"
         xmlns:graphModels="clr-namespace:HyperGraphSharp.Models;assembly=HyperGraphSharp"
+        xmlns:zoom="clr-namespace:GraphSharp.WPFExtensions.Zoom;assembly=GraphSharp.Wpf"
         mc:Ignorable="d"
-        Title="MainWindow"
+        Title="SecondMainView"
         Height="450" Width="800">
 
 	<Window.DataContext>
-		<viewModels:MainViewModel />
+		<viewModels:SecondMainViewModel />
 	</Window.DataContext>
 
 	<Window.Resources>
@@ -34,30 +34,34 @@
 			<ColumnDefinition Width="Auto" />
 		</Grid.ColumnDefinitions>
 
-		<!-- <paz:ZoomBorder Grid.Row="0" -->
-		<!--                 Stretch="None" -->
-		<!--                 VerticalAlignment="Stretch" -->
-		<!--                 HorizontalAlignment="Stretch" -->
-		<!--                 MinZoomX="0.5" -->
-		<!--                 MinZoomY="0.5" -->
-		<!--                 BorderThickness="0"> -->
-		<!-- 	<models:PocHyperGraphLayout x:Name="GraphLayout" -->
-		<!-- 	                            Graph="{Binding HyperGraph}" /> -->
-		<!-- </paz:ZoomBorder> -->
+		<zoom:ZoomControl Grid.Row="0"
+		                  Grid.Column="0"
+		                  Mode="Fill">
+			<models:PocHyperGraphLayout
+				x:Name="GraphLayout"
+				Background="White"
+				Graph="{Binding SelectedGraph.Graph, UpdateSourceTrigger=PropertyChanged}" />
+		</zoom:ZoomControl>
 
-		<!-- <zoom:ZoomControl Grid.Row="0" -->
-		<!--                   Mode="Original"> -->
-		<!-- 	<models:PocHyperGraphLayout x:Name="GraphLayout" -->
-		<!-- 	                            Graph="{Binding HyperGraph}" /> -->
-		<!-- </zoom:ZoomControl> -->
-		<!-- <StackPanel Grid.Row="1"> -->
-		<!-- 	<Button Click="UpdateGraphBtn_OnClick" Content="Update Graph" /> -->
-		<!-- </StackPanel> -->
-		<TabControl Grid.Column="0"
-		            Grid.Row="0"
-		            Grid.RowSpan="2"
+		<StackPanel Grid.Row="1"
+		            Grid.Column="0">
+			<Button Content="Invalidate"
+			        Command="{Binding SelectedGraph.InvalidateMeasureButtonCommand}"
+			        CommandParameter="{Binding ElementName=GraphLayout, Path=.}" />
+			<Button Content="ReLayout"
+			        Command="{Binding SelectedGraph.ReLayoutCommand}"
+			        CommandParameter="{Binding ElementName=GraphLayout, Path=.}" />
+			<Button Content="Save as image"
+			        Command="{Binding SelectedGraph.SaveGraphImageCommand}"
+			        CommandParameter="{Binding ElementName=GraphLayout, Path=.}" />
+		</StackPanel>
+
+
+		<TabControl Grid.Row="0"
+		            Grid.Column="1"
+		            TabStripPlacement="Left"
 		            ItemsSource="{Binding HyperGraphs}"
-		            SelectedIndex="{Binding SelectedTabIndex}">
+		            SelectedIndex="{Binding SelectedGraphIndex, Mode=TwoWay}">
 			<TabControl.ItemTemplate>
 				<DataTemplate DataType="viewModels:HyperGraphViewModel">
 					<TextBlock Text="{Binding Graph.Caption}" />
@@ -67,26 +71,59 @@
 				<DataTemplate DataType="viewModels:HyperGraphViewModel">
 					<Grid>
 						<Grid.RowDefinitions>
+							<RowDefinition Height="Auto" />
 							<RowDefinition Height="*" />
 							<RowDefinition Height="Auto" />
+							<RowDefinition Height="*" />
 						</Grid.RowDefinitions>
-						<zoom:ZoomControl Grid.Row="0"
-						                  x:Name="ZoomControl"
-						                  Mode="Fill">
-							<models:PocHyperGraphLayout x:Name="GraphLayout"
-							                            Graph="{Binding Graph}" />
-						</zoom:ZoomControl>
-						<StackPanel Grid.Row="1">
-							<Button Content="Invalidate measure"
-							        Command="{Binding InvalidateMeasureButtonCommand}"
-							        CommandParameter="{Binding ElementName=GraphLayout, Path=.}" />
-							<!-- <Button Content="Invalidate arrange" -->
-							<!--         Command="{Binding InvalidateArrangeButtonCommand}" -->
-							<!--         CommandParameter="{Binding ElementName=GraphLayout, Path=.}" /> -->
+						<StackPanel Grid.Row="0"
+						            HorizontalAlignment="Stretch"
+						            Orientation="Horizontal">
+							<TextBlock Text="Количество вершин: "
+							           TextAlignment="Left" />
+							<TextBlock Text="{Binding Graph.Vertices.Count}"
+							           TextAlignment="Right" />
 						</StackPanel>
+						<ListView Grid.Row="1"
+						          ItemsSource="{Binding Graph.Vertices}">
+							<ListView.ItemTemplate>
+								<DataTemplate DataType="graphModels:Vertex">
+									<TextBlock Text="{Binding Data}" />
+								</DataTemplate>
+							</ListView.ItemTemplate>
+						</ListView>
+						<StackPanel Grid.Row="2"
+						            HorizontalAlignment="Stretch"
+						            Orientation="Horizontal">
+							<TextBlock Text="Количество гиперребер: "
+							           TextAlignment="Left" />
+							<TextBlock Text="{Binding Graph.HyperEdges.Count}"
+							           TextAlignment="Right" />
+						</StackPanel>
+						<ListView Grid.Row="3" ItemsSource="{Binding Graph.HyperEdges}">
+							<ListView.ItemTemplate>
+								<DataTemplate DataType="graphModels:HyperEdge">
+									<StackPanel>
+										<StackPanel Orientation="Horizontal"
+										            HorizontalAlignment="Stretch">
+											<TextBlock Text="Вес: "
+											           TextAlignment="Left" />
+											<TextBlock Text="{Binding Path=Weight}"
+											           TextAlignment="Right" />
+										</StackPanel>
+										<StackPanel Orientation="Horizontal"
+										            HorizontalAlignment="Stretch">
+											<TextBlock Text="Кол. вершин: " />
+											<TextBlock Text="{Binding Vertices.Count}" />
+										</StackPanel>
+									</StackPanel>
+								</DataTemplate>
+							</ListView.ItemTemplate>
+						</ListView>
 					</Grid>
 				</DataTemplate>
 			</TabControl.ContentTemplate>
 		</TabControl>
+
 	</Grid>
 </Window>

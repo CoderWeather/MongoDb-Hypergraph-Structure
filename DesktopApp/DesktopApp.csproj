@@ -14,13 +14,10 @@
     </ItemGroup>
 
     <ItemGroup>
-        <Page Update="Views\MainView.xaml">
-            <Generator>MSBuild:Compile</Generator>
-        </Page>
         <Page Update="Resources\HyperGraphTemplates.xaml">
           <Generator></Generator>
         </Page>
-        <Page Update="Views\SecondMainView.xaml">
+        <Page Update="Views\MainView.xaml">
           <Generator></Generator>
         </Page>
     </ItemGroup>
@@ -33,7 +30,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Compile Update="Views\SecondMainView.xaml.cs">
+      <Compile Update="Views\MainView.xaml.cs">
         <DependentUpon>SecondMainView.xaml</DependentUpon>
       </Compile>
     </ItemGroup>

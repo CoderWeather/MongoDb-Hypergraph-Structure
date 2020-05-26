@@ -9,12 +9,16 @@ namespace HyperGraphSharp.Controls
 	{
 		protected virtual void RemoveVertexControl(Vertex vertex)
 		{
+			var vc = VertexControls[vertex];
 			VertexControls.Remove(vertex);
+			InternalChildren.Remove(vc);
 		}
 
 		protected virtual void RemoveEdgeControl(HyperEdge hyperEdge)
 		{
+			var hec = HyperEdgeControls[hyperEdge];
 			HyperEdgeControls.Remove(hyperEdge);
+			InternalChildren.Remove(hec);
 		}
 
 		protected void RemoveAllGraphElements()
@@ -92,13 +96,13 @@ namespace HyperGraphSharp.Controls
 				if (keepControls)
 				{
 					foreach (var (edge, _) in HyperEdgeControls
-					   .Where(pair => Graph.HyperEdges.Contains(pair.Key) is false))
+					   .Where(pair => !Graph.HyperEdges.Contains(pair.Key)))
 					{
 						RemoveEdgeControl(edge);
 					}
 
 					foreach (var (vertex, _) in VertexControls
-					   .Where(pair => Graph.Vertices.Contains(pair.Key) is false))
+					   .Where(pair => !Graph.Vertices.Contains(pair.Key)))
 					{
 						RemoveVertexControl(vertex);
 					}

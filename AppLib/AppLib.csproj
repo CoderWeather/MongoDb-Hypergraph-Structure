@@ -16,7 +16,6 @@
 
     <ItemGroup>
         <ProjectReference Include="..\HyperGraphSharp\HyperGraphSharp.csproj" />
-        <ProjectReference Include="..\QuickGraph\QuickGraph.csproj" />
     </ItemGroup>
 
     <ItemGroup>

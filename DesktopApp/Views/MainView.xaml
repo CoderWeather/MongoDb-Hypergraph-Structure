@@ -8,11 +8,11 @@
         xmlns:graphModels="clr-namespace:HyperGraphSharp.Models;assembly=HyperGraphSharp"
         xmlns:zoom="clr-namespace:HyperGraphSharp.WPFExtensions.Zoom;assembly=HyperGraphSharp"
         mc:Ignorable="d"
-        Title="SecondMainView"
+        Title="Представление NoSQL базы данных в виде гиперграфа"
         Height="450" Width="800">
 
 	<Window.DataContext>
-		<viewModels:SecondMainViewModel />
+		<viewModels:MainViewModel />
 	</Window.DataContext>
 
 	<Window.Resources>
@@ -31,10 +31,13 @@
 		<Grid.ColumnDefinitions>
 			<ColumnDefinition Width="*" />
 			<ColumnDefinition Width="Auto" />
+			<ColumnDefinition Width="Auto" />
 		</Grid.ColumnDefinitions>
 
 		<zoom:ZoomControl Grid.Row="0"
+		                  Grid.RowSpan="2"
 		                  Grid.Column="0"
+		                  Grid.ColumnSpan="2"
 		                  Mode="Fill">
 			<models:PocHyperGraphLayout
 				x:Name="GraphLayout"
@@ -42,87 +45,106 @@
 				Graph="{Binding SelectedGraph.Graph, UpdateSourceTrigger=PropertyChanged}" />
 		</zoom:ZoomControl>
 
-		<StackPanel Grid.Row="1"
-		            Grid.Column="0">
-			<Button Content="Invalidate"
-			        Command="{Binding SelectedGraph.InvalidateMeasureButtonCommand}"
-			        CommandParameter="{Binding ElementName=GraphLayout, Path=.}" />
-			<Button Content="ReLayout"
-			        Command="{Binding SelectedGraph.ReLayoutCommand}"
-			        CommandParameter="{Binding ElementName=GraphLayout, Path=.}" />
-			<Button Content="Save as image"
-			        Command="{Binding SelectedGraph.SaveGraphImageCommand}"
-			        CommandParameter="{Binding ElementName=GraphLayout, Path=.}" />
-		</StackPanel>
+		<!-- <StackPanel Grid.Row="1" -->
+		<!--             Grid.Column="0"> -->
+		<!-- 	<Button Content="Invalidate" -->
+		<!-- 	        Command="{Binding SelectedGraph.InvalidateMeasureButtonCommand}" -->
+		<!-- 	        CommandParameter="{Binding ElementName=GraphLayout, Path=.}" /> -->
+		<!-- 	<Button Content="ReLayout" -->
+		<!-- 	        Command="{Binding SelectedGraph.ReLayoutCommand}" -->
+		<!-- 	        CommandParameter="{Binding ElementName=GraphLayout, Path=.}" /> -->
+		<!-- 	<Button Content="Save as image" -->
+		<!-- 	        Command="{Binding SelectedGraph.SaveGraphImageCommand}" -->
+		<!-- 	        CommandParameter="{Binding ElementName=GraphLayout, Path=.}" /> -->
+		<!-- </StackPanel> -->
 
+		<Button Grid.Row="0"
+		        Grid.RowSpan="2"
+		        Grid.Column="1"
+		        VerticalAlignment="Top"
+		        Content="Информация о графах"
+		        Command="{Binding SideGraphInfoPanelVisibilityCommand}" />
 
-		<TabControl Grid.Row="0"
-		            Grid.Column="1"
-		            TabStripPlacement="Left"
-		            ItemsSource="{Binding HyperGraphs}"
-		            SelectedIndex="{Binding SelectedGraphIndex, Mode=TwoWay}">
-			<TabControl.ItemTemplate>
-				<DataTemplate DataType="viewModels:HyperGraphViewModel">
-					<TextBlock Text="{Binding Graph.Caption}" />
-				</DataTemplate>
-			</TabControl.ItemTemplate>
-			<TabControl.ContentTemplate>
-				<DataTemplate DataType="viewModels:HyperGraphViewModel">
-					<Grid>
-						<Grid.RowDefinitions>
-							<RowDefinition Height="Auto" />
-							<RowDefinition Height="*" />
-							<RowDefinition Height="Auto" />
-							<RowDefinition Height="*" />
-						</Grid.RowDefinitions>
-						<StackPanel Grid.Row="0"
-						            HorizontalAlignment="Stretch"
-						            Orientation="Horizontal">
-							<TextBlock Text="Количество вершин: "
-							           TextAlignment="Left" />
-							<TextBlock Text="{Binding Graph.Vertices.Count}"
-							           TextAlignment="Right" />
-						</StackPanel>
-						<ListView Grid.Row="1"
-						          ItemsSource="{Binding Graph.Vertices}">
-							<ListView.ItemTemplate>
-								<DataTemplate DataType="graphModels:Vertex">
-									<TextBlock Text="{Binding Data}" />
-								</DataTemplate>
-							</ListView.ItemTemplate>
-						</ListView>
-						<StackPanel Grid.Row="2"
-						            HorizontalAlignment="Stretch"
-						            Orientation="Horizontal">
-							<TextBlock Text="Количество гиперребер: "
-							           TextAlignment="Left" />
-							<TextBlock Text="{Binding Graph.HyperEdges.Count}"
-							           TextAlignment="Right" />
-						</StackPanel>
-						<ListView Grid.Row="3" ItemsSource="{Binding Graph.HyperEdges}">
-							<ListView.ItemTemplate>
-								<DataTemplate DataType="graphModels:HyperEdge">
-									<StackPanel>
-										<StackPanel Orientation="Horizontal"
-										            HorizontalAlignment="Stretch">
-											<TextBlock Text="Вес: "
-											           TextAlignment="Left" />
-											<TextBlock Text="{Binding Path=Weight}"
-											           TextAlignment="Right" />
+		<Grid Grid.Row="0"
+		      Grid.RowSpan="2"
+		      Grid.Column="2"
+		      Visibility="{Binding SideGraphInfoPanelVisibility}">
+			<Grid.RowDefinitions>
+				<RowDefinition Height="Auto" />
+				<RowDefinition Height="*" />
+			</Grid.RowDefinitions>
+			<TabControl Grid.Row="1"
+			            TabStripPlacement="Left"
+			            ItemsSource="{Binding HyperGraphs}"
+			            SelectedIndex="{Binding SelectedGraphIndex, Mode=TwoWay}">
+				<TabControl.ItemTemplate>
+					<DataTemplate DataType="viewModels:HyperGraphViewModel">
+						<TextBlock Text="{Binding Graph.Caption}" />
+					</DataTemplate>
+				</TabControl.ItemTemplate>
+				<TabControl.ContentTemplate>
+					<DataTemplate DataType="viewModels:HyperGraphViewModel">
+						<Grid>
+							<Grid.RowDefinitions>
+								<RowDefinition Height="Auto" />
+								<RowDefinition Height="*" />
+								<RowDefinition Height="Auto" />
+								<RowDefinition Height="*" />
+								<RowDefinition Height="Auto" />
+							</Grid.RowDefinitions>
+							<StackPanel Grid.Row="0"
+							            HorizontalAlignment="Stretch"
+							            Orientation="Horizontal">
+								<TextBlock Text="Количество вершин: "
+								           TextAlignment="Left" />
+								<TextBlock Text="{Binding Graph.Vertices.Count}"
+								           TextAlignment="Right" />
+							</StackPanel>
+							<ListView Grid.Row="1"
+							          ItemsSource="{Binding Graph.Vertices}">
+								<ListView.ItemTemplate>
+									<DataTemplate DataType="graphModels:Vertex">
+										<TextBlock Text="{Binding Data}" />
+									</DataTemplate>
+								</ListView.ItemTemplate>
+							</ListView>
+							<StackPanel Grid.Row="2"
+							            HorizontalAlignment="Stretch"
+							            Orientation="Horizontal">
+								<TextBlock Text="Количество гиперребер: "
+								           TextAlignment="Left" />
+								<TextBlock Text="{Binding Graph.HyperEdges.Count}"
+								           TextAlignment="Right" />
+							</StackPanel>
+							<ListView Grid.Row="3" ItemsSource="{Binding Graph.HyperEdges}">
+								<ListView.ItemTemplate>
+									<DataTemplate DataType="graphModels:HyperEdge">
+										<StackPanel>
+											<StackPanel Orientation="Horizontal"
+											            HorizontalAlignment="Stretch">
+												<TextBlock Text="Вес: "
+												           TextAlignment="Left" />
+												<TextBlock Text="{Binding Path=Weight}"
+												           TextAlignment="Right" />
+											</StackPanel>
+											<StackPanel Orientation="Horizontal"
+											            HorizontalAlignment="Stretch">
+												<TextBlock Text="Кол. вершин: " />
+												<TextBlock Text="{Binding Vertices.Count}" />
+											</StackPanel>
 										</StackPanel>
-										<StackPanel Orientation="Horizontal"
-										            HorizontalAlignment="Stretch">
-											<TextBlock Text="Кол. вершин: " />
-											<TextBlock Text="{Binding Vertices.Count}" />
-										</StackPanel>
-									</StackPanel>
-								</DataTemplate>
-							</ListView.ItemTemplate>
-						</ListView>
-					</Grid>
-				</DataTemplate>
-			</TabControl.ContentTemplate>
-		</TabControl>
-
+									</DataTemplate>
+								</ListView.ItemTemplate>
+							</ListView>
+							<StackPanel Grid.Row="4">
+								<Button Content="Сохранить как изображение"
+								        Command="{Binding SaveGraphImageCommand}"
+								        CommandParameter="{Binding ElementName=GraphLayout, Path=.}" />
+							</StackPanel>
+						</Grid>
+					</DataTemplate>
+				</TabControl.ContentTemplate>
+			</TabControl>
+		</Grid>
 	</Grid>
 </Window>

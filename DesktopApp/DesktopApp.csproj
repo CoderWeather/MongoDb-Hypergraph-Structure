@@ -9,7 +9,6 @@
 
     <ItemGroup>
         <ProjectReference Include="..\AppLib\AppLib.csproj" />
-        <ProjectReference Include="..\GraphSharp.Wpf\GraphSharp.Wpf.csproj" />
         <ProjectReference Include="..\HyperGraphSharp\HyperGraphSharp.csproj" />
     </ItemGroup>
 

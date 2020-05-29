@@ -105,6 +105,8 @@ namespace HyperGraphSharp.Converters
 					new LineSegment(hyperEdgeCenter, true),
 				})
 			   .ToArray();
+			
+			
 
 			// var tracingFigures = verticesInfo
 			//    .Select(vi => new LineSegment(vi.Center, true));

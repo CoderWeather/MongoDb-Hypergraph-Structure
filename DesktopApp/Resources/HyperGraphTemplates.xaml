@@ -119,19 +119,19 @@
 						        Margin="5"
 						        CornerRadius="5"
 						        Background="#88C0C0C0"
-						        Width="275"
+						        Width="155"
 						        Height="40"
 						        VerticalAlignment="Top"
 						        HorizontalAlignment="Left">
 							<StackPanel Orientation="Horizontal">
-								<ToggleButton Content="1:1"
-								              Width="55">
-									<ToggleButton.IsChecked>
-										<Binding RelativeSource="{RelativeSource TemplatedParent}" Path="Mode"
-										         Converter="{StaticResource EqualityConverter}"
-										         ConverterParameter="{x:Static zoom:ZoomControlModes.Original}" />
-									</ToggleButton.IsChecked>
-								</ToggleButton>
+								<!-- <ToggleButton Content="1:1" -->
+								<!--               Width="55"> -->
+								<!-- 	<ToggleButton.IsChecked> -->
+								<!-- 		<Binding RelativeSource="{RelativeSource TemplatedParent}" Path="Mode" -->
+								<!-- 		         Converter="{StaticResource EqualityConverter}" -->
+								<!-- 		         ConverterParameter="{x:Static zoom:ZoomControlModes.Original}" /> -->
+								<!-- 	</ToggleButton.IsChecked> -->
+								<!-- </ToggleButton> -->
 								<ToggleButton Content="Fill"
 								              Width="55">
 									<ToggleButton.IsChecked>
@@ -140,14 +140,14 @@
 										         ConverterParameter="{x:Static zoom:ZoomControlModes.Fill}" />
 									</ToggleButton.IsChecked>
 								</ToggleButton>
-								<ToggleButton Content="Custom"
-								              Width="55">
-									<ToggleButton.IsChecked>
-										<Binding RelativeSource="{RelativeSource TemplatedParent}" Path="Mode"
-										         Converter="{StaticResource EqualityConverter}"
-										         ConverterParameter="{x:Static zoom:ZoomControlModes.Custom}" />
-									</ToggleButton.IsChecked>
-								</ToggleButton>
+								<!-- <ToggleButton Content="Custom" -->
+								<!--               Width="55"> -->
+								<!-- 	<ToggleButton.IsChecked> -->
+								<!-- 		<Binding RelativeSource="{RelativeSource TemplatedParent}" Path="Mode" -->
+								<!-- 		         Converter="{StaticResource EqualityConverter}" -->
+								<!-- 		         ConverterParameter="{x:Static zoom:ZoomControlModes.Custom}" /> -->
+								<!-- 	</ToggleButton.IsChecked> -->
+								<!-- </ToggleButton> -->
 								<TextBlock
 									Text="{Binding RelativeSource={RelativeSource TemplatedParent},Path=Zoom,StringFormat='Zoom: {0:P2}'}"
 									VerticalAlignment="Center"
